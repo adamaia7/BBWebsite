@@ -4,7 +4,7 @@
 
 - ქართული: `/`
 - ინგლისური: `/en/`
-- სატესტო მისამართი: https://adamaia7.github.io/bbwebsite/
+- სატესტო მისამართი: https://adamaia7.github.io/BBWebsite/
 
 ## ხშირი ცვლილებები
 
@@ -40,7 +40,7 @@
 
 ```bash
 npm install
-npm run dev      # http://localhost:4321/bbwebsite/
+npm run dev      # http://localhost:4321/BBWebsite/
 npm run build    # მზა საიტი dist/ საქაღალდეში
 ```
 

@@ -263,7 +263,7 @@ const en: Dict = {
 
 export const dict: Record<Lang, Dict> = { ka, en };
 
-/** აბრუნებს ბმულს base path-ის გათვალისწინებით (GitHub Pages-ზე /bbwebsite/). */
+/** აბრუნებს ბმულს base path-ის გათვალისწინებით (GitHub Pages-ზე /BBWebsite/). */
 export function url(path = ''): string {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   return `${base}/${path.replace(/^\//, '')}`;
