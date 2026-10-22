@@ -1,0 +1,62 @@
+---
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = dict[lang];
+---
+
+<section class="stats section--border" aria-label={t.stats.label}>
+  <dl class="container stats__grid">
+    {t.stats.items.map((s) => (
+      <div class="stat">
+        <dt class="stat__label">{s.small}</dt>
+        <dd class="stat__value">{s.big}</dd>
+      </div>
+    ))}
+  </dl>
+</section>
+
+<style>
+  .stats {
+    padding: 48px 0;
+  }
+  @media (min-width: 900px) {
+    .stats {
+      padding: 72px 0;
+    }
+  }
+  .stats__grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+  }
+  @media (min-width: 900px) {
+    .stats__grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .stat {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6px;
+  }
+  .stat__value {
+    margin: 0;
+    font-family: var(--font-latin);
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1;
+  }
+  @media (min-width: 900px) {
+    .stat__value {
+      font-size: 56px;
+    }
+  }
+  .stat__label {
+    color: var(--muted);
+  }
+</style>

@@ -1,0 +1,211 @@
+---
+// BAU BILD ლოგო, 6 ვარიანტი ერთ კომპონენტში. აქტიური ვარიანტი src/config.ts-შია (LOGO_VARIANT).
+// ფერები CSS ცვლადებიდან მოდის (--logo-ink, --logo-sub ...), ამიტომ ღია და მუქ თემაზე ავტომატურად იცვლება.
+import { LOGO_VARIANT, type LogoVariant } from '../../config';
+
+interface Props {
+  /** ლოგოს სიმაღლე პიქსელებში */
+  height: number;
+  /** ქვესათაურის ჩვენება („მშენებლობა · რემონტი“) */
+  tagline?: boolean;
+  /** ქვესათაურის ტექსტი მიმდინარე ენაზე */
+  text: { line: string; a: string; b: string };
+  variant?: LogoVariant;
+  class?: string;
+}
+
+const { height, tagline = false, text, variant = LOGO_VARIANT, class: className = '' } = Astro.props;
+
+const wall = variant === '14' || variant === '19';
+const pyramid = !wall;
+// თითოეული ვარიანტის ბუნებრივი სიმაღლე (ორიგინალ ფაილში, BAUBILD_logos.html)
+let native: number;
+if (wall) native = 196;
+else if (variant === '21') native = tagline ? 205 : 143;
+else native = tagline ? 177 : 137;
+const zoom = Math.round((height / native) * 1000) / 1000;
+const left = variant === '14' ? '#E07B24' : 'currentColor';
+const right = variant === '14' ? 'currentColor' : '#E07B24';
+const wallRows = [0, 18, 36, 54, 72, 90];
+---
+
+<span class:list={['logo', wall && 'logo--wall', className]} style={`zoom: ${zoom}`} role="img" aria-label="BAU BILD">
+  {pyramid && (
+    <svg class="logo__mark" width="132" height="132" viewBox="0 0 96 96" aria-hidden="true">
+      <rect x="0" y="66" width="44" height="28" rx="2" fill="currentColor" />
+      <rect x="50" y="66" width="44" height="28" rx="2" fill="currentColor" />
+      <rect x="24" y="34" width="44" height="28" rx="2" fill="currentColor" />
+      <rect x="50" y="2" width="44" height="28" rx="2" fill="#E07B24" />
+    </svg>
+  )}
+  {wall && (
+    <svg class="logo__mark" width="160" height="196" viewBox="0 0 114 140" aria-hidden="true">
+      <g transform="translate(0 0) skewY(26)" fill={left}>
+        {wallRows.map((y, i) =>
+          i % 2 === 0 ? (
+            <>
+              <rect x="0" y={y} width="32" height="14" rx="1" />
+              <rect x="36" y={y} width="32" height="14" rx="1" />
+            </>
+          ) : (
+            <>
+              <rect x="0" y={y} width="14" height="14" rx="1" />
+              <rect x="18" y={y} width="32" height="14" rx="1" />
+              <rect x="54" y={y} width="14" height="14" rx="1" />
+            </>
+          ),
+        )}
+      </g>
+      <g transform="translate(72 33.2) skewY(-26)" fill={right}>
+        {wallRows.map((y, i) =>
+          i % 2 === 0 ? (
+            <>
+              <rect x="0" y={y} width="18" height="14" rx="1" />
+              <rect x="22" y={y} width="18" height="14" rx="1" />
+            </>
+          ) : (
+            <>
+              <rect x="0" y={y} width="7" height="14" rx="1" />
+              <rect x="11" y={y} width="18" height="14" rx="1" />
+              <rect x="33" y={y} width="7" height="14" rx="1" />
+            </>
+          ),
+        )}
+      </g>
+    </svg>
+  )}
+
+  <span class="logo__text">
+    {variant === '7' && <span class="logo__word logo__word--archivo">BAU<br />BILD</span>}
+
+    {variant === '17' && (
+      <span class="logo__word logo__word--archivo">
+        <span class="logo__line">BA<span class="logo__u">U<svg class="logo__hat" width="56" height="36" viewBox="0 0 60 38" aria-hidden="true"><path d="M8 30 C8 12 19 3 30 3 C41 3 52 12 52 30 Z" fill="#E07B24" /><path d="M25 4.5 C25 4 35 4 35 4.5 L35 30 L25 30 Z" fill="#000" opacity="0.14" /><path d="M14 28 C14 18 20 11 25 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity="0.35" /><rect x="0" y="29" width="60" height="7" rx="3.5" fill="#E07B24" /><rect x="0" y="33" width="60" height="3" rx="1.5" fill="#000" opacity="0.14" /></svg></span></span>
+        <span class="logo__line">BILD</span>
+      </span>
+    )}
+
+    {variant === '18' && (
+      <span class="logo__word logo__word--archivo">
+        <span class="logo__line">BAU</span>
+        <span class="logo__line logo__nowrap">BI<svg class="logo__hammer" width="36" height="56" viewBox="0 0 36 56" preserveAspectRatio="none" aria-hidden="true"><path d="M4 3.5 Q4 0 9 0 Q14 0 14 3.5 L13.2 47 H4.8 Z" fill="#E07B24" /><path d="M6.6 7 L6.9 42" stroke="#fff" stroke-width="1.3" stroke-linecap="round" opacity="0.28" /><path d="M7.4 4.2 H10.6 L9 7.6 Z" fill="var(--logo-notch)" /><rect x="3.5" y="44.5" width="11" height="11.5" rx="2.5" fill="currentColor" /><rect x="0" y="48.2" width="4.6" height="6.6" rx="1.6" fill="currentColor" /><rect x="13" y="47" width="8" height="9" fill="currentColor" /><path d="M20 56 C27 56 32.3 52.5 35.6 44.2 L31 42.2 C29 47 25.3 49 20 49 Z" fill="currentColor" /></svg>D</span>
+      </span>
+    )}
+
+    {variant === '21' && (
+      <span class="logo__word logo__word--mont21">
+        <span class="logo__line logo__nowrap" style="letter-spacing: 2px">BA<span class="logo__u" style="letter-spacing: 0">U<svg class="logo__hat" width="56" height="36" viewBox="0 0 60 38" aria-hidden="true"><path d="M8 30 C8 12 19 3 30 3 C41 3 52 12 52 30 Z" fill="#E07B24" /><path d="M25 4.5 C25 4 35 4 35 4.5 L35 30 L25 30 Z" fill="#000" opacity="0.14" /><path d="M14 28 C14 18 20 11 25 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity="0.35" /><rect x="0" y="29" width="60" height="7" rx="3.5" fill="#E07B24" /><rect x="0" y="33" width="60" height="3" rx="1.5" fill="#000" opacity="0.14" /></svg></span></span>
+        <span class="logo__spread"><span>B</span><span>I</span><span>L</span><span>D</span></span>
+      </span>
+    )}
+
+    {wall && <span class="logo__word logo__word--wall">BAU BILD</span>}
+
+    {tagline && !wall && variant !== '21' && <span class="logo__tag">{text.line}</span>}
+    {tagline && wall && <span class="logo__tag logo__tag--wall">{text.line}</span>}
+    {tagline && variant === '21' && <span class="logo__tag logo__tag--21">{text.a}<br />{text.b}</span>}
+  </span>
+</span>
+
+<style>
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 36px;
+    color: var(--logo-ink);
+    line-height: normal;
+    font-family: 'Archivo', sans-serif;
+  }
+  .logo--wall {
+    gap: 34px;
+    color: var(--logo-ink-wall);
+  }
+  .logo__mark {
+    flex: none;
+    display: block;
+  }
+  .logo__text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .logo--wall .logo__text {
+    gap: 12px;
+  }
+  .logo__word--archivo {
+    display: block;
+    font-weight: 900;
+    font-size: 78px;
+    line-height: 0.88;
+    letter-spacing: 1px;
+  }
+  .logo__line {
+    display: block;
+  }
+  .logo__nowrap {
+    white-space: nowrap;
+  }
+  .logo__u {
+    position: relative;
+    display: inline-block;
+  }
+  .logo__hat {
+    position: absolute;
+    right: -20px;
+    top: -15px;
+    transform: rotate(35deg);
+    transform-origin: 50% 90%;
+  }
+  .logo__hammer {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 3px;
+  }
+  .logo__word--mont21 {
+    align-self: flex-start;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 0.95;
+  }
+  .logo__spread {
+    display: flex;
+    justify-content: space-between;
+    width: 0;
+    min-width: 100%;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 0.95;
+    margin-top: 4px;
+  }
+  .logo__word--wall {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing: 6px;
+    white-space: nowrap;
+  }
+  .logo__tag {
+    font-family: 'Noto Sans Georgian', 'Archivo', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 3px;
+    color: var(--logo-sub);
+    white-space: nowrap;
+  }
+  .logo__tag--wall {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 9px;
+    color: var(--logo-sub-wall);
+  }
+  .logo__tag--21 {
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: normal;
+  }
+</style>

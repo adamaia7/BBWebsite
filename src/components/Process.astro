@@ -1,0 +1,76 @@
+---
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = dict[lang];
+---
+
+<section class="section process on-dark">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow process__eyebrow">{t.process.eyebrow}</span>
+        <h2 class="h2">{t.process.title}</h2>
+      </div>
+    </div>
+    <ol class="steps">
+      {t.process.steps.map((s, i) => (
+        <li class="step">
+          <span class="step__num">0{i + 1}</span>
+          <h3 class="step__title">{s.title}</h3>
+          <p class="step__text">{s.text}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .process {
+    background: var(--band);
+    color: var(--light);
+  }
+  .process__eyebrow {
+    color: #e59a55;
+  }
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+  @media (min-width: 640px) {
+    .steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1080px) {
+    .steps {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .step {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 2px solid #3e434a;
+    padding-top: 24px;
+  }
+  .step__num {
+    font-family: var(--font-latin);
+    font-weight: 800;
+    font-size: 15px;
+    color: #e59a55;
+  }
+  .step__title {
+    font-size: 21px;
+  }
+  .step__text {
+    color: var(--light-muted);
+  }
+</style>
