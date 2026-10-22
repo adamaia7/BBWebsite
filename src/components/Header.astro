@@ -1,0 +1,263 @@
+---
+import Logo from './logo/Logo.astro';
+import { dict, homeUrl, LANGS, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = dict[lang];
+const home = homeUrl(lang);
+const links = [
+  { href: `${home}#services`, label: t.nav.services },
+  { href: `${home}#projects`, label: t.nav.projects },
+  { href: `${home}#about`, label: t.nav.about },
+  { href: `${home}#reviews`, label: t.nav.reviews },
+  { href: `${home}#contact`, label: t.nav.contact },
+];
+const langLabels: Record<Lang, string> = { ka: 'GE', en: 'EN' };
+---
+
+<header class="header" data-header>
+  <div class="container header__bar">
+    <a class="header__logo" href={home} aria-label="BAU BILD">
+      <Logo height={40} text={{ line: t.tagline, a: t.taglineA, b: t.taglineB }} class="header__logo-full" />
+      <Logo height={32} text={{ line: t.tagline, a: t.taglineA, b: t.taglineB }} class="header__logo-small" />
+    </a>
+
+    <nav class="header__nav" aria-label={t.nav.label}>
+      {links.map((l) => <a href={l.href}>{l.label}</a>)}
+    </nav>
+
+    <div class="header__tools">
+      <div class="lang" role="group" aria-label={t.langLabel}>
+        {LANGS.map((l) => (
+          <a
+            href={homeUrl(l)}
+            hreflang={l}
+            lang={l}
+            class:list={['lang__link', l === lang && 'is-active']}
+            aria-current={l === lang ? 'true' : undefined}
+          >
+            {langLabels[l]}
+          </a>
+        ))}
+      </div>
+
+      <button
+        type="button"
+        class="icon-btn"
+        data-theme-toggle
+        data-label-dark={t.themeToDark}
+        data-label-light={t.themeToLight}
+        aria-label={t.themeToLight}
+      >
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg>
+      </button>
+
+      <button
+        type="button"
+        class="icon-btn header__menu-btn"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label={t.nav.menu}
+        data-label-open={t.nav.menu}
+        data-label-close={t.nav.close}
+        data-menu-toggle
+      >
+        <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+        <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-menu" class="mobile-menu" aria-label={t.nav.label} hidden>
+    <div class="container mobile-menu__list">
+      {links.map((l) => <a href={l.href}>{l.label}</a>)}
+    </div>
+  </nav>
+</header>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+
+  function syncThemeLabel() {
+    if (!themeBtn) return;
+    const dark = root.dataset.theme === 'dark';
+    themeBtn.setAttribute('aria-label', (dark ? themeBtn.dataset.labelLight : themeBtn.dataset.labelDark) ?? '');
+  }
+
+  themeBtn?.addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem('theme', next);
+    } catch {}
+    syncThemeLabel();
+  });
+  syncThemeLabel();
+
+  const menuBtn = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+  const menu = document.getElementById('mobile-menu');
+
+  function setMenu(open: boolean) {
+    if (!menuBtn || !menu) return;
+    menu.hidden = !open;
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', (open ? menuBtn.dataset.labelClose : menuBtn.dataset.labelOpen) ?? '');
+  }
+
+  menuBtn?.addEventListener('click', () => setMenu(menu?.hidden ?? false));
+  menu?.addEventListener('click', (e) => {
+    if ((e.target as HTMLElement).closest('a')) setMenu(false);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenu(false);
+  });
+</script>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .header__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 64px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @media (min-width: 900px) {
+    .header__bar {
+      min-height: 76px;
+    }
+  }
+  .header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    min-height: 44px;
+  }
+  .header__logo :global(.header__logo-full) {
+    display: none;
+  }
+  @media (min-width: 900px) {
+    .header__logo :global(.header__logo-full) {
+      display: inline-flex;
+    }
+    .header__logo :global(.header__logo-small) {
+      display: none;
+    }
+  }
+  .header__nav {
+    display: none;
+    gap: 32px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .header__nav a {
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+  }
+  .header__nav a:hover {
+    border-bottom-color: var(--orange);
+  }
+  @media (min-width: 1080px) {
+    .header__nav {
+      display: flex;
+    }
+  }
+  .header__tools {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .lang {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-latin);
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .lang__link {
+    min-width: 40px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--muted);
+  }
+  .lang__link.is-active {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+  }
+  .icon-btn {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .icon-btn:hover {
+    border-color: var(--text);
+  }
+  :global([data-theme='dark']) .icon-moon,
+  :global([data-theme='light']) .icon-sun {
+    display: none;
+  }
+  .icon-close {
+    display: none;
+  }
+  .header__menu-btn[aria-expanded='true'] .icon-close {
+    display: block;
+  }
+  .header__menu-btn[aria-expanded='true'] .icon-menu {
+    display: none;
+  }
+  @media (min-width: 1080px) {
+    .header__menu-btn {
+      display: none;
+    }
+  }
+  .mobile-menu {
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .mobile-menu__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+  .mobile-menu__list a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  @media (min-width: 1080px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+</style>

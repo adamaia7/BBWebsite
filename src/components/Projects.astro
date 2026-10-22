@@ -1,0 +1,85 @@
+---
+import { dict, url, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = dict[lang];
+---
+
+<section class="section section--alt" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{t.nav.projects}</span>
+        <h2 class="h2">{t.projects.title}</h2>
+      </div>
+    </div>
+    <ul class="projects">
+      {t.projects.items.map((p) => (
+        <li class="project">
+          {p.image ? (
+            <img class="project__img" src={url(p.image)} alt={p.name} loading="lazy" width="1200" height="432" />
+          ) : (
+            <div class="placeholder project__img">{t.photo}</div>
+          )}
+          <div class="project__body">
+            <span class="project__type">{t.services.items[p.service].title}</span>
+            <h3 class="project__name">{p.name}</h3>
+            <span class="project__meta">{p.meta}</span>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .projects {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px 24px;
+  }
+  @media (min-width: 900px) {
+    .projects {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .project__img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+  @media (min-width: 900px) {
+    .project__img {
+      height: 320px;
+    }
+  }
+  .project__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .project__type {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent-text);
+  }
+  .project__name {
+    font-size: 20px;
+  }
+  .project__meta {
+    color: var(--muted);
+    font-size: 15px;
+  }
+</style>

@@ -1,0 +1,86 @@
+---
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = dict[lang];
+---
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">{t.nav.services}</span>
+        <h2 class="h2">{t.services.title}</h2>
+      </div>
+    </div>
+    <ul class="services">
+      {t.services.items.map((s) => (
+        <li class="service on-dark">
+          <span class="service__photo">{t.photo}</span>
+          <div class="service__body">
+            <h3 class="service__title">{s.title}</h3>
+            <p class="service__sub">{s.sub}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .services {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  @media (min-width: 640px) {
+    .services {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1080px) {
+    .services {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+  .service {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    background: #2b2f34;
+    color: var(--light);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+  @media (min-width: 1080px) {
+    .service {
+      min-height: 360px;
+    }
+  }
+  .service__photo {
+    font-size: 12px;
+    color: #a9a49b;
+  }
+  .service__body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .service__title {
+    font-size: 21px;
+    line-height: 1.25;
+  }
+  .service__sub {
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--light-muted);
+  }
+</style>
