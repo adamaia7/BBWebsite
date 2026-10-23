@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { DEFAULT_THEME } from '../config';
+import { DEFAULT_THEME, CONTACT } from '../config';
 import { dict, url, homeUrl, LANGS, type Lang } from '../i18n';
 
 interface Props {
@@ -18,6 +18,31 @@ const description = Astro.props.description ?? t.meta.description;
 const site = Astro.site;
 const abs = (path: string) => (site ? new URL(path, site).href : path);
 const ogLocale = lang === 'ka' ? 'ka_GE' : 'en_US';
+
+// სტრუქტურირებული მონაცემები Google-ისთვის (კომპანიის ბარათი ძიებაში).
+// შეფასებები განზრახ არ შედის: საიტზე ჯერ სატესტოა და Google ყალბ შეფასებებს სჯის.
+const sameAs = [CONTACT.facebook, CONTACT.instagram].filter(Boolean);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'GeneralContractor',
+  '@id': abs(homeUrl('ka')) + '#company',
+  name: 'BAU BILD',
+  alternateName: 'BAUBILD',
+  url: abs(homeUrl(lang)),
+  logo: abs(url('favicon.svg')),
+  image: abs(url('og.jpg')),
+  description,
+  telephone: CONTACT.phoneHref.replace('tel:', ''),
+  email: CONTACT.email,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: t.contact.addressValue,
+    addressLocality: lang === 'ka' ? 'თბილისი' : 'Tbilisi',
+    addressCountry: 'GE',
+  },
+  areaServed: { '@type': 'Country', name: 'Georgia' },
+  ...(sameAs.length ? { sameAs } : {}),
+};
 ---
 
 <!doctype html>
@@ -42,6 +67,7 @@ const ogLocale = lang === 'ka' ? 'ka_GE' : 'en_US';
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    {index && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
     <meta name="theme-color" content="#16181b" />
