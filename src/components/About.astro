@@ -1,5 +1,5 @@
 ---
-import { dict, type Lang } from '../i18n';
+import { dict, url, type Lang } from '../i18n';
 
 interface Props {
   lang: Lang;
@@ -10,7 +10,7 @@ const t = dict[lang];
 
 <section class="section section--alt" id="about">
   <div class="container about">
-    <div class="placeholder about__photo">{t.about.photo}</div>
+    <img class="about__photo" src={url('images/about-team.jpg')} alt={t.about.photo} loading="lazy" width="699" height="559" />
     <div class="about__text">
       <span class="eyebrow">{t.nav.about}</span>
       <h2 class="h2">{t.about.title}</h2>
@@ -33,7 +33,10 @@ const t = dict[lang];
     }
   }
   .about__photo {
+    width: 100%;
     height: 260px;
+    object-fit: cover;
+    border-radius: var(--radius);
   }
   @media (min-width: 900px) {
     .about__photo {

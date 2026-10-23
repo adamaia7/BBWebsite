@@ -65,7 +65,7 @@ const ka = {
   about: {
     title: 'ერთი კომპანია, ერთი პასუხისმგებლობა',
     text: 'პროექტს ვიღებთ ნულიდან და ბოლომდე მივყავართ: საძირკველი, კარკასი, სახურავი, ფასადი, ინტერიერი. დამკვეთს ერთი კონტაქტი ჰყავს მთელი პროცესის განმავლობაში. 12 წელია ვმუშაობთ თბილისსა და მის შემოგარენში.',
-    photo: '[ფოტო: გუნდი ობიექტზე]',
+    photo: 'BAU BILD-ის გუნდი სამშენებლო ობიექტზე',
     link: 'კომპანიის შესახებ',
   },
   process: {
@@ -194,7 +194,7 @@ const en: Dict = {
   about: {
     title: 'One company, one point of responsibility',
     text: 'We take a project from zero to completion: foundation, structure, roof, facade and interior. The client has one contact throughout the whole process. We have been working in Tbilisi and the surrounding area for 12 years.',
-    photo: '[Photo: team on site]',
+    photo: 'The BAU BILD team on a construction site',
     link: 'About the company',
   },
   process: {
