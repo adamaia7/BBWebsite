@@ -7,7 +7,7 @@ export const LANGS: Lang[] = ['ka', 'en'];
 
 const ka = {
   meta: {
-    title: 'BAU BILD — მშენებლობა და რემონტი',
+    title: 'მშენებლობა და რემონტი თბილისში | BAU BILD',
     description:
       'BAU BILD: მშენებლობა და რემონტი სრული ციკლით, კარკასიდან ინტერიერამდე. პროექტიდან გასაღების ჩაბარებამდე.',
   },
@@ -136,7 +136,7 @@ export type Dict = typeof ka;
 
 const en: Dict = {
   meta: {
-    title: 'BAU BILD — Construction and Renovation',
+    title: 'Construction and Renovation in Tbilisi | BAU BILD',
     description:
       'BAU BILD: construction and renovation as a full cycle, from structure to interior. From design to handover.',
   },
