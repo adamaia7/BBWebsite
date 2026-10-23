@@ -4,7 +4,7 @@
 
 - ქართული: `/`
 - ინგლისური: `/en/`
-- სატესტო მისამართი: https://adamaia7.github.io/BBWebsite/
+- მისამართი: https://baubild.ge
 
 ## ხშირი ცვლილებები
 
@@ -40,7 +40,7 @@
 
 ```bash
 npm install
-npm run dev      # http://localhost:4321/BBWebsite/
+npm run dev      # http://localhost:4321/
 npm run build    # მზა საიტი dist/ საქაღალდეში
 ```
 
@@ -49,12 +49,14 @@ npm run build    # მზა საიტი dist/ საქაღალდე�
 `main` ბრენჩზე ყოველი ცვლილება ავტომატურად იტვირთება GitHub Pages-ზე (`.github/workflows/deploy.yml`).
 ერთხელ საჭიროა: Settings → Pages → Source: **GitHub Actions**.
 
-### baubild.ge დომენზე გადასვლა
+### დომენი (baubild.ge)
 
-1. `public/CNAME` ფაილში ჩაწერე `baubild.ge`.
-2. `.github/workflows/deploy.yml`-ში build ნაბიჯს დაუმატე გარემოს ცვლადები:
-   `SITE_URL=https://baubild.ge` და `BASE_PATH=/`.
-3. დომენის DNS-ში GitHub Pages-ის IP მისამართები ჩაწერე (GitHub-ის ინსტრუქციით).
+დომენის DNS domenebi.ge-ზეა (NS ჩანაწერები არ იცვლება). DNS-ში ჩაწერილია:
+- `A` ჩანაწერები `baubild.ge`-სთვის: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+- `CNAME` ჩანაწერი `www` → `adamaia7.github.io`
+
+GitHub-ზე: Settings → Pages → Custom domain: `baubild.ge`, ჩართულია **Enforce HTTPS**.
+`public/CNAME` ფაილში წერია `baubild.ge`.
 
 ## ახალი ენის დამატება
 
