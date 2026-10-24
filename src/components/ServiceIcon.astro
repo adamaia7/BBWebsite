@@ -1,0 +1,64 @@
+---
+// სერვისის ხაზოვანი იკონა (ფოტოს ნაცვლად, სანამ რეალური ფოტოები არ გვაქვს).
+// index ემთხვევა t.services.items-ის რიგს: 0 სახლი, 1 კომერციული, 2 სკოლა/ბაღი, 3 ფასადი/სახურავი, 4 რემონტი.
+interface Props {
+  index: number;
+  size?: number;
+  class?: string;
+}
+const { index, size = 40, class: className = '' } = Astro.props;
+---
+
+<svg
+  class={className}
+  width={size}
+  height={size}
+  viewBox="0 0 48 48"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2.4"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+>
+  {index === 0 && (
+    <>
+      <path d="M6 22 24 7l18 15"></path>
+      <path d="M11 18v23h26V18"></path>
+      <path d="M20 41V29h8v12"></path>
+    </>
+  )}
+  {index === 1 && (
+    <>
+      <path d="M6 18 9 8h30l3 10"></path>
+      <path d="M6 18c0 3 2 5 4.5 5S15 21 15 18c0 3 2 5 4.5 5S24 21 24 18c0 3 2 5 4.5 5S33 21 33 18c0 3 2 5 4.5 5S42 21 42 18"></path>
+      <path d="M9 23v18h30V23"></path>
+      <path d="M20 41V31h8v10"></path>
+    </>
+  )}
+  {index === 2 && (
+    <>
+      <path d="M24 6v8"></path>
+      <path d="M24 6h8v4h-8"></path>
+      <path d="M8 24 24 14l16 10"></path>
+      <path d="M11 22v19h26V22"></path>
+      <path d="M21 41v-8h6v8"></path>
+      <path d="M16 28h3M29 28h3"></path>
+    </>
+  )}
+  {index === 3 && (
+    <>
+      <path d="M4 24 24 8l20 16"></path>
+      <path d="M10 19l14-11 14 11"></path>
+      <path d="M9 24v17h30V24"></path>
+      <path d="M9 30h30M9 36h30M19 24v6M29 30v6M19 36v5"></path>
+    </>
+  )}
+  {index === 4 && (
+    <>
+      <rect x="6" y="7" width="28" height="10" rx="2"></rect>
+      <path d="M34 12h5v9H22v6"></path>
+      <rect x="18" y="27" width="8" height="15" rx="2"></rect>
+    </>
+  )}
+</svg>
