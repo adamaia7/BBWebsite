@@ -34,13 +34,14 @@ const jsonLd = {
   description,
   telephone: CONTACT.phoneHref.replace('tel:', ''),
   email: CONTACT.email,
-  // ოფისი ჯერ არ არის, ამიტომ ქუჩის მისამართი არ ეწერება (Google Business Profile-ში მომსახურების არეა).
+  // ოფისი ჯერ არ არის, ამიტომ ქუჩის მისამართი არ ეწერება. ბაზა თბილისშია, ვმუშაობთ მთელ საქართველოში
+  // (Google Business Profile-შიც მომსახურების არე Georgia-ა).
   address: {
     '@type': 'PostalAddress',
-    addressLocality: t.contact.areaValue,
+    addressLocality: lang === 'ka' ? 'თბილისი' : 'Tbilisi',
     addressCountry: 'GE',
   },
-  areaServed: { '@type': 'City', name: t.contact.areaValue },
+  areaServed: { '@type': 'Country', name: lang === 'ka' ? 'საქართველო' : 'Georgia' },
   ...(sameAs.length ? { sameAs } : {}),
 };
 ---

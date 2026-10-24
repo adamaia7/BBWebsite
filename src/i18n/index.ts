@@ -104,7 +104,7 @@ const ka = {
     phone: 'ტელეფონი',
     email: 'ელფოსტა',
     area: 'მომსახურების არე',
-    areaValue: 'თბილისი',
+    areaValue: 'თბილისი და მთელი საქართველო',
     messengers: 'WhatsApp · Viber',
     form: {
       name: 'სახელი',
@@ -232,7 +232,7 @@ const en: Dict = {
     phone: 'Phone',
     email: 'Email',
     area: 'Service area',
-    areaValue: 'Tbilisi',
+    areaValue: 'Tbilisi and all of Georgia',
     messengers: 'WhatsApp · Viber',
     form: {
       name: 'Name',
