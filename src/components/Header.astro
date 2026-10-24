@@ -4,9 +4,12 @@ import { dict, homeUrl, LANGS, type Lang } from '../i18n';
 
 interface Props {
   lang: Lang;
+  /** ენის გადამრთველის ბმულები, თუ გვერდი მთავარი არ არის */
+  paths?: Record<Lang, string>;
 }
 
 const { lang } = Astro.props;
+const langHref = (l: Lang) => Astro.props.paths?.[l] ?? homeUrl(l);
 const t = dict[lang];
 const home = homeUrl(lang);
 const links = [
@@ -34,7 +37,7 @@ const langLabels: Record<Lang, string> = { ka: 'GE', en: 'EN' };
       <div class="lang" role="group" aria-label={t.langLabel}>
         {LANGS.map((l) => (
           <a
-            href={homeUrl(l)}
+            href={langHref(l)}
             hreflang={l}
             lang={l}
             class:list={['lang__link', l === lang && 'is-active']}
