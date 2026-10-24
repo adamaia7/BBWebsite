@@ -14,7 +14,6 @@ export const CONTACT = {
   email: 'info@baubild.ge',
   whatsapp: 'https://wa.me/995591948000',
   viber: 'viber://chat?number=%2B995591948000',
-  mapQuery: 'Giorgi Brtskinvale St 4, Tbilisi',
   facebook: '',
   instagram: '',
 };
