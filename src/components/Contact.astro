@@ -8,7 +8,6 @@ interface Props {
 const { lang } = Astro.props;
 const t = dict[lang];
 const f = t.contact.form;
-const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(CONTACT.mapQuery)}&hl=${lang}&z=16&output=embed`;
 ---
 
 <section class="section section--alt" id="contact">
@@ -30,8 +29,8 @@ const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(CONTACT.mapQu
           <dd><a class="latin contact__big" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></dd>
         </div>
         <div>
-          <dt>{t.contact.address}</dt>
-          <dd class="contact__addr">{t.contact.addressValue}</dd>
+          <dt>{t.contact.area}</dt>
+          <dd class="contact__addr">{t.contact.areaValue}</dd>
         </div>
         <div>
           <dt>{t.contact.messengers}</dt>
@@ -41,13 +40,6 @@ const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(CONTACT.mapQu
           </dd>
         </div>
       </dl>
-
-      <iframe
-        class="contact__map"
-        src={mapSrc}
-        title={t.contact.mapTitle}
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <form class="form" data-contact-form data-key={WEB3FORMS_KEY} novalidate>
@@ -186,13 +178,6 @@ const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(CONTACT.mapQu
     min-height: 44px;
     display: inline-flex;
     align-items: center;
-  }
-  .contact__map {
-    width: 100%;
-    height: 220px;
-    border: 0;
-    border-radius: var(--radius);
-    background: var(--placeholder);
   }
   .form {
     background: var(--card);
