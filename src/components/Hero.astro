@@ -27,10 +27,13 @@ const t = dict[lang];
   <div class="container hero__content">
     <h1 class="hero__title">{t.hero.title}</h1>
     <p class="hero__lead">{t.hero.lead}</p>
-    <a class="arrow-link hero__link" href={`${homeUrl(lang)}#projects`}>
-      {t.hero.link}
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E07B24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-    </a>
+    <div class="hero__actions">
+      <a class="btn hero__cta" href={`${homeUrl(lang)}#contact`}>{t.hero.cta}</a>
+      <a class="arrow-link hero__link" href={`${homeUrl(lang)}#projects`}>
+        {t.hero.link}
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E07B24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -95,13 +98,21 @@ const t = dict[lang];
       font-size: 20px;
     }
   }
-  .hero__link {
-    align-self: flex-start;
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px 32px;
     margin-top: 12px;
+  }
+  .hero__cta {
+    font-size: 17px;
+    min-height: 56px;
+    padding: 0 28px;
+  }
+  .hero__link {
     gap: 12px;
     font-size: 17px;
-    border-bottom: 2px solid var(--orange);
-    padding-bottom: 6px;
   }
 </style>
 

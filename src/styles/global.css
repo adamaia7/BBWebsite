@@ -126,6 +126,10 @@ p {
   outline-offset: 3px;
 }
 
+main:focus {
+  outline: none;
+}
+
 .container {
   width: 100%;
   max-width: calc(var(--max) + 2 * var(--gutter));
@@ -203,14 +207,34 @@ p {
   transform: translateX(3px);
 }
 
-.placeholder {
-  background: var(--placeholder);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: flex-end;
-  padding: 14px;
-  font-size: 12px;
-  color: var(--muted);
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 24px;
+  background: var(--orange);
+  color: var(--on-orange);
+  border-radius: 3px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ea8a36;
+}
+
+/* „მთავარ შინაარსზე გადასვლა“ — ჩანს მხოლოდ კლავიატურით ფოკუსისას */
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 12px;
 }
 
 .latin {

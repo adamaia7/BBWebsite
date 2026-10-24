@@ -46,18 +46,20 @@ const f = t.contact.form;
       </dl>
     </div>
 
-    <form class="form" data-contact-form data-key={WEB3FORMS_KEY} novalidate>
+    <form class="form" data-contact-form data-key={WEB3FORMS_KEY} data-email={CONTACT.email} novalidate>
       <input type="hidden" name="subject" value={f.subject} />
       <input type="hidden" name="from_name" value="BAU BILD website" />
-      <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" />
+      <div class="visually-hidden" aria-hidden="true">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" />
+      </div>
 
       <div class="field">
-        <label for="f-name">{f.name}</label>
-        <input id="f-name" name="name" type="text" autocomplete="name" required />
+        <label for="f-name">{f.name}<span class="req" aria-hidden="true"> *</span></label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required aria-required="true" />
       </div>
       <div class="field">
-        <label for="f-phone">{t.contact.phone}</label>
-        <input id="f-phone" name="phone" type="tel" autocomplete="tel" required />
+        <label for="f-phone">{t.contact.phone}<span class="req" aria-hidden="true"> *</span></label>
+        <input id="f-phone" name="phone" type="tel" autocomplete="tel" required aria-required="true" />
       </div>
       <div class="field field--full">
         <label for="f-type">{f.type}</label>
@@ -71,6 +73,7 @@ const f = t.contact.form;
         <label for="f-msg">{f.message}</label>
         <textarea id="f-msg" name="message" rows="5"></textarea>
       </div>
+      <p class="form__note field--full"><span class="req" aria-hidden="true">*</span> {f.required}</p>
       <button class="form__submit field--full" type="submit" data-label={f.send} data-sending={f.sending}>{f.send}</button>
       <p
         class="form__status field--full"
@@ -101,8 +104,14 @@ const f = t.contact.form;
 
     const key = form.dataset.key;
     if (!key) {
+      // სანამ Web3Forms-ის გასაღები არ არის, შეტყობინება ვიზიტორის ელფოსტის პროგრამით იგზავნება.
+      const d = new FormData(form);
+      const lines = [d.get('name'), d.get('phone'), d.get('work_type'), d.get('message')].filter(Boolean);
+      const subject = encodeURIComponent(String(d.get('subject') ?? ''));
+      const body = encodeURIComponent(lines.join('\n'));
+      window.location.href = `mailto:${form.dataset.email}?subject=${subject}&body=${body}`;
       status.textContent = status.dataset.notConfigured ?? '';
-      status.dataset.state = 'error';
+      status.dataset.state = 'success';
       return;
     }
 
@@ -165,6 +174,9 @@ const f = t.contact.form;
     margin: 0;
   }
   .contact__big {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;
@@ -209,6 +221,13 @@ const f = t.contact.form;
   .field label {
     font-size: 14px;
     font-weight: 600;
+  }
+  .form__note {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .req {
+    color: var(--accent-text);
   }
   .field input,
   .field select,
