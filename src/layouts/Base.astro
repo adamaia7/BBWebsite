@@ -42,6 +42,13 @@ const jsonLd = {
     addressCountry: 'GE',
   },
   areaServed: { '@type': 'Country', name: lang === 'ka' ? 'საქართველო' : 'Georgia' },
+  // იგივე საათები, რაც Google Business Profile-შია
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    opens: '09:00',
+    closes: '19:00',
+  },
   ...(sameAs.length ? { sameAs } : {}),
 };
 ---

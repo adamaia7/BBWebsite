@@ -105,6 +105,8 @@ const ka = {
     email: 'ელფოსტა',
     area: 'მომსახურების არე',
     areaValue: 'თბილისი და მთელი საქართველო',
+    hours: 'სამუშაო საათები',
+    hoursValue: 'ორშ–შაბ, 09:00–19:00',
     messengers: 'WhatsApp · Viber',
     form: {
       name: 'სახელი',
@@ -233,6 +235,8 @@ const en: Dict = {
     email: 'Email',
     area: 'Service area',
     areaValue: 'Tbilisi and all of Georgia',
+    hours: 'Working hours',
+    hoursValue: 'Mon–Sat, 09:00–19:00',
     messengers: 'WhatsApp · Viber',
     form: {
       name: 'Name',
