@@ -5,7 +5,8 @@ import { SERVICE_SLUGS, serviceUrl } from '../i18n/services';
 // საიტის რუკა Google-ისთვის. ახალი გვერდის დამატებისას აქ ჩაამატე.
 export const GET: APIRoute = ({ site }) => {
   const abs = (path: string) => new URL(path, site).href;
-  const lastmod = new Date().toISOString().slice(0, 10);
+  // lastmod განზრახ არ არის: აწყობის თარიღი ყველა გვერდზე ყოველ deploy-ზე იცვლება და Google ასეთ
+  // არაზუსტ lastmod-ს ენდობა აღარ. შეცვლის თარიღს თითო გვერდზე, როცა ნამდვილად გვექნება, მაშინ დავამატოთ.
   // თითო გვერდი ყველა ენაზე: მთავარი + სერვისები
   const pages: ((l: Lang) => string)[] = [homeUrl, ...SERVICE_SLUGS.map((slug) => (l: Lang) => serviceUrl(l, slug))];
   const urls = pages
@@ -13,7 +14,6 @@ export const GET: APIRoute = ({ site }) => {
       LANGS.map(
         (lang) => `  <url>
     <loc>${abs(page(lang))}</loc>
-    <lastmod>${lastmod}</lastmod>
 ${LANGS.map((l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${abs(page(l))}"/>`).join('\n')}
     <xhtml:link rel="alternate" hreflang="x-default" href="${abs(page('ka'))}"/>
   </url>`,
