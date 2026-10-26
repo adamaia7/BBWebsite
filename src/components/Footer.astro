@@ -21,7 +21,7 @@ const social = [
       <a class="footer__logo" href={home} aria-label="BAU BILD">
         <Logo height={96} tagline text={{ line: t.tagline, a: t.taglineA, b: t.taglineB }} />
       </a>
-      <nav class="footer__col" aria-label={t.nav.label}>
+      <nav class="footer__col" aria-label={t.nav.footerLabel}>
         <span class="footer__head">{t.nav.menu}</span>
         <a href={`${home}#services`}>{t.nav.services}</a>
         <a href={`${home}#projects`}>{t.nav.projects}</a>
@@ -80,9 +80,13 @@ const social = [
   .footer__col {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 0;
   }
   .footer__col a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     text-decoration: none;
   }
   .footer__col a:hover {
@@ -90,6 +94,7 @@ const social = [
     text-decoration-color: var(--orange);
   }
   .footer__head {
+    margin-bottom: 4px;
     font-size: 14px;
     font-weight: 700;
     color: #b8b3aa;

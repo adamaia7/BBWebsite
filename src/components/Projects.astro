@@ -1,5 +1,6 @@
 ---
 import { dict, url, type Lang } from '../i18n';
+import ServiceIcon from './ServiceIcon.astro';
 
 interface Props {
   lang: Lang;
@@ -22,7 +23,9 @@ const t = dict[lang];
           {p.image ? (
             <img class="project__img" src={url(p.image)} alt={p.name} loading="lazy" width="1200" height="432" />
           ) : (
-            <div class="placeholder project__img">{t.photo}</div>
+            <div class="project__img project__blank" aria-hidden="true">
+              <ServiceIcon index={p.service} size={64} />
+            </div>
           )}
           <div class="project__body">
             <span class="project__type">{t.services.items[p.service].title}</span>
@@ -65,13 +68,27 @@ const t = dict[lang];
       height: 320px;
     }
   }
+  /* ფოტოს გარეშე პროექტი: ნახაზის ბადე + სერვისის იკონა */
+  .project__blank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-text);
+    background-color: var(--card);
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: center;
+    border: 1px solid var(--border);
+  }
   .project__body {
     display: flex;
     flex-direction: column;
     gap: 2px;
   }
   .project__type {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--accent-text);
   }

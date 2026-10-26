@@ -54,7 +54,7 @@ const extraLd = [
 
 <Base lang={lang} title={page.metaTitle} description={page.metaDescription} paths={paths} extraLd={extraLd}>
   <Header lang={lang} paths={paths} />
-  <main>
+  <main id="main" tabindex="-1">
     <section class="sp-hero on-dark">
       <div class="container">
         <nav class="crumbs" aria-label="breadcrumb">
@@ -65,7 +65,7 @@ const extraLd = [
         <span class="eyebrow sp-hero__eyebrow">{ui.eyebrow}</span>
         <h1 class="sp-hero__title">{page.h1}</h1>
         <p class="sp-hero__lead">{page.lead}</p>
-        <a class="sp-btn" href="#contact">{ui.call}</a>
+        <a class="btn sp-btn" href="#contact">{ui.call}</a>
       </div>
     </section>
 
@@ -159,19 +159,7 @@ const extraLd = [
     color: var(--light-muted);
   }
   .sp-btn {
-    display: inline-flex;
-    align-items: center;
-    min-height: 52px;
     margin-top: 28px;
-    padding: 0 24px;
-    background: var(--orange);
-    color: var(--on-orange);
-    border-radius: 3px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .sp-btn:hover {
-    background: #ea8a36;
   }
   .sp-grid {
     display: grid;
