@@ -10,7 +10,7 @@ import Process from './Process.astro';
 import Reviews from './Reviews.astro';
 import Contact from './Contact.astro';
 import Footer from './Footer.astro';
-import type { Lang } from '../i18n';
+import { url, type Lang } from '../i18n';
 
 interface Props {
   lang: Lang;
@@ -18,7 +18,7 @@ interface Props {
 const { lang } = Astro.props;
 ---
 
-<Base lang={lang}>
+<Base lang={lang} preloadImage={url('video/hero-poster.jpg')}>
   <Header lang={lang} />
   <main>
     <Hero lang={lang} />

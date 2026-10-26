@@ -13,9 +13,11 @@ interface Props {
   paths?: Record<Lang, string>;
   /** დამატებითი სტრუქტურირებული მონაცემები (მაგ. სერვისის გვერდისთვის) */
   extraLd?: object[];
+  /** სურათი, რომელიც პირველ ეკრანზე ჩანს (LCP): ბრაუზერი ადრე ჩამოტვირთავს */
+  preloadImage?: string;
 }
 
-const { lang, index = true, extraLd = [] } = Astro.props;
+const { lang, index = true, extraLd = [], preloadImage } = Astro.props;
 const paths = Astro.props.paths ?? { ka: homeUrl('ka'), en: homeUrl('en') };
 const t = dict[lang];
 const title = Astro.props.title ?? t.meta.title;
@@ -83,6 +85,7 @@ const jsonLd = {
     {index && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     {index && extraLd.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
 
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
     <meta name="theme-color" content="#16181b" />
 
