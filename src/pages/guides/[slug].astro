@@ -1,0 +1,10 @@
+---
+import GuidePage from '../../components/GuidePage.astro';
+import { GUIDE_SLUGS } from '../../i18n/guides';
+
+export function getStaticPaths() {
+  return GUIDE_SLUGS.map((slug) => ({ params: { slug } }));
+}
+---
+
+<GuidePage lang="ka" slug={Astro.params.slug} />

@@ -17,6 +17,7 @@
 | hero ვიდეო | `public/video/` (hero-1920.mp4, hero-960.mp4, hero-poster.jpg) |
 | პროექტების ფოტოები | `public/images/` და `src/i18n/index.ts` → `projects.items[].image` |
 | ფერები | `src/styles/global.css` |
+| რჩევები / სტატიები (`/guides/`) | `src/i18n/guides.ts` (ახალი სტატია: ჩანაწერი `ka`-სა და `en`-ში + slug `GUIDE_SLUGS`-ში) |
 
 ## საკონტაქტო ფორმა
 
