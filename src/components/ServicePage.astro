@@ -5,6 +5,7 @@ import Contact from './Contact.astro';
 import Footer from './Footer.astro';
 import { dict, homeUrl, LANGS, type Lang } from '../i18n';
 import { servicePages, serviceUi, serviceUrl } from '../i18n/services';
+import { guides, guideUi, guideUrl } from '../i18n/guides';
 
 interface Props {
   lang: Lang;
@@ -16,6 +17,8 @@ const ui = serviceUi[lang];
 const pages = servicePages[lang];
 const page = pages.find((p) => p.slug === slug)!;
 const others = pages.filter((p) => p.slug !== slug);
+// სტატიები, რომლებიც ამ სერვისზე მიუთითებენ: შიდა ბმული უკან, სერვისის გვერდიდან სტატიისკენ
+const related = guides[lang].filter((g) => g.service === slug);
 const paths = Object.fromEntries(LANGS.map((l) => [l, serviceUrl(l, slug)])) as Record<Lang, string>;
 const site = Astro.site;
 const abs = (path: string) => (site ? new URL(path, site).href : path);
@@ -94,6 +97,17 @@ const extraLd = [
             </details>
           ))}
         </div>
+        {related.length > 0 && (
+          <p class="sp-related">
+            <span>{guideUi[lang].eyebrow}:</span>
+            {related.map((g) => (
+              <a class="arrow-link" href={guideUrl(lang, g.slug)}>
+                {g.h1}
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E07B24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </a>
+            ))}
+          </p>
+        )}
       </div>
     </section>
 
@@ -230,6 +244,14 @@ const extraLd = [
   }
   .faq__item p {
     padding-bottom: 18px;
+    color: var(--muted);
+  }
+  .sp-related {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    margin-top: 32px;
     color: var(--muted);
   }
   .sp-others__title {
