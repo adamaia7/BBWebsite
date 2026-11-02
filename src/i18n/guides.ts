@@ -19,7 +19,7 @@ export interface Guide {
   service: string;
 }
 
-export const GUIDE_SLUGS = ['house-construction-stages'] as const;
+export const GUIDE_SLUGS = ['house-construction-stages', 'apartment-renovation'] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
   const path = slug ? `guides/${slug}/` : 'guides/';
@@ -146,6 +146,76 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
   },
+  {
+    slug: GUIDE_SLUGS[1],
+    metaTitle: 'ბინის რემონტი თბილისში: რა უნდა იცოდეთ დაწყებამდე | BAU BILD',
+    metaDescription:
+      'ბინის რემონტის დაგეგმვა ნაბიჯ-ნაბიჯ: დიზაინი, ხარჯთაღრიცხვა, სამუშაოების თანმიმდევრობა, მეზობლები და ამხანაგობა, ჩაბარება.',
+    h1: 'ბინის რემონტი: რა უნდა იცოდეთ დაწყებამდე',
+    lead: 'რემონტზე ყველაზე მეტი დრო და ფული იქ იკარგება, სადაც დაწყებამდე არაფერი დაიგეგმა. აქ მოკლედ ავხსნით, რა უნდა გადაწყვიტოთ წინასწარ და რა თანმიმდევრობით მიდის სამუშაო.',
+    published: '2026-11-02',
+    sections: [
+      {
+        h2: '1. გადაწყვიტეთ, რა გინდათ',
+        paragraphs: [
+          'ჯერ განსაზღვრეთ, კოსმეტიკური რემონტი გჭირდებათ (შეღებვა, იატაკი, კარები) თუ სრული, ელექტროობისა და სანტექნიკის შეცვლით. ამაზეა დამოკიდებული ვადაც, ბიუჯეტიც და ის, შეგიძლიათ თუ არა ბინაში ცხოვრება სამუშაოს დროს.',
+          'ძველ ბინაში სჯობს, ელექტროგაყვანილობა და მილები ერთხელ და სრულად შეიცვალოს: დასრულებული მოპირკეთების ქვეშ მათი შეცვლა გაცილებით ძვირი ჯდება.',
+        ],
+      },
+      {
+        h2: '2. დიზაინი და გეგმა',
+        paragraphs: [
+          'სამუშაოს დაწყებამდე უნდა იცოდეთ, სად იქნება როზეტები, განათება, სველი წერტილები და ავეჯი. ინტერიერის პროექტი ან თუნდაც დეტალური ნახაზი გიცავთ გადაკეთებისგან, როცა კედელი უკვე შეღებილია.',
+          'თუ კედლის გატანას ან გადატანას გეგმავთ, ჯერ გაარკვიეთ, მზიდია თუ არა. მზიდი კონსტრუქციის შეცვლა სპეციალისტის დასკვნისა და შეთანხმების გარეშე არ შეიძლება.',
+        ],
+      },
+      {
+        h2: '3. ხარჯთაღრიცხვა და ხელშეკრულება',
+        paragraphs: [
+          'ხარჯთაღრიცხვაში ცალ-ცალკე უნდა ეწეროს სამუშაოები და მასალები. შეთანხმდით, ვინ ყიდულობს მასალას და როგორ ხდება ცვლილებების შეთანხმება სამუშაოს მიმდინარეობისას.',
+          'ბიუჯეტში დატოვეთ რეზერვი გაუთვალისწინებელი ხარჯებისთვის: ძველ ბინაში კედლებისა და იატაკის გახსნისას ხშირად ჩნდება ის, რაც წინასწარ არ ჩანდა.',
+        ],
+      },
+      {
+        h2: '4. მეზობლები და ამხანაგობა',
+        paragraphs: [
+          'ხმაურიანი სამუშაოს დაწყებამდე გააფრთხილეთ მეზობლები და შეუთანხმდით ამხანაგობას ნაგვის გატანასა და ლიფტის გამოყენებაზე. ხმაურიან სამუშაოს დღისით გეგმავენ, საღამოს და დასვენების დღეებში კი ცდილობენ, მეზობლები არ შეაწუხონ.',
+        ],
+      },
+      {
+        h2: '5. სამუშაოების თანმიმდევრობა',
+        paragraphs: [
+          'ჯერ დემონტაჟი, შემდეგ „უხეში“ სამუშაოები: კედლების შეცვლა, ელექტროობა, წყალი და კანალიზაცია, გათბობა. შემდეგ ლესვა, მოჭიმვა და სველი წერტილების ჰიდროიზოლაცია.',
+          'ბოლოს მოდის „სუფთა“ სამუშაოები: ფილა, შპაკლი და შეღებვა, იატაკი, კარები, განათება და სანტექნიკა. ამ თანმიმდევრობის დარღვევა თითქმის ყოველთვის ნიშნავს, რომ დასრულებული ზედაპირი თავიდან გასაკეთებელი ხდება.',
+        ],
+      },
+      {
+        h2: '6. ჩაბარება',
+        paragraphs: [
+          'დასრულებისას ბინა ერთად დაათვალიერეთ: შეამოწმეთ როზეტები, ონკანები, კარების დაკეტვა, ფილის სიბრტყე და ნაკერები. შენიშვნები ჩამოწერეთ და გასწორების შემდეგ ჩაიბარეთ. ითხოვეთ ელექტრო და სანტექნიკური ქსელის სქემა, ის მომავალში დაგჭირდებათ.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რამდენ ხანს გრძელდება ბინის რემონტი?',
+        a: 'ეს ბინის ფართზე, რემონტის სახეობასა და მასალების მიწოდებაზეა დამოკიდებული. ზუსტ გრაფიკს ობიექტის ნახვისა და ხარჯთაღრიცხვის შემდეგ ვადგენთ.',
+      },
+      {
+        q: 'შეიძლება ბინაში ცხოვრება რემონტის დროს?',
+        a: 'კოსმეტიკური რემონტისას ხანდახან შესაძლებელია, ოთახ-ოთახ თუ ვიმუშავებთ. სრული რემონტისას, როცა წყალი და ელექტროობა იცვლება, სჯობს დროებით სხვაგან იცხოვროთ.',
+      },
+      {
+        q: 'ვინ ყიდულობს მასალას?',
+        a: 'ორივე ვარიანტი შესაძლებელია. მთავარია, ეს ხელშეკრულებაში წინასწარ ჩაიწეროს, რომ გაუგებრობა არ მოხდეს.',
+      },
+      {
+        q: 'რემონტს და ინტერიერის დიზაინს ერთი გუნდი აკეთებს?',
+        a: 'დიახ. BAU BILD რემონტს დემონტაჟიდან ჩაბარებამდე ასრულებს და მთელი პროცესის განმავლობაში ერთი პასუხისმგებელი პირი გყავთ.',
+      },
+    ],
+    service: 'renovation-interior',
+  },
 ];
 
 const en: Guide[] = [
@@ -242,6 +312,76 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[1],
+    metaTitle: 'Apartment Renovation in Tbilisi: What to Know Before You Start | BAU BILD',
+    metaDescription:
+      'Planning an apartment renovation step by step: design, estimate, the order of works, neighbours and the building association, and handover.',
+    h1: 'Apartment renovation: what to know before you start',
+    lead: 'Most of the time and money lost on a renovation is lost where nothing was planned in advance. Here is what to decide up front and the order the work follows.',
+    published: '2026-11-02',
+    sections: [
+      {
+        h2: '1. Decide what you want',
+        paragraphs: [
+          'First decide whether you need a cosmetic renovation (paint, flooring, doors) or a full one that replaces the electrics and plumbing. This sets the timeline, the budget and whether you can live in the apartment while the work goes on.',
+          'In an older apartment it is better to replace the wiring and pipes once and completely: replacing them under finished surfaces costs far more.',
+        ],
+      },
+      {
+        h2: '2. Design and layout',
+        paragraphs: [
+          'Before work starts you should know where the sockets, lighting, bathrooms and furniture will go. An interior design, or at least a detailed drawing, protects you from rework after the walls are already painted.',
+          'If you plan to remove or move a wall, first find out whether it is load-bearing. A load-bearing structure must not be changed without an engineer\'s assessment and approval.',
+        ],
+      },
+      {
+        h2: '3. Estimate and contract',
+        paragraphs: [
+          'The estimate should list works and materials separately. Agree who buys the materials and how changes are approved while the work is under way.',
+          'Keep a reserve in the budget for the unexpected: opening up walls and floors in an older apartment often reveals what could not be seen beforehand.',
+        ],
+      },
+      {
+        h2: '4. Neighbours and the building association',
+        paragraphs: [
+          'Before noisy work begins, warn the neighbours and agree with the building association on rubbish removal and use of the lift. Noisy work is planned for the daytime, and evenings and days off are kept as quiet as possible.',
+        ],
+      },
+      {
+        h2: '5. The order of works',
+        paragraphs: [
+          'Demolition comes first, then the rough work: changing walls, electrics, water and sewerage, heating. After that come plastering, screeding and waterproofing of wet areas.',
+          'The finishing work comes last: tiling, skimming and painting, flooring, doors, lighting and sanitary ware. Breaking this order almost always means a finished surface has to be redone.',
+        ],
+      },
+      {
+        h2: '6. Handover',
+        paragraphs: [
+          'When the work is finished, inspect the apartment together: check sockets, taps, door locks, tile flatness and joints. Write the remarks down and accept the job once they are fixed. Ask for the wiring and plumbing layout; you will need it later.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'How long does an apartment renovation take?',
+        a: 'It depends on the size of the apartment, the type of renovation and material deliveries. We set an exact schedule after seeing the apartment and preparing the estimate.',
+      },
+      {
+        q: 'Can I live in the apartment during the renovation?',
+        a: 'With a cosmetic renovation it is sometimes possible if we work room by room. With a full renovation, when water and electrics are replaced, it is better to stay elsewhere for a while.',
+      },
+      {
+        q: 'Who buys the materials?',
+        a: 'Either way works. What matters is that it is written into the contract in advance to avoid misunderstandings.',
+      },
+      {
+        q: 'Does one team handle both the renovation and the interior?',
+        a: 'Yes. BAU BILD carries out renovations from demolition to handover, and you have one person responsible throughout the whole process.',
+      },
+    ],
+    service: 'renovation-interior',
   },
 ];
 
