@@ -218,7 +218,7 @@ const ka: ServicePage[] = [
 const en: ServicePage[] = [
   {
     slug: SERVICE_SLUGS[0],
-    metaTitle: 'House Construction in Tbilisi and Across Georgia | BAU BILD',
+    metaTitle: 'Home Builders in Tbilisi and Across Georgia | BAU BILD',
     metaDescription:
       'Private house and country home construction as a full cycle: foundation, structure, roof, facade and interior. One team, from design to handover.',
     h1: 'Private house and country home construction',
