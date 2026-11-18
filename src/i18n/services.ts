@@ -220,7 +220,7 @@ const en: ServicePage[] = [
     slug: SERVICE_SLUGS[0],
     metaTitle: 'Home Builders in Tbilisi and Across Georgia | BAU BILD',
     metaDescription:
-      'Private house and country home construction as a full cycle: foundation, structure, roof, facade and interior. One team, from design to handover.',
+      'Custom home builder in Tbilisi and across Georgia: private houses built as a full cycle, from foundation and roof to facade and interior. One team.',
     h1: 'Private house and country home construction',
     lead: 'We build homes from the ground up, from the foundation to handing over the keys, with one team and one person responsible.',
     body: [
