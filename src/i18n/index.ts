@@ -32,6 +32,8 @@ const ka = {
   skip: 'მთავარ შინაარსზე გადასვლა',
   call: 'დარეკვა',
   hero: {
+    // h1 საძიებო ფრაზით; სლოგანი ვიზუალურად დიდი რჩება
+    h1: 'მშენებლობა და რემონტი თბილისში',
     title: 'ვაშენებთ და ვარემონტებთ, ზუსტად და დროულად',
     lead: 'სრული ციკლი ერთ გუნდში: კარკასი, სახურავი, ფასადი და ინტერიერი, პროექტიდან გასაღების ჩაბარებამდე.',
     cta: 'შეფასების მოთხოვნა',
@@ -167,6 +169,7 @@ const en: Dict = {
   skip: 'Skip to main content',
   call: 'Call',
   hero: {
+    h1: 'Construction and renovation in Tbilisi',
     title: 'We build and renovate, precisely and on time',
     lead: 'The full cycle in one team: structure, roof, facade and interior, from design to handover.',
     cta: 'Request an estimate',
