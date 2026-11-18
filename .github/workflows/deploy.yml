@@ -38,3 +38,20 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Submit sitemap URLs to IndexNow
+        run: |
+          KEY=341551e6be6481bea00e68f34af1a65b
+          sleep 30
+          URLS=$(curl -fsS https://baubild.ge/sitemap.xml | grep -o '<loc>[^<]*' | sed 's/<loc>//' | jq -R . | jq -sc .)
+          echo "Submitting $(echo "$URLS" | jq length) URLs"
+          BODY=$(jq -nc --arg k "$KEY" --argjson u "$URLS" '{host:"baubild.ge",key:$k,keyLocation:("https://baubild.ge/"+$k+".txt"),urlList:$u}')
+          CODE=$(curl -s -o resp.txt -w "%{http_code}" -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" -d "$BODY")
+          echo "IndexNow HTTP $CODE"; cat resp.txt || true
+          [ "$CODE" = 200 ] || [ "$CODE" = 202 ]
