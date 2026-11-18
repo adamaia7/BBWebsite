@@ -19,7 +19,12 @@ export interface Guide {
   service: string;
 }
 
-export const GUIDE_SLUGS = ['house-construction-stages', 'apartment-renovation'] as const;
+export const GUIDE_SLUGS = [
+  'house-construction-stages',
+  'apartment-renovation',
+  'house-construction-cost',
+  'black-white-green-frame',
+] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
   const path = slug ? `guides/${slug}/` : 'guides/';
@@ -216,6 +221,144 @@ const ka: Guide[] = [
     ],
     service: 'renovation-interior',
   },
+  {
+    slug: GUIDE_SLUGS[2],
+    metaTitle: 'სახლის მშენებლობის ხარჯთაღრიცხვა: რა განსაზღვრავს ფასს | BAU BILD',
+    metaDescription:
+      'რისგან შედგება სახლის მშენებლობის ხარჯთაღრიცხვა და რა მოქმედებს ფასზე: ნაკვეთი, გრუნტი, პროექტი, კონსტრუქცია, მასალები, კარკასის დონე და კომუნიკაციები.',
+    h1: 'სახლის მშენებლობის ხარჯთაღრიცხვა: რა განსაზღვრავს ფასს',
+    lead: 'კითხვაზე „რა ღირს სახლის აშენება“ ერთი ციფრით პასუხი არ არსებობს: ორი ერთნაირი ფართის სახლი შეიძლება სრულიად სხვადასხვა ფასი დაჯდეს. აქ ავხსნით, რისგან შედგება ხარჯთაღრიცხვა და რომელი გადაწყვეტილებები ცვლის ფასს ყველაზე მეტად.',
+    published: '2026-11-18',
+    sections: [
+      {
+        h2: '1. რატომ არ არსებობს ერთი ფასი კვადრატულ მეტრზე',
+        paragraphs: [
+          'კვადრატული მეტრის ფასი მოსახერხებელია შესადარებლად, მაგრამ ის ბევრს მალავს. ერთ შემთხვევაში მასში შედის მხოლოდ შავი კარკასი, მეორეში სახურავი და ფასადიც, მესამეში კი მზა ინტერიერი.',
+          'ამიტომ ორი შეთავაზების შედარებისას ყოველთვის იკითხეთ, რა შედის ფასში და რა არა. ზუსტი ფასი მხოლოდ პროექტისა და ობიექტის ნახვის შემდეგ შედგენილი ხარჯთაღრიცხვით დგინდება.',
+        ],
+      },
+      {
+        h2: '2. ნაკვეთი და გრუნტი',
+        paragraphs: [
+          'დახრილ ნაკვეთზე საჭიროა მიწის სამუშაოები და ხშირად საყრდენი კედლები. სუსტ ან წყალგაჯერებულ გრუნტზე საძირკველი უფრო ღრმა და მასიური გამოდის.',
+          'ამიტომ გრუნტის კვლევა ხარჯი კი არა, დაზოგვაა: ის აჩვენებს, რა საძირკველი გჭირდებათ, და გიცავთ როგორც ზედმეტი ხარჯისგან, ისე ბზარებისგან მომავალში.',
+        ],
+      },
+      {
+        h2: '3. პროექტი და კონსტრუქცია',
+        paragraphs: [
+          'სახლის ფორმა ფასზე პირდაპირ მოქმედებს. მარტივი, კომპაქტური გეგმა ნაკლები კედლით, კუთხით და სახურავის ქანობით იაფია, ვიდრე რთული ფორმა დიდი კონსოლებითა და მინის ფართო ზედაპირებით.',
+          'მნიშვნელოვანია კონსტრუქციის სისტემაც: რკინაბეტონის კარკასი, ბლოკის მზიდი კედლები თუ ლითონის ან ხის კარკასი. თითოეულს თავისი ღირებულება, ვადა და შესაბამისი ნაკვეთი აქვს.',
+        ],
+      },
+      {
+        h2: '4. კარკასის დონე: შავი, თეთრი, მწვანე',
+        paragraphs: [
+          'შავი კარკასი არის კონსტრუქცია, კედლები და სახურავი. თეთრ კარკასში ემატება ლესვა, მოჭიმვა, კომუნიკაციების გაყვანა და ფანჯრები. მწვანე კარკასი კი ნიშნავს, რომ დარჩენილია მხოლოდ საბოლოო მოპირკეთება.',
+          'რაც უფრო მაღალია მზადყოფნა, მით მაღალია ფასი, მაგრამ მით ნაკლებად გიწევთ ცალკეული ხელოსნების მოძებნა და კოორდინაცია.',
+        ],
+      },
+      {
+        h2: '5. მასალები',
+        paragraphs: [
+          'ერთი და იგივე სამუშაო სხვადასხვა მასალით სრულიად სხვა ფასი ჯდება: ფანჯრის პროფილი, სახურავის საფარი, ფასადის სისტემა, თბოიზოლაციის სისქე, იატაკი და სანტექნიკა.',
+          'კარგი თბოიზოლაცია და ფანჯრები მშენებლობისას ძვირი ჩანს, მაგრამ წლების განმავლობაში გათბობასა და გაგრილებაზე ზოგავს. ამიტომ მასალებს მხოლოდ ფასით არ ვარჩევთ.',
+        ],
+      },
+      {
+        h2: '6. კომუნიკაციები, დოკუმენტები და რეზერვი',
+        paragraphs: [
+          'ხარჯთაღრიცხვაში ხშირად გამორჩება წყლის, კანალიზაციის, ელექტროობისა და გაზის მიერთება, ასევე პროექტისა და ნებართვის ხარჯი. დაწყებამდე გაარკვიეთ, რა მიდის ნაკვეთამდე და რა არის გასაყვანი.',
+          'კარგ ბიუჯეტს ყოველთვის აქვს რეზერვი გაუთვალისწინებელი ხარჯებისთვის: მასალის გაძვირება, გრუნტის მოულოდნელობა ან თქვენი ცვლილებები მშენებლობის დროს.',
+        ],
+      },
+      {
+        h2: '7. როგორ ვადგენთ ხარჯთაღრიცხვას',
+        paragraphs: [
+          'ვნახულობთ ნაკვეთს, ვეცნობით პროექტს ან ერთად ვადგენთ მოთხოვნებს, შემდეგ ვამზადებთ ხარჯთაღრიცხვას, სადაც სამუშაოები და მასალები ცალ-ცალკეა გაწერილი. ასე ხედავთ, რაში იხდით და სად შეიძლება დაზოგვა ხარისხის დაკარგვის გარეშე.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რატომ არ წერთ საიტზე ფასს კვადრატულ მეტრზე?',
+        a: 'იმიტომ, რომ ფასი ნაკვეთზე, პროექტზე, მასალებსა და კარკასის დონეზეა დამოკიდებული. ზოგადი ციფრი ხშირად შეცდომაში შეჰყავს დამკვეთი. ზუსტ ფასს ობიექტის ნახვის შემდეგ ხარჯთაღრიცხვით გეტყვით.',
+      },
+      {
+        q: 'რამდენ ხანში მომიმზადებთ ხარჯთაღრიცხვას?',
+        a: 'ეს პროექტის სირთულეზეა დამოკიდებული. დაგვიკავშირდით, ვნახავთ ობიექტს და შევთანხმდებით ვადაზე.',
+      },
+      {
+        q: 'შეიძლება ფასის შემცირება ხარისხის დაკარგვის გარეშე?',
+        a: 'ხშირად კი: გეგმის გამარტივებით, მასალის სხვა ვარიანტით ან სამუშაოების ეტაპებად დაყოფით. ხარჯთაღრიცხვაში ასეთ ვარიანტებს ცალკე გაჩვენებთ.',
+      },
+      {
+        q: 'ფასში შედის პროექტი და ნებართვა?',
+        a: 'ეს შეთანხმებაზეა დამოკიდებული. ხარჯთაღრიცხვაში ცალკე ეწერება, რას ვაკეთებთ ჩვენ და რას აგვარებს დამკვეთი.',
+      },
+    ],
+    service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[3],
+    metaTitle: 'შავი, თეთრი და მწვანე კარკასი: რას ნიშნავს და რა რემონტი სჭირდება | BAU BILD',
+    metaDescription:
+      'რას ნიშნავს შავი, თეთრი და მწვანე კარკასი ახალ აშენებულ ბინაში, რა შედის თითოეულში და რა სამუშაოები რჩება ბინის საცხოვრებლად მოსამზადებლად.',
+    h1: 'შავი, თეთრი და მწვანე კარკასი: რას ნიშნავს და რა რემონტი სჭირდება',
+    lead: 'ახალ კორპუსში ბინის ყიდვისას დეველოპერი ხშირად გთავაზობთ შავ, თეთრ ან მწვანე კარკასს. ეს სიტყვები ყველა კომპანიასთან ერთსა და იმავეს არ ნიშნავს, ამიტომ აქ ავხსნით, რა შედის ჩვეულებრივ თითოეულში და რა რემონტი გელით შემდეგ.',
+    published: '2026-11-18',
+    sections: [
+      {
+        h2: '1. შავი კარკასი',
+        paragraphs: [
+          'შავი კარკასი არის ბინა, სადაც მხოლოდ კონსტრუქცია და გარე კედლებია. ჩვეულებრივ არ არის შიდა ტიხრები ან მხოლოდ ნაწილობრივ არის, არ არის ლესვა, მოჭიმვა, ელექტროობა და სანტექნიკა ბინის შიგნით. ფანჯრები ზოგჯერ დაყენებულია, ზოგჯერ არა.',
+          'შავი კარკასი იაფია და ბინის გეგმა სრულად თქვენზეა, მაგრამ საცხოვრებლად მოსამზადებლად სრული რემონტი სჭირდება.',
+        ],
+      },
+      {
+        h2: '2. თეთრი კარკასი',
+        paragraphs: [
+          'თეთრ კარკასში ჩვეულებრივ დგას ტიხრები, კედლები გალესილია, იატაკი მოჭიმულია, გაყვანილია ელექტროობა და წყალ-კანალიზაცია, დაყენებულია ფანჯრები და შესასვლელი კარი.',
+          'ამის შემდეგ რჩება ფინალური სამუშაოები: შპაკლი და შეღებვა, იატაკის საფარი, ფილა სველ წერტილებში, შიდა კარები, განათება და სანტექნიკა.',
+        ],
+      },
+      {
+        h2: '3. მწვანე კარკასი',
+        paragraphs: [
+          'მწვანე კარკასი თეთრსა და მზა რემონტს შორისაა: კედლები შპაკლით მომზადებულია შესაღებად, ხშირად დაყენებულია სველი წერტილების ფილა ან სანტექნიკის ნაწილი. ცალკეულ დეველოპერებთან შემადგენლობა ძალიან განსხვავდება.',
+        ],
+      },
+      {
+        h2: '4. რა უნდა შეამოწმოთ ბინის ჩაბარებისას',
+        paragraphs: [
+          'ხელშეკრულებაში ზუსტად ჩაწერეთ, რა შედის კარკასში: ტიხრები, ფანჯრის პროფილი, გათბობის მილები, ელექტროს ფარი და გაყვანილობა, მრიცხველები.',
+          'ჩაბარებისას შეამოწმეთ კედლებისა და იატაკის სიბრტყე, ბზარები, ფანჯრების დახურვა და ნესტის კვალი. რასაც ახლა შენიშნავთ, დეველოპერი ასწორებს; რასაც რემონტის შემდეგ, თქვენ.',
+        ],
+      },
+      {
+        h2: '5. რა თანმიმდევრობით მიდის რემონტი',
+        paragraphs: [
+          'შავი კარკასიდან: ტიხრები, ელექტროობა და სანტექნიკა, გათბობა, ლესვა და მოჭიმვა, შემდეგ ფინალური სამუშაოები. თეთრი კარკასიდან პირდაპირ ფინალურ სამუშაოებზე გადავდივართ, მაგრამ ჯერ ვამოწმებთ, რამდენად სწორად არის გაკეთებული უკვე არსებული ნაწილი.',
+          'ზოგჯერ თეთრი კარკასის ნაწილის თავიდან გაკეთება გვიწევს, მაგალითად, როცა როზეტების ან სველი წერტილების ადგილი თქვენს ინტერიერს არ ერგება. ეს ჯობს წინასწარ გადაწყდეს, ვიდრე მოპირკეთების შემდეგ.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რომელი სჯობს ყიდვისას: შავი თუ თეთრი კარკასი?',
+        a: 'თუ გეგმის შეცვლა და ყველაფრის საკუთარი გემოვნებით გაკეთება გინდათ, შავი კარკასი მეტ თავისუფლებას გაძლევთ. თუ სწრაფად შესახლება გინდათ და დეველოპერის გეგმა მოგწონთ, თეთრი კარკასი ზოგავს დროს.',
+      },
+      {
+        q: 'რა ღირს შავი ან თეთრი კარკასის რემონტი?',
+        a: 'ფასი ბინის ფართზე, კარკასის რეალურ მდგომარეობაზე, მასალებსა და ინტერიერის სირთულეზეა დამოკიდებული. ბინის ნახვის შემდეგ გიმზადებთ ხარჯთაღრიცხვას, სადაც სამუშაოები და მასალები ცალ-ცალკეა.',
+      },
+      {
+        q: 'აკეთებთ რემონტს შავი კარკასიდან ბოლომდე?',
+        a: 'დიახ. BAU BILD ბინას შავი ან თეთრი კარკასიდან მზა ინტერიერამდე ერთი გუნდით ამზადებს.',
+      },
+    ],
+    service: 'renovation-interior',
+  },
 ];
 
 const en: Guide[] = [
@@ -379,6 +522,144 @@ const en: Guide[] = [
       {
         q: 'Does one team handle both the renovation and the interior?',
         a: 'Yes. BAU BILD carries out renovations from demolition to handover, and you have one person responsible throughout the whole process.',
+      },
+    ],
+    service: 'renovation-interior',
+  },
+  {
+    slug: GUIDE_SLUGS[2],
+    metaTitle: 'House Construction Cost Estimate in Georgia: What Drives the Price | BAU BILD',
+    metaDescription:
+      'What a house construction estimate is made of and what changes the price: the plot, soil, design, structure, materials, frame level and utilities.',
+    h1: 'House construction estimate: what drives the price',
+    lead: 'There is no single-number answer to "how much does it cost to build a house": two houses of the same size can cost very different amounts. Here we explain what an estimate is made of and which decisions change the price most.',
+    published: '2026-11-18',
+    sections: [
+      {
+        h2: '1. Why there is no single price per square metre',
+        paragraphs: [
+          'A price per square metre is handy for comparison, but it hides a lot. In one quote it covers only the black frame, in another the roof and facade too, and in a third a finished interior.',
+          'So when you compare two offers, always ask what is included and what is not. An exact price comes only from an estimate prepared after seeing the design and the site.',
+        ],
+      },
+      {
+        h2: '2. The plot and the soil',
+        paragraphs: [
+          'A sloping plot needs earthworks and often retaining walls. On weak or waterlogged soil the foundation has to be deeper and heavier.',
+          'That is why a soil survey saves money rather than costing it: it shows which foundation you need and protects you from both overspending and cracks later on.',
+        ],
+      },
+      {
+        h2: '3. Design and structure',
+        paragraphs: [
+          'The shape of the house affects the price directly. A simple, compact plan with fewer walls, corners and roof slopes costs less than a complex form with large cantilevers and wide glazing.',
+          'The structural system matters too: a reinforced concrete frame, load-bearing block walls, or a steel or timber frame. Each has its own cost, timeline and suitable site.',
+        ],
+      },
+      {
+        h2: '4. Frame level: black, white, green',
+        paragraphs: [
+          'A black frame is the structure, walls and roof. A white frame adds plastering, screed, utilities and windows. A green frame means only the final finishes are left.',
+          'The higher the level of completion, the higher the price, but the less you have to find and coordinate separate trades yourself.',
+        ],
+      },
+      {
+        h2: '5. Materials',
+        paragraphs: [
+          'The same job costs very different amounts with different materials: window profiles, roofing, facade system, insulation thickness, flooring and sanitary ware.',
+          'Good insulation and windows look expensive during construction, but they save on heating and cooling for years. That is why we never choose materials on price alone.',
+        ],
+      },
+      {
+        h2: '6. Utilities, paperwork and a reserve',
+        paragraphs: [
+          'Estimates often leave out connections to water, sewerage, electricity and gas, as well as the cost of the design and the permit. Before you start, find out what already reaches the plot and what has to be brought in.',
+          'A good budget always keeps a reserve for the unexpected: material price rises, surprises in the ground, or changes you decide on during construction.',
+        ],
+      },
+      {
+        h2: '7. How we prepare an estimate',
+        paragraphs: [
+          'We visit the plot, review the design or work out the requirements with you, then prepare an estimate with works and materials listed separately. That way you see what you are paying for and where you can save without losing quality.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Why is there no price per square metre on your website?',
+        a: 'Because the price depends on the plot, the design, the materials and the frame level, and a general figure often misleads. We give you an exact price in an estimate after seeing the site.',
+      },
+      {
+        q: 'How long does it take to prepare an estimate?',
+        a: 'It depends on how complex the project is. Get in touch, we will see the site and agree on a timeline.',
+      },
+      {
+        q: 'Can the price be reduced without losing quality?',
+        a: 'Often yes: by simplifying the plan, choosing a different material or splitting the work into stages. We show such options separately in the estimate.',
+      },
+      {
+        q: 'Are the design and permit included in the price?',
+        a: 'That depends on the agreement. The estimate states separately what we do and what the client arranges.',
+      },
+    ],
+    service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[3],
+    metaTitle: 'Black, White and Green Frame Apartments in Georgia Explained | BAU BILD',
+    metaDescription:
+      'What black, white and green frame mean for a new-build apartment in Georgia, what each usually includes and what work is left before you can move in.',
+    h1: 'Black, white and green frame: what they mean and what renovation they need',
+    lead: 'When you buy in a new building in Georgia, developers often offer a black, white or green frame. These words do not mean exactly the same thing at every company, so here is what each usually includes and what renovation comes next.',
+    published: '2026-11-18',
+    sections: [
+      {
+        h2: '1. Black frame',
+        paragraphs: [
+          'A black frame apartment has only the structure and outer walls. Usually there are no internal partitions or only some, and no plaster, screed, electrics or plumbing inside the flat. Windows are sometimes fitted, sometimes not.',
+          'A black frame is cheaper and the layout is entirely up to you, but it needs a full renovation before you can live in it.',
+        ],
+      },
+      {
+        h2: '2. White frame',
+        paragraphs: [
+          'A white frame usually has partitions in place, plastered walls, a levelled floor screed, electrics and water and sewerage run in, and windows and an entrance door fitted.',
+          'What remains are the final finishes: skim coat and paint, floor covering, tiles in wet areas, internal doors, lighting and sanitary ware.',
+        ],
+      },
+      {
+        h2: '3. Green frame',
+        paragraphs: [
+          'A green frame sits between white frame and a finished renovation: walls are skimmed ready for paint, and wet-area tiles or some sanitary ware are often in place. What is included varies a lot between developers.',
+        ],
+      },
+      {
+        h2: '4. What to check at handover',
+        paragraphs: [
+          'Write into the contract exactly what the frame includes: partitions, window profile, heating pipes, the electrical panel and wiring, meters.',
+          'At handover, check that walls and floors are level, look for cracks, test that windows close and look for signs of damp. What you spot now the developer fixes; what you spot after the renovation, you do.',
+        ],
+      },
+      {
+        h2: '5. The order of renovation work',
+        paragraphs: [
+          'From a black frame: partitions, electrics and plumbing, heating, plaster and screed, then the final finishes. From a white frame we go straight to the finishes, but first we check how well the existing work was done.',
+          'Sometimes part of a white frame has to be redone, for example when sockets or wet areas are not where your interior needs them. That is better decided before finishing than after.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Which is better to buy: black or white frame?',
+        a: 'If you want to change the layout and do everything to your own taste, a black frame gives you more freedom. If you want to move in quickly and like the developer\'s layout, a white frame saves time.',
+      },
+      {
+        q: 'How much does a black or white frame renovation cost?',
+        a: 'The price depends on the size of the flat, the real condition of the frame, the materials and how complex the interior is. After seeing the flat we prepare an estimate with works and materials listed separately.',
+      },
+      {
+        q: 'Do you renovate from black frame all the way to finished?',
+        a: 'Yes. BAU BILD takes an apartment from black or white frame to a finished interior with one team.',
       },
     ],
     service: 'renovation-interior',
