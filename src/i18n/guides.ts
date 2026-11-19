@@ -25,6 +25,7 @@ export const GUIDE_SLUGS = [
   'house-construction-cost',
   'black-white-green-frame',
   'choose-construction-company',
+  'frame-vs-block-house',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -441,6 +442,78 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
   },
+  {
+    slug: GUIDE_SLUGS[5],
+    metaTitle: 'კარკასული თუ ბლოკის სახლი: რომელი ავირჩიოთ | BAU BILD',
+    metaDescription:
+      'კარკასული (ხის ან მეტალის) და ბლოკის სახლის შედარება: მშენებლობის პროცესი, სითბო, ხმის იზოლაცია, ხანგამძლეობა, მოვლა და რა უნდა გაითვალისწინოთ საქართველოში.',
+    h1: 'კარკასული თუ ბლოკის სახლი: რომელი ავირჩიოთ',
+    lead: 'სახლის აშენების დაწყებამდე ერთ-ერთი პირველი კითხვაა, რისგან აშენდეს: კარკასით თუ ბლოკით. ორივე ვარიანტს თავისი უპირატესობა აქვს, და სწორი არჩევანი ნაკვეთზე, სახლის დანიშნულებასა და თქვენს გეგმებზეა დამოკიდებული.',
+    published: '2026-11-19',
+    sections: [
+      {
+        h2: '1. რას ნიშნავს კარკასული და ბლოკის სახლი',
+        paragraphs: [
+          'კარკასულ სახლს აქვს ხის ან მსუბუქი მეტალის ჩონჩხი, რომლის შიგნითაც თბოიზოლაცია დგება, გარედან და შიგნიდან კი ფილებით იფარება.',
+          'ბლოკის სახლის კედლები აშენებულია ბლოკით (მაგალითად, გაზობლოკი, კერამიკული ან ბეტონის ბლოკი) და ჩვეულებრივ რკინაბეტონის სარტყლითა და გადახურვით მაგრდება.',
+        ],
+      },
+      {
+        h2: '2. მშენებლობის პროცესი',
+        paragraphs: [
+          'კარკასული სახლი მსუბუქია, ამიტომ ხშირად უფრო მარტივი საძირკველი სჭირდება და „მშრალი“ სამუშაოები ჭარბობს. ის ნაკლებადაა დამოკიდებული ამინდზე.',
+          'ბლოკის სახლი „სველი“ სამუშაოებით შენდება: წყობა, ბეტონი, ლესვა. ბეტონს და ხსნარს გაშრობის დრო სჭირდება და ზოგიერთი სამუშაო ცივ ამინდში ფერხდება.',
+        ],
+      },
+      {
+        h2: '3. სითბო და ენერგია',
+        paragraphs: [
+          'კარკასული სახლი სწრაფად თბება, რადგან კედელში ძირითადად თბოიზოლაციაა. ზამთრის კომფორტისთვის მთავარია, სწორად იყოს მოწყობილი თბოიზოლაცია, ორთქლის ბარიერი და ვენტილაცია.',
+          'ბლოკის კედელი სითბოს ინახავს: ნელა თბება და ნელა ცივდება. ცივ კლიმატში ბლოკის კედელსაც გარე თბოიზოლაცია სჭირდება.',
+        ],
+      },
+      {
+        h2: '4. ხმის იზოლაცია და შეგრძნება',
+        paragraphs: [
+          'მასიური ბლოკის კედელი თავისთავად უკეთ ახშობს ხმას. კარკასულ სახლში კარგი ხმის იზოლაციისთვის ტიხრებსა და სართულშუა გადახურვაში დამატებითი ფენებია საჭირო.',
+        ],
+      },
+      {
+        h2: '5. ხანგამძლეობა და მოვლა',
+        paragraphs: [
+          'ორივე სახლი დიდხანს ძლებს, თუ სწორად არის აშენებული. კარკასულ სახლში გადამწყვეტია ნესტისგან დაცვა: ჰიდროიზოლაცია, სახურავის კარგი კვანძები და ვენტილაცია. ბლოკის სახლში მთავარია საძირკველი, ჰიდროიზოლაცია და ბზარების თავიდან აცილება.',
+        ],
+      },
+      {
+        h2: '6. სეისმური უსაფრთხოება',
+        paragraphs: [
+          'საქართველო სეისმური რეგიონია, ამიტომ ორივე ტიპის სახლი სეისმური ნორმების მიხედვით უნდა დაპროექტდეს. მსუბუქი კარკასი მიწისძვრისას ნაკლებ დატვირთვას იღებს, ბლოკის სახლს კი სწორად მოწყობილი რკინაბეტონის სარტყლები და დგარები სჭირდება.',
+        ],
+      },
+      {
+        h2: '7. როგორ ავირჩიოთ',
+        paragraphs: [
+          'კარკასი ხშირად მოსახერხებელია აგარაკისთვის, რთულად მისასვლელი ნაკვეთისთვის ან როცა მშენებლობის სისწრაფე მნიშვნელოვანია. ბლოკი ხშირად ირჩევა მუდმივი საცხოვრებლისთვის, როცა მასიური კედლები, ხმის იზოლაცია და მომავალში სართულის დამატება გინდათ.',
+          'საბოლოო არჩევანამდე ღირს ნაკვეთის ნახვა და ორივე ვარიანტის ხარჯთაღრიცხვის შედარება ერთსა და იმავე ფართსა და მოპირკეთებაზე.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რომელი უფრო იაფია, კარკასული თუ ბლოკის სახლი?',
+        a: 'ეს პროექტზე, ნაკვეთსა და მასალებზეა დამოკიდებული, ამიტომ ერთი პასუხი არ არსებობს. ნაკვეთის ნახვის შემდეგ ორივე ვარიანტის ხარჯთაღრიცხვას ცალ-ცალკე გიმზადებთ.',
+      },
+      {
+        q: 'შეიძლება კარკასულ სახლში ზამთარში ცხოვრება?',
+        a: 'დიახ, თუ თბოიზოლაცია, ორთქლის ბარიერი, ფანჯრები და გათბობა სწორად არის შერჩეული და დამონტაჟებული.',
+      },
+      {
+        q: 'დამეხმარებით არჩევანში?',
+        a: 'დიახ. ვნახულობთ ნაკვეთს, განვიხილავთ თქვენს გეგმებს და გეტყვით, რომელი ვარიანტი ერგება უკეთ, შემდეგ კი სახლს საძირკვლიდან ჩაბარებამდე ვაშენებთ.',
+      },
+    ],
+    service: 'residential-construction',
+  },
 ];
 
 const en: Guide[] = [
@@ -823,6 +896,78 @@ const en: Guide[] = [
       {
         q: 'How does BAU BILD work?',
         a: 'We visit the site first, then prepare an estimate with works and materials listed separately, and carry out the work in stages with one team.',
+      },
+    ],
+    service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[5],
+    metaTitle: 'Frame House vs Block House: Which to Build in Georgia | BAU BILD',
+    metaDescription:
+      'Timber or steel frame house versus block house: how each is built, warmth, sound insulation, durability, upkeep and what to consider when building in Georgia.',
+    h1: 'Frame house or block house: which should you build?',
+    lead: 'One of the first questions before building a house is what to build it from: a frame or blocks. Both have real advantages, and the right choice depends on the plot, how you will use the house and your plans for it.',
+    published: '2026-11-19',
+    sections: [
+      {
+        h2: '1. What frame and block houses are',
+        paragraphs: [
+          'A frame house has a timber or light steel skeleton, filled with insulation and clad with boards inside and out.',
+          'A block house has walls built from blocks (for example aerated concrete, ceramic or concrete blocks), usually tied together with reinforced concrete ring beams and floor slabs.',
+        ],
+      },
+      {
+        h2: '2. How each is built',
+        paragraphs: [
+          'A frame house is light, so it often needs a simpler foundation, and most of the work is "dry". It depends less on the weather.',
+          'A block house is built with "wet" work: laying blocks, pouring concrete, plastering. Concrete and mortar need time to cure, and some work slows down in cold weather.',
+        ],
+      },
+      {
+        h2: '3. Warmth and energy',
+        paragraphs: [
+          'A frame house heats up quickly because its walls are mostly insulation. For winter comfort, insulation, vapour barrier and ventilation must be done properly.',
+          'A block wall stores heat: it warms slowly and cools slowly. In a cold climate a block wall also needs external insulation.',
+        ],
+      },
+      {
+        h2: '4. Sound insulation and feel',
+        paragraphs: [
+          'A massive block wall dampens sound on its own. In a frame house, good sound insulation needs extra layers in partitions and between floors.',
+        ],
+      },
+      {
+        h2: '5. Durability and upkeep',
+        paragraphs: [
+          'Both last a long time when built properly. In a frame house, protection from moisture is critical: waterproofing, well-made roof details and ventilation. In a block house, the foundation, waterproofing and avoiding cracks matter most.',
+        ],
+      },
+      {
+        h2: '6. Earthquake safety',
+        paragraphs: [
+          'Georgia is a seismic region, so either type must be designed to seismic standards. A light frame takes less load in an earthquake, while a block house needs properly designed reinforced concrete ring beams and columns.',
+        ],
+      },
+      {
+        h2: '7. How to choose',
+        paragraphs: [
+          'A frame is often practical for a country house, a hard-to-reach plot or when building speed matters. Blocks are often chosen for a permanent home, when you want solid walls, sound insulation and the option to add a floor later.',
+          'Before deciding, have the plot inspected and compare estimates for both options with the same floor area and finishes.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Which is cheaper, a frame house or a block house?',
+        a: 'It depends on the design, the plot and the materials, so there is no single answer. After seeing the plot we prepare separate estimates for both options.',
+      },
+      {
+        q: 'Can you live in a frame house in winter?',
+        a: 'Yes, if the insulation, vapour barrier, windows and heating are chosen and installed properly.',
+      },
+      {
+        q: 'Can you help me choose?',
+        a: 'Yes. We look at the plot, talk through your plans and tell you which option fits better, then build the house from foundation to handover.',
       },
     ],
     service: 'residential-construction',
