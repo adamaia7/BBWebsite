@@ -24,6 +24,7 @@ export const GUIDE_SLUGS = [
   'apartment-renovation',
   'house-construction-cost',
   'black-white-green-frame',
+  'choose-construction-company',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -359,6 +360,87 @@ const ka: Guide[] = [
     ],
     service: 'renovation-interior',
   },
+  {
+    slug: GUIDE_SLUGS[4],
+    metaTitle: 'როგორ ავირჩიოთ სამშენებლო კომპანია თბილისში: 8 რამ, რაც უნდა შეამოწმოთ | BAU BILD',
+    metaDescription:
+      'როგორ ავირჩიოთ სამშენებლო ან სარემონტო კომპანია თბილისში: რა ჰკითხოთ, რა უნდა ეწეროს ხარჯთაღრიცხვასა და ხელშეკრულებაში და რა ნიშნები უნდა გაგაფრთხილოთ.',
+    h1: 'როგორ ავირჩიოთ სამშენებლო კომპანია: რა უნდა შეამოწმოთ ხელშეკრულებამდე',
+    lead: 'სახლის მშენებლობა ან ბინის რემონტი დიდი ხარჯია და შედეგი ძირითადად იმაზეა დამოკიდებული, ვის ანდობთ სამუშაოს. აქ შევკრიბეთ, რა უნდა ჰკითხოთ კომპანიას, რა უნდა ეწეროს ქაღალდზე და რა ნიშნები უნდა გაგაფრთხილოთ.',
+    published: '2026-11-19',
+    sections: [
+      {
+        h2: '1. დაიწყეთ ობიექტის ნახვით, არა ფასით',
+        paragraphs: [
+          'სერიოზული კომპანია ფასს ტელეფონით, ობიექტის ნახვის გარეშე, არ გეტყვით. ჯერ ნახულობს ნაკვეთს ან ბინას, გისმენთ, რა გინდათ, და მხოლოდ ამის შემდეგ ამზადებს ხარჯთაღრიცხვას.',
+          'თუ ვინმე ზუსტ ფასს ნახვამდე გეუბნებათ, სავარაუდოდ ფასი მოგვიანებით შეიცვლება, როცა „გაუთვალისწინებელი“ სამუშაოები გამოჩნდება.',
+        ],
+      },
+      {
+        h2: '2. მოითხოვეთ დეტალური ხარჯთაღრიცხვა',
+        paragraphs: [
+          'კარგ ხარჯთაღრიცხვაში თითო სამუშაო ცალკე წერია: რა კეთდება, რა რაოდენობით, რა მასალით და რა ღირს სამუშაო და მასალა ცალ-ცალკე.',
+          'ერთი საერთო თანხა „სრული რემონტისთვის“ ვერ გაჩვენებთ, რას იხდით, და ვერც სხვა კომპანიის შეთავაზებას შეადარებთ.',
+        ],
+      },
+      {
+        h2: '3. შეადარეთ შეთავაზებები ერთნაირად',
+        paragraphs: [
+          'ორი ან სამი კომპანიის ხარჯთაღრიცხვა გვერდიგვერდ დადეთ და შეამოწმეთ, ერთსა და იმავე სამუშაოებსა და მასალებს ითვალისწინებს თუ არა. ყველაზე იაფი შეთავაზება ხშირად იაფია იმიტომ, რომ რაღაც აკლია.',
+          'ჰკითხეთ, რა არ შედის ფასში: ნაგვის გატანა, მასალის მიტანა, პროექტი, ნებართვა, ხარაჩოები.',
+        ],
+      },
+      {
+        h2: '4. რა უნდა ეწეროს ხელშეკრულებაში',
+        paragraphs: [
+          'ხელშეკრულებაში უნდა იყოს სამუშაოების სია (ან ხარჯთაღრიცხვა დანართად), ეტაპები და ვადები, გადახდის გრაფიკი, ვინ ყიდულობს მასალას და როგორ ფორმდება დამატებითი სამუშაო.',
+          'გადახდა ჯობს ეტაპებს მიებას: იხდით შესრულებულ ეტაპში და არა წინასწარ მთელ თანხას.',
+        ],
+      },
+      {
+        h2: '5. ვინ შეასრულებს სამუშაოს',
+        paragraphs: [
+          'ჰკითხეთ, ვინ იქნება ობიექტზე: კომპანიის საკუთარი გუნდი თუ ქვეკონტრაქტორები, და ვინ არის პასუხისმგებელი პირი, რომელსაც ყოველდღიურ საკითხებზე დაურეკავთ.',
+          'როცა ელექტროობას, სანტექნიკას და მოპირკეთებას სხვადასხვა ხელოსანი აკეთებს და მათ ერთი ადამიანი არ ხელმძღვანელობს, შეცდომებზე პასუხს არავინ აგებს.',
+        ],
+      },
+      {
+        h2: '6. როგორ მიიღებთ ინფორმაციას სამუშაოს მსვლელობისას',
+        paragraphs: [
+          'შეთანხმდით, რამდენად ხშირად და როგორ მიიღებთ ცნობებს: ფოტოები, ობიექტზე შეხვედრა ეტაპის დასრულებისას, ცვლილებების წერილობით დადასტურება.',
+          'ფარული სამუშაოები (გაყვანილობა, მილები, ჰიდროიზოლაცია) დახურვამდე უნდა ნახოთ ან ფოტოზე დაინახოთ.',
+        ],
+      },
+      {
+        h2: '7. გარანტია და ჩაბარება',
+        paragraphs: [
+          'ჰკითხეთ, რა გარანტიას იძლევა კომპანია შესრულებულ სამუშაოზე და როგორ ასწორებს ხარვეზს, თუ ის ჩაბარების შემდეგ გამოჩნდა.',
+          'ჩაბარებისას ობიექტი ერთად დაათვალიერეთ და შენიშვნები წერილობით ჩაიწერეთ. ბოლო გადახდა ჯობს შენიშვნების გასწორების შემდეგ იყოს.',
+        ],
+      },
+      {
+        h2: '8. ნიშნები, რომლებიც უნდა გაგაფრთხილოთ',
+        paragraphs: [
+          'ფასი ობიექტის ნახვის გარეშე, მთელი თანხის წინასწარ მოთხოვნა, ხელშეკრულების გარეშე მუშაობის შეთავაზება, ბუნდოვანი პასუხები კითხვაზე „რა შედის ფასში“ და ზეწოლა, რომ „დღესვე“ გადაწყვიტოთ.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რამდენი კომპანიისგან ავიღო შეთავაზება?',
+        a: 'ჩვეულებრივ ორი ან სამი საკმარისია, რომ ფასები და მიდგომა შეადაროთ. მთავარია, ყველამ ერთი და იგივე სამუშაო შეაფასოს.',
+      },
+      {
+        q: 'უნდა ვიყიდო მასალა თავად?',
+        a: 'შეიძლება, მაგრამ მაშინ ხარისხსა და დროულ მიწოდებაზე პასუხისმგებლობა თქვენზე გადადის. ხელშეკრულებაში ცალკე ჩაწერეთ, ვინ რას ყიდულობს.',
+      },
+      {
+        q: 'როგორ მუშაობს BAU BILD?',
+        a: 'ჯერ ობიექტს ვნახულობთ, შემდეგ გიმზადებთ ხარჯთაღრიცხვას, სადაც სამუშაოები და მასალები ცალ-ცალკეა, და სამუშაოს ერთი გუნდით, ეტაპებად ვასრულებთ.',
+      },
+    ],
+    service: 'residential-construction',
+  },
 ];
 
 const en: Guide[] = [
@@ -663,6 +745,87 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+  },
+  {
+    slug: GUIDE_SLUGS[4],
+    metaTitle: 'How to Choose a Construction Company in Tbilisi: 8 Things to Check | BAU BILD',
+    metaDescription:
+      'How to choose a construction or renovation company in Tbilisi: what to ask, what the estimate and contract should say, and the warning signs to watch for.',
+    h1: 'How to choose a construction company: what to check before you sign',
+    lead: 'Building a house or renovating an apartment is a big expense, and the result depends mostly on who you hire. Here is what to ask a company, what should be on paper and which signs should make you cautious.',
+    published: '2026-11-19',
+    sections: [
+      {
+        h2: '1. Start with a site visit, not a price',
+        paragraphs: [
+          'A serious company will not quote a price over the phone without seeing the site. It visits the plot or apartment, listens to what you want, and only then prepares an estimate.',
+          'If someone gives you an exact price before seeing anything, that price will probably change later, when "unexpected" work turns up.',
+        ],
+      },
+      {
+        h2: '2. Ask for a detailed estimate',
+        paragraphs: [
+          'A good estimate lists each job separately: what is done, in what quantity, with which material, and what the labour and materials cost.',
+          'A single lump sum for a "full renovation" does not show what you are paying for, and you cannot compare it with another offer.',
+        ],
+      },
+      {
+        h2: '3. Compare offers like for like',
+        paragraphs: [
+          'Put two or three estimates side by side and check that they cover the same work and materials. The cheapest offer is often cheap because something is missing.',
+          'Ask what is not included: waste removal, delivery of materials, design, permits, scaffolding.',
+        ],
+      },
+      {
+        h2: '4. What the contract should say',
+        paragraphs: [
+          'The contract should contain the list of works (or the estimate as an annex), stages and deadlines, a payment schedule, who buys the materials and how extra work is agreed.',
+          'Tie payments to stages: you pay for a completed stage, not the whole amount up front.',
+        ],
+      },
+      {
+        h2: '5. Who will actually do the work',
+        paragraphs: [
+          'Ask who will be on site: the company\'s own team or subcontractors, and who the responsible person is that you call about day-to-day questions.',
+          'When electrics, plumbing and finishes are done by different tradespeople with nobody in charge, nobody answers for mistakes.',
+        ],
+      },
+      {
+        h2: '6. How you will be kept informed',
+        paragraphs: [
+          'Agree how often and how you get updates: photos, a site meeting at the end of each stage, written confirmation of changes.',
+          'Hidden work (wiring, pipes, waterproofing) should be seen in person or in photos before it is covered up.',
+        ],
+      },
+      {
+        h2: '7. Warranty and handover',
+        paragraphs: [
+          'Ask what warranty the company gives on its work and how it fixes defects that appear after handover.',
+          'At handover, walk through the site together and write the remarks down. The final payment is best made after those remarks are fixed.',
+        ],
+      },
+      {
+        h2: '8. Warning signs',
+        paragraphs: [
+          'A price without a site visit, a demand for the full amount up front, an offer to work without a contract, vague answers to "what is included", and pressure to decide "today".',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'How many companies should I get quotes from?',
+        a: 'Two or three are usually enough to compare prices and approach. What matters is that they all price the same work.',
+      },
+      {
+        q: 'Should I buy the materials myself?',
+        a: 'You can, but then responsibility for quality and on-time delivery moves to you. Write into the contract who buys what.',
+      },
+      {
+        q: 'How does BAU BILD work?',
+        a: 'We visit the site first, then prepare an estimate with works and materials listed separately, and carry out the work in stages with one team.',
+      },
+    ],
+    service: 'residential-construction',
   },
 ];
 

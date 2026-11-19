@@ -317,14 +317,16 @@ const en: ServicePage[] = [
   },
   {
     slug: SERVICE_SLUGS[3],
-    metaTitle: 'Facade and Roofing Installation and Repair | BAU BILD',
+    metaTitle: 'Roofing and Facade Contractor in Tbilisi: Roof and Siding Repair | BAU BILD',
     metaDescription:
-      'Roof installation, repair and replacement, facade cladding and insulation. For private houses, residential and commercial buildings.',
-    h1: 'Facade and roofing installation and repair',
+      'Local roofing and construction company in Tbilisi and across Georgia: roof repair and replacement, leak repair, facade cladding (siding) repair and insulation.',
+    h1: 'Roofing and facade contractor: roof and siding repair',
     lead: 'We install new roofs and facades and handle re-roofing, repairs and insulation. A good roof and facade protect a building for decades.',
     body: [
       'The roof and facade are the building’s shell: they keep out rain, wind and cold and define how the house looks. Rushed work shows up as leaks and cracks, so we build every layer properly.',
       'We work on new buildings and on renewing old ones: replacing damaged roofs, insulating facades and applying new cladding.',
+      'For repairs we start with an on-site inspection of the roof covering, flashings, gutters and the facade cladding (siding, render or tiles), find where water gets in, and then propose either a local repair or a replacement of the damaged section.',
+      'We work as a local roofing and construction team in Tbilisi and travel to projects across Georgia.',
     ],
     includesTitle: 'What is included',
     includes: [
@@ -343,6 +345,18 @@ const en: ServicePage[] = [
       {
         q: 'Which season is best for facade work?',
         a: 'Wet work such as render and insulation is done in warm, dry weather, and we plan the schedule around it.',
+      },
+      {
+        q: 'Do you repair facade cladding and siding, or only replace it?',
+        a: 'Both. Damaged panels, cracked render or loose tiles can often be repaired in sections. If the insulation behind the cladding is wet or damaged, we replace that part as well.',
+      },
+      {
+        q: 'Do you do roof and siding repair together?',
+        a: 'Yes. Leaks often appear where the roof meets the walls, so we inspect the roof, gutters and facade together and fix them as one job.',
+      },
+      {
+        q: 'Do you work outside Tbilisi?',
+        a: 'Yes. We are based in Tbilisi and take roofing and facade projects across Georgia.',
       },
     ],
   },
