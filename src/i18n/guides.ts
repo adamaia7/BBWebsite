@@ -27,6 +27,7 @@ export const GUIDE_SLUGS = [
   'choose-construction-company',
   'frame-vs-block-house',
   'roof-repair',
+  'facade-cladding',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -580,6 +581,73 @@ const ka: Guide[] = [
     ],
     service: 'facade-roofing',
   },
+  {
+    slug: GUIDE_SLUGS[7],
+    metaTitle: 'ფასადის მოპირკეთება: ბათქაში, ფილა თუ ვენტილირებადი ფასადი | BAU BILD',
+    metaDescription:
+      'ფასადის მოპირკეთების სახეები: დეკორატიული ბათქაში, ფილა და ქვა, ვენტილირებადი ფასადი. რა უნდა იცოდეთ თბოიზოლაციაზე, მომზადებაზე და სეზონზე საქართველოში.',
+    h1: 'ფასადის მოპირკეთება: ბათქაში, ფილა თუ ვენტილირებადი ფასადი',
+    lead: 'ფასადი სახლს ამინდისგან იცავს და განსაზღვრავს, როგორ გამოიყურება ის წლების შემდეგ. აქ შევადარეთ მოპირკეთების ძირითადი სახეები და ავხსენით, რა უნდა გაითვალისწინოთ არჩევამდე.',
+    published: '2026-11-20',
+    sections: [
+      {
+        h2: '1. დეკორატიული ბათქაში',
+        paragraphs: [
+          'ბათქაში ყველაზე გავრცელებული მოპირკეთებაა კერძო სახლებში. ის თბოიზოლაციის ფილებზე ან პირდაპირ კედელზე იტანება, არმირების ბადისა და გრუნტის ფენების შემდეგ.',
+          'ბათქაში სხვადასხვა ფაქტურისა და ფერისაა. მისი ხანგამძლეობა დიდწილად ფუძის მომზადებაზე, სწორ ფენებსა და იმაზეა დამოკიდებული, რა ამინდში შესრულდა სამუშაო.',
+        ],
+      },
+      {
+        h2: '2. ფილა და ქვა',
+        paragraphs: [
+          'კერამიკული ფილა, კლინკერი ან ბუნებრივი და ხელოვნური ქვა მყარია და მცირე მოვლას საჭიროებს. ის ხშირად სოკოზე, კიბეებზე ან ფასადის ნაწილზე გამოიყენება, ბათქაშთან კომბინაციაში.',
+          'ფილა და ქვა მძიმეა, ამიტომ ფუძე და წებოს სისტემა ფასადის დატვირთვას უნდა შეესაბამებოდეს.',
+        ],
+      },
+      {
+        h2: '3. ვენტილირებადი ფასადი',
+        paragraphs: [
+          'ვენტილირებად ფასადში მოპირკეთების ფილები მეტალის კარკასზე მაგრდება და კედელსა და მოპირკეთებას შორის ჰაერის ფენა რჩება. ეს ფენა ნესტს აშრობს, ხოლო თბოიზოლაცია კარკასის ქვეშ დგება.',
+          'ასეთი ფასადი ხშირად გამოიყენება კომერციულ და მრავალსართულიან შენობებზე, თუმცა კერძო სახლზეც შესაძლებელია.',
+        ],
+      },
+      {
+        h2: '4. თბოიზოლაცია',
+        paragraphs: [
+          'ფასადის სამუშაო თბოიზოლაციის დამატების საუკეთესო დროა: ზამთარში სახლი ნაკლებ სითბოს კარგავს, ზაფხულში კი ნაკლებად ცხელდება.',
+          'მნიშვნელოვანია, თბოიზოლაცია ფანჯრებისა და აივნების კვანძებშიც გაგრძელდეს, თორემ იქ „ცივი ხიდები“ რჩება და კედელი ნესტიანდება.',
+        ],
+      },
+      {
+        h2: '5. მომზადება და სეზონი',
+        paragraphs: [
+          'მოპირკეთებამდე კედელი უნდა იყოს მშრალი, სწორი და მყარი: იწმინდება ძველი აქერცლილი ფენები, სწორდება ბზარები და გაუმართავი წყალსაწრეტი.',
+          'ბათქაში და წებოზე დამაგრებული სისტემები თბილ და მშრალ ამინდში სრულდება. ვენტილირებადი ფასადი ამინდზე ნაკლებადაა დამოკიდებული.',
+        ],
+      },
+      {
+        h2: '6. როგორ ავირჩიოთ',
+        paragraphs: [
+          'არჩევანი შენობის ტიპზე, ბიუჯეტზე, სასურველ იერსახესა და მოვლის სურვილზეა დამოკიდებული. ხშირად საუკეთესო შედეგს კომბინაცია იძლევა: ბათქაში ძირითად ზედაპირზე და ფილა ან ქვა ქვედა ნაწილსა და აქცენტებზე.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება ძველ ფასადზე ახალი მოპირკეთება?',
+        a: 'ხშირად კი, თუ ძველი ფენა მყარია. დაზიანებული ან აქერცლილი ფენა ჯერ უნდა მოიხსნას, რომ ახალმა მოპირკეთებამ ხანგრძლივად გაძლოს.',
+      },
+      {
+        q: 'რა ღირს ფასადის მოპირკეთება?',
+        a: 'ფასი ფასადის ფართზე, მასალაზე, თბოიზოლაციასა და კედლის მდგომარეობაზეა დამოკიდებული. ობიექტის ნახვის შემდეგ გიმზადებთ ხარჯთაღრიცხვას, სადაც სამუშაოები და მასალები ცალ-ცალკეა.',
+      },
+      {
+        q: 'აკეთებთ ფასადს თბოიზოლაციასთან ერთად?',
+        a: 'დიახ. თბოიზოლაციასა და მოპირკეთებას ერთი სამუშაოს ფარგლებში ვაკეთებთ.',
+      },
+    ],
+    service: 'facade-roofing',
+  },
 ];
 
 const en: Guide[] = [
@@ -1099,6 +1167,73 @@ const en: Guide[] = [
       {
         q: 'Do you work outside Tbilisi?',
         a: 'Yes. We are based in Tbilisi and take roofing and facade work across Georgia.',
+      },
+    ],
+    service: 'facade-roofing',
+  },
+  {
+    slug: GUIDE_SLUGS[7],
+    metaTitle: 'Facade Cladding in Georgia: Render, Tiles or Ventilated Facade | BAU BILD',
+    metaDescription:
+      'Types of facade cladding: decorative render, tiles and stone, ventilated facades. What to know about insulation, preparation and the right season in Georgia.',
+    h1: 'Facade cladding: render, tiles or a ventilated facade',
+    lead: 'A facade protects a house from the weather and decides how it looks years later. Here we compare the main types of cladding and explain what to consider before choosing.',
+    published: '2026-11-20',
+    sections: [
+      {
+        h2: '1. Decorative render',
+        paragraphs: [
+          'Render is the most common facade finish on private houses. It is applied over insulation boards or straight onto the wall, after layers of reinforcing mesh and primer.',
+          'Render comes in many textures and colours. How long it lasts depends mostly on how the base is prepared, whether the layers are right and the weather the work is done in.',
+        ],
+      },
+      {
+        h2: '2. Tiles and stone',
+        paragraphs: [
+          'Ceramic tiles, clinker or natural and engineered stone are hard-wearing and need little upkeep. They are often used on the plinth, steps or part of the facade, combined with render.',
+          'Tiles and stone are heavy, so the base and adhesive system must match the load on the facade.',
+        ],
+      },
+      {
+        h2: '3. Ventilated facade',
+        paragraphs: [
+          'In a ventilated facade, cladding panels are fixed to a metal frame with an air gap between the wall and the cladding. The gap dries out moisture, and the insulation sits under the frame.',
+          'This type is common on commercial and multi-storey buildings, but it also works on a private house.',
+        ],
+      },
+      {
+        h2: '4. Insulation',
+        paragraphs: [
+          'Facade work is the best time to add insulation: the house loses less heat in winter and heats up less in summer.',
+          'Insulation must continue around windows and balconies, otherwise "cold bridges" remain there and the wall gets damp.',
+        ],
+      },
+      {
+        h2: '5. Preparation and season',
+        paragraphs: [
+          'Before cladding, the wall must be dry, level and sound: old flaking layers are removed, cracks and faulty drainage are fixed.',
+          'Render and glued systems are applied in warm, dry weather. A ventilated facade depends less on the weather.',
+        ],
+      },
+      {
+        h2: '6. How to choose',
+        paragraphs: [
+          'The choice depends on the type of building, budget, the look you want and how much upkeep you accept. A combination often gives the best result: render on the main surfaces and tiles or stone on the lower part and accents.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can new cladding go over an old facade?',
+        a: 'Often yes, if the old layer is sound. Damaged or flaking layers must be removed first so the new cladding lasts.',
+      },
+      {
+        q: 'How much does facade cladding cost?',
+        a: 'It depends on the facade area, the material, the insulation and the condition of the wall. After seeing the building we prepare an estimate with works and materials listed separately.',
+      },
+      {
+        q: 'Do you do the facade together with insulation?',
+        a: 'Yes. We do insulation and cladding as one job.',
       },
     ],
     service: 'facade-roofing',
