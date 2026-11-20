@@ -26,6 +26,7 @@ export const GUIDE_SLUGS = [
   'black-white-green-frame',
   'choose-construction-company',
   'frame-vs-block-house',
+  'roof-repair',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -514,6 +515,71 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
   },
+  {
+    slug: GUIDE_SLUGS[6],
+    metaTitle: 'სახურავის შეკეთება: როდის საკმარისია შეკეთება და როდის საჭიროა გადახურვა | BAU BILD',
+    metaDescription:
+      'სახურავის შეკეთება თბილისში და საქართველოში: რატომ ჟონავს სახურავი, როგორ მოვძებნოთ წყლის შემოსვლის ადგილი, როდის კმარა შეკეთება და როდის ჯობს გადახურვა.',
+    h1: 'სახურავის შეკეთება: როდის კმარა შეკეთება და როდის საჭიროა გადახურვა',
+    lead: 'ჭერზე ლაქა ან წვეთი ჩვეულებრივ ნიშნავს, რომ სახურავში სადღაც წყალი შემოდის. რაც უფრო ადრე მოიძებნება მიზეზი, მით უფრო ნაკლები სამუშაო დასჭირდება. აქ ავხსნით, რატომ ჟონავს სახურავი, როგორ ვპოულობთ პრობლემას და როგორ ვწყვეტთ, შეკეთება საკმარისია თუ გადახურვა ჯობს.',
+    published: '2026-11-20',
+    sections: [
+      {
+        h2: '1. რატომ ჟონავს სახურავი',
+        paragraphs: [
+          'ყველაზე ხშირი მიზეზებია: დაზიანებული ან ადგილიდან დაძრული საფარი (კრამიტი, მეტალოკრამიტი, თუნუქი), გამოსული ხრახნები და შუასადებები, ცუდად დახურული კვანძები მილთან, სარკმელთან ან კედელთან მიერთებაზე, და გაჭედილი ან დაზიანებული ღარები.',
+          'ბრტყელ სახურავზე წყალი ხშირად იქ ჩერდება, სადაც დახრილობა არასწორია, და დროთა განმავლობაში ჰიდროიზოლაციას აზიანებს.',
+        ],
+      },
+      {
+        h2: '2. როგორ ვპოულობთ წყლის შემოსვლის ადგილს',
+        paragraphs: [
+          'ლაქა ჭერზე ყოველთვის იქ არ არის, სადაც სახურავი დაზიანებულია: წყალი ხშირად კოჭს ან ფირს მიუყვება და სხვაგან ჩნდება. ამიტომ ვამოწმებთ როგორც გარედან, ისე სხვენიდან.',
+          'ვათვალიერებთ საფარს, კვანძებს, ღარებს და ქვეშ არსებულ ფენებს: ჰიდროიზოლაციის ფირს, მოლარტყვას და თბოიზოლაციას. სველი თბოიზოლაცია სითბოს აღარ ინახავს და შესაცვლელია.',
+        ],
+      },
+      {
+        h2: '3. როდის საკმარისია შეკეთება',
+        paragraphs: [
+          'თუ დაზიანება ადგილობრივია (რამდენიმე ფურცელი ან კრამიტი, ერთი კვანძი, ღარის მონაკვეთი) და ქვედა ფენები მშრალი და მთელია, ჩვეულებრივ საკმარისია ამ ადგილის შეკეთება ან შეცვლა.',
+        ],
+      },
+      {
+        h2: '4. როდის ჯობს გადახურვა',
+        paragraphs: [
+          'გადახურვა ჯობს, როცა საფარი ბევრ ადგილას არის დაზიანებული ან ჟანგიანი, ჟონვა სხვადასხვა ადგილას მეორდება, ხის კონსტრუქცია დამპალია, ან ჰიდროიზოლაცია და თბოიზოლაცია მთლიანად დაზიანებულია.',
+          'ასეთ შემთხვევაში ცალკეული შეკეთებები ხშირად მხოლოდ დროებით შველის, ხოლო ჯამში მეტი უჯდება მფლობელს.',
+        ],
+      },
+      {
+        h2: '5. ღარები და წყალსაწრეტი',
+        paragraphs: [
+          'ღარები და წყალსაწრეტი მილები სახურავის ნაწილია. როცა ისინი გაჭედილია ან არასწორი დახრილობით არის დაყენებული, წყალი კედელზე ჩამოდის და ფასადსა და საძირკველს აზიანებს. სახურავის შეკეთებისას მათაც ვამოწმებთ.',
+        ],
+      },
+      {
+        h2: '6. როდის ჯობს სამუშაოს ჩატარება',
+        paragraphs: [
+          'სასწრაფო შეკეთება, როცა სახურავი ჟონავს, ნებისმიერ დროს კეთდება, რომ შიდა სივრცე არ დაზიანდეს. სრული გადახურვა და ჰიდროიზოლაციის სამუშაოები ჯობს მშრალ ამინდში დაიგეგმოს.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება სახურავის შეკეთება ზამთარში?',
+        a: 'დიახ, სასწრაფო შეკეთება და დაზიანებული ელემენტების შეცვლა ზამთარშიც კეთდება. დიდი სამუშაოები, განსაკუთრებით ჰიდროიზოლაცია, ჯობს მშრალ და თბილ ამინდში ჩატარდეს.',
+      },
+      {
+        q: 'რა ღირს სახურავის შეკეთება?',
+        a: 'ფასი სახურავის ტიპზე, დაზიანების მოცულობასა და მასალაზეა დამოკიდებული. ჯერ სახურავს ვათვალიერებთ და შემდეგ გიმზადებთ ხარჯთაღრიცხვას, სადაც სამუშაოები და მასალები ცალ-ცალკეა.',
+      },
+      {
+        q: 'მუშაობთ თბილისის გარეთ?',
+        a: 'დიახ. ბაზა თბილისშია, სახურავისა და ფასადის სამუშაოებს მთელ საქართველოში ვიღებთ.',
+      },
+    ],
+    service: 'facade-roofing',
+  },
 ];
 
 const en: Guide[] = [
@@ -971,6 +1037,71 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[6],
+    metaTitle: 'Roof Repair in Tbilisi: When to Repair and When to Re-Roof | BAU BILD',
+    metaDescription:
+      'Roof repair in Tbilisi and across Georgia: why roofs leak, how to find where water gets in, when a repair is enough and when re-roofing is the better choice.',
+    h1: 'Roof repair: when a repair is enough and when to re-roof',
+    lead: 'A stain or drip on the ceiling usually means water is getting in somewhere in the roof. The sooner the cause is found, the less work it takes. Here is why roofs leak, how we find the problem and how we decide between a repair and a new roof.',
+    published: '2026-11-20',
+    sections: [
+      {
+        h2: '1. Why roofs leak',
+        paragraphs: [
+          'The most common causes are damaged or shifted roofing (tiles, metal tiles, sheet metal), loose screws and seals, poorly sealed details around chimneys, roof windows and walls, and blocked or damaged gutters.',
+          'On a flat roof, water often pools where the slope is wrong and over time damages the waterproofing.',
+        ],
+      },
+      {
+        h2: '2. How we find where water gets in',
+        paragraphs: [
+          'A ceiling stain is not always below the damage: water often runs along a rafter or membrane and appears somewhere else. That is why we inspect both from outside and from the attic.',
+          'We check the covering, the details, the gutters and the layers underneath: the waterproofing membrane, battens and insulation. Wet insulation no longer keeps heat in and needs replacing.',
+        ],
+      },
+      {
+        h2: '3. When a repair is enough',
+        paragraphs: [
+          'If the damage is local (a few sheets or tiles, one detail, a stretch of gutter) and the layers underneath are dry and intact, repairing or replacing that area is usually enough.',
+        ],
+      },
+      {
+        h2: '4. When re-roofing is better',
+        paragraphs: [
+          'Re-roofing is the better choice when the covering is damaged or rusted in many places, leaks keep coming back in different spots, the timber structure is rotten, or the waterproofing and insulation are damaged throughout.',
+          'In those cases, patch repairs often only help for a while and cost the owner more in total.',
+        ],
+      },
+      {
+        h2: '5. Gutters and drainage',
+        paragraphs: [
+          'Gutters and downpipes are part of the roof. When they are blocked or set at the wrong slope, water runs down the wall and damages the facade and the foundation. We check them as part of every roof repair.',
+        ],
+      },
+      {
+        h2: '6. When to schedule the work',
+        paragraphs: [
+          'An emergency repair on a leaking roof is done at any time of year, so the inside is not damaged. A full re-roof and waterproofing work are best planned for dry weather.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can a roof be repaired in winter?',
+        a: 'Yes, emergency repairs and replacing damaged parts are done in winter too. Larger jobs, especially waterproofing, are best done in dry, warm weather.',
+      },
+      {
+        q: 'How much does a roof repair cost?',
+        a: 'It depends on the type of roof, how much is damaged and the materials. We inspect the roof first, then prepare an estimate with works and materials listed separately.',
+      },
+      {
+        q: 'Do you work outside Tbilisi?',
+        a: 'Yes. We are based in Tbilisi and take roofing and facade work across Georgia.',
+      },
+    ],
+    service: 'facade-roofing',
   },
 ];
 

@@ -15,6 +15,12 @@ const { lang, slug } = Astro.props;
 const ui = guideUi[lang];
 const guide = guides[lang].find((g) => g.slug === slug)!;
 const service = servicePages[lang].find((s) => s.slug === guide.service)!;
+// შიდა ბმულები: 3 სხვა სტატია, ჯერ იმავე სერვისის, შემდეგ უახლესი
+const others = guides[lang].filter((g) => g.slug !== slug);
+const more = [
+  ...others.filter((g) => g.service === guide.service),
+  ...others.filter((g) => g.service !== guide.service).reverse(),
+].slice(0, 3);
 const paths = Object.fromEntries(LANGS.map((l) => [l, guideUrl(l, slug)])) as Record<Lang, string>;
 const site = Astro.site;
 const abs = (path: string) => (site ? new URL(path, site).href : path);
@@ -97,6 +103,17 @@ const extraLd = [
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E07B24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
           </a>
         </p>
+        {more.length > 0 && (
+          <p class="g-service g-more">
+            <span>{ui.eyebrow}:</span>
+            {more.map((g) => (
+              <a class="arrow-link" href={guideUrl(lang, g.slug)}>
+                {g.h1}
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E07B24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </a>
+            ))}
+          </p>
+        )}
       </div>
     </section>
 
@@ -181,5 +198,8 @@ const extraLd = [
     gap: 8px 12px;
     margin-top: 40px;
     color: var(--muted);
+  }
+  .g-more {
+    margin-top: 16px;
   }
 </style>
