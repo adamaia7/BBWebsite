@@ -372,10 +372,10 @@ const en: ServicePage[] = [
   },
   {
     slug: SERVICE_SLUGS[4],
-    metaTitle: 'Apartment and House Renovation in Tbilisi | BAU BILD',
+    metaTitle: 'Interior Renovation in Tbilisi: Apartments and Houses | BAU BILD',
     metaDescription:
-      'Apartment and house renovation from bare shell to finished interior: partitions, floors, walls, bathrooms and kitchens. One team for the full cycle.',
-    h1: 'Apartment and house renovation, interiors',
+      'Interior renovation in Tbilisi from bare shell to finished home: partitions, floors, walls, bathrooms and kitchens. One renovation team for the full cycle.',
+    h1: 'Interior renovation in Tbilisi: apartments and houses',
     lead: 'We renovate from bare shell to finished interior. One team does all the work, so you do not have to coordinate different tradespeople.',
     body: [
       'The hardest part of a renovation is often the organisation: who does what, when and in which order. We take that on and bring electrics, plumbing, partitions, floors, walls and finishes into one plan.',
@@ -399,6 +399,14 @@ const en: ServicePage[] = [
       {
         q: 'Do you buy the materials?',
         a: 'As you prefer: we can choose and buy the materials, or work with ones you have chosen.',
+      },
+      {
+        q: 'How does a renovation start?',
+        a: 'We visit the apartment or house, agree on what you want to change, and prepare a cost estimate with works and materials listed separately. Work starts once the plan and estimate are agreed.',
+      },
+      {
+        q: 'Do you renovate older apartments, not just new builds?',
+        a: 'Yes. Besides shell and white-box apartments, we do full renewals of older apartments and houses, including replacing electrics and plumbing.',
       },
     ],
   },

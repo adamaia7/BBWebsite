@@ -28,6 +28,7 @@ export const GUIDE_SLUGS = [
   'frame-vs-block-house',
   'roof-repair',
   'facade-cladding',
+  'house-design',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -648,6 +649,81 @@ const ka: Guide[] = [
     ],
     service: 'facade-roofing',
   },
+  {
+    slug: GUIDE_SLUGS[8],
+    metaTitle: 'სახლის დაპროექტება: რა შედის პროექტში და როგორ დავიწყოთ | BAU BILD',
+    metaDescription:
+      'სახლის დაპროექტება ეტაპობრივად: ესკიზი, არქიტექტურული და კონსტრუქციული ნაწილი, საინჟინრო ქსელები, ნებართვა. რა უნდა იცოდეთ მშენებლობის დაწყებამდე.',
+    h1: 'სახლის დაპროექტება: რა შედის პროექტში და როგორ დავიწყოთ',
+    lead: 'კარგი პროექტი მშენებლობის დროს ბევრ შეცდომასა და ზედმეტ ხარჯს გიზოგავთ. აქ ავხსენით, რისგან შედგება სახლის პროექტი, რა თანმიმდევრობით მზადდება და რა უნდა გადაწყვიტოთ თავიდანვე.',
+    published: '2026-11-20',
+    sections: [
+      {
+        h2: '1. რით იწყება დაპროექტება',
+        paragraphs: [
+          'პირველი ნაბიჯი საკუთარი საჭიროებების ჩამოწერაა: რამდენი ადამიანი იცხოვრებს სახლში, რამდენი ოთახი გჭირდებათ, გინდათ თუ არა სამუშაო ოთახი, სარდაფი, ავტოფარეხი ან ტერასა.',
+          'პარალელურად საჭიროა ნაკვეთის მონაცემები: საკადასტრო ნახაზი, რელიეფი, მიმართულება მზის მიმართ, მისასვლელი გზა და სად გადის წყალი, ელექტროობა და გაზი.',
+        ],
+      },
+      {
+        h2: '2. ესკიზი და გეგმარება',
+        paragraphs: [
+          'ესკიზურ ეტაპზე არქიტექტორი ოთახების განლაგებას, სართულიანობას და სახლის ზოგად ფორმას გთავაზობთ. ამ დროს ცვლილებები ყველაზე იაფია, ამიტომ აქ ღირს დროის დახარჯვა.',
+          'კარგი გეგმარება ითვალისწინებს ბუნებრივ განათებას, ოთახებს შორის მოძრაობას, შენახვის ადგილებს და იმას, თუ როგორ გამოიყენებთ სახლს ყოველდღიურად.',
+        ],
+      },
+      {
+        h2: '3. არქიტექტურული ნაწილი',
+        paragraphs: [
+          'არქიტექტურული პროექტი მოიცავს სართულების გეგმებს, ჭრილებს, ფასადებს, ფანჯრებისა და კარების ზომებს, სახურავის ფორმას და ძირითად მასალებს.',
+          'რაც უფრო დეტალურია ეს ნაწილი, მით უფრო ზუსტად შეიძლება მომზადდეს ხარჯთაღრიცხვა და მით ნაკლები კითხვა ჩნდება მშენებლობის დროს.',
+        ],
+      },
+      {
+        h2: '4. კონსტრუქციული ნაწილი',
+        paragraphs: [
+          'კონსტრუქტორი ითვლის საძირკველს, კოლონებს, კოჭებს, გადახურვებს და სახურავის კონსტრუქციას. საქართველო სეისმურად აქტიური ქვეყანაა, ამიტომ ეს ნაწილი განსაკუთრებით მნიშვნელოვანია.',
+          'საძირკვლის სწორად შესარჩევად სასურველია გრუნტის კვლევა, განსაკუთრებით ფერდობზე, ნაყარ ან ნესტიან ნიადაგზე.',
+        ],
+      },
+      {
+        h2: '5. საინჟინრო ქსელები',
+        paragraphs: [
+          'ელექტროობის, წყალმომარაგების, კანალიზაციის, გათბობისა და ვენტილაციის სქემები წინასწარ უნდა დაიგეგმოს. ასე სადენები და მილები კედლებში და იატაკში სწორ ადგილას ჩაიდება და შემდეგ არაფრის ნგრევა არ მოგიწევთ.',
+          'თუ გეგმავთ იატაკის გათბობას, სითბურ ტუმბოს ან მზის პანელებს, ესეც პროექტის ეტაპზე უნდა გადაწყდეს.',
+        ],
+      },
+      {
+        h2: '6. ნებართვა და შეთანხმებები',
+        paragraphs: [
+          'სახლის ზომისა და ადგილმდებარეობის მიხედვით შეიძლება საჭირო გახდეს მშენებლობის ნებართვა ან შეთანხმება ადგილობრივ მერიასთან. მოთხოვნები მუნიციპალიტეტების მიხედვით განსხვავდება.',
+          'ამიტომ პროექტზე მუშაობის დაწყებამდე გადაამოწმეთ, რა წესები ვრცელდება თქვენს ნაკვეთზე: მაგალითად, დასაშვები სიმაღლე და რა მანძილით უნდა იდგეს სახლი მეზობლის საზღვრიდან.',
+        ],
+      },
+      {
+        h2: '7. ხშირი შეცდომები',
+        paragraphs: [
+          'ყველაზე ხშირი შეცდომაა მშენებლობის დაწყება სრული პროექტის გარეშე, „ადგილზე გადავწყვეტთ“ პრინციპით. ასე იზრდება ხარჯი და ვადა, ხოლო ზოგი გადაწყვეტილება შემდეგ ვეღარ შეიცვლება.',
+          'ასევე ხშირია ინტერნეტიდან აღებული მზა პროექტის გამოყენება ნაკვეთის, კლიმატისა და სეისმური მოთხოვნების გათვალისწინების გარეშე.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება მზა პროექტით აშენება?',
+        a: 'შესაძლებელია, მაგრამ მზა პროექტი თქვენს ნაკვეთზე უნდა მოერგოს: რელიეფს, გრუნტს, მზის მიმართულებას და ადგილობრივ წესებს. კონსტრუქციული ნაწილი ყოველთვის ადგილის პირობებით უნდა შემოწმდეს.',
+      },
+      {
+        q: 'გეხმარებით პროექტის მომზადებაში?',
+        a: 'დიახ. ვმუშაობთ კლიენტის მზა პროექტით ან გეხმარებით მის მომზადებაში. მზა პროექტის შემთხვევაში ჯერ ვამოწმებთ, რამდენად შესრულებადია ის და რა აკლია ზუსტი ხარჯთაღრიცხვისთვის.',
+      },
+      {
+        q: 'რა ღირს სახლის დაპროექტება?',
+        a: 'ეს დამოკიდებულია სახლის ფართზე, სირთულესა და პროექტის ნაწილებზე, რომლებიც გჭირდებათ. ფასი ინდივიდუალურია, ამიტომ დაგვიკავშირდით და დეტალებს ერთად განვიხილავთ.',
+      },
+    ],
+    service: 'residential-construction',
+  },
 ];
 
 const en: Guide[] = [
@@ -1237,6 +1313,81 @@ const en: Guide[] = [
       },
     ],
     service: 'facade-roofing',
+  },
+  {
+    slug: GUIDE_SLUGS[8],
+    metaTitle: 'House Design in Georgia: What a Building Project Includes | BAU BILD',
+    metaDescription:
+      'House design step by step: concept, architectural and structural drawings, utilities and permits. What to decide before you start building a house in Georgia.',
+    h1: 'House Design: What a Building Project Includes and How to Start',
+    lead: 'A good design saves you many mistakes and extra costs during construction. Here we explain what a house project consists of, the order it is prepared in, and what you should decide from the start.',
+    published: '2026-11-20',
+    sections: [
+      {
+        h2: '1. Where design starts',
+        paragraphs: [
+          'The first step is to write down your needs: how many people will live in the house, how many rooms you need, and whether you want a home office, basement, garage or terrace.',
+          'You also need the plot data: the cadastral drawing, the terrain, orientation to the sun, the access road, and where water, electricity and gas connections run.',
+        ],
+      },
+      {
+        h2: '2. Concept and layout',
+        paragraphs: [
+          'At the concept stage the architect proposes the room layout, number of floors and the overall shape of the house. Changes are cheapest at this point, so it is worth taking your time here.',
+          'A good layout considers natural light, movement between rooms, storage, and how you will actually use the house every day.',
+        ],
+      },
+      {
+        h2: '3. Architectural drawings',
+        paragraphs: [
+          'The architectural part includes floor plans, sections, elevations, window and door sizes, the roof shape and the main materials.',
+          'The more detailed this part is, the more accurate the cost estimate can be and the fewer questions come up on site.',
+        ],
+      },
+      {
+        h2: '4. Structural design',
+        paragraphs: [
+          'The structural engineer calculates the foundation, columns, beams, floor slabs and roof structure. Georgia is seismically active, so this part matters a lot.',
+          'A soil survey helps choose the right foundation, especially on slopes, filled ground or damp soil.',
+        ],
+      },
+      {
+        h2: '5. Utilities and building services',
+        paragraphs: [
+          'Electrical, water supply, sewage, heating and ventilation layouts should be planned in advance. Then cables and pipes go into walls and floors in the right place and nothing has to be broken open later.',
+          'If you plan underfloor heating, a heat pump or solar panels, decide that at the design stage too.',
+        ],
+      },
+      {
+        h2: '6. Permits and approvals',
+        paragraphs: [
+          'Depending on the size and location of the house, you may need a building permit or approval from the local municipality. Requirements differ between municipalities.',
+          'So before design work starts, check which rules apply to your plot, such as the allowed height and the required distance from the neighbour’s boundary.',
+        ],
+      },
+      {
+        h2: '7. Common mistakes',
+        paragraphs: [
+          'The most common mistake is starting construction without a complete design and deciding things on site. Costs and timelines grow, and some decisions cannot be changed later.',
+          'Another is using a ready-made plan from the internet without adapting it to the plot, the climate and seismic requirements.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can I build from a ready-made house plan?',
+        a: 'Yes, but a ready-made plan has to be adapted to your plot: the terrain, soil, sun orientation and local rules. The structural part should always be checked against site conditions.',
+      },
+      {
+        q: 'Do you help prepare the design?',
+        a: 'Yes. We work from the client’s finished design or help prepare one. With a finished design we first check that it can be built as drawn and what is missing for an accurate cost estimate.',
+      },
+      {
+        q: 'How much does house design cost?',
+        a: 'It depends on the size, complexity and which parts of the project you need. Pricing is individual, so contact us and we will go through the details together.',
+      },
+    ],
+    service: 'residential-construction',
   },
 ];
 
