@@ -29,6 +29,7 @@ export const GUIDE_SLUGS = [
   'roof-repair',
   'facade-cladding',
   'house-design',
+  'old-apartment-renovation',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -724,6 +725,80 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
   },
+  {
+    slug: GUIDE_SLUGS[9],
+    metaTitle: 'ძველი ბინის რემონტი: რა უნდა შეიცვალოს აუცილებლად | BAU BILD',
+    metaDescription:
+      'ძველი ბინის რემონტი თბილისში: ელექტროგაყვანილობა, წყალი და კანალიზაცია, ფანჯრები, იატაკი, კედლები და ვენტილაცია. რა შევცვალოთ პირველ რიგში და რას მივაქციოთ ყურადღება.',
+    h1: 'ძველი ბინის რემონტი: რა უნდა შეიცვალოს აუცილებლად',
+    lead: 'ძველ ბინაში რემონტი მხოლოდ ახალი შპალერი და იატაკი არ არის. ბევრი მნიშვნელოვანი სისტემა კედლებსა და იატაკქვეშაა და სწორედ ისინი მოითხოვს ყველაზე მეტ ყურადღებას. აქ ჩამოვწერეთ, რა უნდა შეამოწმოთ და შეცვალოთ პირველ რიგში.',
+    published: '2026-11-21',
+    sections: [
+      {
+        h2: '1. ელექტროგაყვანილობა',
+        paragraphs: [
+          'ძველ ბინებში ხშირად ძველი, ზოგჯერ ალუმინის სადენებია, რომლებიც თანამედროვე ტექნიკის დატვირთვისთვის არ არის გათვლილი. ეს ხანძრის რისკს ზრდის.',
+          'სრული რემონტის დროს სასურველია გაყვანილობის მთლიანად შეცვლა: ახალი სადენები, ცალკე ხაზები სამზარეულოსა და აბაზანისთვის, დამიწება და თანამედროვე ავტომატური ამომრთველების ფარი.',
+        ],
+      },
+      {
+        h2: '2. წყალი და კანალიზაცია',
+        paragraphs: [
+          'ძველი ლითონის მილები შიგნიდან იჟანგება, წყლის წნევა იკლებს და ჟონვის რისკი იზრდება. ბინის შიდა მილები რემონტის დროს უნდა შეიცვალოს, სანამ კედლები და იატაკი ჯერ ღიაა.',
+          'საერთო დგარები ხშირად მეზობლებთანაა გაზიარებული. მათ შეცვლაზე ჯობს წინასწარ შეთანხმდეთ მეზობლებთან და ბინათმესაკუთრეთა ამხანაგობასთან.',
+        ],
+      },
+      {
+        h2: '3. ფანჯრები და თბოიზოლაცია',
+        paragraphs: [
+          'ძველი ხის ან დაზიანებული ფანჯრებიდან ზამთარში დიდი სითბო იკარგება. ახალი, კარგად დამონტაჟებული ფანჯრები ბინას თბილს და მშვიდს ხდის.',
+          'გარე კედლების შიდა თბოიზოლაცია ზოგჯერ სასარგებლოა, მაგრამ ის სწორად უნდა დაიგეგმოს, რომ კედელში ნესტი და ობი არ გაჩნდეს.',
+        ],
+      },
+      {
+        h2: '4. კედლები და ტიხრები',
+        paragraphs: [
+          'ძველ ბინაში გეგმარების შეცვლა ხშირად სასურველია, მაგრამ ყველა კედლის მოშლა არ შეიძლება. მზიდი კედლის შეცვლა შენობის სიმყარეს ეხება და მხოლოდ სპეციალისტის დასკვნითა და სათანადო შეთანხმებით უნდა მოხდეს.',
+          'არამზიდი ტიხრები შეიძლება მოიხსნას ან ახლით, მაგალითად თაბაშირ-მუყაოთი, შეიცვალოს. ძველი ბათქაში ხშირად აქერცლილია და ჯობს მოიხსნას, ვიდრე ზედ ახალი ფენა დაიდოს.',
+        ],
+      },
+      {
+        h2: '5. იატაკი',
+        paragraphs: [
+          'ძველ ბინებში იატაკი ხშირად არათანაბარია. ახალი საფარის დაგებამდე ფუძე უნდა გასწორდეს მოჭიმვით ან სხვა მეთოდით, რომ ლამინატი, პარკეტი ან ფილა წლების განმავლობაში კარგად იდგეს.',
+          'თუ ძველი ხის იატაკი გაქვთ, შეამოწმეთ ძელების მდგომარეობა: დამპალი ან დაზიანებული ძელები უნდა შეიცვალოს.',
+        ],
+      },
+      {
+        h2: '6. აბაზანა და ვენტილაცია',
+        paragraphs: [
+          'აბაზანის რემონტისას ფილის ქვეშ ჰიდროიზოლაცია აუცილებელია, განსაკუთრებით იატაკზე და შხაპის ზონაში. ასე მეზობელს წყალი არ ჩაუვა.',
+          'ძველ ბინებში ვენტილაციის არხები ხშირად ჩახერგილია. რემონტის დროს შეამოწმეთ ისინი და აბაზანასა და სამზარეულოში დაამატეთ ვენტილატორი, რომ ნესტი არ დაგროვდეს.',
+        ],
+      },
+      {
+        h2: '7. სამუშაოების თანმიმდევრობა',
+        paragraphs: [
+          'ჯერ სრულდება დემონტაჟი, შემდეგ ელექტრობა და სანტექნიკა, ფანჯრები, ბათქაში და მოჭიმვა, ბოლოს კი საბოლოო მოპირკეთება. ამ თანმიმდევრობის დარღვევა ხშირად ახალი სამუშაოს ნგრევას იწვევს.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება ძველი ბინის რემონტი ეტაპობრივად?',
+        a: 'შეიძლება, მაგრამ ელექტროგაყვანილობა და მილები ჯობს ერთიანად შეიცვალოს, სანამ კედლები და იატაკი ღიაა. საბოლოო მოპირკეთება შემდეგ ოთახ-ოთახ შეიძლება გაკეთდეს.',
+      },
+      {
+        q: 'შეიძლება ბინაში კედლის მოშლა?',
+        a: 'არამზიდი ტიხრის მოშლა, როგორც წესი, შესაძლებელია. მზიდ კედელს კი სპეციალისტის დასკვნისა და სათანადო შეთანხმების გარეშე არ უნდა შეეხოთ.',
+      },
+      {
+        q: 'რა ღირს ძველი ბინის რემონტი?',
+        a: 'ფასი ბინის ფართზე, მდგომარეობასა და სამუშაოების მოცულობაზეა დამოკიდებული. ბინის ნახვის შემდეგ გიმზადებთ ხარჯთაღრიცხვას, სადაც სამუშაოები და მასალები ცალ-ცალკეა.',
+      },
+    ],
+    service: 'renovation-interior',
+  },
 ];
 
 const en: Guide[] = [
@@ -1388,6 +1463,80 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[9],
+    metaTitle: 'Old Apartment Renovation in Tbilisi: What to Replace First | BAU BILD',
+    metaDescription:
+      'Renovating an old apartment in Tbilisi: wiring, plumbing, windows, floors, walls and ventilation. What to replace first and what to watch out for.',
+    h1: 'Old Apartment Renovation: What You Should Replace',
+    lead: 'Renovating an old apartment is not just new wallpaper and flooring. Many important systems sit inside the walls and under the floor, and they need the most attention. Here is what to check and replace first.',
+    published: '2026-11-21',
+    sections: [
+      {
+        h2: '1. Electrical wiring',
+        paragraphs: [
+          'Old apartments often have old wiring, sometimes aluminium, that was not designed for the load of modern appliances. This increases the fire risk.',
+          'In a full renovation it is best to replace the wiring completely: new cables, separate circuits for the kitchen and bathroom, earthing, and a modern distribution board with circuit breakers.',
+        ],
+      },
+      {
+        h2: '2. Water and sewage',
+        paragraphs: [
+          'Old metal pipes rust from the inside, water pressure drops and the risk of leaks grows. The pipes inside the apartment should be replaced during the renovation, while walls and floors are still open.',
+          'Shared risers are often connected to neighbours. Before replacing them, it is best to agree with your neighbours and the homeowners’ association.',
+        ],
+      },
+      {
+        h2: '3. Windows and insulation',
+        paragraphs: [
+          'Old wooden or damaged windows lose a lot of heat in winter. New, properly installed windows make the apartment warmer and quieter.',
+          'Insulating external walls from the inside can help, but it has to be planned correctly so that damp and mould do not appear in the wall.',
+        ],
+      },
+      {
+        h2: '4. Walls and partitions',
+        paragraphs: [
+          'Changing the layout of an old apartment is often desirable, but not every wall can go. Altering a load-bearing wall affects the strength of the whole building and should only happen with an engineer’s assessment and the proper approval.',
+          'Non-load-bearing partitions can be removed or replaced, for example with drywall. Old plaster is often flaking and is better removed than covered with a new layer.',
+        ],
+      },
+      {
+        h2: '5. Floors',
+        paragraphs: [
+          'Floors in old apartments are often uneven. Before laying a new floor the base should be levelled with a screed or another method, so laminate, parquet or tiles stay in good shape for years.',
+          'If you have an old timber floor, check the joists: rotten or damaged joists need replacing.',
+        ],
+      },
+      {
+        h2: '6. Bathroom and ventilation',
+        paragraphs: [
+          'When renovating a bathroom, waterproofing under the tiles is essential, especially on the floor and in the shower area. It keeps water from leaking into the neighbour’s ceiling.',
+          'Ventilation ducts in old buildings are often blocked. Check them during the renovation and add extract fans in the bathroom and kitchen so damp does not build up.',
+        ],
+      },
+      {
+        h2: '7. The right order of work',
+        paragraphs: [
+          'Demolition comes first, then electrics and plumbing, windows, plastering and screed, and finally the finishes. Breaking this order often means tearing out new work.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can I renovate an old apartment in stages?',
+        a: 'You can, but wiring and pipes are best replaced in one go while walls and floors are open. Final finishes can then be done room by room.',
+      },
+      {
+        q: 'Can I remove a wall in my apartment?',
+        a: 'Removing a non-load-bearing partition is usually possible. A load-bearing wall should not be touched without an engineer’s assessment and the proper approval.',
+      },
+      {
+        q: 'How much does renovating an old apartment cost?',
+        a: 'It depends on the size, condition and scope of work. After visiting the apartment we prepare a cost estimate with works and materials listed separately.',
+      },
+    ],
+    service: 'renovation-interior',
   },
 ];
 
