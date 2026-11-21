@@ -30,6 +30,7 @@ export const GUIDE_SLUGS = [
   'facade-cladding',
   'house-design',
   'old-apartment-renovation',
+  'roof-leak',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -799,6 +800,76 @@ const ka: Guide[] = [
     ],
     service: 'renovation-interior',
   },
+  {
+    slug: GUIDE_SLUGS[10],
+    metaTitle: 'სახურავი ჟონავს: რა გავაკეთოთ სასწრაფოდ და შემდეგ | BAU BILD',
+    metaDescription:
+      'სახურავი ჟონავს? სასწრაფო ნაბიჯები ზარალის შესამცირებლად, ჟონვის ხშირი მიზეზები და როგორ მოვაგვაროთ პრობლემა სამუდამოდ. რჩევები კერძო სახლისა და ბინისთვის.',
+    h1: 'სახურავი ჟონავს: რა გავაკეთოთ სასწრაფოდ',
+    lead: 'ჭერზე ლაქა ან წვეთი ნიშნავს, რომ წყალი უკვე სახლში შემოდის. სწორი პირველი ნაბიჯები ზარალს ამცირებს, ხოლო მიზეზის პოვნა განმეორებას გვაცილებს. აქ ავხსენით ორივე.',
+    published: '2026-11-21',
+    sections: [
+      {
+        h2: '1. პირველი ნაბიჯები სახლის შიგნით',
+        paragraphs: [
+          'შემოსული წყლის ქვეშ დადგით ვედრო ან ტაშტი და ახლოს მდგარი ავეჯი, ტექნიკა და ხალიჩები გაიტანეთ. იატაკზე დაგებული ქსოვილი ან ფირი ზედაპირს დაიცავს.',
+          'თუ წყალი ჭერის სანათთან ან როზეტთან ჩამოდის, ამ ზონის ელექტროობა ფარიდან გამორთეთ. წყალი და ელექტროობა ერთად საშიშია.',
+          'თუ ჭერი გაბერილია და შიგნით წყალი გროვდება, ის შეიძლება მოულოდნელად ჩამოინგრეს. ამ ადგილის ქვეშ ნუ დადგებით.',
+        ],
+      },
+      {
+        h2: '2. სახურავზე ავიდეთ თუ არა',
+        paragraphs: [
+          'წვიმის, ქარის ან ყინვის დროს სახურავზე ასვლა სახიფათოა. სველი თუნუქი, კრამიტი და მეტალოკრამიტი ძალიან სრიალებს.',
+          'თუ უსაფრთხოდ შეგიძლიათ მიდგომა, მაგალითად სხვენიდან, დროებით დაზიანებული ადგილი წყალგაუმტარი ფირით შეიძლება დაიფაროს. სრული შეკეთება მშრალ ამინდში უნდა გაკეთდეს.',
+        ],
+      },
+      {
+        h2: '3. ჟონვის ხშირი მიზეზები',
+        paragraphs: [
+          'დაზიანებული ან ადგილიდან გადაწეული კრამიტი და ფურცლები, დაჟანგული ან გახვრეტილი თუნუქი, დაზიანებული შესაკრავები.',
+          'მილის, ბუხრის, სავენტილაციო არხის ან სახურავის ფანჯრის გარშემო ცუდად დალუქული კვანძები. ეს ჟონვის ერთ-ერთი ყველაზე ხშირი წყაროა.',
+          'ფოთლებით ჩახერგილი ღარები და წყალსაწრეტი მილები, რის გამოც წყალი სახურავის კიდეზე ბრუნდება. ბრტყელ სახურავზე კი გაცვეთილი ან დახეული ჰიდროიზოლაცია.',
+        ],
+      },
+      {
+        h2: '4. როგორ ვიპოვოთ ჟონვის ადგილი',
+        paragraphs: [
+          'წყალი ხშირად შემოსვლის ადგილიდან შორს ჩამოდის: ის კოჭზე ან ფენებს შორის მიედინება და სულ სხვა ადგილას ჩნდება. ამიტომ ლაქის ზემოთ მხოლოდ ერთი ადგილის შეკეთება ყოველთვის არ შველის.',
+          'შემოწმება სხვენიდან იწყება: სველი ხე, ლაქები და ობი ჟონვის გზას აჩვენებს. შემდეგ სახურავი გარედანაც მოწმდება, განსაკუთრებით კვანძებისა და ღარების ზონაში.',
+        ],
+      },
+      {
+        h2: '5. რემონტი თუ სახურავის შეცვლა',
+        paragraphs: [
+          'თუ დაზიანება ლოკალურია, საკმარისია ცალკეული ელემენტების შეცვლა და კვანძების ხელახლა დალუქვა.',
+          'თუ სახურავი ძველია, ჟონვა სხვადასხვა ადგილას მეორდება ან კონსტრუქცია დამპალია, უფრო გონივრულია საფარის ან მთელი სახურავის შეცვლა. ასეთ დროს ღირს თბოიზოლაციის დამატებაც.',
+        ],
+      },
+      {
+        h2: '6. ჟონვის შემდეგ',
+        paragraphs: [
+          'სველი თბოიზოლაცია და თაბაშირ-მუყაოს ჭერი ხშირად საბოლოოდ ვეღარ შრება და შესაცვლელია. სხვენი და ჭერი კარგად უნდა გაშრეს, რომ ობი არ გაჩნდეს.',
+          'ზამთრამდე ღარებისა და სახურავის წლიური დათვალიერება ჟონვის უმეტეს შემთხვევას თავიდან აგაცილებთ.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება სახურავის შეკეთება ზამთარში?',
+        a: 'სასწრაფო, დროებითი შეკეთება შეიძლება მშრალ დღეს. სრული რემონტი ან შეცვლა, განსაკუთრებით ჰიდროიზოლაციის სამუშაოები, თბილ და მშრალ ამინდში უკეთ სრულდება.',
+      },
+      {
+        q: 'ბინა ბოლო სართულზეა და ჭერი ჟონავს. ვის მივმართო?',
+        a: 'მრავალბინიან სახლში სახურავი, როგორც წესი, საერთო საკუთრებაა, ამიტომ ჯერ ბინათმესაკუთრეთა ამხანაგობას ან მეზობლებს დაელაპარაკეთ. შეკეთებაზე შეთანხმების შემდეგ სამუშაოს შესრულება ჩვენც შეგვიძლია.',
+      },
+      {
+        q: 'რა ღირს ჟონვის აღმოფხვრა?',
+        a: 'ეს დამოკიდებულია მიზეზზე, სახურავის ტიპსა და დაზიანების ზომაზე. ობიექტის ნახვის შემდეგ გეტყვით, რა არის საჭირო, და მოგიმზადებთ ხარჯთაღრიცხვას.',
+      },
+    ],
+    service: 'facade-roofing',
+  },
 ];
 
 const en: Guide[] = [
@@ -1537,6 +1608,76 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+  },
+  {
+    slug: GUIDE_SLUGS[10],
+    metaTitle: 'Roof Leaking? What to Do Right Away and What Comes Next | BAU BILD',
+    metaDescription:
+      'Roof leaking? Emergency steps to limit the damage, the most common causes of roof leaks, and how to fix the problem for good. Advice for houses and top-floor apartments.',
+    h1: 'Roof Leaking: What to Do Right Away',
+    lead: 'A stain or drip on the ceiling means water is already getting inside. The right first steps limit the damage, and finding the cause stops it from happening again. Here we explain both.',
+    published: '2026-11-21',
+    sections: [
+      {
+        h2: '1. First steps inside the house',
+        paragraphs: [
+          'Put a bucket or basin under the water and move furniture, appliances and rugs out of the way. A sheet or plastic film on the floor protects the surface.',
+          'If water is coming through near a ceiling light or fitting, switch that circuit off at the board. Water and electricity together are dangerous.',
+          'If the ceiling is bulging and holding water, it can collapse suddenly. Do not stand underneath it.',
+        ],
+      },
+      {
+        h2: '2. Should you go up on the roof?',
+        paragraphs: [
+          'Climbing onto a roof in rain, wind or frost is dangerous. Wet metal sheets, clay tiles and metal tiles are very slippery.',
+          'If you can reach the damaged spot safely, for example from the attic, you can cover it temporarily with waterproof film. The full repair should be done in dry weather.',
+        ],
+      },
+      {
+        h2: '3. Common causes of roof leaks',
+        paragraphs: [
+          'Damaged or shifted tiles and sheets, rusted or punctured metal roofing, and failed fixings.',
+          'Poorly sealed details around pipes, chimneys, vents or roof windows. These are one of the most common sources of leaks.',
+          'Gutters and downpipes blocked with leaves, which send water back over the roof edge. On flat roofs, worn or torn waterproofing.',
+        ],
+      },
+      {
+        h2: '4. How to find where the water gets in',
+        paragraphs: [
+          'Water often appears far from where it enters: it runs along a rafter or between layers and shows up somewhere else entirely. So repairing just the spot above the stain does not always help.',
+          'The check starts in the attic: wet timber, stains and mould show the water’s path. The roof is then inspected from outside, especially around details and gutters.',
+        ],
+      },
+      {
+        h2: '5. Repair or replace the roof',
+        paragraphs: [
+          'If the damage is local, replacing individual elements and resealing the details is usually enough.',
+          'If the roof is old, leaks keep appearing in different places, or the structure is rotten, replacing the covering or the whole roof is the sensible choice. It is also a good moment to add insulation.',
+        ],
+      },
+      {
+        h2: '6. After the leak',
+        paragraphs: [
+          'Wet insulation and plasterboard ceilings often never fully dry and need replacing. The attic and ceiling must dry out properly so mould does not appear.',
+          'A yearly check of the gutters and roof before winter prevents most leaks.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can a roof be repaired in winter?',
+        a: 'An emergency, temporary repair can be done on a dry day. A full repair or replacement, especially waterproofing work, is best done in warm, dry weather.',
+      },
+      {
+        q: 'My apartment is on the top floor and the ceiling leaks. Who should I contact?',
+        a: 'In an apartment building the roof is usually shared property, so first talk to the homeowners’ association or your neighbours. Once the repair is agreed, we can carry out the work.',
+      },
+      {
+        q: 'How much does fixing a roof leak cost?',
+        a: 'It depends on the cause, the roof type and the extent of the damage. After seeing the roof we tell you what is needed and prepare a cost estimate.',
+      },
+    ],
+    service: 'facade-roofing',
   },
 ];
 
