@@ -273,7 +273,7 @@ const en: ServicePage[] = [
   },
   {
     slug: SERVICE_SLUGS[1],
-    metaTitle: 'Commercial Construction and Fit-Out | BAU BILD',
+    metaTitle: 'Commercial Construction and Fit-Out in Tbilisi | BAU BILD',
     metaDescription:
       'Construction and renovation of pharmacies, shops, offices and petrol stations. On schedule, so your business opens on time.',
     h1: 'Commercial construction and renovation',

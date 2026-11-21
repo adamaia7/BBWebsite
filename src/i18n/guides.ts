@@ -31,6 +31,7 @@ export const GUIDE_SLUGS = [
   'house-design',
   'old-apartment-renovation',
   'roof-leak',
+  'commercial-fit-out',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -870,6 +871,79 @@ const ka: Guide[] = [
     ],
     service: 'facade-roofing',
   },
+  {
+    slug: GUIDE_SLUGS[11],
+    metaTitle: 'ოფისისა და მაღაზიის რემონტი: როგორ დავგეგმოთ კომერციული ფართი | BAU BILD',
+    metaDescription:
+      'კომერციული ფართის რემონტი ეტაპობრივად: ოფისი, მაღაზია, აფთიაქი. გეგმარება, ინჟინერია, მასალები, ბრენდის სტანდარტები და რემონტი ბიზნესის გაუჩერებლად.',
+    h1: 'ოფისისა და მაღაზიის რემონტი: როგორ დავგეგმოთ კომერციული ფართი',
+    lead: 'კომერციულ ფართში რემონტს ორი მთავარი მოთხოვნა აქვს: ობიექტი დროზე უნდა გაიხსნას და ყოველდღიურ დატვირთვას წლების განმავლობაში გაუძლოს. აქ ავხსენით, რა უნდა დაიგეგმოს წინასწარ, რომ ორივე შესრულდეს.',
+    published: '2026-11-21',
+    sections: [
+      {
+        h2: '1. დაიწყეთ ბიზნესის საჭიროებებით',
+        paragraphs: [
+          'ოფისისთვის მთავარია სამუშაო ადგილების რაოდენობა, შეხვედრების ოთახები, ხმის იზოლაცია და კომფორტული განათება. მაღაზიისთვის კი მყიდველის მოძრაობის გზა, ვიტრინა, სალარო და საწყობი.',
+          'ჩამოწერეთ, რამდენი ადამიანი იმუშავებს ფართში, რა ტექნიკა დადგება და რა უნდა იყოს მომხმარებლისთვის ხილული. ეს ჩამონათვალი გეგმარებისა და ხარჯთაღრიცხვის საფუძველია.',
+        ],
+      },
+      {
+        h2: '2. ბრენდის სტანდარტები',
+        paragraphs: [
+          'თუ ფართი ქსელის ნაწილია, ხშირად არსებობს დიზაინის წიგნი ან ტექნიკური მოთხოვნები: ფერები, მასალები, განათება, ავეჯის განლაგება და აბრა.',
+          'ეს მოთხოვნები სამუშაოს დაწყებამდე უნდა გაიაროს მშენებელმა, რომ ფართის რეალურ ზომებსა და ინჟინერიას მოერგოს და მოგვიანებით გადაკეთება არ დასჭირდეს.',
+        ],
+      },
+      {
+        h2: '3. ინჟინერია',
+        paragraphs: [
+          'კომერციულ ფართში ელექტროენერგიის მოხმარება ხშირად ბევრად მეტია, ვიდრე ბინაში: კომპიუტერები, მაცივრები, კონდიციონერები, განათება და სალარო. ამიტომ ჯერ უნდა შემოწმდეს, საკმარისია თუ არა არსებული სიმძლავრე.',
+          'ვენტილაცია და კონდიცირება წინასწარ იგეგმება, ისევე როგორც ინტერნეტისა და სუსტი დენის ქსელები, ვიდეოკამერები და სიგნალიზაცია. ჭერის დახურვის შემდეგ მათი დამატება ბევრად რთულია.',
+        ],
+      },
+      {
+        h2: '4. მასალები, რომლებიც დატვირთვას უძლებს',
+        paragraphs: [
+          'კომერციულ ფართში ყოველდღე ბევრი ადამიანი დადის, ამიტომ იატაკი, კედლები და კარები ბინაზე მეტ დატვირთვას იღებს. ირჩევენ ცვეთამედეგ იატაკს, ადვილად გასაწმენდ საღებავს და მყარ ფურნიტურას.',
+          'მასალის არჩევისას მოვლის სიმარტივეც მნიშვნელოვანია: ზედაპირი, რომელიც სწრაფად სუფთავდება და ადვილად შეკეთდება, დიდხანს ინარჩუნებს კარგ იერსახეს.',
+        ],
+      },
+      {
+        h2: '5. უსაფრთხოება და ხელმისაწვდომობა',
+        paragraphs: [
+          'საჯარო ფართისთვის ხანძარსაწინააღმდეგო მოთხოვნები, ევაკუაციის გზები და ხელმისაწვდომობა შეზღუდული შესაძლებლობის მქონე ადამიანებისთვის განსაკუთრებით მნიშვნელოვანია. კონკრეტული მოთხოვნები ობიექტის ტიპზეა დამოკიდებული, ამიტომ ისინი პროექტის ეტაპზე უნდა გადამოწმდეს.',
+        ],
+      },
+      {
+        h2: '6. რემონტი ბიზნესის გაუჩერებლად',
+        paragraphs: [
+          'თუ ობიექტი უკვე მუშაობს, სამუშაო შეიძლება ეტაპებად დაიყოს ან ღამით და დასვენების დღეებში შესრულდეს. ხმაურიანი და მტვრიანი სამუშაოები სამუშაო საათების გარეთ იგეგმება.',
+          'ასეთ დროს მნიშვნელოვანია სამუშაო ზონის გამოყოფა, ყოველდღიური დალაგება და მკაფიო გრაფიკი, რომელზეც ბიზნესი და მშენებელი წინასწარ თანხმდებიან.',
+        ],
+      },
+      {
+        h2: '7. ჩაბარება გახსნისთვის',
+        paragraphs: [
+          'რემონტის ბოლოს ფართი უნდა ჩაბარდეს სრულად მზა მდგომარეობაში: დალაგებული, შემოწმებული ელექტროობით, ვენტილაციითა და სანტექნიკით, ისე რომ მასში ავეჯი დაიდგას და ობიექტი გაიხსნას.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეგიძლიათ იმუშაოთ ღამით ან შაბათ-კვირას?',
+        a: 'დიახ. თუ ობიექტი მუშაობს და დღისით სამუშაო შეუძლებელია, გრაფიკს ერთად ვადგენთ.',
+      },
+      {
+        q: 'ქსელის რამდენიმე ობიექტზე ერთად მუშაობთ?',
+        a: 'დიახ, შეგვიძლია რამდენიმე ობიექტის პარალელურად აწყობა, სხვადასხვა ქალაქშიც.',
+      },
+      {
+        q: 'რა ღირს ოფისის ან მაღაზიის რემონტი?',
+        a: 'ფასი ფართის ზომაზე, მდგომარეობაზე, ინჟინერიასა და მასალებზეა დამოკიდებული. ობიექტის ნახვის შემდეგ ვამზადებთ ხარჯთაღრიცხვას, სადაც სამუშაოები და მასალები ცალ-ცალკეა.',
+      },
+    ],
+    service: 'commercial-construction',
+  },
 ];
 
 const en: Guide[] = [
@@ -1678,6 +1752,79 @@ const en: Guide[] = [
       },
     ],
     service: 'facade-roofing',
+  },
+  {
+    slug: GUIDE_SLUGS[11],
+    metaTitle: 'Office and Shop Renovation in Tbilisi: Planning a Commercial Fit-Out | BAU BILD',
+    metaDescription:
+      'Commercial fit-out step by step: offices, shops, pharmacies. Layout, building services, durable materials, brand standards and renovating without closing the business.',
+    h1: 'Office and Shop Renovation: How to Plan a Commercial Fit-Out',
+    lead: 'A commercial renovation has two main requirements: the space must open on time, and it must stand up to daily use for years. Here we explain what to plan in advance so both happen.',
+    published: '2026-11-21',
+    sections: [
+      {
+        h2: '1. Start with what the business needs',
+        paragraphs: [
+          'For an office, the key points are the number of workstations, meeting rooms, sound insulation and comfortable lighting. For a shop, it is the customer route, the shopfront, the till and the stockroom.',
+          'Write down how many people will work in the space, what equipment will go in, and what customers should see. This list is the basis for the layout and the cost estimate.',
+        ],
+      },
+      {
+        h2: '2. Brand standards',
+        paragraphs: [
+          'If the space is part of a chain, there is often a design book or technical brief covering colours, materials, lighting, furniture layout and signage.',
+          'The contractor should go through these requirements before work starts, so they fit the real dimensions and services of the space and nothing has to be redone later.',
+        ],
+      },
+      {
+        h2: '3. Building services',
+        paragraphs: [
+          'A commercial space often uses far more power than an apartment: computers, fridges, air conditioning, lighting and tills. So the first check is whether the existing supply is enough.',
+          'Ventilation and air conditioning are planned in advance, as are data and low-voltage networks, CCTV and alarms. Adding them after the ceiling is closed is much harder.',
+        ],
+      },
+      {
+        h2: '4. Materials that stand up to heavy use',
+        paragraphs: [
+          'Many people walk through a commercial space every day, so floors, walls and doors take more wear than at home. Hard-wearing flooring, washable paint and sturdy hardware are the usual choices.',
+          'Ease of maintenance matters too: surfaces that clean quickly and are easy to repair keep looking good for longer.',
+        ],
+      },
+      {
+        h2: '5. Safety and accessibility',
+        paragraphs: [
+          'For a space open to the public, fire safety, escape routes and access for people with disabilities are especially important. The exact requirements depend on the type of premises, so they should be checked at the design stage.',
+        ],
+      },
+      {
+        h2: '6. Renovating without closing the business',
+        paragraphs: [
+          'If the premises are already trading, the work can be split into phases or done at night and at weekends. Noisy and dusty work is scheduled outside opening hours.',
+          'In that case it is important to separate the work area, clean up every day, and agree a clear schedule between the business and the contractor in advance.',
+        ],
+      },
+      {
+        h2: '7. Handover ready for opening',
+        paragraphs: [
+          'At the end, the space should be handed over fully ready: clean, with electrics, ventilation and plumbing tested, so furniture can go in and the business can open.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can you work at night or at weekends?',
+        a: 'Yes. If the premises are open and daytime work is not possible, we agree a schedule together.',
+      },
+      {
+        q: 'Can you fit out several locations of a chain at once?',
+        a: 'Yes, we can fit out several locations in parallel, including in different cities.',
+      },
+      {
+        q: 'How much does an office or shop renovation cost?',
+        a: 'It depends on the size, condition, building services and materials. After visiting the space we prepare a cost estimate with works and materials listed separately.',
+      },
+    ],
+    service: 'commercial-construction',
   },
 ];
 
