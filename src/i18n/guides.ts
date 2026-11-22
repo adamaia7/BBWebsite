@@ -33,6 +33,7 @@ export const GUIDE_SLUGS = [
   'roof-leak',
   'commercial-fit-out',
   'renovation-cost-factors',
+  'energy-efficient-house',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -1020,6 +1021,79 @@ const ka: Guide[] = [
     ],
     service: 'renovation-interior',
   },
+  {
+    slug: GUIDE_SLUGS[13],
+    metaTitle: 'ენერგოეფექტური სახლი: როგორ ავაშენოთ თბილი და ეკონომიური სახლი | BAU BILD',
+    metaDescription:
+      'ენერგოეფექტური სახლი საქართველოში: თბოიზოლაცია, ფანჯრები, ცივი ხიდები, ჰერმეტულობა, ვენტილაცია და გათბობა. როგორ შევამციროთ გათბობისა და გაგრილების ხარჯი.',
+    h1: 'ენერგოეფექტური სახლი: როგორ ავაშენოთ თბილი და ეკონომიური სახლი',
+    lead: 'ენერგოეფექტური სახლი ზამთარში ნაკლებ სითბოს კარგავს, ზაფხულში ნაკლებად ცხელდება და ყოველთვიურ ხარჯს ამცირებს. მთავარი ის არის, რომ ეს გადაწყვეტილებები პროექტის ეტაპზე მიიღოთ, როცა მათი განხორციელება ყველაზე მარტივია.',
+    published: '2026-11-22',
+    sections: [
+      {
+        h2: '1. რას ნიშნავს ენერგოეფექტური სახლი',
+        paragraphs: [
+          'ენერგოეფექტური სახლი კომფორტულ ტემპერატურას ნაკლები ენერგიით ინარჩუნებს. ეს მიიღწევა კარგად იზოლირებული კედლებით, სახურავითა და იატაკით, ხარისხიანი ფანჯრებით, ჰერმეტული შენობით და ეფექტური გათბობა-ვენტილაციით.',
+          'საქართველოში ზამთარი რეგიონების მიხედვით განსხვავებულია, მთაში კი ძალიან ცივია. ამიტომ იზოლაციის დონე ადგილის კლიმატს უნდა მოერგოს.',
+        ],
+      },
+      {
+        h2: '2. თბოიზოლაცია',
+        paragraphs: [
+          'სითბოს ყველაზე დიდი ნაწილი სახურავიდან და კედლებიდან იკარგება. სახურავის ან სხვენის გადახურვის იზოლაცია ხშირად ყველაზე ეფექტური პირველი ნაბიჯია.',
+          'კედლების გარე თბოიზოლაცია, ფასადის სისტემის ნაწილად, კედელს თბილად და მშრალად ინახავს. არ დაგავიწყდეთ იატაკი და საძირკვლის კიდე, განსაკუთრებით თუ სახლს სარდაფი არ აქვს.',
+        ],
+      },
+      {
+        h2: '3. ფანჯრები და კარები',
+        paragraphs: [
+          'ფანჯრები სითბოს დანაკარგის მნიშვნელოვანი წყაროა. ორმაგი ან სამმაგი მინაპაკეტი, კარგი პროფილი და, რაც მთავარია, სწორი მონტაჟი თბოიზოლაციის ფენასთან კავშირში დიდ განსხვავებას ქმნის.',
+          'დიდი ფანჯრები სამხრეთ მხარეს ზამთარში მზის სითბოს იჭერს, ზაფხულში კი გადახურვის ჩრდილი ან ჟალუზი ოთახს ზედმეტ გახურებას აცილებს.',
+        ],
+      },
+      {
+        h2: '4. ცივი ხიდები და ჰერმეტულობა',
+        paragraphs: [
+          'ცივი ხიდი ის ადგილია, სადაც იზოლაცია წყდება: ბეტონის აივნის ფილა, კოჭი ან ფანჯრის კიდე. აქ სითბო სწრაფად გადის, ზედაპირი ცივდება და შეიძლება ნესტი და ობი გაჩნდეს.',
+          'ჰერმეტულობა ნიშნავს, რომ ცივი ჰაერი ნაპრალებიდან არ შემოდის. ამისთვის კვანძები, მილების გასასვლელები და ფანჯრების პერიმეტრი სწორად უნდა დაილუქოს.',
+        ],
+      },
+      {
+        h2: '5. ვენტილაცია',
+        paragraphs: [
+          'ჰერმეტულ სახლს კონტროლირებადი ვენტილაცია სჭირდება, თორემ შიგნით ნესტი და უჰაერობა გროვდება. ყველაზე ეფექტურია ვენტილაცია რეკუპერაციით, რომელიც გამავალი ჰაერის სითბოთი შემომავალ ჰაერს ათბობს.',
+        ],
+      },
+      {
+        h2: '6. გათბობა და განახლებადი ენერგია',
+        paragraphs: [
+          'კარგად იზოლირებულ სახლს გაცილებით მცირე სიმძლავრის გათბობა სჭირდება. იატაკის გათბობა დაბალ ტემპერატურაზე მუშაობს და კარგად ერგება როგორც გაზის ქვაბს, ისე სითბურ ტუმბოს.',
+          'მზის პანელები ან მზის წყალგამაცხელებელი დამატებით ამცირებს ხარჯს. მათთვის ადგილი და სახურავის მიმართულება წინასწარ უნდა გათვალისწინდეს.',
+        ],
+      },
+      {
+        h2: '7. არსებული სახლის გაუმჯობესება',
+        paragraphs: [
+          'უკვე აშენებულ სახლშიც ბევრის გაკეთება შეიძლება: სახურავის და სხვენის იზოლაცია, ფანჯრების შეცვლა, ფასადის თბოიზოლაცია და ნაპრალების დალუქვა. ყველაზე კარგია, ეს სამუშაოები სახურავის ან ფასადის რემონტს დაემთხვეს.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'ღირს თუ არა ენერგოეფექტურობაზე დამატებითი ხარჯი?',
+        a: 'დამატებითი ხარჯი მშენებლობის ეტაპზე ყოველთვიური გათბობისა და გაგრილების ხარჯის შემცირებით ბრუნდება, სახლი კი უფრო კომფორტულია. ყველაზე მომგებიანია იზოლაცია და ფანჯრები, რადგან მათი შემდეგ შეცვლა ძვირი და რთულია.',
+      },
+      {
+        q: 'შეიძლება ძველი სახლის ენერგოეფექტურად გადაკეთება?',
+        a: 'დიახ, ნაწილობრივ მაინც. სახურავის იზოლაცია, ფანჯრების შეცვლა და ფასადის თბოიზოლაცია ყველაზე დიდ შედეგს იძლევა.',
+      },
+      {
+        q: 'მუშაობთ ენერგოეფექტური გადაწყვეტილებებით?',
+        a: 'დიახ. თბოიზოლაციას, ფასადსა და სახურავს მშენებლობის ან რემონტის ფარგლებში ვაკეთებთ და პროექტის ეტაპზე გირჩევთ, სად მოიტანს იზოლაცია ყველაზე მეტ სარგებელს.',
+      },
+    ],
+    service: 'residential-construction',
+  },
 ];
 
 const en: Guide[] = [
@@ -1976,6 +2050,79 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+  },
+  {
+    slug: GUIDE_SLUGS[13],
+    metaTitle: 'Energy-Efficient House in Georgia: Building Warm and Economical | BAU BILD',
+    metaDescription:
+      'Energy-efficient house building in Georgia: insulation, windows, thermal bridges, airtightness, ventilation and heating. How to cut heating and cooling costs.',
+    h1: 'Energy-Efficient House: How to Build Warm and Economical',
+    lead: 'An energy-efficient house loses less heat in winter, stays cooler in summer and lowers monthly bills. The key is to make these decisions at the design stage, when they are easiest to carry out.',
+    published: '2026-11-22',
+    sections: [
+      {
+        h2: '1. What makes a house energy-efficient',
+        paragraphs: [
+          'An energy-efficient house keeps a comfortable temperature with less energy. This comes from well-insulated walls, roof and floor, good windows, an airtight building and efficient heating and ventilation.',
+          'Winters in Georgia vary by region, and in the mountains they are very cold. So the level of insulation should match the local climate.',
+        ],
+      },
+      {
+        h2: '2. Insulation',
+        paragraphs: [
+          'Most heat is lost through the roof and walls. Insulating the roof or attic floor is often the most effective first step.',
+          'External wall insulation, as part of the facade system, keeps walls warm and dry. Do not forget the floor and the edge of the foundation, especially if the house has no basement.',
+        ],
+      },
+      {
+        h2: '3. Windows and doors',
+        paragraphs: [
+          'Windows are a major source of heat loss. Double or triple glazing, a good frame and, above all, correct installation tied into the insulation layer make a big difference.',
+          'Large south-facing windows catch winter sun, while a roof overhang or shutters stop rooms overheating in summer.',
+        ],
+      },
+      {
+        h2: '4. Thermal bridges and airtightness',
+        paragraphs: [
+          'A thermal bridge is where insulation is interrupted: a concrete balcony slab, a beam or the edge of a window. Heat escapes quickly there, the surface gets cold, and damp and mould can appear.',
+          'Airtightness means cold air does not leak in through gaps. For that, junctions, pipe penetrations and window perimeters must be sealed properly.',
+        ],
+      },
+      {
+        h2: '5. Ventilation',
+        paragraphs: [
+          'An airtight house needs controlled ventilation, otherwise damp and stale air build up inside. The most efficient option is heat recovery ventilation, which uses the warmth of outgoing air to heat incoming air.',
+        ],
+      },
+      {
+        h2: '6. Heating and renewable energy',
+        paragraphs: [
+          'A well-insulated house needs far less heating capacity. Underfloor heating works at low temperatures and suits both a gas boiler and a heat pump.',
+          'Solar panels or a solar water heater cut costs further. Space for them and the roof orientation should be planned in advance.',
+        ],
+      },
+      {
+        h2: '7. Improving an existing house',
+        paragraphs: [
+          'A lot can be done in an existing house too: roof and attic insulation, new windows, facade insulation and sealing gaps. It works best when this is combined with roof or facade renovation.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Is the extra cost of energy efficiency worth it?',
+        a: 'The extra cost at the building stage comes back through lower heating and cooling bills, and the house is more comfortable. Insulation and windows pay off most, because replacing them later is expensive and difficult.',
+      },
+      {
+        q: 'Can an old house be made energy-efficient?',
+        a: 'Yes, at least partly. Roof insulation, new windows and facade insulation give the biggest results.',
+      },
+      {
+        q: 'Do you work with energy-efficient solutions?',
+        a: 'Yes. We do insulation, facades and roofs as part of construction or renovation, and at the design stage we advise where insulation will bring the most benefit.',
+      },
+    ],
+    service: 'residential-construction',
   },
 ];
 
