@@ -32,6 +32,7 @@ export const GUIDE_SLUGS = [
   'old-apartment-renovation',
   'roof-leak',
   'commercial-fit-out',
+  'renovation-cost-factors',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -944,6 +945,81 @@ const ka: Guide[] = [
     ],
     service: 'commercial-construction',
   },
+  {
+    slug: GUIDE_SLUGS[12],
+    metaTitle: 'რემონტის ფასი: რა განსაზღვრავს ბინისა და სახლის რემონტის ღირებულებას | BAU BILD',
+    metaDescription:
+      'რაზეა დამოკიდებული რემონტის ფასი: ფართის მდგომარეობა, სამუშაოს მოცულობა, მასალები, ინჟინერია, ვადები და გეგმის ცვლილებები. როგორ მივიღოთ ზუსტი ხარჯთაღრიცხვა.',
+    h1: 'რემონტის ფასი: რა განსაზღვრავს მის ღირებულებას',
+    lead: 'რემონტის ფასზე ყველაზე ხშირად სვამენ კითხვას და მასზე ერთი პასუხი არ არსებობს: ორი ერთნაირი ფართის ბინა შეიძლება სულ სხვადასხვა ხარჯს მოითხოვდეს. აქ ავხსენით, რა ფაქტორები ქმნის საბოლოო ფასს და როგორ მიიღოთ ზუსტი ხარჯთაღრიცხვა.',
+    published: '2026-11-22',
+    sections: [
+      {
+        h2: '1. ფართის საწყისი მდგომარეობა',
+        paragraphs: [
+          'შავ კარკასში ახალი ბინა, თეთრი კარკასი და ძველი, საცხოვრებელი ბინა სამი სრულიად განსხვავებული ამოცანაა. შავ კარკასში ყველაფერი ნულიდან კეთდება, თეთრში ნაწილი უკვე შესრულებულია, ძველ ბინაში კი ჯერ დემონტაჟი და ძველი სისტემების მოხსნაა საჭირო.',
+          'ძველ ბინაში ფასს ზრდის ფარული პრობლემებიც: მრუდე კედლები, არათანაბარი იატაკი, დაზიანებული მილები ან გაყვანილობა, რომლებიც ხშირად მხოლოდ დემონტაჟის შემდეგ ჩანს.',
+        ],
+      },
+      {
+        h2: '2. სამუშაოს მოცულობა',
+        paragraphs: [
+          'კოსმეტიკური რემონტი, რომელიც კედლების შეღებვასა და იატაკის შეცვლას მოიცავს, ბევრად ნაკლებ სამუშაოს ითხოვს, ვიდრე კაპიტალური, სადაც ელექტროობა, სანტექნიკა, ტიხრები და მოჭიმვა იცვლება.',
+          'გეგმარების შეცვლა, ახალი ტიხრები, შეკიდული ჭერი და იატაკის გათბობა სამუშაოს მოცულობას და, შესაბამისად, ფასს ზრდის.',
+        ],
+      },
+      {
+        h2: '3. მასალები',
+        paragraphs: [
+          'ერთი და იგივე სამუშაო სხვადასხვა მასალით სულ სხვა ფასი ჯდება. ფილა, ლამინატი, პარკეტი, სანტექნიკა, კარები და ფანჯრები ფართო არჩევანით იყიდება, ძირითადი განსხვავება კი ხარისხში, ბრენდსა და ხანგამძლეობაშია.',
+          'ძვირი მასალა ყოველთვის საჭირო არ არის, მაგრამ ზედმეტად იაფი ხშირად მალე საჭიროებს შეცვლას. გონივრული ბალანსი ის ადგილებია, სადაც დატვირთვა დიდია: იატაკი, სველი წერტილები და სამზარეულო.',
+        ],
+      },
+      {
+        h2: '4. აბაზანა, სამზარეულო და ინჟინერია',
+        paragraphs: [
+          'აბაზანა და სამზარეულო რემონტის ყველაზე შრომატევადი ნაწილია: აქ ერთად თავს იყრის სანტექნიკა, ელექტროობა, ჰიდროიზოლაცია, ფილა და ტექნიკა.',
+          'რაც უფრო მეტი ელექტრო წერტილი, განათების ხაზი და სანტექნიკური წერტილია, მით მეტია სამუშაოც. ასევე ფასზე მოქმედებს კონდიციონერის, ვენტილაციისა და გათბობის სისტემების მონტაჟი.',
+        ],
+      },
+      {
+        h2: '5. დიზაინი და დეტალები',
+        paragraphs: [
+          'რთული ფორმის ჭერი, ფარული განათება, ნიშები, დეკორატიული ზედაპირები და ინდივიდუალური ავეჯი მეტ დროსა და ოსტატობას მოითხოვს.',
+          'რაც უფრო დეტალურია დიზაინ-პროექტი, მით უფრო ზუსტად შეიძლება ფასის წინასწარ გათვლა.',
+        ],
+      },
+      {
+        h2: '6. ცვლილებები რემონტის დროს',
+        paragraphs: [
+          'რემონტის განმავლობაში გადაწყვეტილების შეცვლა ხარჯის ზრდის ერთ-ერთი მთავარი მიზეზია: უკვე შესრულებული სამუშაოს მოშლა და თავიდან გაკეთება ორმაგ ხარჯს ნიშნავს.',
+          'ამიტომ ღირს, განლაგება, მასალები და ელექტრო წერტილები სამუშაოს დაწყებამდე გადაწყდეს და ხარჯთაღრიცხვაში აისახოს.',
+        ],
+      },
+      {
+        h2: '7. როგორ მივიღოთ ზუსტი ფასი',
+        paragraphs: [
+          'ზუსტი ფასი მხოლოდ ობიექტის ნახვის შემდეგ შეიძლება დადგინდეს. კარგ ხარჯთაღრიცხვაში სამუშაოები და მასალები ცალ-ცალკეა გაწერილი, რაოდენობებით, რომ ნათლად ჩანდეს, რაში იხდით.',
+          'რამდენიმე შეთავაზების შედარებისას ყურადღება მიაქციეთ, ერთსა და იმავე სამუშაოს და მასალას ადარებთ თუ არა. ყველაზე დაბალი ფასი ხშირად იმას ნიშნავს, რომ რაღაც სამუშაო ხარჯთაღრიცხვაში უბრალოდ არ შედის.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რატომ არ წერთ რემონტის ფასს საიტზე?',
+        a: 'იმიტომ, რომ ყოველი ობიექტი განსხვავებულია: მდგომარეობა, სამუშაოს მოცულობა და მასალები ფასს მნიშვნელოვნად ცვლის. საერთო ციფრი შეცდომაში შეგიყვანდათ, ამიტომ ფასს ობიექტის ნახვის შემდეგ ვადგენთ.',
+      },
+      {
+        q: 'შეიძლება რემონტის ფასის შემცირება ხარისხის დაკარგვის გარეშე?',
+        a: 'ხშირად კი: წინასწარ კარგად დაგეგმილი რემონტი, გადაწყვეტილებების ცვლილებების გარეშე, და ძვირი მასალების გამოყენება მხოლოდ იქ, სადაც ეს მართლა საჭიროა, ხარჯს მნიშვნელოვნად ამცირებს.',
+      },
+      {
+        q: 'მასალები ხარჯთაღრიცხვაში შედის?',
+        a: 'როგორც გირჩევნიათ: შეგვიძლია მასალები ჩვენ შევარჩიოთ და შევიძინოთ, ან თქვენ მიერ შერჩეულით ვიმუშაოთ. ორივე შემთხვევაში ხარჯთაღრიცხვაში სამუშაოები და მასალები ცალ-ცალკეა.',
+      },
+    ],
+    service: 'renovation-interior',
+  },
 ];
 
 const en: Guide[] = [
@@ -1825,6 +1901,81 @@ const en: Guide[] = [
       },
     ],
     service: 'commercial-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[12],
+    metaTitle: 'Renovation Cost in Tbilisi: What Determines the Price | BAU BILD',
+    metaDescription:
+      'What drives renovation cost: the starting condition, scope of work, materials, building services, design details and mid-project changes. How to get an accurate estimate.',
+    h1: 'Renovation Cost: What Determines the Price',
+    lead: 'Renovation cost is the question people ask most, and there is no single answer: two apartments of the same size can need very different budgets. Here we explain what makes up the final price and how to get an accurate estimate.',
+    published: '2026-11-22',
+    sections: [
+      {
+        h2: '1. Starting condition of the space',
+        paragraphs: [
+          'A new apartment in shell condition, a white-box apartment and an old lived-in apartment are three very different jobs. In shell condition everything is done from scratch, in white box part of the work is already done, and an old apartment first needs demolition and removal of old systems.',
+          'Hidden problems also raise the cost in older apartments: crooked walls, uneven floors, damaged pipes or wiring, which often only show up after demolition.',
+        ],
+      },
+      {
+        h2: '2. Scope of work',
+        paragraphs: [
+          'A cosmetic renovation, such as painting walls and replacing flooring, involves far less work than a full renovation where electrics, plumbing, partitions and screed are replaced.',
+          'Changing the layout, adding partitions, suspended ceilings or underfloor heating all increase the scope and therefore the price.',
+        ],
+      },
+      {
+        h2: '3. Materials',
+        paragraphs: [
+          'The same work costs very different amounts depending on materials. Tiles, laminate, parquet, sanitary ware, doors and windows come in a wide range, and the main differences are quality, brand and durability.',
+          'Expensive materials are not always necessary, but very cheap ones often need replacing soon. A sensible balance is to spend more where wear is high: floors, bathrooms and the kitchen.',
+        ],
+      },
+      {
+        h2: '4. Bathroom, kitchen and building services',
+        paragraphs: [
+          'The bathroom and kitchen are the most labour-intensive parts of a renovation: plumbing, electrics, waterproofing, tiling and appliances all come together there.',
+          'The more electrical points, lighting circuits and plumbing points there are, the more work is involved. Installing air conditioning, ventilation and heating also affects the price.',
+        ],
+      },
+      {
+        h2: '5. Design and details',
+        paragraphs: [
+          'Complex ceilings, hidden lighting, niches, decorative finishes and custom furniture take more time and skill.',
+          'The more detailed the interior design, the more accurately the price can be calculated in advance.',
+        ],
+      },
+      {
+        h2: '6. Changes during the renovation',
+        paragraphs: [
+          'Changing decisions mid-project is one of the main reasons budgets grow: tearing out finished work and redoing it means paying twice.',
+          'So it is worth settling the layout, materials and electrical points before work starts and reflecting them in the estimate.',
+        ],
+      },
+      {
+        h2: '7. How to get an accurate price',
+        paragraphs: [
+          'An accurate price can only be set after seeing the property. A good estimate lists works and materials separately, with quantities, so it is clear what you are paying for.',
+          'When comparing several quotes, check that you are comparing the same work and materials. The lowest price often means some work is simply missing from the estimate.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Why don’t you list renovation prices on the website?',
+        a: 'Because every property is different: condition, scope and materials change the price significantly. A general figure would be misleading, so we set the price after seeing the property.',
+      },
+      {
+        q: 'Can I lower the renovation cost without losing quality?',
+        a: 'Often yes: careful planning in advance, avoiding mid-project changes, and using premium materials only where they really matter all reduce costs significantly.',
+      },
+      {
+        q: 'Are materials included in the estimate?',
+        a: 'As you prefer: we can choose and buy the materials, or work with ones you have chosen. Either way, the estimate lists works and materials separately.',
+      },
+    ],
+    service: 'renovation-interior',
   },
 ];
 

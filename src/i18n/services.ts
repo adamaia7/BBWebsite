@@ -121,7 +121,7 @@ const ka: ServicePage[] = [
   },
   {
     slug: SERVICE_SLUGS[2],
-    metaTitle: 'სკოლისა და საბავშვო ბაღის მშენებლობა და რემონტი | BAU BILD',
+    metaTitle: 'სკოლისა და საბავშვო ბაღის მშენებლობა და რემონტი საქართველოში | BAU BILD',
     metaDescription:
       'სკოლების და საბავშვო ბაღების მშენებლობა და რემონტი უსაფრთხოების მოთხოვნების დაცვით. სამუშაოს ვგეგმავთ ისე, რომ სასწავლო წლის დაწყებას დაემთხვეს.',
     h1: 'სკოლებისა და საბავშვო ბაღების მშენებლობა',
@@ -304,7 +304,7 @@ const en: ServicePage[] = [
   },
   {
     slug: SERVICE_SLUGS[2],
-    metaTitle: 'School and Kindergarten Construction and Renovation | BAU BILD',
+    metaTitle: 'School and Kindergarten Construction and Renovation in Georgia | BAU BILD',
     metaDescription:
       'Construction and renovation of schools and kindergartens to safety requirements. Planned around the start of the school year.',
     h1: 'School and kindergarten construction',
