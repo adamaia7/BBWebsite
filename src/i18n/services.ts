@@ -124,7 +124,7 @@ const ka: ServicePage[] = [
     metaTitle: 'სკოლისა და საბავშვო ბაღის მშენებლობა და რემონტი საქართველოში | BAU BILD',
     metaDescription:
       'სკოლების და საბავშვო ბაღების მშენებლობა და რემონტი უსაფრთხოების მოთხოვნების დაცვით. სამუშაოს ვგეგმავთ ისე, რომ სასწავლო წლის დაწყებას დაემთხვეს.',
-    h1: 'სკოლებისა და საბავშვო ბაღების მშენებლობა',
+    h1: 'სკოლებისა და საბავშვო ბაღების მშენებლობა და რემონტი',
     lead: 'ვაშენებთ და ვარემონტებთ სკოლებსა და საბავშვო ბაღებს. ბავშვებისთვის განკუთვნილ შენობაში უსაფრთხოება და ხარისხი პირველ ადგილზეა.',
     body: [
       'საგანმანათლებლო ობიექტს განსაკუთრებული მოთხოვნები აქვს: უსაფრთხო მასალები, სწორი განათება და ვენტილაცია, ხელმისაწვდომობა და ხანძარსაწინააღმდეგო ნორმები. ამ ყველაფერს პროექტის ეტაპიდანვე ვითვალისწინებთ.',
@@ -307,7 +307,7 @@ const en: ServicePage[] = [
     metaTitle: 'School and Kindergarten Construction and Renovation in Georgia | BAU BILD',
     metaDescription:
       'Construction and renovation of schools and kindergartens to safety requirements. Planned around the start of the school year.',
-    h1: 'School and kindergarten construction',
+    h1: 'School and kindergarten construction and renovation',
     lead: 'We build and renovate schools and kindergartens. In a building for children, safety and quality come first.',
     body: [
       'Educational buildings have special requirements: safe materials, proper lighting and ventilation, accessibility and fire safety. We account for all of this from the design stage.',

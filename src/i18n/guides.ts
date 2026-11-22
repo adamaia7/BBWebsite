@@ -34,6 +34,7 @@ export const GUIDE_SLUGS = [
   'commercial-fit-out',
   'renovation-cost-factors',
   'energy-efficient-house',
+  'construction-renovation-rustavi',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -1094,6 +1095,68 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
   },
+  {
+    slug: GUIDE_SLUGS[14],
+    metaTitle: 'მშენებლობა და რემონტი რუსთავში: ბინები და კერძო სახლები | BAU BILD',
+    metaDescription:
+      'ბინის რემონტი და სახლის მშენებლობა რუსთავში: საბჭოთა პერიოდის კორპუსები, ახალი კორპუსები შავ და თეთრ კარკასში, კერძო სახლები. რას მივაქციოთ ყურადღება და როგორ დავგეგმოთ სამუშაო.',
+    h1: 'მშენებლობა და რემონტი რუსთავში',
+    lead: 'რუსთავი თბილისის მახლობლად მდებარე დიდი ქალაქია, სადაც ერთმანეთის გვერდით დგას საბჭოთა პერიოდის კორპუსები, ახალი საცხოვრებელი კომპლექსები და კერძო სახლები. თითოეულ მათგანს რემონტისა და მშენებლობის საკუთარი თავისებურებები აქვს. აქ ავხსენით, რას უნდა მიაქციოთ ყურადღება.',
+    published: '2026-11-22',
+    sections: [
+      {
+        h2: '1. ძველი კორპუსების ბინები',
+        paragraphs: [
+          'რუსთავის საცხოვრებელი ფონდის დიდი ნაწილი საბჭოთა პერიოდშია აშენებული. ასეთ ბინებში რემონტისას ხშირად შესაცვლელია ძველი ელექტროგაყვანილობა, წყლისა და კანალიზაციის მილები და ფანჯრები.',
+          'პანელურ და ბლოკის კორპუსებში ბევრი კედელი მზიდია. გეგმარების შეცვლამდე აუცილებელია იმის დადგენა, რომელი კედლის მოშლა შეიძლება და რომლის არა.',
+          'ბოლო სართულებზე ხშირი პრობლემაა ბრტყელი სახურავის ჟონვა, ხოლო კუთხის ბინებში ცივი და ნესტიანი კედლები. ამ შემთხვევაში რემონტი ჰიდროიზოლაციითა და თბოიზოლაციით უნდა დაიწყოს.',
+        ],
+      },
+      {
+        h2: '2. ახალი კორპუსები შავ და თეთრ კარკასში',
+        paragraphs: [
+          'ბოლო წლებში რუსთავში ბევრი ახალი საცხოვრებელი კორპუსი აშენდა, ბინები კი ხშირად შავ ან თეთრ კარკასში იყიდება. ასეთი ბინის მოყვანა მზა მდგომარეობამდე სრულ ციკლს მოიცავს: ტიხრებს, ელექტროობას, სანტექნიკას, მოჭიმვას, კედლებს და მოპირკეთებას.',
+          'ამ დროს უფრო ადვილია გეგმარების თავიდანვე სწორად დაგეგმვა და ყველა სისტემის ახლით ჩადება.',
+        ],
+      },
+      {
+        h2: '3. კერძო სახლები ქალაქსა და მის გარშემო',
+        paragraphs: [
+          'რუსთავში და მის მიმდებარე სოფლებში ბევრი კერძო სახლი შენდება. აქ რელიეფი ძირითადად ბრტყელია, რაც მშენებლობას ამარტივებს, თუმცა საძირკვლის სწორად შესარჩევად გრუნტის შემოწმება მაინც საჭიროა.',
+          'საქართველოს სხვა რეგიონების მსგავსად, სახლის კონსტრუქცია სეისმური მოთხოვნების გათვალისწინებით უნდა დაპროექტდეს.',
+        ],
+      },
+      {
+        h2: '4. კლიმატი და მასალები',
+        paragraphs: [
+          'რუსთავში ზაფხული ცხელი და მშრალია, ამიტომ სახურავისა და კედლების თბოიზოლაცია მხოლოდ ზამთრისთვის კი არა, ზაფხულის სიცხისგანაც იცავს სახლს.',
+          'ფასადისა და სახურავის მასალა უნდა იყოს მზისა და ტემპერატურის ცვლილებისადმი მდგრადი. ღია ფერის ზედაპირები ნაკლებად ცხელდება.',
+        ],
+      },
+      {
+        h2: '5. როგორ დავიწყოთ',
+        paragraphs: [
+          'პირველი ნაბიჯი ობიექტის ნახვაა: ვაფასებთ ბინის ან ნაკვეთის მდგომარეობას, ვთანხმდებით, რა გსურთ, და ვამზადებთ ხარჯთაღრიცხვას, სადაც სამუშაოები და მასალები ცალ-ცალკეა.',
+          'რუსთავში ისევე ვმუშაობთ, როგორც თბილისში: ერთი გუნდი ასრულებს ყველა სამუშაოს და ერთი პასუხისმგებელი პირი გიყვებათ პროცესის განმავლობაში.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'მუშაობთ რუსთავში?',
+        a: 'დიახ. ვმუშაობთ თბილისში, რუსთავში და მთელ საქართველოში: ვაკეთებთ ბინების რემონტს, კერძო სახლების მშენებლობას და კომერციულ ობიექტებს.',
+      },
+      {
+        q: 'შეიძლება ძველი კორპუსის ბინაში გეგმარების შეცვლა?',
+        a: 'ხშირად კი, მაგრამ მხოლოდ არამზიდი კედლების ფარგლებში. მზიდ კედელს სპეციალისტის დასკვნისა და სათანადო შეთანხმების გარეშე არ ვეხებით.',
+      },
+      {
+        q: 'რა ღირს რემონტი რუსთავში?',
+        a: 'ფასი ბინის ან სახლის მდგომარეობაზე, სამუშაოს მოცულობასა და მასალებზეა დამოკიდებული. ობიექტის ნახვის შემდეგ ვამზადებთ ხარჯთაღრიცხვას.',
+      },
+    ],
+    service: 'renovation-interior',
+  },
 ];
 
 const en: Guide[] = [
@@ -2123,6 +2186,68 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[14],
+    metaTitle: 'Construction and Renovation in Rustavi: Apartments and Houses | BAU BILD',
+    metaDescription:
+      'Apartment renovation and house building in Rustavi: Soviet-era blocks, new builds in shell and white-box condition, and private houses. What to watch for and how to plan the work.',
+    h1: 'Construction and Renovation in Rustavi',
+    lead: 'Rustavi is a large city near Tbilisi where Soviet-era apartment blocks, new residential complexes and private houses stand side by side. Each has its own renovation and building specifics. Here is what to pay attention to.',
+    published: '2026-11-22',
+    sections: [
+      {
+        h2: '1. Apartments in older blocks',
+        paragraphs: [
+          'Much of Rustavi’s housing was built in the Soviet period. Renovating these apartments often means replacing old wiring, water and sewage pipes, and windows.',
+          'In panel and block buildings many walls are load-bearing. Before changing the layout, you need to establish which walls can be removed and which cannot.',
+          'Top-floor apartments often suffer from flat-roof leaks, and corner apartments from cold, damp walls. In these cases the renovation should start with waterproofing and insulation.',
+        ],
+      },
+      {
+        h2: '2. New builds in shell and white-box condition',
+        paragraphs: [
+          'Many new residential buildings have gone up in Rustavi in recent years, and apartments are often sold in shell or white-box condition. Bringing them to a finished state is a full cycle: partitions, electrics, plumbing, screed, walls and finishes.',
+          'In this case it is easier to plan the layout properly from the start and install all systems new.',
+        ],
+      },
+      {
+        h2: '3. Private houses in and around the city',
+        paragraphs: [
+          'Many private houses are built in Rustavi and the surrounding villages. The terrain here is mostly flat, which makes building easier, but the soil should still be checked to choose the right foundation.',
+          'As elsewhere in Georgia, the structure has to be designed with seismic requirements in mind.',
+        ],
+      },
+      {
+        h2: '4. Climate and materials',
+        paragraphs: [
+          'Summers in Rustavi are hot and dry, so roof and wall insulation protects the house from summer heat as well as winter cold.',
+          'Facade and roofing materials should withstand sun and temperature swings. Light-coloured surfaces heat up less.',
+        ],
+      },
+      {
+        h2: '5. How to start',
+        paragraphs: [
+          'The first step is a site visit: we assess the apartment or plot, agree on what you want, and prepare a cost estimate with works and materials listed separately.',
+          'We work in Rustavi the same way as in Tbilisi: one team does all the work and one responsible person stays with you throughout.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Do you work in Rustavi?',
+        a: 'Yes. We work in Tbilisi, Rustavi and across Georgia: apartment renovation, private house construction and commercial projects.',
+      },
+      {
+        q: 'Can I change the layout of an apartment in an older block?',
+        a: 'Often yes, but only within non-load-bearing walls. We do not touch load-bearing walls without an engineer’s assessment and the proper approval.',
+      },
+      {
+        q: 'How much does renovation in Rustavi cost?',
+        a: 'It depends on the condition of the property, the scope of work and the materials. After a site visit we prepare a cost estimate.',
+      },
+    ],
+    service: 'renovation-interior',
   },
 ];
 
