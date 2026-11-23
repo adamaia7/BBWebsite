@@ -36,6 +36,7 @@ export const GUIDE_SLUGS = [
   'energy-efficient-house',
   'construction-renovation-rustavi',
   'building-in-georgia-foreigner',
+  'building-permit-tbilisi',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -1233,6 +1234,85 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
   },
+  {
+    slug: GUIDE_SLUGS[16],
+    metaTitle: 'მშენებლობის ნებართვა თბილისში: დოკუმენტები და ნაბიჯები | BAU BILD',
+    metaDescription:
+      'როგორ მივიღოთ მშენებლობის ნებართვა თბილისში: ნაკვეთის სტატუსის შემოწმება, განაშენიანების პირობები, პროექტი, განაცხადი მერიაში, მშენებლობა და ექსპლუატაციაში მიღება.',
+    h1: 'მშენებლობის ნებართვა თბილისში: დოკუმენტები და ნაბიჯები',
+    lead: 'სახლის ან სხვა შენობის აშენებამდე უნდა გაირკვეს, რა ნებართვა სჭირდება და როგორ მიიღება. აქ ზოგადად ავხსენით პროცესის ეტაპები და ის, რაც წინასწარ უნდა მოამზადოთ. ზუსტი მოთხოვნები, ვადები და მოსაკრებლები მოქმედი კანონმდებლობით და თბილისის მერიაში უნდა გადაამოწმოთ.',
+    published: '2026-11-23',
+    sections: [
+      {
+        h2: '1. სჭირდება თუ არა თქვენს მშენებლობას ნებართვა',
+        paragraphs: [
+          'საქართველოში შენობები რისკისა და მასშტაბის მიხედვით კლასებად იყოფა. რაც უფრო დიდი და რთულია შენობა, მით მეტი დოკუმენტი და შემოწმებაა საჭირო. ზოგიერთ მცირე, დაბალი რისკის ნაგებობას ნებართვა საერთოდ არ სჭირდება.',
+          'კერძო საცხოვრებელ სახლს, მრავალბინიან შენობას, მიშენებას ან სართულის დაშენებას, როგორც წესი, ნებართვა სჭირდება. თქვენი შემთხვევა რომელ კლასს მიეკუთვნება, ეს პროექტის დაწყებამდე დააზუსტეთ არქიტექტორთან ან მერიაში.',
+        ],
+      },
+      {
+        h2: '2. ნაკვეთის დოკუმენტები და სტატუსი',
+        paragraphs: [
+          'ყველაფერი საჯარო რეესტრის ამონაწერით იწყება: ვის საკუთრებაშია ნაკვეთი, რა ფართობი და საზღვრები აქვს და რა დანიშნულებისაა. თუ საზღვრები ზუსტად არ არის აზომილი, ჯერ აზომვითი ნახაზი უნდა მომზადდეს.',
+          'შეამოწმეთ, რა ზონაშია ნაკვეთი და რა წესები მოქმედებს მასზე. ზონა განსაზღვრავს, რისი აშენება შეიძლება, რამდენი სართულის და ნაკვეთის რა ნაწილზე. თუ მიწის დანიშნულება მშენებლობას არ ემთხვევა, მისი შეცვლა ცალკე პროცედურაა.',
+        ],
+      },
+      {
+        h2: '3. განაშენიანების პირობები',
+        paragraphs: [
+          'ბევრ შემთხვევაში პროექტირებამდე მერიიდან ნაკვეთის განაშენიანების პირობები უნდა მიიღოთ. ეს არის დოკუმენტი, რომელიც ადგენს შენობის დასაშვებ პარამეტრებს: სიმაღლეს, განაშენიანების ფართობს, დაშორებებს საზღვრებიდან და სხვა მოთხოვნებს.',
+          'ამ პირობებზე დაყრდნობით ხდება შემდეგ არქიტექტურული პროექტი. ამიტომ ჯობს, პროექტზე მუშაობა მათი მიღების შემდეგ დაიწყოს, რომ ხელახლა გადაკეთება არ დაგჭირდეთ.',
+        ],
+      },
+      {
+        h2: '4. არქიტექტურული და კონსტრუქციული პროექტი',
+        paragraphs: [
+          'ნებართვის განაცხადს თან ერთვის პროექტი: გეგმები, ფასადები, ჭრილები და სიტუაციური გეგმა. შენობის კლასის მიხედვით შეიძლება საჭირო გახდეს კონსტრუქციული ნაწილი, გრუნტის კვლევა და სხვა საინჟინრო დოკუმენტები.',
+          'საქართველოში კონსტრუქციული გაანგარიშება სეისმურ მოთხოვნებს უნდა ითვალისწინებდეს. პროექტი კვალიფიციურმა სპეციალისტებმა უნდა მოამზადონ, რადგან სწორედ მას ამოწმებს მერია და სწორედ მისით ხელმძღვანელობს მშენებელი.',
+          'დაპროექტების ეტაპზე რა უნდა გაითვალისწინოთ, დაწვრილებით ცალკე სტატიაში აღვწერეთ: სახლის დაპროექტება.',
+        ],
+      },
+      {
+        h2: '5. განაცხადი და ნებართვის მიღება',
+        paragraphs: [
+          'თბილისში ნებართვის განაცხადს განიხილავს ქალაქის მერიის შესაბამისი სამსახური. განაცხადს ერთვის საკუთრების დოკუმენტი, პროექტი და კანონით მოთხოვნილი სხვა საბუთები.',
+          'თუ შენიშვნები გამოითქვა, პროექტი უნდა შესწორდეს და ხელახლა წარედგინოს. ნებართვის მიღებამდე მშენებლობის დაწყება არ შეიძლება: ამას შეიძლება მოჰყვეს ჯარიმა და სამუშაოების შეჩერება.',
+        ],
+      },
+      {
+        h2: '6. მშენებლობა და ექსპლუატაციაში მიღება',
+        paragraphs: [
+          'მშენებლობა დამტკიცებული პროექტის მიხედვით უნდა წარიმართოს. თუ სამუშაოს დროს პროექტის შეცვლა გახდა საჭირო, ცვლილება შეიძლება ცალკე შეთანხმებას საჭიროებდეს.',
+          'დასრულების შემდეგ შენობა ექსპლუატაციაში უნდა მიიღოს. ამის მერე შესაძლებელია შენობის საჯარო რეესტრში რეგისტრაცია, რაც მომავალში გაყიდვისთვის, იპოთეკისთვის ან მემკვიდრეობისთვის მნიშვნელოვანია.',
+        ],
+      },
+      {
+        h2: '7. რით შეგვიძლია დაგეხმაროთ',
+        paragraphs: [
+          'BAU BILD გეხმარებათ ნაკვეთის შეფასებაში, დაპროექტებასა და ხარჯთაღრიცხვაში და მშენებლობას დამტკიცებული პროექტის მიხედვით აწარმოებს. ნებართვასთან დაკავშირებულ კონკრეტულ საკითხებზე კი ჯობს, მერიას ან იურისტს მიმართოთ.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'სჭირდება თუ არა კერძო სახლის აშენებას ნებართვა?',
+        a: 'როგორც წესი, სჭირდება. ზოგიერთ მცირე, დაბალი რისკის ნაგებობას ნებართვა არ სჭირდება, მაგრამ თქვენი შემთხვევა პროექტის დაწყებამდე დააზუსტეთ მერიაში ან არქიტექტორთან.',
+      },
+      {
+        q: 'რა დოკუმენტებით უნდა დავიწყო?',
+        a: 'საჯარო რეესტრის ამონაწერით და ნაკვეთის აზომვითი ნახაზით. ამის შემდეგ საჭიროა განაშენიანების პირობები და პროექტი. ზუსტი ჩამონათვალი შენობის კლასზეა დამოკიდებული.',
+      },
+      {
+        q: 'შეიძლება თუ არა მშენებლობის დაწყება ნებართვამდე?',
+        a: 'არა. ნებართვის გარეშე მშენებლობას შეიძლება მოჰყვეს ჯარიმა, სამუშაოების შეჩერება და შენობის რეგისტრაციის პრობლემები.',
+      },
+      {
+        q: 'ვინ ამზადებს ნებართვისთვის საჭირო პროექტს?',
+        a: 'არქიტექტორი და კონსტრუქტორი. პროექტი უნდა ითვალისწინებდეს განაშენიანების პირობებს და სეისმურ მოთხოვნებს.',
+      },
+    ],
+    service: 'residential-construction',
+  },
 ];
 
 const en: Guide[] = [
@@ -1332,10 +1412,10 @@ const en: Guide[] = [
   },
   {
     slug: GUIDE_SLUGS[1],
-    metaTitle: 'Apartment Renovation in Tbilisi: What to Know Before You Start | BAU BILD',
+    metaTitle: 'Apartment Renovation in Tbilisi: Planning and Order of Works | BAU BILD',
     metaDescription:
-      'Planning an apartment renovation step by step: design, estimate, the order of works, neighbours and the building association, and handover.',
-    h1: 'Apartment renovation: what to know before you start',
+      'Planning an apartment renovation in Tbilisi step by step: interior design and layout, the estimate, the order of works, neighbours and the building association, and handover.',
+    h1: 'Apartment renovation in Tbilisi: what to know before you start',
     lead: 'Most of the time and money lost on a renovation is lost where nothing was planned in advance. Here is what to decide up front and the order the work follows.',
     published: '2026-11-02',
     sections: [
@@ -1392,6 +1472,14 @@ const en: Guide[] = [
       {
         q: 'Who buys the materials?',
         a: 'Either way works. What matters is that it is written into the contract in advance to avoid misunderstandings.',
+      },
+      {
+        q: 'Do I need a design before the renovation starts?',
+        a: 'A full interior design is not always necessary, but at minimum you need a drawing with the layout, sockets, lighting, bathrooms and furniture. Deciding this before work starts avoids redoing finished surfaces.',
+      },
+      {
+        q: 'Can I remove a wall in my apartment?',
+        a: 'Only after checking whether it is load-bearing. A load-bearing wall must not be changed without an engineer\'s assessment and the required approval.',
       },
       {
         q: 'Does one team handle both the renovation and the interior?',
@@ -2388,6 +2476,85 @@ const en: Guide[] = [
       {
         q: 'What do you need to prepare an estimate if I am abroad?',
         a: 'To start, the plot documents, photos or video, and a design if you have one are enough. The exact estimate is prepared after seeing the site in person.',
+      },
+    ],
+    service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[16],
+    metaTitle: 'Building Permit in Tbilisi: Documents and Steps | BAU BILD',
+    metaDescription:
+      'How to get a building permit in Tbilisi: checking the plot status, development conditions, the design, applying to City Hall, construction and commissioning.',
+    h1: 'Building permit in Tbilisi: documents and steps',
+    lead: 'Before building a house or any other structure, you need to know which permit it requires and how to get it. This guide gives a general overview of the stages and what to prepare in advance. Check exact requirements, timelines and fees against current legislation and with Tbilisi City Hall.',
+    published: '2026-11-23',
+    sections: [
+      {
+        h2: '1. Does your project need a permit?',
+        paragraphs: [
+          'In Georgia, buildings are grouped into classes by risk and scale. The larger and more complex the building, the more documents and checks are needed. Some small, low-risk structures need no permit at all.',
+          'A private house, an apartment building, an extension or an added storey usually does need a permit. Confirm which class your project falls into with an architect or City Hall before design work starts.',
+        ],
+      },
+      {
+        h2: '2. Plot documents and status',
+        paragraphs: [
+          'Everything starts with an extract from the Public Registry: who owns the plot, its area and boundaries, and its designated use. If the boundaries have not been surveyed precisely, a survey drawing has to be prepared first.',
+          'Check which zone the plot is in and which rules apply to it. The zone determines what can be built, how many storeys and on what share of the plot. If the land use does not allow construction, changing it is a separate procedure.',
+        ],
+      },
+      {
+        h2: '3. Development conditions',
+        paragraphs: [
+          'In many cases, before design starts, you need to obtain the development conditions for the plot from City Hall. This document sets the allowed parameters of the building: height, footprint, setbacks from the boundaries and other requirements.',
+          'The architectural design is then based on these conditions, so it is best to start the design after receiving them to avoid rework.',
+        ],
+      },
+      {
+        h2: '4. Architectural and structural design',
+        paragraphs: [
+          'The permit application includes the design: plans, elevations, sections and a site plan. Depending on the building class, a structural section, a soil investigation and other engineering documents may be required.',
+          'In Georgia, structural calculations must account for seismic requirements. The design should be prepared by qualified specialists, because it is what City Hall reviews and what the builder follows.',
+          'We cover what to consider at the design stage in a separate guide: house design.',
+        ],
+      },
+      {
+        h2: '5. Applying and receiving the permit',
+        paragraphs: [
+          'In Tbilisi, permit applications are reviewed by the relevant City Hall service. The application includes the ownership document, the design and other documents required by law.',
+          'If comments are raised, the design has to be corrected and resubmitted. Construction must not start before the permit is issued: doing so can lead to fines and a stop-work order.',
+        ],
+      },
+      {
+        h2: '6. Construction and commissioning',
+        paragraphs: [
+          'Construction must follow the approved design. If the design needs to change during the works, the change may need separate approval.',
+          'Once finished, the building has to be commissioned. After that it can be registered in the Public Registry, which matters later for selling, a mortgage or inheritance.',
+        ],
+      },
+      {
+        h2: '7. How we can help',
+        paragraphs: [
+          'BAU BILD helps with assessing the plot, design and cost estimates, and builds according to the approved design. For specific permit questions, it is best to contact City Hall or a lawyer.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Does building a private house need a permit?',
+        a: 'Usually yes. Some small, low-risk structures do not need one, but confirm your case with City Hall or an architect before design starts.',
+      },
+      {
+        q: 'Which documents do I start with?',
+        a: 'A Public Registry extract and a survey drawing of the plot. After that you need the development conditions and the design. The exact list depends on the building class.',
+      },
+      {
+        q: 'Can construction start before the permit?',
+        a: 'No. Building without a permit can lead to fines, a stop-work order and problems registering the building.',
+      },
+      {
+        q: 'Who prepares the design needed for the permit?',
+        a: 'An architect and a structural engineer. The design must follow the development conditions and seismic requirements.',
       },
     ],
     service: 'residential-construction',
