@@ -135,13 +135,18 @@ const extraLd = [
   }
   .crumbs {
     display: flex;
+    align-items: center;
     gap: 8px;
     font-size: 14px;
     color: var(--light-muted);
-    margin-bottom: 28px;
+    margin-bottom: 16px;
   }
   .crumbs a {
     color: inherit;
+    /* ტელეფონზე თითით მოსახერხებელი ზომა */
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
   .g-hero__title {
     font-size: 30px;
