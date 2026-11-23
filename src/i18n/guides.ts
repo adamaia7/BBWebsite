@@ -35,6 +35,7 @@ export const GUIDE_SLUGS = [
   'renovation-cost-factors',
   'energy-efficient-house',
   'construction-renovation-rustavi',
+  'building-in-georgia-foreigner',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -70,9 +71,9 @@ export const guideUi: Record<Lang, { eyebrow: string; title: string; metaTitle: 
 const ka: Guide[] = [
   {
     slug: GUIDE_SLUGS[0],
-    metaTitle: 'სახლის მშენებლობის ეტაპები: პროექტიდან გასაღებამდე | BAU BILD',
+    metaTitle: 'სახლის მშენებლობის ეტაპები: დაპროექტებიდან გასაღებამდე | BAU BILD',
     metaDescription:
-      'სახლის მშენებლობის ეტაპები თანმიმდევრობით: ნაკვეთი და დოკუმენტები, პროექტი, ნებართვა, საძირკველი, შავი, თეთრი და მწვანე კარკასი, ჩაბარება.',
+      'სახლის მშენებლობის ეტაპები თანმიმდევრობით: ნაკვეთი, სახლის დაპროექტება, ხარჯთაღრიცხვა, ნებართვა, საძირკველი, შავი, თეთრი და მწვანე კარკასი, ჩაბარება.',
     h1: 'სახლის მშენებლობის ეტაპები: პროექტიდან გასაღების ჩაბარებამდე',
     lead: 'კერძო სახლის აშენება გრძელი პროცესია, მაგრამ ყოველთვის ერთი და იგივე თანმიმდევრობით მიდის. აქ ყველა ეტაპს მოკლედ ავხსნით, რომ იცოდეთ, რა გელით და რა უნდა მოამზადოთ წინასწარ.',
     published: '2026-10-26',
@@ -158,6 +159,14 @@ const ka: Guide[] = [
       {
         q: 'შეგიძლიათ ყველა ეტაპი ერთმა გუნდმა გააკეთოს?',
         a: 'დიახ. BAU BILD სახლს საძირკვლიდან გასაღების ჩაბარებამდე აშენებს და მთელი პროცესის განმავლობაში ერთი პასუხისმგებელი პირი გყავთ.',
+      },
+      {
+        q: 'რით იწყება სახლის დაპროექტება?',
+        a: 'საჭიროებების ჩამოწერით და ნაკვეთის მონაცემებით: რელიეფი, მზის მიმართულება, მისასვლელი გზა და კომუნიკაციები. შემდეგ მზადდება ესკიზი, არქიტექტურული და კონსტრუქციული ნაწილი და საინჟინრო ქსელების სქემები.',
+      },
+      {
+        q: 'როდის მზადდება სახლის მშენებლობის ხარჯთაღრიცხვა?',
+        a: 'ზუსტი ხარჯთაღრიცხვა პროექტის შემდეგ მზადდება, როცა ცნობილია სახლის ზომები, კონსტრუქცია და მასალები. მასში სამუშაოები და მასალები ეტაპების მიხედვით ცალ-ცალკეა გაწერილი.',
       },
     ],
     service: 'residential-construction',
@@ -1156,6 +1165,73 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+  },
+  {
+    slug: GUIDE_SLUGS[15],
+    metaTitle: 'სახლის აშენება საქართველოში უცხოელისთვის: სრული გზამკვლევი | BAU BILD',
+    metaDescription:
+      'როგორ ააშენოს სახლი საქართველოში უცხოელმა: ნაკვეთის შერჩევა და შემოწმება, დისტანციური მართვა, პროექტი, ხარჯთაღრიცხვა, ხელშეკრულება და ანგარიშგება მშენებლობის დროს.',
+    h1: 'სახლის აშენება საქართველოში უცხოელისთვის',
+    lead: 'საქართველოში სახლის აშენებით ბევრი უცხოელი და ემიგრაციაში მცხოვრები ქართველი ინტერესდება. ხშირად ისინი თავად ვერ არიან ადგილზე. აქ ავხსენით, როგორ წარიმართოს პროცესი სწორად და რა უნდა გაითვალისწინოთ მანძილიდან მშენებლობისას.',
+    published: '2026-11-23',
+    sections: [
+      {
+        h2: '1. ნაკვეთი და საკუთრება',
+        paragraphs: [
+          'პირველი ნაბიჯი ნაკვეთის შერჩევა და მისი დოკუმენტების შემოწმებაა: საჯარო რეესტრის ამონაწერი, საზღვრები, დანიშნულება და მისასვლელი გზა.',
+          'უცხო ქვეყნის მოქალაქეებისთვის მიწის ზოგიერთი კატეგორიის, განსაკუთრებით სასოფლო-სამეურნეო მიწის, შეძენა შეზღუდულია. ამიტომ ყიდვამდე აუცილებლად გადაამოწმეთ მოქმედი წესები იურისტთან ან საჯარო რეესტრში.',
+        ],
+      },
+      {
+        h2: '2. რა უნდა შემოწმდეს ადგილზე',
+        paragraphs: [
+          'ფოტოებითა და რუკით ბევრი რამ არ ჩანს: რელიეფი, გრუნტი, მეზობელი შენობები, წყლისა და ელექტროობის მიერთების შესაძლებლობა.',
+          'თუ თავად ვერ ჩამოდიხართ, სთხოვეთ მშენებელს ნაკვეთის დათვალიერება ვიდეოთი და დეტალური ანგარიში იმაზე, რა სამუშაოებია საჭირო მშენებლობამდე.',
+        ],
+      },
+      {
+        h2: '3. პროექტი და ხარჯთაღრიცხვა',
+        paragraphs: [
+          'პროექტი უნდა მოერგოს ნაკვეთს, კლიმატსა და საქართველოს სეისმურ პირობებს. ქვეყნის გარეთ მომზადებული მზა პროექტი ხშირად ადგილობრივ ადაპტაციას საჭიროებს.',
+          'ხარჯთაღრიცხვაში სამუშაოები და მასალები ცალ-ცალკე და ეტაპების მიხედვით უნდა იყოს გაწერილი. ეს მანძილიდან მართვისას განსაკუთრებით მნიშვნელოვანია, რადგან ნათლად ჩანს, რაში და როდის იხდით.',
+        ],
+      },
+      {
+        h2: '4. ხელშეკრულება',
+        paragraphs: [
+          'ხელშეკრულებაში უნდა ეწეროს სამუშაოების ჩამონათვალი, ეტაპები, ანგარიშგების წესი, გადახდის გრაფიკი და ის, თუ როგორ წყდება ცვლილებები პროცესში.',
+          'თუ ქართული ენა არ იცით, მოითხოვეთ თარგმანი ან ორენოვანი ვერსია და დოკუმენტები იურისტს გადაახედეთ.',
+        ],
+      },
+      {
+        h2: '5. მშენებლობა მანძილიდან',
+        paragraphs: [
+          'რეგულარული ანგარიშგება ფოტოებითა და ვიდეოებით გაძლევთ საშუალებას, ადგილზე არყოფნის დროსაც იცოდეთ, რა ხდება ობიექტზე.',
+          'კარგია, თუ ყოველი ეტაპის დასრულება ფიქსირდება, მაგალითად საძირკვლის, შავი კარკასისა და სახურავის დასრულება, და შემდეგი ეტაპი მხოლოდ ამის შემდეგ იწყება.',
+        ],
+      },
+      {
+        h2: '6. ჩაბარება და შემდეგ',
+        paragraphs: [
+          'ჩაბარებამდე შეამოწმეთ ყველა სისტემა: ელექტროობა, წყალი, გათბობა, კანალიზაცია და ვენტილაცია. თუ თავად ვერ ესწრებით, ჩაბარებას შეიძლება დაესწროს თქვენი ნდობით აღჭურვილი პირი.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება სახლის აშენება ისე, რომ საქართველოში არ ვიყო?',
+        a: 'დიახ. რეგულარული ფოტო და ვიდეო ანგარიშებით პროცესს მანძილიდანაც აკონტროლებთ, ხოლო ძირითადი გადაწყვეტილებები წინასწარ თანხმდება.',
+      },
+      {
+        q: 'შეუძლია უცხოელს საქართველოში მიწის ყიდვა?',
+        a: 'ეს მიწის კატეგორიაზეა დამოკიდებული: ზოგიერთი, განსაკუთრებით სასოფლო-სამეურნეო მიწის, შეძენა უცხოელებისთვის შეზღუდულია. ყიდვამდე მოქმედი წესები იურისტთან გადაამოწმეთ.',
+      },
+      {
+        q: 'რა გჭირდებათ ხარჯთაღრიცხვის მოსამზადებლად, თუ საქართველოში არ ვარ?',
+        a: 'თავიდან საკმარისია ნაკვეთის დოკუმენტები, ფოტოები ან ვიდეო და პროექტი, თუ გაქვთ. ზუსტი ხარჯთაღრიცხვა ობიექტის ადგილზე ნახვის შემდეგ მზადდება.',
+      },
+    ],
+    service: 'residential-construction',
   },
 ];
 
@@ -2248,6 +2324,73 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+  },
+  {
+    slug: GUIDE_SLUGS[15],
+    metaTitle: 'Building a House in Georgia as a Foreigner: A Practical Guide | BAU BILD',
+    metaDescription:
+      'How to build a house in Georgia as a foreigner: choosing and checking a plot, managing from abroad, design, cost estimate, contract and progress reports during construction.',
+    h1: 'Building a House in Georgia as a Foreigner',
+    lead: 'Many foreigners and Georgians living abroad are interested in building a house in Georgia, often without being able to be on site. Here we explain how to run the process properly and what to keep in mind when building from a distance.',
+    published: '2026-11-23',
+    sections: [
+      {
+        h2: '1. Land and ownership',
+        paragraphs: [
+          'The first step is choosing a plot and checking its documents: the public registry extract, boundaries, land use category and access road.',
+          'For foreign citizens, buying some categories of land, especially agricultural land, is restricted. So before buying, check the current rules with a lawyer or the public registry.',
+        ],
+      },
+      {
+        h2: '2. What to check on site',
+        paragraphs: [
+          'Photos and maps do not show everything: the terrain, the soil, neighbouring buildings, and whether water and electricity can be connected.',
+          'If you cannot travel, ask the builder for a video walkthrough of the plot and a detailed report on what work is needed before construction.',
+        ],
+      },
+      {
+        h2: '3. Design and cost estimate',
+        paragraphs: [
+          'The design has to fit the plot, the climate and Georgia’s seismic conditions. A ready-made plan prepared abroad often needs local adaptation.',
+          'The cost estimate should list works and materials separately and by stage. This matters even more when managing from abroad, because it shows clearly what you pay for and when.',
+        ],
+      },
+      {
+        h2: '4. The contract',
+        paragraphs: [
+          'The contract should set out the scope of work, the stages, how progress is reported, the payment schedule, and how changes are handled during the project.',
+          'If you do not read Georgian, ask for a translation or a bilingual version and have a lawyer review the documents.',
+        ],
+      },
+      {
+        h2: '5. Building from a distance',
+        paragraphs: [
+          'Regular photo and video reports let you know what is happening on site even when you are not there.',
+          'It helps when the completion of each stage is recorded, for example the foundation, the structural frame and the roof, and the next stage starts only after that.',
+        ],
+      },
+      {
+        h2: '6. Handover and after',
+        paragraphs: [
+          'Before handover, check every system: electrics, water, heating, sewage and ventilation. If you cannot attend, a person you trust with a power of attorney can attend for you.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can I build a house in Georgia without being there?',
+        a: 'Yes. Regular photo and video reports let you follow the process remotely, and key decisions are agreed in advance.',
+      },
+      {
+        q: 'Can a foreigner buy land in Georgia?',
+        a: 'It depends on the land category: buying some types, especially agricultural land, is restricted for foreigners. Check the current rules with a lawyer before buying.',
+      },
+      {
+        q: 'What do you need to prepare an estimate if I am abroad?',
+        a: 'To start, the plot documents, photos or video, and a design if you have one are enough. The exact estimate is prepared after seeing the site in person.',
+      },
+    ],
+    service: 'residential-construction',
   },
 ];
 
