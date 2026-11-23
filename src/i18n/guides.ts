@@ -37,6 +37,7 @@ export const GUIDE_SLUGS = [
   'construction-renovation-rustavi',
   'building-in-georgia-foreigner',
   'building-permit-tbilisi',
+  'cosmetic-vs-full-renovation',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -49,7 +50,7 @@ export const guideUi: Record<Lang, { eyebrow: string; title: string; metaTitle: 
     eyebrow: 'რჩევები',
     title: 'რჩევები მშენებლობასა და რემონტზე',
     metaTitle: 'რჩევები მშენებლობასა და რემონტზე | BAU BILD',
-    metaDescription: 'პრაქტიკული რჩევები სახლის მშენებლობასა და რემონტზე: ეტაპები, დოკუმენტები და რა უნდა იცოდეთ სამუშაოს დაწყებამდე.',
+    metaDescription: 'პრაქტიკული რჩევები სახლის მშენებლობასა და ბინის რემონტზე: ეტაპები, ნებართვა, ხარჯთაღრიცხვა, შავი და თეთრი კარკასი, სახურავი და ფასადი. BAU BILD, თბილისი.',
     lead: 'რა უნდა იცოდეთ სახლის მშენებლობის ან რემონტის დაწყებამდე, მარტივად ახსნილი.',
     faq: 'ხშირი კითხვები',
     read: 'წაკითხვა',
@@ -60,7 +61,7 @@ export const guideUi: Record<Lang, { eyebrow: string; title: string; metaTitle: 
     eyebrow: 'Guides',
     title: 'Construction and renovation guides',
     metaTitle: 'Construction and Renovation Guides | BAU BILD',
-    metaDescription: 'Practical guides to building and renovating a house in Georgia: the stages, the paperwork and what to know before work starts.',
+    metaDescription: 'Practical guides to building and renovating in Tbilisi and Georgia: construction stages, permits, cost estimates, black and white frame, roofs and facades. By BAU BILD.',
     lead: 'What to know before you start building or renovating, explained simply.',
     faq: 'Frequently asked questions',
     read: 'Read',
@@ -1313,6 +1314,79 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
   },
+  {
+    slug: GUIDE_SLUGS[17],
+    metaTitle: 'კოსმეტიკური თუ კაპიტალური რემონტი: რომელი გჭირდებათ | BAU BILD',
+    metaDescription:
+      'რით განსხვავდება კოსმეტიკური და კაპიტალური რემონტი: სამუშაოების ჩამონათვალი, როდის საკმარისია კოსმეტიკური, როდის არის კაპიტალური აუცილებელი და როგორ დავგეგმოთ.',
+    h1: 'კოსმეტიკური თუ კაპიტალური რემონტი: რომელი გჭირდებათ',
+    lead: 'რემონტის დაგეგმვისას პირველი კითხვა ასეთია: საკმარისია ზედაპირების განახლება, თუ ბინას ან სახლს „შიგნიდან“ შეცვლა სჭირდება? ამ არჩევანზეა დამოკიდებული ბიუჯეტი, ვადა და ის, შეძლებთ თუ არა სამუშაოს დროს იქვე ცხოვრებას.',
+    published: '2026-11-23',
+    sections: [
+      {
+        h2: '1. რა არის კოსმეტიკური რემონტი',
+        paragraphs: [
+          'კოსმეტიკური რემონტი ზედაპირების განახლებაა: კედლების და ჭერის შეღებვა ან შპალერი, იატაკის საფარის შეცვლა, კარების, სანათებისა და როზეტების განახლება.',
+          'ამ დროს ელექტროგაყვანილობა, წყალი, კანალიზაცია და გათბობა უცვლელი რჩება. ამიტომ კოსმეტიკური რემონტი მაშინ ჯობს, როცა ეს სისტემები კარგ მდგომარეობაშია.',
+        ],
+      },
+      {
+        h2: '2. რა არის კაპიტალური რემონტი',
+        paragraphs: [
+          'კაპიტალური რემონტი ბინის ან სახლის „ჩონჩხამდე“ განახლებაა: იცვლება ელექტროგაყვანილობა, წყალგაყვანილობა და კანალიზაცია, ხშირად გათბობაც, ფანჯრები და კარები.',
+          'კედლები და იატაკი თავიდან სწორდება, სველ წერტილებს ჰიდროიზოლაცია უკეთდება, საჭიროების შემთხვევაში იცვლება გეგმარებაც. ამის შემდეგ კეთდება საბოლოო მოპირკეთება.',
+        ],
+      },
+      {
+        h2: '3. როდის არის კაპიტალური რემონტი აუცილებელი',
+        paragraphs: [
+          'ძველ ბინაში, სადაც გაყვანილობა და მილები ათწლეულების წინ არის დამონტაჟებული, კოსმეტიკური რემონტი ხშირად მხოლოდ პრობლემის დამალვაა. რამდენიმე წლის შემდეგ ახალი მოპირკეთების გატეხვა მოგიწევთ.',
+          'კაპიტალური რემონტის ნიშნებია: ხშირად ამომრთველი ავტომატები, ჟანგიანი ან გაჟონვადი მილები, ნესტი და ობი, მრუდე კედლები და იატაკი, ან როცა გეგმარების შეცვლა გინდათ.',
+          'შავი კარკასის მდგომარეობაში ნაყიდ ახალ ბინაში რემონტი ფაქტობრივად ყოველთვის სრულია, რადგან ყველა სისტემა ნულიდან კეთდება.',
+        ],
+      },
+      {
+        h2: '4. როდის საკმარისია კოსმეტიკური',
+        paragraphs: [
+          'თუ ბინა ბოლო წლებშია გარემონტებული, გაყვანილობა და სანტექნიკა გამართულად მუშაობს და გეგმარება გაწყობთ, კოსმეტიკური რემონტი სწრაფი და გონივრული გამოსავალია.',
+          'კოსმეტიკური რემონტი კარგი არჩევანია გაქირავების ან გაყიდვის წინაც, როცა სივრცის განახლებაა საჭირო დიდი ჩარევის გარეშე.',
+        ],
+      },
+      {
+        h2: '5. როგორ მივიღოთ გადაწყვეტილება',
+        paragraphs: [
+          'ჯერ სპეციალისტმა შეამოწმოს ელექტროობა, მილები, კედლები და იატაკი. ამის შემდეგ გაირკვევა, რომელი სისტემის შეცვლაა საჭირო და რომლის დატოვება შეიძლება.',
+          'ხშირად შუალედური ვარიანტიც მუშაობს: მაგალითად, სამზარეულოსა და აბაზანაში სრული რემონტი, დანარჩენ ოთახებში კი კოსმეტიკური.',
+          'რა განსაზღვრავს რემონტის ღირებულებას, ცალკე სტატიაში აღვწერეთ.',
+        ],
+      },
+      {
+        h2: '6. ცხოვრება რემონტის დროს',
+        paragraphs: [
+          'კოსმეტიკური რემონტის დროს ბინაში ცხოვრება ზოგჯერ შესაძლებელია, თუ სამუშაო ოთახ-ოთახ მიდის. კაპიტალური რემონტისას, როცა წყალი და დენი ითიშება და ბევრი მტვერია, ჯობს გარკვეული პერიოდით სხვაგან გადახვიდეთ.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რა განსხვავებაა კოსმეტიკურ და კაპიტალურ რემონტს შორის?',
+        a: 'კოსმეტიკური რემონტი მხოლოდ ზედაპირებს ანახლებს. კაპიტალური ცვლის ელექტროგაყვანილობას, წყალს, კანალიზაციას და ხშირად გათბობასაც, შემდეგ კი ახალი მოპირკეთება კეთდება.',
+      },
+      {
+        q: 'ძველ ბინაში კოსმეტიკური რემონტი საკმარისია?',
+        a: 'ხშირად არა. თუ გაყვანილობა და მილები ძველია, ჯობს ერთხელ და სრულად შეიცვალოს, ვიდრე ახალი მოპირკეთება მოგვიანებით გატეხოთ.',
+      },
+      {
+        q: 'შეიძლება ნაწილობრივ კაპიტალური რემონტი?',
+        a: 'კი. მაგალითად, სამზარეულოსა და აბაზანაში სრული რემონტი, დანარჩენ ოთახებში კოსმეტიკური. გადაწყვეტილება ადგილზე შემოწმების შემდეგ მიიღება.',
+      },
+      {
+        q: 'როგორ გავიგო, რომელი რემონტი მჭირდება?',
+        a: 'სპეციალისტი ადგილზე ამოწმებს ელექტროობას, მილებს, კედლებს და იატაკს. ამის შემდეგ მზადდება ხარჯთაღრიცხვა სამუშაოების ჩამონათვალით.',
+      },
+    ],
+    service: 'renovation-interior',
+  },
 ];
 
 const en: Guide[] = [
@@ -2558,6 +2632,79 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[17],
+    metaTitle: 'Cosmetic vs Full Renovation: Differences and Which You Need | BAU BILD',
+    metaDescription:
+      'How a cosmetic renovation differs from a full renovation: the scope of work, when cosmetic is enough, when a full renovation is necessary and how to plan it.',
+    h1: 'Cosmetic or full renovation: which one do you need?',
+    lead: 'The first question when planning a renovation is whether refreshing the surfaces is enough, or whether the apartment or house needs to be changed from the inside. The answer sets the budget, the timeline and whether you can live there while the work goes on.',
+    published: '2026-11-23',
+    sections: [
+      {
+        h2: '1. What a cosmetic renovation is',
+        paragraphs: [
+          'A cosmetic renovation refreshes the surfaces: painting or wallpapering walls and ceilings, replacing floor coverings, and updating doors, light fittings and sockets.',
+          'The electrics, water, sewerage and heating stay as they are. That is why a cosmetic renovation makes sense when these systems are in good condition.',
+        ],
+      },
+      {
+        h2: '2. What a full renovation is',
+        paragraphs: [
+          'A full renovation strips the apartment or house back to its structure: the wiring, water supply and sewerage are replaced, often the heating, windows and doors too.',
+          'Walls and floors are levelled again, wet areas are waterproofed and, if needed, the layout changes. The final finishes come after that.',
+        ],
+      },
+      {
+        h2: '3. When a full renovation is necessary',
+        paragraphs: [
+          'In an older apartment where the wiring and pipes were installed decades ago, a cosmetic renovation often just hides the problem, and a few years later the new finishes have to be broken open.',
+          'Signs that you need a full renovation: breakers that trip often, rusty or leaking pipes, damp and mould, uneven walls and floors, or wanting to change the layout.',
+          'In a new apartment bought as a black frame, the renovation is in practice always a full one, because every system is built from scratch.',
+        ],
+      },
+      {
+        h2: '4. When cosmetic is enough',
+        paragraphs: [
+          'If the apartment was renovated in recent years, the wiring and plumbing work properly and the layout suits you, a cosmetic renovation is a quick and sensible option.',
+          'It is also a good choice before renting out or selling, when the space needs a refresh without major work.',
+        ],
+      },
+      {
+        h2: '5. How to decide',
+        paragraphs: [
+          'First have a specialist check the electrics, pipes, walls and floors. That shows which systems need replacing and which can stay.',
+          'A middle option often works too: for example, a full renovation of the kitchen and bathroom and a cosmetic one in the other rooms.',
+          'We explain what drives the cost of a renovation in a separate guide.',
+        ],
+      },
+      {
+        h2: '6. Living there during the work',
+        paragraphs: [
+          'During a cosmetic renovation it is sometimes possible to stay if the work goes room by room. During a full renovation, when water and power are cut off and there is a lot of dust, it is better to move out for a while.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between a cosmetic and a full renovation?',
+        a: 'A cosmetic renovation only refreshes the surfaces. A full renovation replaces the wiring, water, sewerage and often the heating, followed by new finishes.',
+      },
+      {
+        q: 'Is a cosmetic renovation enough for an old apartment?',
+        a: 'Often not. If the wiring and pipes are old, it is better to replace them once and completely than to break open new finishes later.',
+      },
+      {
+        q: 'Can a renovation be partly full and partly cosmetic?',
+        a: 'Yes. For example, a full renovation of the kitchen and bathroom and a cosmetic one elsewhere. The decision is made after an on-site inspection.',
+      },
+      {
+        q: 'How do I know which renovation I need?',
+        a: 'A specialist checks the electrics, pipes, walls and floors on site. A cost estimate with the list of works is then prepared.',
+      },
+    ],
+    service: 'renovation-interior',
   },
 ];
 
