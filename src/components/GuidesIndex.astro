@@ -42,10 +42,14 @@ const paths = Object.fromEntries(LANGS.map((l) => [l, guideUrl(l)])) as Record<L
   .crumbs {
     font-size: 14px;
     color: var(--muted);
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
   .crumbs a {
     color: inherit;
+    /* ტელეფონზე თითით მოსახერხებელი ზომა */
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
   .gi__lead {
     margin-top: 14px;
