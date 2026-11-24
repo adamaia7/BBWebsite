@@ -40,6 +40,7 @@ export const GUIDE_SLUGS = [
   'cosmetic-vs-full-renovation',
   'roofing-materials',
   'pharmacy-fit-out',
+  'reading-an-estimate',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -962,6 +963,10 @@ const ka: Guide[] = [
         a: 'დიახ, შეგვიძლია რამდენიმე ობიექტის პარალელურად აწყობა, სხვადასხვა ქალაქშიც.',
       },
       {
+        q: 'რა სპეციფიკა აქვს აფთიაქის მოწყობას?',
+        a: 'აფთიაქს სჭირდება მკაფიო ზონირება, მედიკამენტების შესანახი პირობები, კარგი ვენტილაცია და კონდიცირება და ადვილად მოსავლელი ზედაპირები. დაწვრილებით ცალკე სტატიაში ვწერთ.',
+      },
+      {
         q: 'რა ღირს ოფისის ან მაღაზიის რემონტი?',
         a: 'ფასი ფართის ზომაზე, მდგომარეობაზე, ინჟინერიასა და მასალებზეა დამოკიდებული. ობიექტის ნახვის შემდეგ ვამზადებთ ხარჯთაღრიცხვას, სადაც სამუშაოები და მასალები ცალ-ცალკეა.',
       },
@@ -1541,6 +1546,79 @@ const ka: Guide[] = [
       },
     ],
     service: 'commercial-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[20],
+    metaTitle: 'როგორ წავიკითხოთ ხარჯთაღრიცხვა: რას შევამოწმოთ ხელმოწერამდე | BAU BILD',
+    metaDescription:
+      'როგორ წავიკითხოთ მშენებლობის ან რემონტის ხარჯთაღრიცხვა: სამუშაოები და მასალები, ერთეულები და რაოდენობები, რა არ შედის, ცვლილებები, გადახდის ეტაპები და შედარება.',
+    h1: 'როგორ წავიკითხოთ ხარჯთაღრიცხვა: რას შევამოწმოთ ხელმოწერამდე',
+    lead: 'ხარჯთაღრიცხვა მხოლოდ საბოლოო თანხა არ არის. კარგად შედგენილი დოკუმენტიდან ჩანს, რა გაკეთდება, რა მასალით და რა რაოდენობით. აქ ავხსენით, როგორ წაიკითხოთ ის და რას მიაქციოთ ყურადღება, სანამ ხელშეკრულებას მოაწერთ ხელს.',
+    published: '2026-11-24',
+    sections: [
+      {
+        h2: '1. სამუშაოები და მასალები ცალ-ცალკე',
+        paragraphs: [
+          'კარგ ხარჯთაღრიცხვაში სამუშაო და მასალა ცალკე სტრიქონებადაა გაწერილი. ასე ხედავთ, რა ღირს თავად შრომა და რა მასალა, და საჭიროების შემთხვევაში მასალის შეცვლის გავლენასაც დაინახავთ.',
+          'თუ დოკუმენტში მხოლოდ ზოგადი სტრიქონებია, მაგალითად „სააბაზანოს რემონტი“, სთხოვეთ დეტალიზაცია. ასეთ სტრიქონში ძნელია გაიგოთ, რა შედის და რა არა.',
+        ],
+      },
+      {
+        h2: '2. ერთეულები და რაოდენობები',
+        paragraphs: [
+          'თითოეულ სტრიქონს უნდა ჰქონდეს საზომი ერთეული (კვადრატული მეტრი, გრძივი მეტრი, ცალი, კომპლექტი) და რაოდენობა. შეადარეთ რაოდენობები ნახაზებს ან ბინის რეალურ ზომებს.',
+          'ზოგიერთ მასალას ჭრისა და დანაკარგის მარაგი სჭირდება. ნორმალურია, თუ ეს ხარჯთაღრიცხვაში წერია, მთავარია, გასაგები იყოს, საიდან მოდის.',
+        ],
+      },
+      {
+        h2: '3. მასალის დაზუსტება',
+        paragraphs: [
+          '„ფილა“ ან „საღებავი“ საკმარისი არ არის. სასურველია, მითითებული იყოს მასალის ტიპი, კლასი ან კონკრეტული მწარმოებელი. სხვაგვარად, ორი ერთნაირი სახელის ხარჯთაღრიცხვა სრულიად განსხვავებულ ხარისხს შეიძლება ნიშნავდეს.',
+          'თუ მასალას თავად ყიდულობთ, ეს ხარჯთაღრიცხვაში მკაფიოდ უნდა ჩანდეს, რომ ერთი და იგივე ორჯერ არ ჩაითვალოს.',
+        ],
+      },
+      {
+        h2: '4. რა არ შედის',
+        paragraphs: [
+          'ყურადღებით წაიკითხეთ, რა რჩება ხარჯთაღრიცხვის გარეთ: ნარჩენების გატანა, მასალის მიტანა და ატანა სართულზე, დროებითი ელექტრომომარაგება, დასუფთავება სამუშაოს ბოლოს, ნებართვები და პროექტი.',
+          'გაუთვალისწინებელი გამოცდება ხშირად სწორედ იმ სამუშაოებზე მოდის, რომლებიც არსად წერია. სჯობს, ეს წინასწარ იკითხოთ.',
+        ],
+      },
+      {
+        h2: '5. ცვლილებები და გაუთვალისწინებელი სამუშაოები',
+        paragraphs: [
+          'განსაკუთრებით ძველ შენობაში კედლის ან იატაკის გახსნის შემდეგ შეიძლება გამოჩნდეს ის, რაც წინასწარ არ ჩანდა. გაარკვიეთ, როგორ შეთანხმდება ასეთი დამატებითი სამუშაო: წერილობით, ფასის წინასწარი დადასტურებით.',
+          'კარგი პრაქტიკაა, ბიუჯეტში გაუთვალისწინებელი ხარჯების მარაგი თავიდანვე იყოს გათვალისწინებული.',
+        ],
+      },
+      {
+        h2: '6. გადახდის ეტაპები და შედარება',
+        paragraphs: [
+          'გადახდის გრაფიკი სამუშაოს ეტაპებს უნდა მიჰყვებოდეს: ყოველი გადახდა დასრულებულ და მიღებულ ეტაპს უნდა შეესაბამებოდეს.',
+          'რამდენიმე კომპანიის ხარჯთაღრიცხვის შედარებისას შეადარეთ იგივე ჩამონათვალი, იგივე მასალები და იგივე რაოდენობები. ყველაზე იაფი ვარიანტი ხშირად უბრალოდ ნაკლებს მოიცავს.',
+          'რა განსაზღვრავს თავად ფასს, ცალკე სტატიებში აღვწერეთ: სახლის მშენებლობის და რემონტის ხარჯთაღრიცხვაზე.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რა უნდა ეწეროს კარგ ხარჯთაღრიცხვაში?',
+        a: 'სამუშაოები და მასალები ცალ-ცალკე, საზომი ერთეულები და რაოდენობები, მასალის ტიპი ან მწარმოებელი, და მკაფიოდ, რა არ შედის ფასში.',
+      },
+      {
+        q: 'როგორ შევადარო ორი კომპანიის ხარჯთაღრიცხვა?',
+        a: 'შეადარეთ ერთი და იგივე სამუშაოები, მასალები და რაოდენობები და არა მხოლოდ საბოლოო თანხა. ხშირად იაფი ვარიანტი ნაკლებ სამუშაოს ან უფრო დაბალი კლასის მასალას მოიცავს.',
+      },
+      {
+        q: 'რა ხდება, თუ რემონტის დროს დამატებითი სამუშაო გამოჩნდა?',
+        a: 'დამატებითი სამუშაო ფასის წინასწარი დადასტურებით და წერილობით უნდა შეთანხმდეს, სანამ შესრულდება.',
+      },
+      {
+        q: 'ხარჯთაღრიცხვა უფასოა?',
+        a: 'ეს კომპანიაზეა დამოკიდებული. დაგვიკავშირდით და აგიხსნით, როგორ ვამზადებთ ხარჯთაღრიცხვას თქვენი ობიექტისთვის.',
+      },
+    ],
+    service: 'residential-construction',
   },
 ];
 
@@ -2434,6 +2512,10 @@ const en: Guide[] = [
         a: 'Yes, we can fit out several locations in parallel, including in different cities.',
       },
       {
+        q: 'What is special about fitting out a pharmacy?',
+        a: 'A pharmacy needs clear zoning, proper medicine storage conditions, good ventilation and air conditioning, and easy-to-clean surfaces. We cover this in a separate guide.',
+      },
+      {
         q: 'How much does an office or shop renovation cost?',
         a: 'It depends on the size, condition, building services and materials. After visiting the space we prepare a cost estimate with works and materials listed separately.',
       },
@@ -3013,6 +3095,79 @@ const en: Guide[] = [
       },
     ],
     service: 'commercial-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[20],
+    metaTitle: 'How to Read a Construction Estimate: What to Check Before Signing | BAU BILD',
+    metaDescription:
+      'How to read a construction or renovation estimate: works and materials, units and quantities, what is excluded, changes, payment stages and comparing quotes.',
+    h1: 'How to read a construction estimate: what to check before signing',
+    lead: 'An estimate is more than a final figure. A well-prepared one shows what will be done, with which materials and in what quantities. Here is how to read it and what to look for before you sign the contract.',
+    published: '2026-11-24',
+    sections: [
+      {
+        h2: '1. Works and materials listed separately',
+        paragraphs: [
+          'A good estimate lists labour and materials on separate lines. That shows what the work itself costs and what the materials cost, and how swapping a material would change the total.',
+          'If the document only has broad lines such as "bathroom renovation", ask for a breakdown. With a line like that it is hard to tell what is included and what is not.',
+        ],
+      },
+      {
+        h2: '2. Units and quantities',
+        paragraphs: [
+          'Each line should have a unit (square metre, linear metre, piece, set) and a quantity. Check the quantities against the drawings or the real dimensions of the apartment.',
+          'Some materials need an allowance for cutting and waste. It is normal for this to appear in the estimate; what matters is that it is clear where it comes from.',
+        ],
+      },
+      {
+        h2: '3. Material specification',
+        paragraphs: [
+          '"Tile" or "paint" is not enough. Ideally the type, grade or specific manufacturer is stated. Otherwise two estimates with the same wording can mean very different quality.',
+          'If you are buying materials yourself, the estimate should show this clearly so nothing is counted twice.',
+        ],
+      },
+      {
+        h2: '4. What is excluded',
+        paragraphs: [
+          'Read carefully what is left out: waste removal, carrying materials up to the floor, temporary power, final cleaning, permits and design.',
+          'Unexpected costs often come from exactly the work that is written nowhere, so it is better to ask about it in advance.',
+        ],
+      },
+      {
+        h2: '5. Changes and unforeseen work',
+        paragraphs: [
+          'Especially in older buildings, opening up a wall or floor can reveal things that could not be seen beforehand. Find out how such extra work is agreed: in writing, with the price confirmed in advance.',
+          'It is good practice to keep a contingency in the budget from the start.',
+        ],
+      },
+      {
+        h2: '6. Payment stages and comparing quotes',
+        paragraphs: [
+          'The payment schedule should follow the stages of work: each payment should match a stage that is finished and accepted.',
+          'When comparing estimates from several companies, compare the same scope, the same materials and the same quantities. The cheapest option often simply includes less.',
+          'We explain what drives the price itself in separate guides on house construction and renovation costs.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What should a good estimate include?',
+        a: 'Works and materials listed separately, units and quantities, the material type or manufacturer, and a clear note of what the price does not include.',
+      },
+      {
+        q: 'How do I compare estimates from two companies?',
+        a: 'Compare the same works, materials and quantities, not just the final total. A cheaper quote often covers less work or a lower grade of material.',
+      },
+      {
+        q: 'What happens if extra work appears during the renovation?',
+        a: 'Extra work should be agreed in writing, with the price confirmed in advance, before it is carried out.',
+      },
+      {
+        q: 'Is the estimate free?',
+        a: 'That depends on the company. Contact us and we will explain how we prepare an estimate for your project.',
+      },
+    ],
+    service: 'residential-construction',
   },
 ];
 
