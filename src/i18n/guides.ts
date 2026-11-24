@@ -39,6 +39,7 @@ export const GUIDE_SLUGS = [
   'building-permit-tbilisi',
   'cosmetic-vs-full-renovation',
   'roofing-materials',
+  'pharmacy-fit-out',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -306,6 +307,10 @@ const ka: Guide[] = [
       {
         q: 'რატომ არ წერთ საიტზე ფასს კვადრატულ მეტრზე?',
         a: 'იმიტომ, რომ ფასი ნაკვეთზე, პროექტზე, მასალებსა და კარკასის დონეზეა დამოკიდებული. ზოგადი ციფრი ხშირად შეცდომაში შეჰყავს დამკვეთი. ზუსტ ფასს ობიექტის ნახვის შემდეგ ხარჯთაღრიცხვით გეტყვით.',
+      },
+      {
+        q: 'როგორ მზადდება ხარჯთაღრიცხვა?',
+        a: 'ჯერ ვეცნობით ნაკვეთს და პროექტს ან თქვენს სურვილებს, შემდეგ სამუშაოებსა და მასალებს ცალ-ცალკე და ეტაპების მიხედვით ვწერთ. ასე ნათლად ჩანს, რაზე მიდის თითოეული თანხა.',
       },
       {
         q: 'რამდენ ხანში მომიმზადებთ ხარჯთაღრიცხვას?',
@@ -1465,6 +1470,78 @@ const ka: Guide[] = [
     ],
     service: 'facade-roofing',
   },
+  {
+    slug: GUIDE_SLUGS[19],
+    metaTitle: 'აფთიაქის მოწყობა: რას ითხოვს სივრცე და როგორ დავგეგმოთ | BAU BILD',
+    metaDescription:
+      'აფთიაქის მოწყობა და რემონტი ეტაპობრივად: ფართის შერჩევა, ზონირება, მედიკამენტების შენახვის პირობები, ვენტილაცია და კონდიცირება, განათება, ხელმისაწვდომობა და ბრენდის სტანდარტები.',
+    h1: 'აფთიაქის მოწყობა: რას ითხოვს სივრცე და როგორ დავგეგმოთ',
+    lead: 'აფთიაქი ჩვეულებრივი მაღაზია არ არის: მედიკამენტების შენახვას თავისი პირობები აქვს, მომხმარებელს კი სწრაფი და კომფორტული მომსახურება სჭირდება. აქ ავხსენით, რა უნდა გაითვალისწინოთ აფთიაქის ფართის შერჩევიდან გახსნამდე.',
+    published: '2026-11-24',
+    sections: [
+      {
+        h2: '1. ფართის შერჩევა',
+        paragraphs: [
+          'აფთიაქისთვის მნიშვნელოვანია ქუჩიდან ხილვადობა, მოხერხებული შესასვლელი და, სასურველია, პირველი სართული. შეამოწმეთ, შესაძლებელია თუ არა ფასადზე აბრის განთავსება და შესასვლელთან პანდუსის მოწყობა.',
+          'ფართის შერჩევამდე გადაამოწმეთ, რა მოთხოვნებს აწესებს მოქმედი კანონმდებლობა და ლიცენზირების წესები აფთიაქის ფართზე და მის დაყოფაზე. ეს წესები შესაძლოა შეიცვალოს, ამიტომ ზუსტი ინფორმაცია შესაბამის უწყებაში დააზუსტეთ.',
+        ],
+      },
+      {
+        h2: '2. ზონირება',
+        paragraphs: [
+          'აფთიაქი, როგორც წესი, რამდენიმე ზონად იყოფა: სავაჭრო დარბაზი მომხმარებლისთვის, მედიკამენტების მიღებისა და შენახვის სათავსი და პერსონალის ოთახი სანკვანძით.',
+          'ზონები ისე უნდა დალაგდეს, რომ საქონლის მიღება მომხმარებლების ნაკადს არ კვეთდეს, ფარმაცევტს კი დარბაზი და თაროები კარგად უნდა ჩანდეს.',
+        ],
+      },
+      {
+        h2: '3. შენახვის პირობები: ტემპერატურა და ტენიანობა',
+        paragraphs: [
+          'მედიკამენტების დიდი ნაწილი განსაზღვრულ ტემპერატურასა და ტენიანობაზე ინახება, ზოგი კი მაცივარში. ამიტომ ვენტილაცია და კონდიცირება სივრცის დაგეგმვის ეტაპზევე უნდა გაითვალისწინოთ და არა რემონტის ბოლოს.',
+          'მაცივრებს და კონდიციონერებს სტაბილური ელექტრომომარაგება და სწორად გათვლილი ხაზები სჭირდება. ხშირად სარეზერვო კვებაზეც ფიქრობენ, რომ გათიშვისას ტემპერატურა არ დაირღვეს.',
+        ],
+      },
+      {
+        h2: '4. ზედაპირები და მასალები',
+        paragraphs: [
+          'აფთიაქში ზედაპირები ხშირად ირეცხება, ამიტომ იატაკი და კედლები გამძლე და ადვილად მოსავლელი უნდა იყოს. იატაკისთვის ხშირად კომერციულ ფილას ან კერამოგრანიტს ირჩევენ.',
+          'თაროები და დახლი ზუსტად უნდა მოერგოს გეგმარებას. ამიტომ მათი ზომები ელექტრო წერტილებთან და განათებასთან ერთად წინასწარ ითვლება.',
+        ],
+      },
+      {
+        h2: '5. განათება და ხელმისაწვდომობა',
+        paragraphs: [
+          'კარგი განათება მომხმარებელს ეხმარება ეტიკეტების წაკითხვაში და სივრცეს სუფთა იერს აძლევს. ზოგადი განათება თაროების განათებასთან ერთად იგეგმება.',
+          'შესასვლელი და დარბაზი მოსახერხებელი უნდა იყოს ეტლით მოსარგებლეებისთვის, ბავშვის ეტლით მოსულებისთვის და ხანდაზმულებისთვის.',
+        ],
+      },
+      {
+        h2: '6. ქსელის სტანდარტები და ვადები',
+        paragraphs: [
+          'თუ აფთიაქი ქსელის ნაწილია, ფირმულ სტილს, ავეჯს და აღჭურვილობას ხშირად ბრენდის სახელმძღვანელო განსაზღვრავს. რემონტი ამ სტანდარტებზე ზუსტად უნდა მოერგოს.',
+          'ბიზნესისთვის გახსნის თარიღი მნიშვნელოვანია, ამიტომ სამუშაოების, მასალების მიწოდებისა და ავეჯის მონტაჟის გრაფიკი წინასწარ უნდა შეთანხმდეს. კომერციული ფართის რემონტზე დაწვრილებით ცალკე სტატიაში ვწერთ.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რა ზონებად იყოფა აფთიაქი?',
+        a: 'როგორც წესი, სავაჭრო დარბაზად, მედიკამენტების მიღებისა და შენახვის სათავსად და პერსონალის ოთახად. ზუსტი მოთხოვნები მოქმედ წესებში და შესაბამის უწყებაში დააზუსტეთ.',
+      },
+      {
+        q: 'რატომ არის კონდიცირება ასე მნიშვნელოვანი აფთიაქში?',
+        a: 'მედიკამენტების დიდი ნაწილი განსაზღვრულ ტემპერატურასა და ტენიანობაზე ინახება. ამიტომ ვენტილაცია და კონდიცირება გეგმარების ეტაპზევე უნდა გაითვალისწინოთ.',
+      },
+      {
+        q: 'შეგიძლიათ ქსელის ბრენდბუქის მიხედვით მოწყობა?',
+        a: 'კი. თუ ქსელს აქვს დიზაინის სახელმძღვანელო ან ტექნიკური მოთხოვნები, ფართს ზუსტად მათი მიხედვით ვაწყობთ.',
+      },
+      {
+        q: 'რა მასალებია კარგი აფთიაქის იატაკისთვის?',
+        a: 'გამძლე და ადვილად მოსავლელი ზედაპირები, მაგალითად, კომერციული ფილა ან კერამოგრანიტი, რადგან აფთიაქში იატაკი ხშირად ირეცხება.',
+      },
+    ],
+    service: 'commercial-construction',
+  },
 ];
 
 const en: Guide[] = [
@@ -1702,6 +1779,10 @@ const en: Guide[] = [
       {
         q: 'Why is there no price per square metre on your website?',
         a: 'Because the price depends on the plot, the design, the materials and the frame level, and a general figure often misleads. We give you an exact price in an estimate after seeing the site.',
+      },
+      {
+        q: 'How is the estimate prepared?',
+        a: 'We first look at the plot and the design or your requirements, then list the works and materials separately and by stage, so it is clear what each amount covers.',
       },
       {
         q: 'How long does it take to prepare an estimate?',
@@ -2860,6 +2941,78 @@ const en: Guide[] = [
       },
     ],
     service: 'facade-roofing',
+  },
+  {
+    slug: GUIDE_SLUGS[19],
+    metaTitle: 'Pharmacy Fit-Out: What the Space Needs and How to Plan It | BAU BILD',
+    metaDescription:
+      'Pharmacy fit-out and renovation step by step: choosing the space, zoning, medicine storage conditions, ventilation and air conditioning, lighting, accessibility and brand standards.',
+    h1: 'Pharmacy fit-out: what the space needs and how to plan it',
+    lead: 'A pharmacy is not an ordinary shop: medicines have their own storage conditions, and customers need fast, comfortable service. Here we explain what to consider from choosing the premises to opening day.',
+    published: '2026-11-24',
+    sections: [
+      {
+        h2: '1. Choosing the premises',
+        paragraphs: [
+          'For a pharmacy, street visibility, a convenient entrance and ideally a ground-floor location matter. Check whether a sign can go on the facade and whether a ramp can be built at the entrance.',
+          'Before choosing premises, check what current legislation and licensing rules require of a pharmacy space and its layout. These rules can change, so confirm the details with the relevant authority.',
+        ],
+      },
+      {
+        h2: '2. Zoning',
+        paragraphs: [
+          'A pharmacy is usually divided into several zones: the sales area for customers, a room for receiving and storing medicines, and a staff room with a toilet.',
+          'The zones should be arranged so that deliveries do not cross the customer flow, and the pharmacist can see the sales area and shelves clearly.',
+        ],
+      },
+      {
+        h2: '3. Storage conditions: temperature and humidity',
+        paragraphs: [
+          'Many medicines must be kept within set temperature and humidity ranges, and some in a fridge. That is why ventilation and air conditioning should be planned at the layout stage, not at the end of the renovation.',
+          'Fridges and air conditioners need a stable power supply and correctly sized circuits. Backup power is often considered too, so temperatures hold during an outage.',
+        ],
+      },
+      {
+        h2: '4. Surfaces and materials',
+        paragraphs: [
+          'Surfaces in a pharmacy are cleaned often, so floors and walls must be durable and easy to maintain. Commercial vinyl or porcelain tile is a common choice for floors.',
+          'Shelving and the counter must fit the layout exactly, so their dimensions are worked out in advance together with power points and lighting.',
+        ],
+      },
+      {
+        h2: '5. Lighting and accessibility',
+        paragraphs: [
+          'Good lighting helps customers read labels and gives the space a clean look. General lighting is planned together with shelf lighting.',
+          'The entrance and sales area should be easy to use for wheelchair users, people with pushchairs and older customers.',
+        ],
+      },
+      {
+        h2: '6. Chain standards and the opening date',
+        paragraphs: [
+          'If the pharmacy is part of a chain, the corporate style, furniture and equipment are often set by a brand manual, and the fit-out must follow it exactly.',
+          'The opening date matters to the business, so the schedule for works, material deliveries and furniture installation should be agreed in advance. We cover commercial fit-outs in more detail in a separate guide.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What zones does a pharmacy have?',
+        a: 'Usually a sales area, a room for receiving and storing medicines, and a staff room. Confirm the exact requirements in the current rules and with the relevant authority.',
+      },
+      {
+        q: 'Why is air conditioning so important in a pharmacy?',
+        a: 'Many medicines must be stored within set temperature and humidity ranges, so ventilation and air conditioning should be planned at the layout stage.',
+      },
+      {
+        q: 'Can you fit out a pharmacy to a chain\'s brand book?',
+        a: 'Yes. If the chain has a design manual or technical requirements, we fit out the space exactly to them.',
+      },
+      {
+        q: 'Which flooring works well in a pharmacy?',
+        a: 'Durable, easy-to-clean surfaces such as commercial vinyl or porcelain tile, because pharmacy floors are cleaned often.',
+      },
+    ],
+    service: 'commercial-construction',
   },
 ];
 
