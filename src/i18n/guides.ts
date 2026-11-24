@@ -38,6 +38,7 @@ export const GUIDE_SLUGS = [
   'building-in-georgia-foreigner',
   'building-permit-tbilisi',
   'cosmetic-vs-full-renovation',
+  'roofing-materials',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -727,6 +728,10 @@ const ka: Guide[] = [
     ],
     faq: [
       {
+        q: 'რა მჭირდება დაპროექტების დასაწყებად?',
+        a: 'ნაკვეთის საჯარო რეესტრის ამონაწერი, აზომვითი ნახაზი და, როცა საჭიროა, მერიიდან მიღებული განაშენიანების პირობები. ამათზე დაყრდნობით მზადდება ესკიზი და შემდეგ სრული პროექტი.',
+      },
+      {
         q: 'შეიძლება მზა პროექტით აშენება?',
         a: 'შესაძლებელია, მაგრამ მზა პროექტი თქვენს ნაკვეთზე უნდა მოერგოს: რელიეფს, გრუნტს, მზის მიმართულებას და ადგილობრივ წესებს. კონსტრუქციული ნაწილი ყოველთვის ადგილის პირობებით უნდა შემოწმდეს.',
       },
@@ -1387,6 +1392,79 @@ const ka: Guide[] = [
     ],
     service: 'renovation-interior',
   },
+  {
+    slug: GUIDE_SLUGS[18],
+    metaTitle: 'მეტალოკრამიტი, კრამიტი თუ პროფნასტილი: რომელი ავირჩიოთ | BAU BILD',
+    metaDescription:
+      'სახურავის მასალების შედარება: მეტალოკრამიტი, კერამიკული და ცემენტის კრამიტი, პროფნასტილი და რბილი სახურავი. წონა, ხმაური, დახრილობა, კლიმატი და მოვლა.',
+    h1: 'მეტალოკრამიტი, კრამიტი თუ პროფნასტილი: რომელი ავირჩიოთ სახურავისთვის',
+    lead: 'სახურავის მასალა სახლის იერსახეს, კონსტრუქციის დატვირთვას და მომავალ მოვლას განსაზღვრავს. აქ შევადარეთ საქართველოში ყველაზე გავრცელებული ვარიანტები და ავხსენით, რას მიაქციოთ ყურადღება არჩევისას.',
+    published: '2026-11-24',
+    sections: [
+      {
+        h2: '1. მეტალოკრამიტი',
+        paragraphs: [
+          'მეტალოკრამიტი დაფარული ფოლადის ფურცელია, რომელიც კრამიტის ფორმას იმეორებს. ის მსუბუქია, ამიტომ სახურავის კონსტრუქციას ნაკლებად ტვირთავს და ძველი სახლის სახურავის შესაცვლელად ხშირად ირჩევენ.',
+          'მონტაჟი სწრაფია, ფერებისა და პროფილის არჩევანი დიდია. მთავარი ნაკლი ხმაურია წვიმისა და სეტყვის დროს. ეს თბოიზოლაციის და სწორი ფენების მოწყობით მცირდება.',
+          'ხარისხი დიდწილად ლითონის სისქესა და დამცავ საფარზეა დამოკიდებული. ჭრის ადგილებს და ხრახნებს სწორი დამუშავება სჭირდება, თორემ დროთა განმავლობაში შეიძლება დაჟანგდეს.',
+        ],
+      },
+      {
+        h2: '2. კრამიტი: კერამიკული და ცემენტის',
+        paragraphs: [
+          'ბუნებრივი კრამიტი კლასიკური მასალაა: გამძლეა, ხმას კარგად ახშობს და მზეზე ფერს დიდხანს ინარჩუნებს. თბილისის ძველ უბნებში და რეგიონებში ის ტრადიციული იერსახის ნაწილია.',
+          'კრამიტი მძიმეა, ამიტომ სახურავის კოჭები და ნივნივები ამ წონაზე უნდა იყოს გათვლილი. ძველ სახლზე მეტალოკრამიტიდან კრამიტზე გადასვლამდე კონსტრუქციას აუცილებლად კონსტრუქტორი უნდა შეამოწმოს.',
+        ],
+      },
+      {
+        h2: '3. პროფნასტილი',
+        paragraphs: [
+          'პროფნასტილი ტალღოვანი ან ტრაპეციული პროფილის ფოლადის ფურცელია. ის მარტივი და სწრაფად დასამონტაჟებელია, ამიტომ ხშირად გამოიყენება ავტოფარეხზე, საწყობზე, ფარდულზე და კომერციულ შენობებზე.',
+          'საცხოვრებელ სახლზეც შეიძლება, მაგრამ იერსახით მეტალოკრამიტს ჩამოუვარდება და წვიმის ხმა მასზეც კარგად ისმის. ამიტომ კარგი თბო- და ხმაიზოლაცია სჭირდება.',
+        ],
+      },
+      {
+        h2: '4. რბილი სახურავი (ბიტუმის ფილები)',
+        paragraphs: [
+          'რბილი სახურავი მოქნილი ფილებისგან შედგება და რთული ფორმის სახურავზე კარგად ეწყობა. ის ჩუმია და ლამაზად გამოიყურება.',
+          'მის ქვეშ მყარი, სწორი ფილის საფუძველია საჭირო. ამიტომ მოწყობა უფრო შრომატევადია, ვიდრე ფურცლოვანი მასალის.',
+        ],
+      },
+      {
+        h2: '5. დახრილობა და კლიმატი',
+        paragraphs: [
+          'თითოეულ მასალას სახურავის დახრის თავისი დასაშვები დიაპაზონი აქვს, რომელსაც მწარმოებელი უთითებს. ძალიან დაბალ დახრაზე ზოგიერთი მასალა ჟონვას იწყებს.',
+          'მთიან რაიონებში მნიშვნელოვანია თოვლის დატვირთვა და თოვლის შემაკავებლები, ზღვისპირეთში ქარი და ტენი. ამ დროს ლითონის საფარის ხარისხი და სამაგრების რაოდენობა განსაკუთრებით მნიშვნელოვანია.',
+        ],
+      },
+      {
+        h2: '6. მასალაზე მნიშვნელოვანი რამ',
+        paragraphs: [
+          'სახურავის ხარისხი მხოლოდ საფარზე არ არის დამოკიდებული. ჰიდრო- და ორთქლიზოლაცია, ვენტილაციის ღრიჩო, შეერთებები, ღარები და მილის ან სხვენის ფანჯრის გარშემო დეტალები ჟონვის ყველაზე ხშირი მიზეზია, როცა ცუდადაა გაკეთებული.',
+          'სახურავის შეკეთებისა და ჟონვის მიზეზების შესახებ ცალკე სტატიებიც გვაქვს.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რომელია უკეთესი, მეტალოკრამიტი თუ კრამიტი?',
+        a: 'ორივეს თავისი უპირატესობა აქვს. მეტალოკრამიტი მსუბუქია და სწრაფად მონტაჟდება, კრამიტი ჩუმია და გამძლე, მაგრამ მძიმეა და მყარ კონსტრუქციას საჭიროებს. არჩევანი სახლის კონსტრუქციასა და სასურველ იერსახეზეა დამოკიდებული.',
+      },
+      {
+        q: 'ხმაურობს თუ არა მეტალოკრამიტი წვიმის დროს?',
+        a: 'ლითონის სახურავი უფრო ხმაურიანია, ვიდრე კრამიტი. სწორი თბოიზოლაცია და სახურავის ფენების სწორი მოწყობა ხმაურს მნიშვნელოვნად ამცირებს.',
+      },
+      {
+        q: 'შეიძლება თუ არა ძველ სახლზე კრამიტის დაგება?',
+        a: 'მხოლოდ მას შემდეგ, რაც კონსტრუქტორი შეამოწმებს, გაუძლებს თუ არა სახურავის კონსტრუქცია კრამიტის წონას. საჭიროების შემთხვევაში კონსტრუქცია მაგრდება.',
+      },
+      {
+        q: 'პროფნასტილი საცხოვრებელ სახლზე შეიძლება?',
+        a: 'კი, მაგრამ ის უფრო ხშირად დამხმარე და კომერციულ შენობებზე გამოიყენება. სახლზე კარგი იზოლაცია სჭირდება, იერსახით კი მეტალოკრამიტს ჩამოუვარდება.',
+      },
+    ],
+    service: 'facade-roofing',
+  },
 ];
 
 const en: Guide[] = [
@@ -2045,6 +2123,10 @@ const en: Guide[] = [
       },
     ],
     faq: [
+      {
+        q: 'What do I need to start the design?',
+        a: 'A Public Registry extract for the plot, a survey drawing and, where required, the development conditions from City Hall. The sketch and then the full design are based on these.',
+      },
       {
         q: 'Can I build from a ready-made house plan?',
         a: 'Yes, but a ready-made plan has to be adapted to your plot: the terrain, soil, sun orientation and local rules. The structural part should always be checked against site conditions.',
@@ -2705,6 +2787,79 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+  },
+  {
+    slug: GUIDE_SLUGS[18],
+    metaTitle: 'Metal Tile, Clay Tile or Profiled Sheet: Choosing Roofing | BAU BILD',
+    metaDescription:
+      'Comparing roofing materials: metal tile, clay and concrete tile, profiled steel sheet and bitumen shingles. Weight, noise, roof pitch, climate and maintenance.',
+    h1: 'Metal tile, clay tile or profiled sheet: which roofing to choose',
+    lead: 'The roofing material shapes how a house looks, how much load the structure carries and how much upkeep it needs later. Here we compare the most common options in Georgia and explain what to look at when choosing.',
+    published: '2026-11-24',
+    sections: [
+      {
+        h2: '1. Metal tile',
+        paragraphs: [
+          'Metal tile is coated steel sheet pressed to look like tiles. It is light, so it puts little load on the roof structure, which is why it is often chosen when replacing the roof of an older house.',
+          'It installs quickly and comes in many colours and profiles. The main drawback is noise in rain and hail, which is reduced with insulation and a correctly built roof build-up.',
+          'Quality depends largely on the steel thickness and the protective coating. Cut edges and fixings need proper treatment, or they can rust over time.',
+        ],
+      },
+      {
+        h2: '2. Tile: clay and concrete',
+        paragraphs: [
+          'Natural tile is the classic material: durable, good at damping sound and keeps its colour in the sun for a long time. In the old districts of Tbilisi and in the regions it is part of the traditional look.',
+          'Tile is heavy, so the rafters and battens must be designed for its weight. Before switching an older house from metal tile to clay tile, a structural engineer must check the structure.',
+        ],
+      },
+      {
+        h2: '3. Profiled steel sheet',
+        paragraphs: [
+          'Profiled sheet is steel sheet with a corrugated or trapezoidal profile. It is simple and quick to install, so it is often used on garages, warehouses, sheds and commercial buildings.',
+          'It can be used on a house, but it looks plainer than metal tile and rain is clearly audible on it, so it needs good thermal and sound insulation.',
+        ],
+      },
+      {
+        h2: '4. Bitumen shingles',
+        paragraphs: [
+          'A soft roof is made of flexible shingles and suits roofs with complex shapes. It is quiet and looks good.',
+          'It needs a solid, even board deck underneath, so it takes more work to install than sheet materials.',
+        ],
+      },
+      {
+        h2: '5. Roof pitch and climate',
+        paragraphs: [
+          'Every material has its own allowed range of roof pitch, set by the manufacturer. At too low a pitch some materials start to leak.',
+          'In mountain areas snow load and snow guards matter; on the coast, wind and humidity do. There the quality of the metal coating and the number of fixings are especially important.',
+        ],
+      },
+      {
+        h2: '6. What matters more than the material',
+        paragraphs: [
+          'A roof is not only its covering. Waterproofing and vapour barriers, the ventilation gap, joints, gutters and the details around chimneys and roof windows are the most common causes of leaks when done badly.',
+          'We also have separate guides on roof repair and the causes of roof leaks.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Which is better, metal tile or clay tile?',
+        a: 'Each has its advantages. Metal tile is light and quick to install; clay tile is quiet and durable but heavy and needs a strong structure. The choice depends on the house structure and the look you want.',
+      },
+      {
+        q: 'Is a metal tile roof noisy in the rain?',
+        a: 'A metal roof is noisier than tile. Proper insulation and a correctly built roof build-up reduce the noise considerably.',
+      },
+      {
+        q: 'Can clay tile go on an older house?',
+        a: 'Only after a structural engineer checks that the roof structure can carry the weight of the tile. If needed, the structure is reinforced.',
+      },
+      {
+        q: 'Can profiled sheet be used on a house?',
+        a: 'Yes, but it is more often used on outbuildings and commercial buildings. On a house it needs good insulation, and it looks plainer than metal tile.',
+      },
+    ],
+    service: 'facade-roofing',
   },
 ];
 
