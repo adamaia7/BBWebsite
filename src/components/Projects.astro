@@ -1,12 +1,25 @@
 ---
 import { dict, url, type Lang } from '../i18n';
 import ServiceIcon from './ServiceIcon.astro';
+import { SERVICE_SLUGS } from '../i18n/services';
+import { PROJECT_CASES, projectUrl } from '../i18n/projects';
 
 interface Props {
   lang: Lang;
 }
 const { lang } = Astro.props;
 const t = dict[lang];
+// რეალური პროექტები (src/i18n/projects.ts) ცვლის სატესტო ბარათებს, როგორც კი პირველი დაემატება
+type Card = { service: number; name: string; meta: string; image: string; href?: string };
+const cards: Card[] = PROJECT_CASES.length
+  ? PROJECT_CASES.slice(0, 6).map((p) => ({
+      service: Math.max(0, SERVICE_SLUGS.indexOf(p.service as (typeof SERVICE_SLUGS)[number])),
+      name: p[lang].name,
+      meta: [p[lang].location, p.area ? `${p.area} ${lang === 'ka' ? 'მ²' : 'm²'}` : '', String(p.year)].filter(Boolean).join(' · '),
+      image: p.images[0] ?? '',
+      href: projectUrl(lang, p.slug),
+    }))
+  : t.projects.items;
 ---
 
 <section class="section section--alt" id="projects">
@@ -18,7 +31,7 @@ const t = dict[lang];
       </div>
     </div>
     <ul class="projects">
-      {t.projects.items.map((p) => (
+      {cards.map((p) => (
         <li class="project">
           {p.image ? (
             <img class="project__img" src={url(p.image)} alt={p.name} loading="lazy" width="1200" height="432" />
@@ -29,7 +42,7 @@ const t = dict[lang];
           )}
           <div class="project__body">
             <span class="project__type">{t.services.items[p.service].title}</span>
-            <h3 class="project__name">{p.name}</h3>
+            <h3 class="project__name">{p.href ? <a href={p.href}>{p.name}</a> : p.name}</h3>
             <span class="project__meta">{p.meta}</span>
           </div>
         </li>
@@ -94,6 +107,9 @@ const t = dict[lang];
   }
   .project__name {
     font-size: 20px;
+  }
+  .project__name a {
+    color: inherit;
   }
   .project__meta {
     color: var(--muted);

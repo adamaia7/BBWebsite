@@ -2,18 +2,20 @@ import type { APIRoute } from 'astro';
 import { LANGS, homeUrl, type Lang } from '../i18n';
 import { SERVICE_SLUGS, serviceUrl } from '../i18n/services';
 import { GUIDE_SLUGS, guideUrl } from '../i18n/guides';
+import { PROJECT_CASES, projectUrl } from '../i18n/projects';
 
 // საიტის რუკა Google-ისთვის. ახალი გვერდის დამატებისას აქ ჩაამატე.
 export const GET: APIRoute = ({ site }) => {
   const abs = (path: string) => new URL(path, site).href;
   // lastmod განზრახ არ არის: აწყობის თარიღი ყველა გვერდზე ყოველ deploy-ზე იცვლება და Google ასეთ
   // არაზუსტ lastmod-ს ენდობა აღარ. შეცვლის თარიღს თითო გვერდზე, როცა ნამდვილად გვექნება, მაშინ დავამატოთ.
-  // თითო გვერდი ყველა ენაზე: მთავარი + სერვისები + რჩევები
+  // თითო გვერდი ყველა ენაზე: მთავარი + სერვისები + რჩევები + დასრულებული პროექტები
   const pages: ((l: Lang) => string)[] = [
     homeUrl,
     ...SERVICE_SLUGS.map((slug) => (l: Lang) => serviceUrl(l, slug)),
     (l: Lang) => guideUrl(l),
     ...GUIDE_SLUGS.map((slug) => (l: Lang) => guideUrl(l, slug)),
+    ...PROJECT_CASES.map((p) => (l: Lang) => projectUrl(l, p.slug)),
   ];
   const urls = pages
     .flatMap((page) =>
