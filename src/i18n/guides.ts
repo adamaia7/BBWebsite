@@ -17,6 +17,10 @@ export interface Guide {
   faq: { q: string; a: string }[];
   /** სერვისის გვერდი, რომელზეც სტატია ბოლოს მიუთითებს */
   service: string;
+  /** ბოლო არსებითი განახლების თარიღი, YYYY-MM-DD (sitemap-ის lastmod) */
+  updated?: string;
+  /** შინაარსით დაკავშირებული სტატიები (slug), „სხვა სტატიებში“ პირველები ჩანს */
+  related?: string[];
 }
 
 export const GUIDE_SLUGS = [
@@ -42,6 +46,7 @@ export const GUIDE_SLUGS = [
   'pharmacy-fit-out',
   'reading-an-estimate',
   'solar-panels',
+  'house-construction-mtskheta',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -180,6 +185,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['house-construction-mtskheta', 'house-design', 'house-construction-cost'],
   },
   {
     slug: GUIDE_SLUGS[1],
@@ -250,6 +256,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    updated: '2026-11-23',
   },
   {
     slug: GUIDE_SLUGS[2],
@@ -332,6 +339,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    updated: '2026-11-24',
   },
   {
     slug: GUIDE_SLUGS[3],
@@ -756,6 +764,8 @@ const ka: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    updated: '2026-11-24',
+    related: ['house-construction-mtskheta', 'house-construction-stages', 'building-permit-tbilisi'],
   },
   {
     slug: GUIDE_SLUGS[9],
@@ -977,6 +987,8 @@ const ka: Guide[] = [
       },
     ],
     service: 'commercial-construction',
+    updated: '2026-11-24',
+    related: ['pharmacy-fit-out', 'reading-an-estimate', 'choose-construction-company'],
   },
   {
     slug: GUIDE_SLUGS[12],
@@ -1125,6 +1137,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['solar-panels', 'facade-cladding', 'frame-vs-block-house'],
   },
   {
     slug: GUIDE_SLUGS[14],
@@ -1187,6 +1200,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['house-construction-mtskheta', 'old-apartment-renovation', 'black-white-green-frame'],
   },
   {
     slug: GUIDE_SLUGS[15],
@@ -1479,6 +1493,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'facade-roofing',
+    related: ['solar-panels', 'roof-repair', 'roof-leak'],
   },
   {
     slug: GUIDE_SLUGS[19],
@@ -1697,6 +1712,80 @@ const ka: Guide[] = [
       },
     ],
     service: 'facade-roofing',
+    related: ['roofing-materials', 'energy-efficient-house', 'roof-repair'],
+  },
+  {
+    slug: GUIDE_SLUGS[22],
+    metaTitle: 'სახლის მშენებლობა მცხეთაში: ნაკვეთი, გრუნტი, ნებართვა | BAU BILD',
+    metaDescription:
+      'სახლის მშენებლობა მცხეთასა და მის შემოგარენში: მდინარისპირა ნაკვეთები და გრუნტი, ისტორიული ზონები, კლიმატი, აგარაკები თბილისის ახლოს და რა უნდა გადამოწმდეს დაწყებამდე.',
+    h1: 'სახლის მშენებლობა მცხეთაში და მის შემოგარენში',
+    lead: 'მცხეთა თბილისის მეზობლად მდებარეობს და ბევრი თბილისელი აქ ან ახლომდებარე სოფლებში აშენებს საცხოვრებელ სახლს ან აგარაკს. ქალაქს თავისი თავისებურებები აქვს: მდინარეები, ისტორიული ძეგლები და მრავალფეროვანი რელიეფი. აქ ავხსენით, რა უნდა გაითვალისწინოთ მშენებლობამდე.',
+    published: '2026-11-25',
+    sections: [
+      {
+        h2: '1. მდინარისპირა ნაკვეთები და გრუნტი',
+        paragraphs: [
+          'მცხეთა მტკვრისა და არაგვის შესართავთან დგას. მდინარესთან ახლოს ნაკვეთებზე გრუნტი ხშირად ხრეშოვან-ქვიშიანია და მიწისქვეშა წყალი შეიძლება ზედაპირთან ახლოს იყოს. ასეთ ადგილას საძირკვლის ტიპი და სიღრმე გეოლოგიური კვლევის შემდეგ უნდა შეირჩეს.',
+          'თუ სარდაფს გეგმავთ, მის ჰიდროიზოლაციასა და დრენაჟს განსაკუთრებული ყურადღება სჭირდება. ნაკვეთის ყიდვამდე ღირს იმის გარკვევაც, ხომ არ ხვდება ის წყალდიდობის რისკის ზონაში.',
+        ],
+      },
+      {
+        h2: '2. ფერდობები და შემოგარენი',
+        paragraphs: [
+          'მცხეთის გარშემო ბევრ სოფელში, მაგალითად, საგურამოში, წილკანსა და მუხრანის მიმართულებით, ნაკვეთები განსხვავებულია: ზოგი ბრტყელ ველზეა, ზოგი ფერდობზე. ფერდობზე სახლს საყრდენი კედლები, ტერასები და წვიმის წყლის სწორად არიდება სჭირდება.',
+          'შემოგარენში ხშირად ჯერ კიდევ მოსაგვარებელია კომუნიკაციები: გზა, წყალი, ელექტროობა და გაზი. მათი არსებობა და მიერთების პირობები ნაკვეთის შერჩევისას უნდა გაირკვეს, რადგან მშენებლობის გეგმაზე პირდაპირ მოქმედებს.',
+        ],
+      },
+      {
+        h2: '3. ისტორიული ზონები',
+        paragraphs: [
+          'მცხეთის ისტორიული ძეგლები UNESCO-ს მსოფლიო მემკვიდრეობის სიაშია შეტანილი, ქალაქის ცენტრი და ძეგლების მიმდებარე ტერიტორიები კი კულტურული მემკვიდრეობის დაცვის ზონებშია.',
+          'ასეთ ზონაში მშენებლობას დამატებითი მოთხოვნები შეიძლება ჰქონდეს: სიმაღლე, ფასადის მასალა, სახურავის ფორმა და შეთანხმების დამატებითი ეტაპი. ზუსტი პირობები ნაკვეთის მიხედვით უნდა გაარკვიოთ მუნიციპალიტეტსა და კულტურული მემკვიდრეობის დაცვის უწყებაში, სანამ პროექტს დაიწყებთ.',
+        ],
+      },
+      {
+        h2: '4. კლიმატი და მასალები',
+        paragraphs: [
+          'მცხეთის კლიმატი თბილისისას ჰგავს: ზაფხული ცხელია, ზამთარი ზომიერი. არაგვის ხეობიდან ხშირად ქარი უბერავს, ამიტომ სახურავის მყარ დამაგრებას და ფანჯრების კარგ შემჭიდროებას მნიშვნელობა აქვს.',
+          'კარგი თბოიზოლაცია ზამთარში გათბობის ხარჯს ამცირებს, ზაფხულში კი სახლს სიცხისგან იცავს. მდინარესთან ახლოს მდებარე სახლებში ნესტისგან დაცვაც საჭიროა: ცოკოლის ჰიდროიზოლაცია და კედლების ვენტილაცია.',
+        ],
+      },
+      {
+        h2: '5. სეისმურობა და კონსტრუქცია',
+        paragraphs: [
+          'საქართველოს სხვა რეგიონების მსგავსად, მცხეთაც სეისმურად აქტიურ ზონაშია. სახლის კონსტრუქცია სეისმური ნორმების მიხედვით უნდა დაპროექტდეს, განსაკუთრებით ორსართულიან სახლებსა და დიდ მალებზე.',
+          'მზა ტიპური პროექტის გამოყენებისას კონსტრუქციული ნაწილი მაინც კონკრეტული ნაკვეთისა და გრუნტის მიხედვით უნდა გადამოწმდეს.',
+        ],
+      },
+      {
+        h2: '6. საცხოვრებელი სახლი თუ აგარაკი',
+        paragraphs: [
+          'თბილისთან სიახლოვის გამო მცხეთაში ბევრი მუდმივად საცხოვრებელ სახლს აშენებს. ამ შემთხვევაში გათბობა, ცხელი წყალი და თბოიზოლაცია მთელი წლის ცხოვრებაზე უნდა გაითვალისწინოთ.',
+          'თუ სახლი ძირითადად ზაფხულის აგარაკია, შეიძლება უფრო მარტივი სისტემები შეირჩეს, მაგრამ კონსტრუქცია, სახურავი და ჰიდროიზოლაცია ერთნაირად საიმედო უნდა იყოს. ზამთარში ცარიელ სახლში მილების გაყინვისგან დაცვაც წინასწარ უნდა დაიგეგმოს.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'მუშაობთ მცხეთასა და მის შემოგარენში?',
+        a: 'დიახ. ვმუშაობთ თბილისში, მცხეთაში, მის შემოგარენში და საქართველოს სხვა ქალაქებში.',
+      },
+      {
+        q: 'შეიძლება სახლის აშენება მცხეთის ისტორიულ ზონაში?',
+        a: 'ზოგ შემთხვევაში შესაძლებელია, მაგრამ დამატებითი მოთხოვნებითა და შეთანხმებით. ზუსტი პირობები ნაკვეთის მიხედვით უნდა გაარკვიოთ მუნიციპალიტეტსა და კულტურული მემკვიდრეობის დაცვის უწყებაში.',
+      },
+      {
+        q: 'რა უნდა შევამოწმო მდინარესთან ახლოს ნაკვეთის ყიდვამდე?',
+        a: 'გრუნტი და მიწისქვეშა წყლის დონე, წყალდიდობის რისკი, მისასვლელი გზა და კომუნიკაციები. საძირკვლის შერჩევისთვის საუკეთესოა გეოლოგიური კვლევა.',
+      },
+      {
+        q: 'რით იწყება სახლის მშენებლობა მცხეთაში?',
+        a: 'ნაკვეთის დათვალიერებით და მისი მონაცემების შეგროვებით, შემდეგ პროექტით, ნებართვით და ხარჯთაღრიცხვით. ამის შემდეგ იწყება მიწის სამუშაოები და საძირკველი.',
+      },
+    ],
+    service: 'residential-construction',
+    related: ['house-construction-stages', 'house-design', 'construction-renovation-rustavi'],
   },
 ];
 
@@ -1794,6 +1883,7 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['house-construction-mtskheta', 'house-design', 'house-construction-cost'],
   },
   {
     slug: GUIDE_SLUGS[1],
@@ -1872,6 +1962,7 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    updated: '2026-11-23',
   },
   {
     slug: GUIDE_SLUGS[2],
@@ -1954,6 +2045,7 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    updated: '2026-11-24',
   },
   {
     slug: GUIDE_SLUGS[3],
@@ -2378,6 +2470,8 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    updated: '2026-11-24',
+    related: ['house-construction-mtskheta', 'house-construction-stages', 'building-permit-tbilisi'],
   },
   {
     slug: GUIDE_SLUGS[9],
@@ -2599,6 +2693,8 @@ const en: Guide[] = [
       },
     ],
     service: 'commercial-construction',
+    updated: '2026-11-24',
+    related: ['pharmacy-fit-out', 'reading-an-estimate', 'choose-construction-company'],
   },
   {
     slug: GUIDE_SLUGS[12],
@@ -2747,6 +2843,7 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['solar-panels', 'facade-cladding', 'frame-vs-block-house'],
   },
   {
     slug: GUIDE_SLUGS[14],
@@ -2809,6 +2906,7 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['house-construction-mtskheta', 'old-apartment-renovation', 'black-white-green-frame'],
   },
   {
     slug: GUIDE_SLUGS[15],
@@ -3101,6 +3199,7 @@ const en: Guide[] = [
       },
     ],
     service: 'facade-roofing',
+    related: ['solar-panels', 'roof-repair', 'roof-leak'],
   },
   {
     slug: GUIDE_SLUGS[19],
@@ -3319,6 +3418,80 @@ const en: Guide[] = [
       },
     ],
     service: 'facade-roofing',
+    related: ['roofing-materials', 'energy-efficient-house', 'roof-repair'],
+  },
+  {
+    slug: GUIDE_SLUGS[22],
+    metaTitle: 'House Construction in Mtskheta: Plots, Soil and Permits | BAU BILD',
+    metaDescription:
+      'Building a house in Mtskheta and the surrounding villages: riverside plots and soil, historic protection zones, climate, country houses near Tbilisi and what to check before you start.',
+    h1: 'House construction in Mtskheta and the surrounding area',
+    lead: 'Mtskheta sits right next to Tbilisi, and many people from the capital build a family home or a country house here or in nearby villages. The town has its own features: rivers, historic monuments and varied terrain. Here is what to take into account before you build.',
+    published: '2026-11-25',
+    sections: [
+      {
+        h2: '1. Riverside plots and soil',
+        paragraphs: [
+          'Mtskheta stands where the Mtkvari and Aragvi rivers meet. On plots close to the rivers the soil is often gravel and sand, and groundwater can be near the surface. In such places the foundation type and depth should be chosen after a geotechnical survey.',
+          'If you plan a basement, its waterproofing and drainage need special attention. Before buying a plot it is also worth finding out whether it lies in a flood-risk area.',
+        ],
+      },
+      {
+        h2: '2. Slopes and the surrounding villages',
+        paragraphs: [
+          'Around Mtskheta, in villages such as Saguramo, Tsilkani and towards Mukhrani, plots vary: some are on flat valley land, others on slopes. A house on a slope needs retaining walls, terraces and proper drainage of rainwater.',
+          'In the surrounding area utilities are often still to be arranged: road access, water, electricity and gas. Check what is available and how connection works when choosing the plot, because it directly affects the construction plan.',
+        ],
+      },
+      {
+        h2: '3. Historic zones',
+        paragraphs: [
+          'The Historical Monuments of Mtskheta are on the UNESCO World Heritage List, and the town centre and the areas around the monuments fall within cultural heritage protection zones.',
+          'Building in such a zone can come with extra requirements: height, facade materials, roof shape and an additional approval step. Find out the exact conditions for your plot from the municipality and the cultural heritage protection authority before the design starts.',
+        ],
+      },
+      {
+        h2: '4. Climate and materials',
+        paragraphs: [
+          'Mtskheta’s climate is similar to Tbilisi’s: hot summers and moderate winters. Wind often blows down the Aragvi valley, so a securely fixed roof and well-sealed windows matter.',
+          'Good insulation lowers heating costs in winter and keeps the house cool in summer. Houses near the river also need protection from damp: waterproofing of the plinth and ventilated walls.',
+        ],
+      },
+      {
+        h2: '5. Seismic design and structure',
+        paragraphs: [
+          'Like the rest of Georgia, Mtskheta lies in a seismically active zone. The structure should be designed to seismic standards, especially for two-storey houses and wide spans.',
+          'If you use a ready-made standard design, its structural part still has to be checked against your specific plot and soil.',
+        ],
+      },
+      {
+        h2: '6. Family home or country house',
+        paragraphs: [
+          'Because it is so close to Tbilisi, many people build a permanent family home in Mtskheta. In that case heating, hot water and insulation should be planned for living there all year round.',
+          'If the house is mainly a summer retreat, simpler systems may do, but the structure, roof and waterproofing must be just as reliable. Protecting pipes from freezing in an empty house in winter should also be planned in advance.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Do you work in Mtskheta and the surrounding area?',
+        a: 'Yes. We work in Tbilisi, Mtskheta, the surrounding villages and other cities across Georgia.',
+      },
+      {
+        q: 'Can I build a house in Mtskheta’s historic zone?',
+        a: 'In some cases yes, but with extra requirements and approval. Find out the exact conditions for your plot from the municipality and the cultural heritage protection authority.',
+      },
+      {
+        q: 'What should I check before buying a plot near the river?',
+        a: 'The soil and groundwater level, flood risk, road access and utilities. A geotechnical survey is the best basis for choosing the foundation.',
+      },
+      {
+        q: 'How does building a house in Mtskheta start?',
+        a: 'With a visit to the plot and gathering its data, then the design, permit and cost estimate. After that groundwork and the foundation begin.',
+      },
+    ],
+    service: 'residential-construction',
+    related: ['house-construction-stages', 'house-design', 'construction-renovation-rustavi'],
   },
 ];
 

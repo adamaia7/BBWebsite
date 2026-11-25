@@ -15,12 +15,14 @@ const { lang, slug } = Astro.props;
 const ui = guideUi[lang];
 const guide = guides[lang].find((g) => g.slug === slug)!;
 const service = servicePages[lang].find((s) => s.slug === guide.service)!;
-// შიდა ბმულები: 3 სხვა სტატია, ჯერ იმავე სერვისის, შემდეგ უახლესი
+// შიდა ბმულები: 3 სხვა სტატია. ჯერ ხელით მითითებული (related), შემდეგ იმავე სერვისის უახლესი, შემდეგ სხვა უახლესი
 const others = guides[lang].filter((g) => g.slug !== slug);
-const more = [
-  ...others.filter((g) => g.service === guide.service),
+const picked = [
+  ...(guide.related ?? []).map((s) => others.find((g) => g.slug === s)).filter((g) => g !== undefined),
+  ...others.filter((g) => g.service === guide.service).reverse(),
   ...others.filter((g) => g.service !== guide.service).reverse(),
-].slice(0, 3);
+];
+const more = picked.filter((g, i) => picked.indexOf(g) === i).slice(0, 3);
 const paths = Object.fromEntries(LANGS.map((l) => [l, guideUrl(l, slug)])) as Record<Lang, string>;
 const site = Astro.site;
 const abs = (path: string) => (site ? new URL(path, site).href : path);
