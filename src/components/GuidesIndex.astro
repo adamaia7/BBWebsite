@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Header from './Header.astro';
 import Footer from './Footer.astro';
 import { homeUrl, LANGS, type Lang } from '../i18n';
-import { guides, guideUi, guideUrl } from '../i18n/guides';
+import { guidesByDate, guideUi, guideUrl } from '../i18n/guides';
 
 interface Props {
   lang: Lang;
@@ -23,7 +23,7 @@ const paths = Object.fromEntries(LANGS.map((l) => [l, guideUrl(l)])) as Record<L
       <h1 class="h2">{ui.title}</h1>
       <p class="gi__lead">{ui.lead}</p>
       <ul class="gi__list">
-        {guides[lang].map((g) => (
+        {guidesByDate(lang).map((g) => (
           <li class="gi__item">
             <h2 class="gi__title"><a href={guideUrl(lang, g.slug)}>{g.h1}</a></h2>
             <p>{g.metaDescription}</p>

@@ -49,7 +49,7 @@ export function guideUrl(lang: Lang, slug?: string): string {
   return lang === 'ka' ? url(path) : url(`${lang}/${path}`);
 }
 
-export const guideUi: Record<Lang, { eyebrow: string; title: string; metaTitle: string; metaDescription: string; lead: string; faq: string; read: string; service: string; home: string }> = {
+export const guideUi: Record<Lang, { eyebrow: string; title: string; metaTitle: string; metaDescription: string; lead: string; faq: string; read: string; service: string; home: string; latest: string; all: string }> = {
   ka: {
     eyebrow: 'რჩევები',
     title: 'რჩევები მშენებლობასა და რემონტზე',
@@ -60,6 +60,8 @@ export const guideUi: Record<Lang, { eyebrow: string; title: string; metaTitle: 
     read: 'წაკითხვა',
     service: 'დაკავშირებული სერვისი',
     home: 'მთავარი',
+    latest: 'ახალი სტატიები',
+    all: 'ყველა რჩევა',
   },
   en: {
     eyebrow: 'Guides',
@@ -71,6 +73,8 @@ export const guideUi: Record<Lang, { eyebrow: string; title: string; metaTitle: 
     read: 'Read',
     service: 'Related service',
     home: 'Home',
+    latest: 'Latest guides',
+    all: 'All guides',
   },
 };
 
@@ -3319,3 +3323,10 @@ const en: Guide[] = [
 ];
 
 export const guides: Record<Lang, Guide[]> = { ka, en };
+
+/** სტატიები ახლიდან ძველისკენ (გამოქვეყნების თარიღით) */
+export function guidesByDate(lang: Lang): Guide[] {
+  // ერთი დღის სტატიებში ბოლოს დამატებული პირველია
+  return [...guides[lang]].reverse().sort((a, b) => b.published.localeCompare(a.published));
+}
+
