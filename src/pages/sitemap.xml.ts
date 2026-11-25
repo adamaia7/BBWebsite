@@ -9,8 +9,11 @@ export const GET: APIRoute = ({ site }) => {
   const abs = (path: string) => new URL(path, site).href;
   // lastmod მხოლოდ იქ, სადაც ნამდვილი თარიღი გვაქვს: სტატიის გამოქვეყნების თარიღი (published).
   // აწყობის თარიღს არ ვწერთ, რადგან ის ყოველ deploy-ზე ყველა გვერდზე იცვლება და Google ასეთ lastmod-ს აღარ ენდობა.
-  const published = (slug: string) => guides.ka.find((g) => g.slug === slug)?.published;
-  const newest = guides.ka.map((g) => g.published).sort().at(-1);
+  const published = (slug: string) => {
+    const g = guides.ka.find((x) => x.slug === slug);
+    return g?.updated ?? g?.published;
+  };
+  const newest = guides.ka.map((g) => g.updated ?? g.published).sort().at(-1);
   // თითო გვერდი ყველა ენაზე: მთავარი + სერვისები + რჩევები + დასრულებული პროექტები
   const pages: { path: (l: Lang) => string; lastmod?: string }[] = [
     { path: homeUrl },
