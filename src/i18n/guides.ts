@@ -47,6 +47,7 @@ export const GUIDE_SLUGS = [
   'reading-an-estimate',
   'solar-panels',
   'house-construction-mtskheta',
+  'renovation-for-foreign-buyers',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -400,6 +401,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['renovation-for-foreign-buyers', 'apartment-renovation', 'cosmetic-vs-full-renovation'],
   },
   {
     slug: GUIDE_SLUGS[4],
@@ -1268,6 +1270,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['renovation-for-foreign-buyers', 'building-permit-tbilisi', 'house-construction-stages'],
   },
   {
     slug: GUIDE_SLUGS[16],
@@ -1787,6 +1790,86 @@ const ka: Guide[] = [
     service: 'residential-construction',
     related: ['house-construction-stages', 'house-design', 'construction-renovation-rustavi'],
   },
+  {
+    slug: GUIDE_SLUGS[23],
+    metaTitle: 'ბინის რემონტი უცხოელი მყიდველისთვის თბილისში | BAU BILD',
+    metaDescription:
+      'იყიდეთ ბინა თბილისში და საქართველოში არ ცხოვრობთ? როგორ დავგეგმოთ რემონტი დისტანციურად: შავი, თეთრი თუ მწვანე კარკასი, კომუნიკაცია, ანგარიშგება, ეტაპობრივი გადახდა და ჩაბარება.',
+    h1: 'ბინის რემონტი უცხოელი მყიდველისთვის: როგორ დავგეგმოთ დისტანციურად',
+    lead: 'ბევრი უცხოელი თბილისში ბინას ახალ კორპუსში იძენს, ხშირად შავ ან თეთრ კარკასში, და თავად აქ არ ცხოვრობს. ასეთ დროს რემონტი უმეტესად შორიდან იმართება. აქ ავხსენით, როგორ დაგეგმოთ ის ისე, რომ ყველაფერი გამჭვირვალე იყოს და შედეგი მოლოდინს დაემთხვეს.',
+    published: '2026-11-25',
+    sections: [
+      {
+        h2: '1. რა მდგომარეობაში იყიდეთ ბინა',
+        paragraphs: [
+          'თბილისის ახალ კორპუსებში ბინები ჩვეულებრივ სამ მდგომარეობაში იყიდება: შავი კარკასი (მხოლოდ კედლები და გადახურვა), თეთრი კარკასი (ლესვა, მოჭიმვა, ძირითადი გაყვანილობა) და მწვანე კარკასი (თითქმის მზა). რამდენი სამუშაოა საჭირო, პირველ რიგში ამაზეა დამოკიდებული.',
+          'ხელშეკრულებაში ზუსტად წერია, რას გადმოგცემთ დეველოპერი. სანამ რემონტს დაგეგმავთ, ის ერთად გადახედეთ კონტრაქტორს, რომ არც ზედმეტი სამუშაო დაიგეგმოს და არც რამე გამოგრჩეთ.',
+        ],
+      },
+      {
+        h2: '2. ბინის დათვალიერება და დაგეგმვა შორიდან',
+        paragraphs: [
+          'თუ ბინაზე ჩამოსვლა არ შეგიძლიათ, კონტრაქტორი ობიექტს დაათვალიერებს, გაზომავს და დეტალურ ფოტოებსა და ვიდეოს გამოგიგზავნით. ამის საფუძველზე მზადდება გეგმარება და ხარჯთაღრიცხვა.',
+          'ყველაზე მნიშვნელოვანი გადაწყვეტილებები თავიდანვე უნდა მიიღოთ: ოთახების განლაგება, სამზარეულოსა და სააბაზანოს ადგილი, ელექტრო წერტილები, გათბობის ტიპი. რემონტის დაწყების შემდეგ მათი შეცვლა უფრო რთულია.',
+        ],
+      },
+      {
+        h2: '3. მასალების შერჩევა დისტანციურად',
+        paragraphs: [
+          'მასალები შეგიძლიათ აირჩიოთ ფოტოებით, ნიმუშების ვიდეოთი ან მაღაზიების კატალოგებით. სჯობს, თითოეული ოთახისთვის მოკლე სია შეადგინოთ: იატაკი, კედლები, ფილა, სანტექნიკა, კარები და განათება.',
+          'ფერი და ფაქტურა ეკრანზე შეიძლება სხვანაირად გამოჩნდეს. ძირითადი მასალებისთვის სთხოვეთ ნიმუშის ფოტო დღის სინათლეზე ან ვიდეოზარი მაღაზიიდან.',
+        ],
+      },
+      {
+        h2: '4. კომუნიკაცია და ანგარიშგება',
+        paragraphs: [
+          'შორიდან მართვისას მთავარია, ერთი პასუხისმგებელი პირი გყავდეთ, რომელიც თქვენთვის მოსახერხებელ ენაზე გელაპარაკებათ. შეთანხმდით, რა სიხშირით და რა ფორმით მიიღებთ ინფორმაციას, მაგალითად, ფოტოანგარიში ყოველი ეტაპის შემდეგ.',
+          'ყველაზე მნიშვნელოვანია ფარული სამუშაოები: ელექტროგაყვანილობა, მილები და ჰიდროიზოლაცია. ისინი კედელსა და იატაკში იმალება, ამიტომ დახურვამდე სთხოვეთ ფოტოები და, სასურველია, სქემა, სად გადის კაბელები და მილები.',
+        ],
+      },
+      {
+        h2: '5. ხელშეკრულება და ეტაპობრივი გადახდა',
+        paragraphs: [
+          'ხელშეკრულებაში უნდა ეწეროს სამუშაოების სია, მასალები, ეტაპები და როგორ ხდება ცვლილებების შეთანხმება. დოკუმენტი თქვენთვის გასაგებ ენაზე უნდა გქონდეთ, ან თარგმანით.',
+          'ეტაპობრივი გადახდა, როცა ყოველი შემდეგი თანხა წინა ეტაპის დადასტურების შემდეგ იხდება, შორიდან მართვისას განსაკუთრებით მოსახერხებელია. ასე ყოველთვის იცით, რაში იხდით.',
+        ],
+      },
+      {
+        h2: '6. კომუნალური სერვისები და კორპუსის მართვა',
+        paragraphs: [
+          'ახალ კორპუსში წყლის, ელექტროობისა და გაზის მრიცხველების გახსნა და აბონენტად რეგისტრაცია ხშირად ცალკე ნაბიჯია. გაარკვიეთ დეველოპერთან ან კორპუსის მმართველ კომპანიასთან, ვინ აკეთებს ამას და რა დოკუმენტებია საჭირო.',
+          'ბევრ კორპუსს თავისი წესები აქვს რემონტისთვის: სამუშაო საათები, ლიფტით მასალის ატანა, ნარჩენების გატანა. ისინი წინასწარ უნდა გაიგოთ, რომ სამუშაო არ შეფერხდეს.',
+        ],
+      },
+      {
+        h2: '7. ჩაბარება',
+        paragraphs: [
+          'ჩაბარებისას შეამოწმეთ ყველა ოთახი: ელექტრო წერტილები, ონკანები და კანალიზაცია, კარები და ფანჯრები, გათბობა. თუ ვერ ჩამოდიხართ, სთხოვეთ დეტალური ვიდეო ან ენდობით ადამიანს, რომელიც თქვენ ნაცვლად დაათვალიერებს.',
+          'შენიშვნები წერილობით ჩამოწერეთ და შეთანხმდით, როდის გასწორდება. ჩაბარების შემდეგ შეინახეთ ფარული სამუშაოების ფოტოები და სქემები: მომავალში ძალიან გამოგადგებათ.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება ბინის რემონტი ისე, რომ საქართველოში არ ვიყო?',
+        a: 'დიახ. დათვალიერება, ხარჯთაღრიცხვა, მასალების შერჩევა და ანგარიშგება შეიძლება დისტანციურად, ფოტოებით, ვიდეოთი და ვიდეოზარებით.',
+      },
+      {
+        q: 'როგორ გავიგო, რომ ფარული სამუშაოები სწორად გაკეთდა?',
+        a: 'სთხოვეთ ფოტოები და სქემა ელექტროგაყვანილობის, მილებისა და ჰიდროიზოლაციისა, სანამ ისინი კედელსა და იატაკში დაიმალება.',
+      },
+      {
+        q: 'რა ენაზე ხდება კომუნიკაცია?',
+        a: 'ვსაუბრობთ ქართულად და ინგლისურად. ენა და ანგარიშგების ფორმა სამუშაოს დაწყებამდე შევთანხმდებით.',
+      },
+      {
+        q: 'რით ჯობს დავიწყოთ?',
+        a: 'ბინის ხელშეკრულებით, გეგმით და ფოტოებით. ამის საფუძველზე ვგეგმავთ დათვალიერებას და ვამზადებთ ხარჯთაღრიცხვას.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['black-white-green-frame', 'apartment-renovation', 'reading-an-estimate'],
+  },
 ];
 
 const en: Guide[] = [
@@ -2106,6 +2189,7 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['renovation-for-foreign-buyers', 'apartment-renovation', 'cosmetic-vs-full-renovation'],
   },
   {
     slug: GUIDE_SLUGS[4],
@@ -2974,6 +3058,7 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['renovation-for-foreign-buyers', 'building-permit-tbilisi', 'house-construction-stages'],
   },
   {
     slug: GUIDE_SLUGS[16],
@@ -3492,6 +3577,86 @@ const en: Guide[] = [
     ],
     service: 'residential-construction',
     related: ['house-construction-stages', 'house-design', 'construction-renovation-rustavi'],
+  },
+  {
+    slug: GUIDE_SLUGS[23],
+    metaTitle: 'Renovating an Apartment You Bought in Tbilisi from Abroad | BAU BILD',
+    metaDescription:
+      'Bought an apartment in Tbilisi but live abroad? How to plan the renovation remotely: black, white or green frame, communication and photo reports, staged payments, utilities and handover.',
+    h1: 'Renovating an apartment you bought in Tbilisi: a guide for foreign buyers',
+    lead: 'Many foreign buyers purchase an apartment in a new Tbilisi building, often in black or white frame, and do not live here themselves. The renovation is then usually managed from a distance. Here is how to plan it so everything stays transparent and the result matches what you expect.',
+    published: '2026-11-25',
+    sections: [
+      {
+        h2: '1. What condition you bought it in',
+        paragraphs: [
+          'Apartments in new Tbilisi buildings are usually sold in one of three states: black frame (walls and slabs only), white frame (plaster, screed and basic wiring) or green frame (nearly finished). How much work is needed depends on this first.',
+          'Your purchase contract says exactly what the developer hands over. Go through it with the contractor before planning the renovation, so nothing is done twice and nothing is missed.',
+        ],
+      },
+      {
+        h2: '2. Surveying and planning from abroad',
+        paragraphs: [
+          'If you cannot come to the apartment, the contractor can survey and measure it and send you detailed photos and video. The layout and cost estimate are prepared on that basis.',
+          'Make the most important decisions at the start: room layout, kitchen and bathroom position, electrical points and the type of heating. Changing them once work has started is harder.',
+        ],
+      },
+      {
+        h2: '3. Choosing materials remotely',
+        paragraphs: [
+          'You can choose materials from photos, video of samples or shop catalogues. A short list for each room helps: flooring, walls, tiles, sanitary ware, doors and lighting.',
+          'Colours and textures can look different on a screen. For the main materials, ask for a photo of the sample in daylight or a video call from the showroom.',
+        ],
+      },
+      {
+        h2: '4. Communication and progress reports',
+        paragraphs: [
+          'When managing from abroad, the key is having one responsible contact who speaks a language you are comfortable with. Agree how often and in what form you will get updates, for example a photo report after each stage.',
+          'The hidden works matter most: wiring, pipes and waterproofing. They disappear into walls and floors, so ask for photos before they are closed up and, ideally, a plan of where the cables and pipes run.',
+        ],
+      },
+      {
+        h2: '5. Contract and staged payments',
+        paragraphs: [
+          'The contract should list the works, materials, stages and how changes are agreed. Make sure you have it in a language you understand, or with a translation.',
+          'Staged payments, where each payment follows confirmation of the previous stage, are especially convenient when you manage remotely. You always know what you are paying for.',
+        ],
+      },
+      {
+        h2: '6. Utilities and building management',
+        paragraphs: [
+          'In a new building, opening the water, electricity and gas meters and registering as a customer is often a separate step. Ask the developer or the building management company who handles it and which documents are needed.',
+          'Many buildings have their own rules for renovation: working hours, moving materials in the lift, removing debris. Find them out in advance so the work is not held up.',
+        ],
+      },
+      {
+        h2: '7. Handover',
+        paragraphs: [
+          'At handover, check every room: electrical points, taps and drains, doors and windows, heating. If you cannot come, ask for a detailed video or send someone you trust to inspect it for you.',
+          'Write down any remarks and agree when they will be fixed. Afterwards, keep the photos and plans of the hidden works: they will be very useful later.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can I renovate my Tbilisi apartment without being in Georgia?',
+        a: 'Yes. The survey, estimate, material choice and progress reports can all be done remotely, with photos, video and video calls.',
+      },
+      {
+        q: 'How do I know the hidden works were done properly?',
+        a: 'Ask for photos and a plan of the wiring, pipes and waterproofing before they are covered by walls and floors.',
+      },
+      {
+        q: 'What language do you work in?',
+        a: 'We speak Georgian and English. The language and the reporting format are agreed before work starts.',
+      },
+      {
+        q: 'Where should I start?',
+        a: 'With the purchase contract, the floor plan and photos of the apartment. On that basis we arrange a survey and prepare a cost estimate.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['black-white-green-frame', 'apartment-renovation', 'building-in-georgia-foreigner'],
   },
 ];
 
