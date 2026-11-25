@@ -9,6 +9,7 @@ import About from './About.astro';
 import Process from './Process.astro';
 import Reviews from './Reviews.astro';
 import Contact from './Contact.astro';
+import LatestGuides from './LatestGuides.astro';
 import Footer from './Footer.astro';
 import { url, type Lang } from '../i18n';
 
@@ -28,6 +29,7 @@ const { lang } = Astro.props;
     <About lang={lang} />
     <Process lang={lang} />
     <Reviews lang={lang} />
+    <LatestGuides lang={lang} />
     <Contact lang={lang} />
   </main>
   <Footer lang={lang} />
