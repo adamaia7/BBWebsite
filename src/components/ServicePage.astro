@@ -3,9 +3,10 @@ import Base from '../layouts/Base.astro';
 import Header from './Header.astro';
 import Contact from './Contact.astro';
 import Footer from './Footer.astro';
-import { dict, homeUrl, LANGS, type Lang } from '../i18n';
+import { dict, homeUrl, url, LANGS, type Lang } from '../i18n';
 import { servicePages, serviceUi, serviceUrl } from '../i18n/services';
 import { guides, guideUi, guideUrl } from '../i18n/guides';
+import { PROJECT_CASES, projectUi, projectUrl } from '../i18n/projects';
 
 interface Props {
   lang: Lang;
@@ -19,6 +20,8 @@ const page = pages.find((p) => p.slug === slug)!;
 const others = pages.filter((p) => p.slug !== slug);
 // სტატიები, რომლებიც ამ სერვისზე მიუთითებენ: შიდა ბმული უკან, სერვისის გვერდიდან სტატიისკენ
 const related = guides[lang].filter((g) => g.service === slug);
+// ამ სერვისით შესრულებული რეალური პროექტები (სანამ PROJECT_CASES ცარიელია, ბლოკი არ ჩანს)
+const cases = PROJECT_CASES.filter((p) => p.service === slug);
 const paths = Object.fromEntries(LANGS.map((l) => [l, serviceUrl(l, slug)])) as Record<Lang, string>;
 const site = Astro.site;
 const abs = (path: string) => (site ? new URL(path, site).href : path);
@@ -85,6 +88,25 @@ const extraLd = [
         </div>
       </div>
     </section>
+
+    {cases.length > 0 && (
+      <section class="section section--border">
+        <div class="container">
+          <h2 class="h2 sp-others__title">{projectUi[lang].related}</h2>
+          <ul class="sp-cases">
+            {cases.map((c) => (
+              <li>
+                <a class="sp-case" href={projectUrl(lang, c.slug)}>
+                  {c.images[0] && <img src={url(c.images[0])} alt={c[lang].imageAlts[0] ?? c[lang].name} width="1200" height="675" loading="lazy" />}
+                  <span class="sp-case__name">{c[lang].name}</span>
+                  <span class="sp-case__meta">{c[lang].location} · {c.year}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )}
 
     <section class="section section--border">
       <div class="container sp-narrow">
@@ -253,6 +275,42 @@ const extraLd = [
     gap: 8px 12px;
     margin-top: 32px;
     color: var(--muted);
+  }
+  .sp-cases {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  @media (min-width: 900px) {
+    .sp-cases {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .sp-case {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: inherit;
+    text-decoration: none;
+  }
+  .sp-case img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+  }
+  .sp-case__name {
+    font-weight: 700;
+    font-size: 19px;
+  }
+  .sp-case__meta {
+    color: var(--muted);
+    font-size: 15px;
   }
   .sp-others__title {
     margin-bottom: 20px;

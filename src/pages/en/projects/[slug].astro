@@ -1,0 +1,10 @@
+---
+import ProjectPage from '../../../components/ProjectPage.astro';
+import { PROJECT_CASES } from '../../../i18n/projects';
+
+export function getStaticPaths() {
+  return PROJECT_CASES.map((p) => ({ params: { slug: p.slug } }));
+}
+---
+
+<ProjectPage lang="en" slug={Astro.params.slug} />
