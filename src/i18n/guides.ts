@@ -41,6 +41,7 @@ export const GUIDE_SLUGS = [
   'roofing-materials',
   'pharmacy-fit-out',
   'reading-an-estimate',
+  'solar-panels',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -53,7 +54,7 @@ export const guideUi: Record<Lang, { eyebrow: string; title: string; metaTitle: 
     eyebrow: 'რჩევები',
     title: 'რჩევები მშენებლობასა და რემონტზე',
     metaTitle: 'რჩევები მშენებლობასა და რემონტზე | BAU BILD',
-    metaDescription: 'პრაქტიკული რჩევები სახლის მშენებლობასა და ბინის რემონტზე: ეტაპები, ნებართვა, ხარჯთაღრიცხვა, შავი და თეთრი კარკასი, სახურავი და ფასადი. BAU BILD, თბილისი.',
+    metaDescription: 'პრაქტიკული რჩევები სახლის მშენებლობასა და ბინის რემონტზე: ეტაპები, ნებართვა, ხარჯთაღრიცხვა, სახურავი, ფასადი და მზის პანელები. BAU BILD, თბილისი.',
     lead: 'რა უნდა იცოდეთ სახლის მშენებლობის ან რემონტის დაწყებამდე, მარტივად ახსნილი.',
     faq: 'ხშირი კითხვები',
     read: 'წაკითხვა',
@@ -64,7 +65,7 @@ export const guideUi: Record<Lang, { eyebrow: string; title: string; metaTitle: 
     eyebrow: 'Guides',
     title: 'Construction and renovation guides',
     metaTitle: 'Construction and Renovation Guides | BAU BILD',
-    metaDescription: 'Practical guides to building and renovating in Tbilisi and Georgia: construction stages, permits, cost estimates, black and white frame, roofs and facades. By BAU BILD.',
+    metaDescription: 'Practical guides to building and renovating in Tbilisi and Georgia: construction stages, permits, cost estimates, roofs, facades and solar panels. By BAU BILD.',
     lead: 'What to know before you start building or renovating, explained simply.',
     faq: 'Frequently asked questions',
     read: 'Read',
@@ -1620,6 +1621,79 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
   },
+  {
+    slug: GUIDE_SLUGS[21],
+    metaTitle: 'მზის პანელები კერძო სახლზე: რა გავითვალისწინოთ | BAU BILD',
+    metaDescription:
+      'მზის პანელები კერძო სახლზე: სახურავის მიმართულება და ჩრდილი, კონსტრუქციის დატვირთვა, დამაგრება ჰიდროიზოლაციის დაზიანების გარეშე, კაბელები და დაგეგმვა მშენებლობისას.',
+    h1: 'მზის პანელები კერძო სახლზე: რა გავითვალისწინოთ სახურავზე და პროექტში',
+    lead: 'მზის პანელებს ბევრი სახლის მშენებლობის დროს ან სახურავის შეცვლისას გეგმავს. პანელების შერჩევასა და მონტაჟს სპეციალიზებული კომპანია აკეთებს, მაგრამ შედეგი დიდწილად სახურავზეა დამოკიდებული. აქ ავხსენით, რა უნდა იყოს გათვალისწინებული მშენებლობის მხრიდან.',
+    published: '2026-11-25',
+    sections: [
+      {
+        h2: '1. სახურავის მიმართულება და ჩრდილი',
+        paragraphs: [
+          'პანელები ყველაზე მეტ ენერგიას მაშინ გამოიმუშავებს, როცა დღის დიდ ნაწილს მზე პირდაპირ ხვდება. ამიტომ მნიშვნელოვანია, სახურავის რომელი ფერდი რა მხარესაა მიმართული და რა დახრილობა აქვს.',
+          'ჩრდილი ხშირად უფრო დიდ პრობლემას ქმნის, ვიდრე მიმართულება. მეზობელი შენობა, ხე, საკვამური მილი ან სახურავის საკუთარი ელემენტი პანელების ნაწილს ჩრდილავს და მთელი სისტემის მუშაობას ამცირებს. სახურავის დაგეგმვისას სჯობს, ერთი ფერდი რაც შეიძლება თავისუფალი დარჩეს.',
+        ],
+      },
+      {
+        h2: '2. კონსტრუქცია და დატვირთვა',
+        paragraphs: [
+          'პანელები და მათი სამაგრი სისტემა სახურავს დამატებით წონას ემატება, ამას კი ქარისა და თოვლის დატვირთვაც ემატება. ახალ სახლზე ეს კონსტრუქციულ გათვლაში უნდა შევიდეს.',
+          'არსებულ სახლზე, განსაკუთრებით ძველ ხის სახურავზე, ჯერ კოჭებისა და ნივნივების მდგომარეობა უნდა შემოწმდეს. თუ ხე დაზიანებულია ან სიმტკიცე საეჭვოა, ჯობს ჯერ სახურავი გამაგრდეს ან შეიცვალოს და პანელები შემდეგ დამონტაჟდეს.',
+        ],
+      },
+      {
+        h2: '3. სახურავის საფარი და დამაგრება',
+        paragraphs: [
+          'სამაგრები სახურავის საფარში და ხშირად ჰიდროიზოლაციაშიც გადის. თითოეული ასეთი წერტილი სწორად უნდა დაიხუროს, თორემ წლების შემდეგ სწორედ იქ შეიძლება გაჩნდეს ჟონვა.',
+          'სხვადასხვა საფარს სხვადასხვა სამაგრი სჭირდება: კრამიტს, მეტალოკრამიტს, პროფილირებულ ფურცელს და ბრტყელ სახურავს თავისი გადაწყვეტა აქვს. ბრტყელ სახურავზე ხშირად სამაგრი ჩარჩო ბალასტით იდგმება, რომ საფარი საერთოდ არ გაიხვრიტოს.',
+          'თუ სახურავის საფარი მალე შესაცვლელია, ჯობს ჯერ ის შეიცვალოს. წინააღმდეგ შემთხვევაში პანელების მოხსნა და თავიდან დადგმა მოგიწევთ.',
+        ],
+      },
+      {
+        h2: '4. კაბელები და აღჭურვილობის ადგილი',
+        paragraphs: [
+          'პანელებიდან კაბელები ინვერტორამდე და ელექტროფარამდე მიდის. მშენებლობის ეტაპზე მარტივია მათთვის არხის ან მილის წინასწარ დატოვება, მზა სახლში კი გაყვანა ფასადზე ან ინტერიერში ხილული ხდება.',
+          'ინვერტორისა და, თუ გეგმავთ, აკუმულატორისთვის საჭიროა მშრალი და ვენტილირებადი ადგილი, მაგალითად, ტექნიკური ოთახი ან სარდაფის ნაწილი. ეს ადგილი პროექტში წინასწარ უნდა გამოიყოს.',
+        ],
+      },
+      {
+        h2: '5. ქსელთან მიერთება და დოკუმენტები',
+        paragraphs: [
+          'თუ სისტემა ელექტროქსელთან იქნება მიერთებული, მიერთების პირობები და საჭირო დოკუმენტები წინასწარ უნდა გაარკვიოთ თქვენი რეგიონის გამანაწილებელ კომპანიასთან და იმ კომპანიასთან, რომელიც პანელებს დაგიმონტაჟებთ.',
+          'წესები შეიძლება შეიცვალოს, ამიტომ ინფორმაცია პირველწყაროდან გადაამოწმეთ და არა ძველი სტატიებიდან.',
+        ],
+      },
+      {
+        h2: '6. როდის დავგეგმოთ',
+        paragraphs: [
+          'ყველაზე მარტივი და იაფი გზა ახალი სახლის პროექტის ეტაპზეა: სახურავის ფორმა, დატვირთვა, კაბელების გზა და ტექნიკური ოთახი ერთდროულად დაიგეგმება.',
+          'თუ პანელებს ახლა არ აყენებთ, მაგრამ მომავალში ფიქრობთ, მაინც ღირს სახურავის მიმართულების, დატვირთვის და კაბელის არხის გათვალისწინება. მოგვიანებით ეს ბევრად მეტ სამუშაოს მოითხოვს.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება თუ არა მზის პანელების დაყენება ნებისმიერ სახურავზე?',
+        a: 'ყოველთვის არა. საჭიროა, რომ სახურავს საკმარისი თავისუფალი და მზიანი ფართი ჰქონდეს, კონსტრუქციამ დამატებითი დატვირთვა გაუძლოს და საფარი კარგ მდგომარეობაში იყოს.',
+      },
+      {
+        q: 'დააზიანებს თუ არა პანელები სახურავს?',
+        a: 'სწორად შერჩეული სამაგრი და კარგად დახურული დამაგრების წერტილები სახურავს არ აზიანებს. პრობლემები ძირითადად მაშინ ჩნდება, როცა საფარში გავლის ადგილები ჰიდროიზოლაციით არ იხურება.',
+      },
+      {
+        q: 'ჯობს პანელები სახლის მშენებლობისას დავგეგმოთ?',
+        a: 'დიახ. პროექტის ეტაპზე მარტივია სახურავის ფორმის, დატვირთვის, კაბელების გზისა და ტექნიკური ოთახის გათვალისწინება. მზა სახლზე იგივე უფრო მეტ სამუშაოს მოითხოვს.',
+      },
+      {
+        q: 'ბრტყელ სახურავზე როგორ მაგრდება პანელები?',
+        a: 'ხშირად სპეციალურ ჩარჩოზე, რომელიც ბალასტით მყარდება და საფარს არ ხვრეტს. ამ შემთხვევაში სახურავმა ბალასტის წონაც უნდა გაუძლოს.',
+      },
+    ],
+    service: 'facade-roofing',
+  },
 ];
 
 const en: Guide[] = [
@@ -3168,6 +3242,79 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+  },
+  {
+    slug: GUIDE_SLUGS[21],
+    metaTitle: 'Solar Panels on a Private House: What to Plan For | BAU BILD',
+    metaDescription:
+      'Solar panels on a private house in Georgia: roof orientation and shade, structural load, mounting without damaging waterproofing, cable routes and planning it during construction.',
+    h1: 'Solar panels on a private house: what to plan on the roof and in the design',
+    lead: 'Many people plan solar panels while building a house or replacing a roof. Choosing and installing the panels is a job for a specialist installer, but the result depends heavily on the roof. Here is what needs to be taken into account on the construction side.',
+    published: '2026-11-25',
+    sections: [
+      {
+        h2: '1. Roof orientation and shade',
+        paragraphs: [
+          'Panels produce the most energy when direct sun reaches them for most of the day. That is why it matters which way each roof slope faces and how steep it is.',
+          'Shade is often a bigger problem than orientation. A neighbouring building, a tree, a chimney or part of the roof itself can shade some of the panels and reduce the output of the whole system. When planning a roof, it helps to keep one slope as clear as possible.',
+        ],
+      },
+      {
+        h2: '2. Structure and load',
+        paragraphs: [
+          'Panels and their mounting system add weight to the roof, on top of wind and snow loads. On a new house this should be part of the structural calculation.',
+          'On an existing house, especially an older timber roof, the condition of the rafters and purlins should be checked first. If the timber is damaged or its strength is doubtful, it is better to reinforce or replace the roof first and install the panels afterwards.',
+        ],
+      },
+      {
+        h2: '3. Roof covering and mounting',
+        paragraphs: [
+          'Mounting brackets pass through the roof covering and often through the waterproofing too. Every such point must be sealed properly, otherwise that is exactly where a leak can appear years later.',
+          'Different coverings need different brackets: clay tiles, metal tiles, profiled sheet and flat roofs each have their own solution. On a flat roof the frame is often held down with ballast so the covering is not pierced at all.',
+          'If the roof covering is due for replacement soon, replace it first. Otherwise the panels will have to be removed and refitted later.',
+        ],
+      },
+      {
+        h2: '4. Cables and space for equipment',
+        paragraphs: [
+          'Cables run from the panels to the inverter and the electrical panel. During construction it is easy to leave a duct or conduit for them; in a finished house the cable run often ends up visible on the facade or indoors.',
+          'The inverter and, if you plan one, a battery need a dry, ventilated space such as a utility room or part of the basement. That space should be set aside in the design.',
+        ],
+      },
+      {
+        h2: '5. Grid connection and paperwork',
+        paragraphs: [
+          'If the system will be connected to the grid, check the connection conditions and the documents required in advance with the distribution company in your region and with the company installing the panels.',
+          'Rules can change, so confirm the information with the original source rather than relying on older articles.',
+        ],
+      },
+      {
+        h2: '6. When to plan it',
+        paragraphs: [
+          'The simplest and cheapest moment is the design stage of a new house: roof shape, load, cable route and utility room are all planned together.',
+          'Even if you are not installing panels now but may in future, it is worth planning the roof orientation, load and a cable duct. Doing this later takes much more work.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can solar panels go on any roof?',
+        a: 'Not always. The roof needs enough clear, sunny area, the structure must carry the extra load and the covering should be in good condition.',
+      },
+      {
+        q: 'Will solar panels damage my roof?',
+        a: 'Properly chosen brackets and well-sealed fixing points do not damage the roof. Problems usually appear when the penetrations through the covering are not sealed into the waterproofing.',
+      },
+      {
+        q: 'Is it better to plan panels while building the house?',
+        a: 'Yes. At the design stage it is easy to account for the roof shape, load, cable route and a utility room. On a finished house the same takes more work.',
+      },
+      {
+        q: 'How are panels mounted on a flat roof?',
+        a: 'Often on a dedicated frame held down by ballast, which does not pierce the covering. In that case the roof must also carry the weight of the ballast.',
+      },
+    ],
+    service: 'facade-roofing',
   },
 ];
 

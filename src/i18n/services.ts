@@ -236,10 +236,10 @@ const ka: ServicePage[] = [
 const en: ServicePage[] = [
   {
     slug: SERVICE_SLUGS[0],
-    metaTitle: 'Home Builders in Tbilisi and Across Georgia | BAU BILD',
+    metaTitle: 'Custom Home Builders in Tbilisi and Across Georgia | BAU BILD',
     metaDescription:
-      'Custom home builder in Tbilisi and across Georgia: private houses built as a full cycle, from foundation and roof to facade and interior. One team.',
-    h1: 'Private house and country home construction',
+      'Custom home builders near Tbilisi and across Georgia: private and country houses built to your design, from foundation and roof to facade and interior. One team.',
+    h1: 'Custom home builders: private houses and country homes in Georgia',
     lead: 'We build homes from the ground up, from the foundation to handing over the keys, with one team and one person responsible.',
     body: [
       'Building a house is a big decision with many details. We take on the whole process: cost estimate, schedule, foundation and structure, roof, facade and interior works.',
@@ -268,6 +268,14 @@ const en: ServicePage[] = [
       {
         q: 'Where do you work?',
         a: 'In Tbilisi and across Georgia.',
+      },
+      {
+        q: 'Do you build custom and high-end homes?',
+        a: 'Yes. We build to the client’s own design and specification. The materials and level of finish are agreed with the client at the estimate stage.',
+      },
+      {
+        q: 'How do I start working with a home builder near me?',
+        a: 'Call or email us. We arrange a site visit, look at the plot and the design, and then prepare a cost estimate and work schedule.',
       },
     ],
   },
