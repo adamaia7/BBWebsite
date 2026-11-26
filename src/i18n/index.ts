@@ -144,9 +144,9 @@ export type Dict = typeof ka;
 
 const en: Dict = {
   meta: {
-    title: 'Construction Company in Tbilisi: Building and Renovation | BAU BILD',
+    title: 'Construction Company and Local Builders in Tbilisi | BAU BILD',
     description:
-      'BAU BILD is a local construction and renovation company in Tbilisi, Georgia: houses, commercial buildings, roofs, facades and interiors, from design to handover.',
+      'BAU BILD are local builders in Tbilisi, Georgia: a construction and renovation company for houses, commercial buildings, roofs, facades and interiors, from design to handover.',
   },
   tagline: 'CONSTRUCTION · RENOVATION',
   taglineA: 'CONSTRUCTION',
