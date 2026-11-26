@@ -48,6 +48,7 @@ export const GUIDE_SLUGS = [
   'solar-panels',
   'house-construction-mtskheta',
   'renovation-for-foreign-buyers',
+  'winter-construction',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -341,6 +342,7 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
     updated: '2026-11-24',
+    related: ['winter-construction', 'reading-an-estimate', 'house-construction-stages'],
   },
   {
     slug: GUIDE_SLUGS[3],
@@ -912,6 +914,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'facade-roofing',
+    related: ['winter-construction', 'roof-repair', 'roofing-materials'],
   },
   {
     slug: GUIDE_SLUGS[11],
@@ -1870,6 +1873,86 @@ const ka: Guide[] = [
     service: 'renovation-interior',
     related: ['black-white-green-frame', 'apartment-renovation', 'reading-an-estimate'],
   },
+  {
+    slug: GUIDE_SLUGS[24],
+    metaTitle: 'მშენებლობა ზამთარში: რა შეიძლება და რა არა | BAU BILD',
+    metaDescription:
+      'შეიძლება თუ არა სახლის მშენებლობა და რემონტი ზამთარში საქართველოში: ბეტონი და წყობა ყინვაში, სახურავი, შიდა სამუშაოები, ობიექტის დაცვა და ზამთრის გამოყენება დაგეგმვისთვის.',
+    h1: 'მშენებლობა ზამთარში: რა შეიძლება და რა არა',
+    lead: 'ზამთარში მშენებლობა მთლიანად არ ჩერდება, მაგრამ ყველა სამუშაო ერთნაირად არ ეგუება სიცივეს. ზოგი ჩვეულებრივ გრძელდება, ზოგს დამატებითი ზომები სჭირდება, ზოგი კი სჯობს თბილ ამინდში გადავდოთ. აქ ავხსენით, როგორ დავგეგმოთ ზამთარი ობიექტზე.',
+    published: '2026-11-26',
+    sections: [
+      {
+        h2: '1. რეგიონი და ამინდი',
+        paragraphs: [
+          'საქართველოში ზამთარი ძალიან განსხვავებულია. თბილისსა და დასავლეთ საქართველოს ბარში ყინვიანი დღეები შედარებით ცოტაა, დასავლეთში კი ხშირი წვიმაა. მთიან რაიონებში, ბაკურიანში, გუდაურსა და ჯავახეთში, ზამთარი ხანგრძლივი და თოვლიანია.',
+          'ამიტომ ზამთრის გეგმა ადგილის მიხედვით უნდა შედგეს. მთაში ბევრი გარე სამუშაო ფაქტობრივად სეზონურია, ბარში კი უმეტესობა გრძელდება, თუ ამინდს ყოველდღიურად თვალს ვადევნებთ.',
+        ],
+      },
+      {
+        h2: '2. ბეტონი და საძირკველი ყინვაში',
+        paragraphs: [
+          'ბეტონი ყველაზე მგრძნობიარეა სიცივის მიმართ. თუ ის სიმტკიცის მოკრებამდე გაიყინა, შიგნით წყალი ფართოვდება და ბეტონი სუსტდება. ეს გარეგნულად შეიძლება მაშინვე არ გამოჩნდეს.',
+          'ყინვაში ბეტონის ჩასხმა შესაძლებელია მხოლოდ დამატებითი ზომებით: ზამთრის დანამატებით, ბეტონის დაფარვითა და დათბუნებით, ზოგჯერ გათბობით. გაყინულ გრუნტზე საძირკვლის ჩასხმა არ შეიძლება. თუ ამის უზრუნველყოფა ვერ ხერხდება, ჩასხმა სჯობს თბილ დღეებში გადავიდეს.',
+        ],
+      },
+      {
+        h2: '3. წყობა, ლესვა და მოჭიმვა',
+        paragraphs: [
+          'ბლოკისა და აგურის წყობის ხსნარი, ბათქაში და მოჭიმვა ასევე წყალზეა დამოკიდებული და ყინვაში ვერ შრება და მაგრდება სწორად. გარე წყობა და ფასადის ბათქაში ცივ დღეებში რისკიანია.',
+          'შიგნით, დახურულ და გამთბარ შენობაში, ლესვა და მოჭიმვა ჩვეულებრივ გრძელდება. მთავარია, ოთახში ტემპერატურა და ტენიანობა სტაბილური იყოს და ფანჯრების ღიობები დახურული.',
+        ],
+      },
+      {
+        h2: '4. სახურავი და ფასადი',
+        paragraphs: [
+          'სახურავის მონტაჟი ზამთარში შესაძლებელია მშრალ დღეებში, მაგრამ ყინულიან და თოვლიან სახურავზე მუშაობა საშიშია. ზოგ ჰიდროიზოლაციის მასალას და ჰერმეტიკს დასაწებებლად დადებითი ტემპერატურა სჭირდება.',
+          'ფასადის საღებავები და დეკორატიული ბათქაში, როგორც წესი, სიცივესა და ნესტში არ დაიტანება. ამიტომ ფასადის მოპირკეთება ხშირად გაზაფხულზე გადადის, ზამთარში კი შენობა ფანჯრებითა და სახურავით იხურება.',
+        ],
+      },
+      {
+        h2: '5. რა გრძელდება ზამთარში თავისუფლად',
+        paragraphs: [
+          'თუ შენობას სახურავი და ფანჯრები აქვს, ზამთარი შიდა სამუშაოების კარგი დროა: ელექტროგაყვანილობა, სანტექნიკა, გათბობის სისტემა, თაბაშირმუყაოს ტიხრები და მოპირკეთების ნაწილი.',
+          'ბინის რემონტი კორპუსში წლის ნებისმიერ დროს შეიძლება. აქ მთავარი პირობაა გათბობა და ვენტილაცია, რომ საღებავი, წებო და მოჭიმვა სწორად გაშრეს.',
+        ],
+      },
+      {
+        h2: '6. ობიექტის დაცვა ზამთარში',
+        paragraphs: [
+          'თუ მშენებლობა ზამთრით ჩერდება, ობიექტი უნდა მომზადდეს: დაუსრულებელი კედლები და გადახურვა დაიფაროს, წყალი სახურავიდან და ქვაბულიდან გაიყვანოს, მასალები მშრალ ადგილას შეინახოს.',
+          'ცარიელ სახლში წყლის მილები უნდა დაიცალოს ან ყინვისგან დაიცვას. ზამთრის შემდეგ ობიექტი სამუშაოს განახლებამდე უნდა დათვალიერდეს: ბზარები, ნესტი და წყლით დაზიანება.',
+        ],
+      },
+      {
+        h2: '7. ზამთარი დაგეგმვისთვის',
+        paragraphs: [
+          'ზამთარი საუკეთესო დროა მომზადებისთვის: პროექტი, ნებართვა, ხარჯთაღრიცხვა, მასალების შერჩევა და კონტრაქტორთან შეთანხმება. ასე გაზაფხულზე სამუშაო პირველივე თბილ დღეებში იწყება.',
+          'ზამთრის ბოლოს გრუნტის კვლევა და ნაკვეთის მომზადებაც შეიძლება, თუ ამინდი იძლევა საშუალებას.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება ზამთარში სახლის მშენებლობა?',
+        a: 'დიახ, ნაწილობრივ. შიდა სამუშაოები, სახურავი მშრალ დღეებში და დაგეგმვა ჩვეულებრივ გრძელდება. ბეტონი, გარე წყობა და ფასადის მოპირკეთება ყინვაში დამატებით ზომებს მოითხოვს ან თბილ ამინდში გადადის.',
+      },
+      {
+        q: 'შეიძლება ბეტონის ჩასხმა ყინვაში?',
+        a: 'მხოლოდ ზამთრის დანამატებით, ბეტონის დაფარვითა და დათბუნებით. გაყინულ გრუნტზე საძირკველი არ ისხმება.',
+      },
+      {
+        q: 'ბინის რემონტი ზამთარში შეიძლება?',
+        a: 'დიახ. კორპუსში ბინის რემონტი წლის ნებისმიერ დროს კეთდება, თუ ბინა თბება და ნიავდება.',
+      },
+      {
+        q: 'როგორ დავიცვათ დაუსრულებელი სახლი ზამთარში?',
+        a: 'დაფარეთ კედლები და გადახურვა, გაიყვანეთ წყალი, მასალები მშრალად შეინახეთ და დაცალეთ წყლის მილები. გაზაფხულზე სამუშაოს განახლებამდე ობიექტი დაათვალიერეთ.',
+      },
+    ],
+    service: 'residential-construction',
+    related: ['house-construction-stages', 'roof-repair', 'house-construction-cost'],
+  },
 ];
 
 const en: Guide[] = [
@@ -2129,6 +2212,7 @@ const en: Guide[] = [
     ],
     service: 'residential-construction',
     updated: '2026-11-24',
+    related: ['winter-construction', 'reading-an-estimate', 'house-construction-stages'],
   },
   {
     slug: GUIDE_SLUGS[3],
@@ -2700,6 +2784,7 @@ const en: Guide[] = [
       },
     ],
     service: 'facade-roofing',
+    related: ['winter-construction', 'roof-repair', 'roofing-materials'],
   },
   {
     slug: GUIDE_SLUGS[11],
@@ -3657,6 +3742,86 @@ const en: Guide[] = [
     ],
     service: 'renovation-interior',
     related: ['black-white-green-frame', 'apartment-renovation', 'building-in-georgia-foreigner'],
+  },
+  {
+    slug: GUIDE_SLUGS[24],
+    metaTitle: 'Winter Construction in Georgia: What Can and Cannot Be Done | BAU BILD',
+    metaDescription:
+      'Can you build or renovate in winter in Georgia? Concrete and masonry in frost, roofing, indoor works, protecting the site, and using winter for planning and permits.',
+    h1: 'Winter construction: what can and cannot be done',
+    lead: 'Construction does not stop completely in winter, but not every job copes with the cold in the same way. Some continue as usual, some need extra measures, and some are better postponed to warmer weather. Here is how to plan the winter on site.',
+    published: '2026-11-26',
+    sections: [
+      {
+        h2: '1. Region and weather',
+        paragraphs: [
+          'Winter varies a lot across Georgia. In Tbilisi and the lowlands of western Georgia frosty days are relatively few, while the west gets a lot of rain. In mountain areas such as Bakuriani, Gudauri and Javakheti, winter is long and snowy.',
+          'So the winter plan depends on the location. In the mountains many outdoor works are effectively seasonal; in the lowlands most continue as long as the weather is checked every day.',
+        ],
+      },
+      {
+        h2: '2. Concrete and foundations in frost',
+        paragraphs: [
+          'Concrete is the most sensitive to cold. If it freezes before it gains strength, the water inside expands and weakens it, and this may not be visible straight away.',
+          'Pouring concrete in frost is possible only with extra measures: winter admixtures, covering and insulating the concrete, sometimes heating. Foundations must never be poured on frozen ground. If these measures cannot be provided, the pour is better moved to warmer days.',
+        ],
+      },
+      {
+        h2: '3. Masonry, plaster and screed',
+        paragraphs: [
+          'Block and brick mortar, plaster and screed also depend on water and cannot dry and harden properly in frost. External masonry and facade render are risky on cold days.',
+          'Indoors, in a closed and heated building, plastering and screeding usually continue. What matters is a stable temperature and humidity in the room and closed window openings.',
+        ],
+      },
+      {
+        h2: '4. Roof and facade',
+        paragraphs: [
+          'Roofing can be installed in winter on dry days, but working on an icy or snowy roof is dangerous. Some waterproofing materials and sealants need above-freezing temperatures to bond.',
+          'Facade paints and decorative render generally cannot be applied in cold, damp weather. Facade finishing therefore often moves to spring, while in winter the building is closed in with windows and the roof.',
+        ],
+      },
+      {
+        h2: '5. What carries on freely in winter',
+        paragraphs: [
+          'Once a building has a roof and windows, winter is a good time for indoor works: wiring, plumbing, the heating system, plasterboard partitions and part of the finishing.',
+          'Apartment renovation in a block of flats can be done at any time of year. The main conditions are heating and ventilation, so paint, adhesive and screed dry properly.',
+        ],
+      },
+      {
+        h2: '6. Protecting the site over winter',
+        paragraphs: [
+          'If work pauses for the winter, the site should be prepared: unfinished walls and slabs covered, water drained from the roof and excavation, and materials stored somewhere dry.',
+          'In an empty house, water pipes should be drained or protected from frost. Before work resumes, inspect the site for cracks, damp and water damage.',
+        ],
+      },
+      {
+        h2: '7. Winter is for planning',
+        paragraphs: [
+          'Winter is the best time to prepare: the design, permit, cost estimate, choice of materials and agreement with the contractor. That way work starts on the first warm days of spring.',
+          'Towards the end of winter a soil survey and site preparation can also be done, weather permitting.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can you build a house in winter?',
+        a: 'Partly, yes. Indoor works, roofing on dry days and planning usually continue. Concrete, external masonry and facade finishing need extra measures in frost or move to warmer weather.',
+      },
+      {
+        q: 'Can concrete be poured in freezing weather?',
+        a: 'Only with winter admixtures and by covering and insulating the concrete. Foundations are never poured on frozen ground.',
+      },
+      {
+        q: 'Can I renovate my apartment in winter?',
+        a: 'Yes. Apartment renovation can be done at any time of year, as long as the flat is heated and ventilated.',
+      },
+      {
+        q: 'How do I protect an unfinished house over winter?',
+        a: 'Cover the walls and slabs, drain water away, keep materials dry and drain the water pipes. Inspect the site before work resumes in spring.',
+      },
+    ],
+    service: 'residential-construction',
+    related: ['house-construction-stages', 'roof-repair', 'house-construction-cost'],
   },
 ];
 
