@@ -50,6 +50,7 @@ export const GUIDE_SLUGS = [
   'renovation-for-foreign-buyers',
   'winter-construction',
   'choosing-a-plot',
+  'bathroom-renovation',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -260,6 +261,7 @@ const ka: Guide[] = [
     ],
     service: 'renovation-interior',
     updated: '2026-11-23',
+    related: ['bathroom-renovation', 'cosmetic-vs-full-renovation', 'reading-an-estimate'],
   },
   {
     slug: GUIDE_SLUGS[2],
@@ -845,6 +847,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['bathroom-renovation', 'apartment-renovation', 'renovation-cost-factors'],
   },
   {
     slug: GUIDE_SLUGS[10],
@@ -2035,6 +2038,89 @@ const ka: Guide[] = [
     service: 'residential-construction',
     related: ['house-design', 'building-permit-tbilisi', 'house-construction-mtskheta'],
   },
+  {
+    slug: GUIDE_SLUGS[26],
+    metaTitle: 'აბაზანის რემონტი: სამუშაოების თანმიმდევრობა და ჰიდროიზოლაცია | BAU BILD',
+    metaDescription:
+      'აბაზანის რემონტი სწორი თანმიმდევრობით: დემონტაჟი, სანტექნიკა, ელექტროობა, მოჭიმვა დახრით, ჰიდროიზოლაცია, კაფელი, ვენტილაცია და მოწყობილობები.',
+    h1: 'აბაზანის რემონტი: სამუშაოების თანმიმდევრობა და ჰიდროიზოლაცია',
+    lead: 'აბაზანა ბინის ყველაზე პატარა, მაგრამ ყველაზე რთული ოთახია: აქ ერთად ხვდება წყალი, კანალიზაცია, ელექტროობა და ნესტი. შეცდომა ხშირად მხოლოდ მოგვიანებით ჩანს, მეზობლის ჭერზე ლაქით ან ობით. აქ ვხსნით, რა თანმიმდევრობით კეთდება სამუშაოები და სად არ ღირს დაზოგვა.',
+    published: '2026-11-26',
+    sections: [
+      {
+        h2: '1. გეგმა რემონტის დაწყებამდე',
+        paragraphs: [
+          'ჯერ გადაწყვიტეთ, რა იქნება აბაზანაში და სად: შხაპი თუ აბაზანა, ნიჟარა, უნიტაზი, სარეცხი მანქანა, წყალგამაცხელებელი, კარადები. მოწყობილობების ადგილი განსაზღვრავს მილების, კანალიზაციის და როზეტების ადგილს, ამიტომ მისი შეცვლა კაფელის დაგების შემდეგ ძვირი ჯდება.',
+          'შეარჩიეთ კონკრეტული მოწყობილობები წინასწარ. ჩაშენებულ უნიტაზს ინსტალაციის ჩარჩო სჭირდება, შხაპის ტრაპს თავისი სიმაღლე, ჩაშენებულ შემრევს კი კედელში მოსათავსებელი ნაწილი. ეს ყველაფერი შავ სამუშაოებზე უნდა იყოს გათვალისწინებული.',
+        ],
+      },
+      {
+        h2: '2. დემონტაჟი და ზედაპირების შემოწმება',
+        paragraphs: [
+          'ძველი ფილის, მოწყობილობების და მილების მოხსნის შემდეგ ჩანს კედლების და იატაკის რეალური მდგომარეობა. ძველ ბინებში ხშირად ჩნდება დამპალი ფენები, გაჟღენთილი მოჭიმვა ან ფარული გაჟონვის კვალი. ესენი ახალ ფენებამდე უნდა გამოსწორდეს.',
+          'თუ კედელს ან ტიხარს ეხებით, ჯერ დარწმუნდით, რომ ის მზიდი არ არის. კორპუსში მზიდ კედელში ღიობის გაჭრა ან დასუსტება დაუშვებელია სპეციალისტის დასკვნის გარეშე.',
+        ],
+      },
+      {
+        h2: '3. სანტექნიკა და კანალიზაცია',
+        paragraphs: [
+          'ძველი ლითონის მილები სრული რემონტისას უმჯობესია მთლიანად შეიცვალოს. კაფელის ქვეშ დატოვებული ძველი მილი შემდეგ გაჟონვის ყველაზე ხშირი მიზეზია. ახალი მილების შეერთებები რაც შეიძლება ცოტა უნდა იყოს კედელში დაფარულ ნაწილში.',
+          'კანალიზაციის მილებს სწორი დახრა სჭირდება სადგარისკენ, წინააღმდეგ შემთხვევაში წყალი ჩერდება და სუნი ჩნდება. სანამ კედლებს დახურავთ, სისტემა წნევით შეამოწმეთ და შეერთებები ღიად ნახეთ.',
+          'დატოვეთ მისასვლელი ონკანებთან, მრიცხველებთან და კოლექტორთან. სარევიზიო ლუქი ფილაში ავარიის დროს კედლის მტვრევას გადაგარჩენთ.',
+        ],
+      },
+      {
+        h2: '4. ელექტროობა და განათება',
+        paragraphs: [
+          'აბაზანა ნესტიანი სათავსოა, ამიტომ აქ ელექტროობა განსაკუთრებით ფრთხილად კეთდება: ცალკე ავტომატი, დამცავი გამორთვის მოწყობილობა (RCD), ტენგამძლე როზეტები და სანათები და მათი სწორი განლაგება წყლის წყაროსთან მიმართებით.',
+          'წინასწარ დაგეგმეთ როზეტები სარეცხი მანქანის, თმის საშრობის და წყალგამაცხელებლისთვის, ასევე სარკის განათება და ვენტილატორის კვება. ეს სამუშაო გამოცდილ ელექტრიკოსს უნდა მიანდოთ.',
+        ],
+      },
+      {
+        h2: '5. იატაკი: მოჭიმვა და დახრა',
+        paragraphs: [
+          'თუ შხაპს ტრაპით აკეთებთ, იატაკს ტრაპისკენ დახრა სჭირდება, რომ წყალი არ დადგეს. დახრა მოჭიმვის ეტაპზე ყალიბდება და ფილით მისი გამოსწორება აღარ ხერხდება.',
+          'მოჭიმვა ჰიდროიზოლაციამდე კარგად უნდა გაშრეს. ნესტიან მოჭიმვაზე დატანილი იზოლაცია და წებო ცუდად ეკვრის ზედაპირს.',
+        ],
+      },
+      {
+        h2: '6. ჰიდროიზოლაცია',
+        paragraphs: [
+          'ჰიდროიზოლაცია აბაზანის რემონტის ყველაზე მნიშვნელოვანი ფენაა: ის ფილის ქვეშ იმალება და არ ჩანს, მაგრამ სწორედ ის იცავს მეზობლებს და კონსტრუქციას წყლისგან. ფილა და შეერთებები წყალს სრულად ვერ აკავებს.',
+          'იზოლაცია მთელ იატაკზე კეთდება და კედლებზე ადის. შხაპის ზონაში კედლები უფრო მაღლა იზოლირდება. კუთხეებში, იატაკისა და კედლის შეერთებაზე და მილების გასასვლელებთან სპეციალური ლენტი და მანჟეტები გამოიყენება, რადგან გაჟონვა ყველაზე ხშირად აქ ხდება.',
+          'ფილის დაგებამდე ღირს იზოლაციის შემოწმება: იატაკზე წყლის დასხმა და დაკვირვება, ჩანს თუ არა სადმე გაჟონვა. ეს უბრალო ტესტი ბევრ პრობლემას აგაცილებთ.',
+        ],
+      },
+      {
+        h2: '7. კაფელი, შეერთებები და ვენტილაცია',
+        paragraphs: [
+          'ფილა უნდა დაეწყოს გაშრალ და სწორ ზედაპირზე, ნესტგამძლე წებოთი. შხაპის ზონაში შეერთებებისთვის ღირს წყალგაუმტარი ან ეპოქსიდური შემავსებლის გამოყენება. კუთხეები და აბაზანის ან შხაპის კიდესთან შეერთება სილიკონით ივსება.',
+          'ვენტილაციის გარეშე საუკეთესო რემონტიც ობით დასრულდება. შეამოწმეთ, მუშაობს თუ არა ვენტილაციის არხი (ძველ კორპუსებში ის ხშირად ჩახერგილია), და საჭიროების შემთხვევაში დაამონტაჟეთ ვენტილატორი. კარის ქვეშ მცირე ღრიჩო ჰაერის მოძრაობას ეხმარება.',
+          'ბოლოს მონტაჟდება მოწყობილობები, შემრევები, სარკე და აქსესუარები. ყველაფერი მუშაობაში შეამოწმეთ: წყლის ნაკადი, დრენაჟი, გაჟონვა შეერთებებთან.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'აუცილებელია ჰიდროიზოლაცია, თუ კაფელს ვაგებთ?',
+        a: 'დიახ. ფილა და შეერთებები წყალს სრულად ვერ აკავებს, განსაკუთრებით შხაპის ზონაში. ჰიდროიზოლაცია ფილის ქვეშ იცავს იატაკს, კედლებს და ქვედა სართულის მეზობლებს.',
+      },
+      {
+        q: 'შეიძლება ახალი ფილის დაგება ძველზე?',
+        a: 'ზოგჯერ ტექნიკურად შესაძლებელია, მაგრამ ამ დროს ვერ ნახავთ, რა ხდება ძველი ფილის ქვეშ, ვერ შეცვლით მილებს და ვერ გააკეთებთ ახალ ჰიდროიზოლაციას. სრული რემონტისას უმჯობესია ძველი ფენების მოხსნა.',
+      },
+      {
+        q: 'რატომ ჩნდება ობი აბაზანაში რემონტის შემდეგ?',
+        a: 'ყველაზე ხშირად ცუდი ვენტილაციის, ნესტიან ზედაპირზე დაგებული ფილის ან ფარული გაჟონვის გამო. გამართული ვენტილაცია და სწორად გაკეთებული ჰიდროიზოლაცია ამის თავიდან აცილების მთავარი გზაა.',
+      },
+      {
+        q: 'აკეთებთ მხოლოდ აბაზანის რემონტს, ბინის დანარჩენი ნაწილის გარეშე?',
+        a: 'დიახ. დაგვიკავშირდით, ვნახავთ აბაზანას, შევაფასებთ მილების, ვენტილაციის და ზედაპირების მდგომარეობას და შევადგენთ სამუშაოების დეტალურ ხარჯთაღრიცხვას.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['apartment-renovation', 'old-apartment-renovation', 'cosmetic-vs-full-renovation'],
+  },
 ];
 
 const en: Guide[] = [
@@ -2211,6 +2297,7 @@ const en: Guide[] = [
     ],
     service: 'renovation-interior',
     updated: '2026-11-23',
+    related: ['bathroom-renovation', 'cosmetic-vs-full-renovation', 'reading-an-estimate'],
   },
   {
     slug: GUIDE_SLUGS[2],
@@ -2796,6 +2883,7 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['bathroom-renovation', 'apartment-renovation', 'renovation-cost-factors'],
   },
   {
     slug: GUIDE_SLUGS[10],
@@ -3985,6 +4073,89 @@ const en: Guide[] = [
     ],
     service: 'residential-construction',
     related: ['house-design', 'building-in-georgia-foreigner', 'house-construction-mtskheta'],
+  },
+  {
+    slug: GUIDE_SLUGS[26],
+    metaTitle: 'Bathroom Renovation in Tbilisi: Order of Works and Waterproofing | BAU BILD',
+    metaDescription:
+      'Bathroom renovation done in the right order: strip-out, plumbing, electrics, sloped screed, waterproofing, tiling, ventilation and fixtures. A practical guide.',
+    h1: 'Bathroom renovation: the order of works and waterproofing',
+    lead: 'The bathroom is the smallest room in a flat and the hardest to renovate well. Water, drainage, electricity and moisture all meet here, and mistakes often show up only later, as a stain on the neighbour\'s ceiling or mould in the corners. Here is the order the work should follow and where it does not pay to cut corners.',
+    published: '2026-11-26',
+    sections: [
+      {
+        h2: '1. Plan before you start',
+        paragraphs: [
+          'First decide what goes where: shower or bath, basin, toilet, washing machine, water heater, cabinets. Their positions fix where pipes, drains and sockets go, and moving them after tiling is expensive.',
+          'Choose the actual fixtures in advance. A wall-hung toilet needs a frame, a shower drain has its own build-up height and a concealed mixer has a part that sits inside the wall. All of this must be planned at the rough-in stage.',
+        ],
+      },
+      {
+        h2: '2. Strip-out and checking the surfaces',
+        paragraphs: [
+          'Once the old tiles, fixtures and pipes are removed you can see the real condition of the walls and floor. Older flats often reveal crumbling layers, soaked screed or traces of hidden leaks. These must be fixed before any new layers go on.',
+          'If you plan to touch a wall or partition, first make sure it is not load-bearing. In an apartment block, cutting into or weakening a load-bearing wall is not acceptable without a structural engineer\'s assessment.',
+        ],
+      },
+      {
+        h2: '3. Plumbing and drainage',
+        paragraphs: [
+          'In a full renovation, old metal pipes are best replaced entirely. An old pipe left under new tiles is the most common cause of later leaks. Keep the number of joints hidden inside walls as low as possible.',
+          'Drain pipes need a proper fall towards the stack, otherwise water sits in them and smells appear. Pressure-test the system and inspect the joints while they are still exposed, before the walls are closed.',
+          'Leave access to valves, meters and the manifold. A service hatch in the tiling saves you from breaking a wall in an emergency.',
+        ],
+      },
+      {
+        h2: '4. Electrics and lighting',
+        paragraphs: [
+          'A bathroom is a wet room, so the electrics need extra care: a dedicated circuit breaker, a residual current device (RCD), moisture-rated sockets and lights, and correct placement relative to water sources.',
+          'Plan sockets for the washing machine, hair dryer and water heater in advance, as well as mirror lighting and power for an extractor fan. Leave this work to an experienced electrician.',
+        ],
+      },
+      {
+        h2: '5. The floor: screed and fall',
+        paragraphs: [
+          'For a walk-in shower with a floor drain, the floor needs a fall towards the drain so water does not pool. The fall is formed in the screed; tiles cannot correct it afterwards.',
+          'The screed must dry properly before waterproofing. Membranes and tile adhesive bond poorly to a damp base.',
+        ],
+      },
+      {
+        h2: '6. Waterproofing',
+        paragraphs: [
+          'Waterproofing is the most important layer in a bathroom renovation. It is hidden under the tiles, but it is what protects the structure and the neighbours below. Tiles and grout on their own do not stop water.',
+          'The membrane covers the whole floor and runs up the walls, higher in the shower area. Corners, the floor-to-wall junction and pipe penetrations get special tape and collars, because that is where leaks usually start.',
+          'Before tiling, it is worth testing the waterproofing: flood the floor with water and check for any sign of leaks. This simple test prevents a lot of trouble.',
+        ],
+      },
+      {
+        h2: '7. Tiling, joints and ventilation',
+        paragraphs: [
+          'Tiles go on a dry, flat surface with a moisture-resistant adhesive. In the shower area, water-resistant or epoxy grout is worth considering. Internal corners and the joint along the bath or shower tray are sealed with silicone.',
+          'Without ventilation even the best renovation ends in mould. Check that the ventilation duct works (in older blocks it is often blocked) and fit an extractor fan if needed. A small gap under the door helps air move.',
+          'Fixtures, mixers, mirrors and accessories go in last. Test everything in use: water flow, drainage and any drips at the joints.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Is waterproofing needed if the bathroom is tiled?',
+        a: 'Yes. Tiles and grout do not fully stop water, especially in the shower area. Waterproofing under the tiles protects the floor, the walls and the neighbours below.',
+      },
+      {
+        q: 'Can new tiles go over old ones?',
+        a: 'Sometimes it is technically possible, but then you cannot see what is under the old tiles, replace the pipes or add new waterproofing. In a full renovation it is better to remove the old layers.',
+      },
+      {
+        q: 'Why does mould appear in a bathroom after renovation?',
+        a: 'Most often because of poor ventilation, tiles laid on a damp base or a hidden leak. Working ventilation and properly installed waterproofing are the main ways to prevent it.',
+      },
+      {
+        q: 'Do you renovate just the bathroom, without the rest of the flat?',
+        a: 'Yes. Contact us and we will look at the bathroom, assess the pipes, ventilation and surfaces, and prepare a detailed estimate of the works.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['apartment-renovation', 'old-apartment-renovation', 'renovation-for-foreign-buyers'],
   },
 ];
 

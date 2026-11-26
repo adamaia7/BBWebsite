@@ -345,7 +345,7 @@ const en: ServicePage[] = [
     slug: SERVICE_SLUGS[3],
     metaTitle: 'Roofing and Facade Contractor in Tbilisi: Roof and Siding Repair | BAU BILD',
     metaDescription:
-      'Local roofing and construction company in Tbilisi and across Georgia: roof repair and replacement, leak repair, facade cladding (siding) repair and insulation.',
+      'Local roofing and construction company in Tbilisi and across Georgia: roof and siding repair near you, re-roofing, leak repair, gutters, facade cladding and insulation.',
     h1: 'Roofing and facade contractor: roof and siding repair',
     lead: 'We install new roofs and facades and handle re-roofing, repairs and insulation. A good roof and facade protect a building for decades.',
     body: [
@@ -353,6 +353,7 @@ const en: ServicePage[] = [
       'We work on new buildings and on renewing old ones: replacing damaged roofs, insulating facades and applying new cladding.',
       'For repairs we start with an on-site inspection of the roof covering, flashings, gutters and the facade cladding (siding, render or tiles), find where water gets in, and then propose either a local repair or a replacement of the damaged section.',
       'We work as a local roofing and construction team in Tbilisi and travel to projects across Georgia.',
+      'Tbilisi weather is hard on roofs and walls: hot summers dry out sealants and render, heavy rain tests gutters and flashings, and winter frost opens up small cracks where water has already got in. That is why we look at the whole shell, not only the spot where the leak shows.',
     ],
     includesTitle: 'What is included',
     includes: [
@@ -379,6 +380,10 @@ const en: ServicePage[] = [
       {
         q: 'Do you do roof and siding repair together?',
         a: 'Yes. Leaks often appear where the roof meets the walls, so we inspect the roof, gutters and facade together and fix them as one job.',
+      },
+      {
+        q: 'What does a roof and facade inspection include?',
+        a: 'We check the roof covering, ridges and valleys, flashings around chimneys and walls, gutters and downpipes, the attic or ceiling below for damp, and the facade for cracks, loose cladding and wet patches. Then we explain what we found and what we recommend.',
       },
       {
         q: 'Do you work outside Tbilisi?',
