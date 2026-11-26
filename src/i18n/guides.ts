@@ -49,6 +49,7 @@ export const GUIDE_SLUGS = [
   'house-construction-mtskheta',
   'renovation-for-foreign-buyers',
   'winter-construction',
+  'choosing-a-plot',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -769,7 +770,7 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
     updated: '2026-11-24',
-    related: ['house-construction-mtskheta', 'house-construction-stages', 'building-permit-tbilisi'],
+    related: ['choosing-a-plot', 'house-construction-mtskheta', 'building-permit-tbilisi'],
   },
   {
     slug: GUIDE_SLUGS[9],
@@ -1353,6 +1354,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['choosing-a-plot', 'house-design', 'house-construction-stages'],
   },
   {
     slug: GUIDE_SLUGS[17],
@@ -1952,6 +1954,86 @@ const ka: Guide[] = [
     ],
     service: 'residential-construction',
     related: ['house-construction-stages', 'roof-repair', 'house-construction-cost'],
+  },
+  {
+    slug: GUIDE_SLUGS[25],
+    metaTitle: 'მიწის ნაკვეთი სახლისთვის: რა შევამოწმოთ ყიდვამდე | BAU BILD',
+    metaDescription:
+      'როგორ შევარჩიოთ მიწის ნაკვეთი სახლის ასაშენებლად: დანიშნულება და რეგისტრაცია, საზღვრები, მისასვლელი გზა, კომუნიკაციები, რელიეფი, გრუნტი, მზე და მშენებლობის პირობები.',
+    h1: 'მიწის ნაკვეთი სახლისთვის: რა შევამოწმოთ ყიდვამდე',
+    lead: 'სახლის მშენებლობის ბევრი პრობლემა ნაკვეთის არჩევისას იწყება: გზა, რომელიც ზამთარში ვერ გაივლება, კომუნიკაციები, რომლებიც შორსაა, ან გრუნტი, რომელიც ძვირ საძირკველს მოითხოვს. აქ შევკრიბეთ, რა უნდა გადაამოწმოთ, სანამ ნაკვეთს იყიდით.',
+    published: '2026-11-26',
+    sections: [
+      {
+        h2: '1. დანიშნულება და დოკუმენტები',
+        paragraphs: [
+          'პირველ რიგში დარწმუნდით, რომ ნაკვეთზე საცხოვრებელი სახლის აშენება შეიძლება. მიწას აქვს კატეგორია და დანიშნულება, მაგალითად, სასოფლო-სამეურნეო ან არასასოფლო-სამეურნეო, და ეს მშენებლობის შესაძლებლობაზე მოქმედებს.',
+          'შეამოწმეთ, რომ ნაკვეთი საჯარო რეესტრშია რეგისტრირებული, გამყიდველი ნამდვილად მესაკუთრეა და ნაკვეთზე ვალდებულება ან შეზღუდვა არ რიცხება. სადავო შემთხვევაში იურისტთან კონსულტაცია ღირს.',
+        ],
+      },
+      {
+        h2: '2. საზღვრები და ფართობი',
+        paragraphs: [
+          'საკადასტრო ნახაზზე მითითებული საზღვრები ადგილზე ღობეს ან მეზობლის მიერ ნაჩვენებ ხაზს ყოველთვის არ ემთხვევა. აზომვა ყიდვამდე სჯობს, განსაკუთრებით პატარა ან ვიწრო ნაკვეთზე.',
+          'გაითვალისწინეთ, რომ სახლი ნაკვეთის კიდესთან ახლოს ყოველთვის ვერ დაიდგმება: ხშირად მეზობლებამდე და გზამდე მინიმალური დაშორებაა საჭირო. ამიტომ ნაკვეთის სასარგებლო ფართობი შეიძლება ქაღალდზე დაწერილზე ნაკლები იყოს.',
+        ],
+      },
+      {
+        h2: '3. მშენებლობის პირობები',
+        paragraphs: [
+          'ზოგ ტერიტორიაზე, მაგალითად, ქალაქებსა და დაცულ ზონებში, განსაზღვრულია, რა ფართის და სიმაღლის შენობა შეიძლება აშენდეს და ნაკვეთის რა ნაწილი შეიძლება დაიკავოს. ეს პირობები ყიდვამდე უნდა გაირკვეს ადგილობრივ მუნიციპალიტეტში.',
+          'თუ სახლის კონკრეტული პროექტი უკვე გაქვთ, შეამოწმეთ, ეტევა თუ არა ის ნაკვეთზე ამ პირობებით.',
+        ],
+      },
+      {
+        h2: '4. მისასვლელი გზა და კომუნიკაციები',
+        paragraphs: [
+          'ნაკვეთამდე გზა წლის ნებისმიერ დროს გასავლელი უნდა იყოს, მათ შორის სატვირთო მანქანისა და ბეტონმრევისთვის. ერთი ზაფხულის ვიზიტი აქ საკმარისი არ არის: ჰკითხეთ მეზობლებს, როგორია გზა ზამთარში და წვიმის შემდეგ.',
+          'გაარკვიეთ, სად გადის წყალი, ელექტროობა, გაზი და კანალიზაცია და რა პირობებით შეიძლება მიერთება. თუ კომუნიკაციები შორსაა, მათი მოყვანა დამატებით დროსა და ხარჯს მოითხოვს.',
+        ],
+      },
+      {
+        h2: '5. რელიეფი, გრუნტი და წყალი',
+        paragraphs: [
+          'ბრტყელ ნაკვეთზე აშენება უფრო მარტივია. ფერდობზე სახლს საყრდენი კედლები, ტერასები და დრენაჟი სჭირდება, თუმცა ფერდობი ხშირად უკეთეს ხედს იძლევა.',
+          'ყურადღება მიაქციეთ ნიშნებს: ნესტიანი მიწა, ჭაობიანი მცენარეები, მიწისქვეშა წყლის სიახლოვე, მეწყრის ან ჩამორეცხვის კვალი, მდინარის ან ხევის სიახლოვე. ამ შემთხვევაში გეოლოგიური კვლევა ყიდვამდე განსაკუთრებით სასარგებლოა.',
+        ],
+      },
+      {
+        h2: '6. მზე, ხედი და გარემო',
+        paragraphs: [
+          'შეამოწმეთ, საიდან ამოდის და სად ჩადის მზე, და რა ჩრდილავს ნაკვეთს: მეზობელი შენობა, ტყე ან მთა. მზიანი ნაკვეთი სითბოს და განათების ხარჯს ამცირებს და მზის პანელებისთვისაც უკეთესია.',
+          'დაათვალიერეთ გარემო სხვადასხვა დროს: ხმაური გზიდან ან საწარმოდან, სუნი, ახლომდებარე მშენებლობები. გაიგეთ, რა არის დაგეგმილი მეზობელ ნაკვეთებზე.',
+        ],
+      },
+      {
+        h2: '7. ვის ვაჩვენოთ ნაკვეთი ყიდვამდე',
+        paragraphs: [
+          'ყიდვამდე ნაკვეთის ჩვენება მშენებელს ან არქიტექტორს ბევრ შეცდომას აგაცილებთ. ისინი სწრაფად შეაფასებენ გზას, რელიეფს, კომუნიკაციებს და იმას, თუ რამდენად რთული იქნება მშენებლობა.',
+          'ამის შემდეგ შეგიძლიათ ზუსტად დაგეგმოთ სახლი, რომელიც ამ ნაკვეთს მოერგება.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'როგორ გავიგო, შეიძლება თუ არა ნაკვეთზე სახლის აშენება?',
+        a: 'შეამოწმეთ ნაკვეთის კატეგორია და დანიშნულება საჯარო რეესტრის ამონაწერში და გაარკვიეთ მშენებლობის პირობები ადგილობრივ მუნიციპალიტეტში.',
+      },
+      {
+        q: 'საჭიროა გეოლოგიური კვლევა ნაკვეთის ყიდვამდე?',
+        a: 'ყოველთვის არა, მაგრამ ფერდობზე, მდინარესთან ახლოს ან ნესტიან ადგილას ძალიან სასარგებლოა, რადგან გრუნტი საძირკვლის ტიპსა და ხარჯზე მოქმედებს.',
+      },
+      {
+        q: 'რა უნდა შევამოწმო კომუნიკაციებზე?',
+        a: 'სად გადის წყალი, ელექტროობა, გაზი და კანალიზაცია, რამდენად შორსაა და რა პირობებით შეიძლება მიერთება.',
+      },
+      {
+        q: 'შეგიძლიათ ნაკვეთის დათვალიერება ყიდვამდე?',
+        a: 'დიახ. ვნახავთ ნაკვეთს და შევაფასებთ გზას, რელიეფს, კომუნიკაციებს და მშენებლობის სირთულეს.',
+      },
+    ],
+    service: 'residential-construction',
+    related: ['house-design', 'building-permit-tbilisi', 'house-construction-mtskheta'],
   },
 ];
 
@@ -2639,7 +2721,7 @@ const en: Guide[] = [
     ],
     service: 'residential-construction',
     updated: '2026-11-24',
-    related: ['house-construction-mtskheta', 'house-construction-stages', 'building-permit-tbilisi'],
+    related: ['choosing-a-plot', 'house-construction-mtskheta', 'building-permit-tbilisi'],
   },
   {
     slug: GUIDE_SLUGS[9],
@@ -3223,6 +3305,7 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['choosing-a-plot', 'house-design', 'house-construction-stages'],
   },
   {
     slug: GUIDE_SLUGS[17],
@@ -3822,6 +3905,86 @@ const en: Guide[] = [
     ],
     service: 'residential-construction',
     related: ['house-construction-stages', 'roof-repair', 'house-construction-cost'],
+  },
+  {
+    slug: GUIDE_SLUGS[25],
+    metaTitle: 'Buying a Plot to Build a House in Georgia: What to Check | BAU BILD',
+    metaDescription:
+      'How to choose a plot for a house in Georgia: land category and registration, boundaries, access road, utilities, terrain, soil, sunlight and building conditions to check before you buy.',
+    h1: 'Buying a plot to build a house: what to check first',
+    lead: 'Many problems in building a house start with the choice of plot: a road that cannot be used in winter, utilities that are far away, or soil that needs an expensive foundation. Here is what to check before you buy.',
+    published: '2026-11-26',
+    sections: [
+      {
+        h2: '1. Land use and documents',
+        paragraphs: [
+          'First make sure a house can be built on the plot. Land has a category and permitted use, for example agricultural or non-agricultural, and this affects whether you can build.',
+          'Check that the plot is registered in the Public Registry, that the seller is the actual owner, and that no encumbrance or restriction is recorded on it. If anything is unclear, it is worth consulting a lawyer.',
+        ],
+      },
+      {
+        h2: '2. Boundaries and area',
+        paragraphs: [
+          'The boundaries on the cadastral plan do not always match the fence on site or the line a neighbour points to. A survey before purchase is a good idea, especially on a small or narrow plot.',
+          'Bear in mind that a house cannot always be placed right at the edge of the plot: minimum distances to neighbours and the road are often required. The usable area can therefore be smaller than the figure on paper.',
+        ],
+      },
+      {
+        h2: '3. Building conditions',
+        paragraphs: [
+          'In some areas, for example in cities and protected zones, there are rules on how large and how tall a building can be and how much of the plot it may cover. Find out these conditions from the local municipality before you buy.',
+          'If you already have a house design in mind, check that it fits the plot under these conditions.',
+        ],
+      },
+      {
+        h2: '4. Access road and utilities',
+        paragraphs: [
+          'The road to the plot must be usable all year round, including by lorries and concrete mixers. One summer visit is not enough: ask the neighbours what the road is like in winter and after rain.',
+          'Find out where water, electricity, gas and sewerage run and on what terms you can connect. If utilities are far away, bringing them in adds time and cost.',
+        ],
+      },
+      {
+        h2: '5. Terrain, soil and water',
+        paragraphs: [
+          'Building on a flat plot is simpler. A house on a slope needs retaining walls, terraces and drainage, although a slope often gives a better view.',
+          'Look for warning signs: damp ground, marsh plants, groundwater close to the surface, traces of landslides or erosion, a river or ravine nearby. In these cases a geotechnical survey before purchase is especially useful.',
+        ],
+      },
+      {
+        h2: '6. Sun, view and surroundings',
+        paragraphs: [
+          'Check where the sun rises and sets and what shades the plot: a neighbouring building, forest or hillside. A sunny plot lowers heating and lighting costs and suits solar panels better.',
+          'Visit at different times: noise from a road or business, smells, nearby construction. Find out what is planned on the neighbouring plots.',
+        ],
+      },
+      {
+        h2: '7. Who to show the plot to before buying',
+        paragraphs: [
+          'Showing the plot to a builder or architect before you buy can save many mistakes. They will quickly assess the road, terrain, utilities and how difficult construction will be.',
+          'After that you can plan a house that suits the plot.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'How do I know whether a house can be built on a plot?',
+        a: 'Check the land category and permitted use in the Public Registry extract, and ask the local municipality about the building conditions.',
+      },
+      {
+        q: 'Do I need a soil survey before buying a plot?',
+        a: 'Not always, but on a slope, near a river or on damp ground it is very useful, because the soil affects the foundation type and cost.',
+      },
+      {
+        q: 'What should I check about utilities?',
+        a: 'Where water, electricity, gas and sewerage run, how far away they are and on what terms you can connect.',
+      },
+      {
+        q: 'Can you inspect a plot before I buy it?',
+        a: 'Yes. We visit the plot and assess the road, terrain, utilities and how difficult construction will be.',
+      },
+    ],
+    service: 'residential-construction',
+    related: ['house-design', 'building-in-georgia-foreigner', 'house-construction-mtskheta'],
   },
 ];
 
