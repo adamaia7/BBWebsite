@@ -53,6 +53,7 @@ export const GUIDE_SLUGS = [
   'bathroom-renovation',
   'common-renovation-mistakes',
   'common-construction-mistakes',
+  'renovating-while-living',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -249,6 +250,14 @@ const ka: Guide[] = [
         a: 'ეს ბინის ფართზე, რემონტის სახეობასა და მასალების მიწოდებაზეა დამოკიდებული. ზუსტ გრაფიკს ობიექტის ნახვისა და ხარჯთაღრიცხვის შემდეგ ვადგენთ.',
       },
       {
+        q: 'რაზეა დამოკიდებული ბინის რემონტის ღირებულება თბილისში?',
+        a: 'ბინის ფართზე და მდგომარეობაზე, იმაზე, იცვლება თუ არა გაყვანილობა, მილები და ტიხრები, და მასალების დონეზე. ძველ კორპუსში ხშირად მეტი შავი სამუშაოა, ახალში კი რემონტი შავი ან თეთრი კარკასიდან იწყება. ზუსტ ღირებულებას ხარჯთაღრიცხვა აჩვენებს.',
+      },
+      {
+        q: 'რით იწყება ბინის რემონტი?',
+        a: 'ბინის დათვალიერებით, გეგმით (სად რა დადგება, სად გჭირდებათ როზეტები და სინათლე) და დეტალური ხარჯთაღრიცხვით. მხოლოდ ამის შემდეგ იწყება დემონტაჟი და სამუშაოები.',
+      },
+      {
         q: 'შეიძლება ბინაში ცხოვრება რემონტის დროს?',
         a: 'კოსმეტიკური რემონტისას ხანდახან შესაძლებელია, ოთახ-ოთახ თუ ვიმუშავებთ. სრული რემონტისას, როცა წყალი და ელექტროობა იცვლება, სჯობს დროებით სხვაგან იცხოვროთ.',
       },
@@ -262,8 +271,8 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    updated: '2026-11-23',
-    related: ['bathroom-renovation', 'cosmetic-vs-full-renovation', 'reading-an-estimate'],
+    updated: '2026-11-27',
+    related: ['renovating-while-living', 'common-renovation-mistakes', 'bathroom-renovation'],
   },
   {
     slug: GUIDE_SLUGS[2],
@@ -2301,6 +2310,86 @@ const ka: Guide[] = [
     service: 'residential-construction',
     related: ['house-construction-stages', 'choose-construction-company', 'house-construction-cost'],
   },
+  {
+    slug: GUIDE_SLUGS[29],
+    metaTitle: 'რემონტი ბინაში ცხოვრებისას: როგორ დავგეგმოთ | BAU BILD',
+    metaDescription:
+      'როგორ გავაკეთოთ ბინის რემონტი, როცა ბინიდან გასვლა არ შეგიძლიათ: ეტაპობრივი რემონტი, მტვერი და ხმაური, წყალი და ელექტროობა, უსაფრთხოება და მეზობლები.',
+    h1: 'რემონტი ბინაში ცხოვრებისას: როგორ დავგეგმოთ',
+    lead: 'ყველას არ აქვს საშუალება, რემონტის დროს სხვაგან იცხოვროს. ბინაში ცხოვრებისას რემონტი შესაძლებელია, მაგრამ მას მეტი დაგეგმვა სჭირდება: რა თანმიმდევრობით გაკეთდეს ოთახები, სად იქნება სამზარეულო და სველი წერტილი, როგორ შევამციროთ მტვერი და ხმაური. აქ ვხსნით, როგორ ავაწყოთ ასეთი რემონტი.',
+    published: '2026-11-27',
+    sections: [
+      {
+        h2: '1. როდის ღირს ბინაში დარჩენა და როდის არა',
+        paragraphs: [
+          'კოსმეტიკური რემონტი ან ერთი-ორი ოთახის განახლება ბინაში ცხოვრებისას ჩვეულებრივ ხერხდება. სრული რემონტი, როცა იცვლება გაყვანილობა, მილები, ტიხრები და იატაკი მთელ ბინაში, გაცილებით რთულია: გარკვეული პერიოდით წყალი, ელექტროობა ან სველი წერტილი შეიძლება საერთოდ არ გქონდეთ.',
+          'თუ ოჯახში მცირეწლოვანი ბავშვები, ხანდაზმულები ან ალერგიის მქონე ადამიანები არიან, მტვრის და ხმაურის გამო სრული რემონტის დროს ბინაში დარჩენა რეკომენდებული არ არის. ასეთ შემთხვევაში ღირს, ყველაზე ბინძური ეტაპისთვის მაინც სხვაგან გადახვიდეთ.',
+        ],
+      },
+      {
+        h2: '2. ეტაპობრივი რემონტი: ოთახი ოთახზე',
+        paragraphs: [
+          'ბინაში ცხოვრებისას რემონტი ზონებად იყოფა: ჯერ კეთდება ერთი ნაწილი, ავეჯი და ნივთები მეორეშია, შემდეგ პირიქით. ასე ყოველთვის რჩება სივრცე, სადაც შეგიძლიათ დაიძინოთ და ნივთები შეინახოთ.',
+          'თანმიმდევრობა წინასწარ შეათანხმეთ გუნდთან. ზოგი სამუშაო, მაგალითად ელექტროგაყვანილობა ან წყლის მილები, მთელ ბინაზე ერთდროულად კეთდება, ამიტომ ის გეგმის დასაწყისში უნდა ჩაჯდეს.',
+        ],
+      },
+      {
+        h2: '3. სამზარეულო და სველი წერტილი',
+        paragraphs: [
+          'ყველაზე რთული პერიოდია, როცა სამზარეულო ან აბაზანა გადაკეთებაშია. თუ ბინაში ერთი სველი წერტილია, მისი რემონტი რაც შეიძლება მოკლე პერიოდში უნდა მოექცეს და წინასწარ უნდა იცოდეთ, სად ისარგებლებთ წყლით ამ დროს.',
+          'სამზარეულოს რემონტისას შეგიძლიათ მოაწყოთ დროებითი კუთხე სხვა ოთახში: მაცივარი, ელექტროქურა ან მიკროტალღური ღუმელი და წყლის წყარო.',
+        ],
+      },
+      {
+        h2: '4. მტვერი და ნივთების დაცვა',
+        paragraphs: [
+          'მტვერი რემონტის ყველაზე შემაწუხებელი ნაწილია. სამუშაო ზონა სხვა ოთახებისგან ფირით და ფირის კარით უნდა გამოიყოს, კარის ჭრილები დაილუქოს, ხოლო იატაკი და ავეჯი დაიფაროს.',
+          'ჭრა, ხეხვა და ლესვის მოხსნა მტვრის მთავარი წყაროა. სასურველია მტვერსასრუტთან მიერთებული ხელსაწყოები და ყოველდღიური დალაგება სამუშაო დღის ბოლოს.',
+        ],
+      },
+      {
+        h2: '5. ხმაური, სამუშაო საათები და მეზობლები',
+        paragraphs: [
+          'ხმაურიანი სამუშაოები (ნგრევა, ბურღვა, ჭრა) შეათანხმეთ ისე, რომ თქვენს და მეზობლების დღის რეჟიმს ნაკლებად შეეხოს. მრავალბინიან სახლში კარგი პრაქტიკაა, მეზობლებს წინასწარ აცნობოთ, რამდენ ხანს და რა საათებში იქნება ხმაური.',
+          'ასევე გაითვალისწინეთ სადარბაზო: მასალების შეტანა და ნაგვის გატანა ისე უნდა მოეწყოს, რომ საერთო სივრცე არ დაზიანდეს და არ დაბინძურდეს.',
+        ],
+      },
+      {
+        h2: '6. უსაფრთხოება',
+        paragraphs: [
+          'ღია გაყვანილობა, ხელსაწყოები, ქიმიური ნარევები და მასალების დასაწყობება სახიფათოა, განსაკუთრებით ბავშვებისთვის და შინაური ცხოველებისთვის. სამუშაო ზონა სამუშაო დღის ბოლოს უნდა დაიკეტოს ან უსაფრთხოდ დალაგდეს.',
+          'ელექტროობის და წყლის გათიშვა წინასწარ შეათანხმეთ და დარწმუნდით, რომ ყოველ საღამოს ბინაში მუშაობს სინათლე, როზეტები და წყალი იქ, სადაც გჭირდებათ.',
+        ],
+      },
+      {
+        h2: '7. გეგმა და კომუნიკაცია',
+        paragraphs: [
+          'ბინაში ცხოვრებისას რემონტი უკეთ მიდის, როცა ერთი პასუხისმგებელი პირი გაქვთ და წინასწარ იცით გეგმა: რომელ დღეს რომელი ოთახი კეთდება, როდის გაითიშება წყალი ან ელექტროობა და როდის იქნება ყველაზე ხმაურიანი სამუშაოები.',
+          'ხარჯთაღრიცხვაში და გრაფიკში ეს პირობები თავიდანვე უნდა ჩაიწეროს, რადგან ეტაპობრივ რემონტს ზოგჯერ მეტი დრო და დამატებითი დაცვითი სამუშაოები სჭირდება.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'შეიძლება ბინაში ცხოვრება სრული რემონტის დროს?',
+        a: 'შესაძლებელია, მაგრამ რთულია: გარკვეული პერიოდით შეიძლება წყალი, ელექტროობა ან სველი წერტილი არ გქონდეთ. ჩვეულებრივ რემონტი ეტაპებად იყოფა, ხოლო ყველაზე ბინძური სამუშაოების დროს უმჯობესია სხვაგან გადასვლა.',
+      },
+      {
+        q: 'როგორ შევამციროთ მტვერი რემონტის დროს?',
+        a: 'სამუშაო ზონა ფირით გამოყავით და კარის ჭრილები დალუქეთ, ავეჯი და იატაკი დაფარეთ, გამოიყენეთ მტვერსასრუტთან მიერთებული ხელსაწყოები და ყოველდღე დაალაგეთ.',
+      },
+      {
+        q: 'რომელი ოთახით დავიწყოთ რემონტი, თუ ბინაში ვცხოვრობთ?',
+        a: 'ჩვეულებრივ იწყებენ იმ ოთახით, რომლის გარეშეც ყველაზე ადვილად გაძლებთ, ხოლო სამზარეულო და აბაზანა ისე გეგმავენ, რომ რაც შეიძლება მოკლე დროში დასრულდეს. ელექტროობა და მილები ხშირად მთელ ბინაზე ერთად კეთდება.',
+      },
+      {
+        q: 'აკეთებთ ეტაპობრივ ბინის რემონტს თბილისში?',
+        a: 'დიახ. ვნახავთ ბინას, შევთანხმდებით, რომელი ოთახები და რა თანმიმდევრობით გაკეთდება, და მოგიმზადებთ ხარჯთაღრიცხვას და გრაფიკს, რომელიც თქვენს ცხოვრებას ბინაში ითვალისწინებს.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['apartment-renovation', 'common-renovation-mistakes', 'bathroom-renovation'],
+  },
 ];
 
 const en: Guide[] = [
@@ -2455,6 +2544,14 @@ const en: Guide[] = [
         a: 'It depends on the size of the apartment, the type of renovation and material deliveries. We set an exact schedule after seeing the apartment and preparing the estimate.',
       },
       {
+        q: 'What does the cost of an apartment renovation in Tbilisi depend on?',
+        a: 'The size and condition of the flat, whether wiring, pipes and partitions are replaced, and the level of materials. Older blocks usually need more rough work, while new builds start from a shell or white frame. A detailed estimate shows the exact cost.',
+      },
+      {
+        q: 'How does an apartment renovation start?',
+        a: 'With a visit to the flat, a plan (where everything goes, where you need sockets and lighting) and a detailed estimate. Demolition and works start only after that.',
+      },
+      {
         q: 'Can I live in the apartment during the renovation?',
         a: 'With a cosmetic renovation it is sometimes possible if we work room by room. With a full renovation, when water and electrics are replaced, it is better to stay elsewhere for a while.',
       },
@@ -2476,8 +2573,8 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    updated: '2026-11-23',
-    related: ['bathroom-renovation', 'cosmetic-vs-full-renovation', 'reading-an-estimate'],
+    updated: '2026-11-27',
+    related: ['renovating-while-living', 'common-renovation-mistakes', 'bathroom-renovation'],
   },
   {
     slug: GUIDE_SLUGS[2],
@@ -4514,6 +4611,86 @@ const en: Guide[] = [
     ],
     service: 'residential-construction',
     related: ['house-construction-stages', 'choose-construction-company', 'building-in-georgia-foreigner'],
+  },
+  {
+    slug: GUIDE_SLUGS[29],
+    metaTitle: 'Renovating While Living in Your Apartment: How to Plan It | BAU BILD',
+    metaDescription:
+      'How to renovate a flat you cannot move out of: renovating in stages, dust and noise, water and power, safety and neighbours. Practical planning advice.',
+    h1: 'Renovating while living in your apartment: how to plan it',
+    lead: 'Not everyone can move out during a renovation. Living in the flat while work goes on is possible, but it needs more planning: which rooms go first, where the kitchen and bathroom will be in the meantime, and how to keep dust and noise down. Here is how to organise it.',
+    published: '2026-11-27',
+    sections: [
+      {
+        h2: '1. When staying makes sense and when it does not',
+        paragraphs: [
+          'A cosmetic refresh or one or two rooms is usually manageable while you live there. A full renovation, with new wiring, pipes, partitions and floors throughout, is much harder: for some periods you may have no water, power or bathroom at all.',
+          'If small children, older people or anyone with allergies live in the flat, staying through a full renovation is not recommended because of dust and noise. In that case it is worth moving out at least for the dirtiest stage.',
+        ],
+      },
+      {
+        h2: '2. Renovating room by room',
+        paragraphs: [
+          'When you live in the flat, the work is split into zones: one part is renovated while furniture and belongings sit in another, then they swap. That way there is always somewhere to sleep and store things.',
+          'Agree the sequence with the team in advance. Some work, such as wiring or water pipes, is done across the whole flat at once, so it has to be scheduled at the start.',
+        ],
+      },
+      {
+        h2: '3. Kitchen and bathroom',
+        paragraphs: [
+          'The hardest period is when the kitchen or bathroom is being redone. If the flat has only one bathroom, its renovation should be kept as short as possible, and you need to know in advance where you will use water during that time.',
+          'During a kitchen renovation you can set up a temporary corner in another room with the fridge, a hob or microwave and access to water.',
+        ],
+      },
+      {
+        h2: '4. Dust and protecting your belongings',
+        paragraphs: [
+          'Dust is the most disruptive part of a renovation. The work zone should be separated from the rest of the flat with plastic sheeting and a zip door, door gaps sealed, and floors and furniture covered.',
+          'Cutting, sanding and stripping plaster create most of the dust. Tools connected to a vacuum and a clean-up at the end of each working day help a lot.',
+        ],
+      },
+      {
+        h2: '5. Noise, working hours and neighbours',
+        paragraphs: [
+          'Plan noisy work (demolition, drilling, cutting) so it disturbs your routine and the neighbours as little as possible. In an apartment block it is good practice to tell neighbours in advance when and for how long there will be noise.',
+          'Think about the stairwell too: deliveries and waste removal should be organised so shared areas are not damaged or left dirty.',
+        ],
+      },
+      {
+        h2: '6. Safety',
+        paragraphs: [
+          'Exposed wiring, tools, chemicals and stacked materials are hazardous, especially for children and pets. The work zone should be closed off or made safe at the end of each day.',
+          'Agree power and water shut-offs in advance, and make sure that every evening you have light, sockets and water where you need them.',
+        ],
+      },
+      {
+        h2: '7. Planning and communication',
+        paragraphs: [
+          'Renovating while living in the flat goes best with one person responsible and a clear plan: which room on which day, when water or power will be off, and when the noisiest work happens.',
+          'These conditions should be written into the estimate and schedule from the start, because a staged renovation sometimes needs more time and extra protection work.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Can I live in my apartment during a full renovation?',
+        a: 'It is possible but hard: for some periods you may have no water, power or bathroom. The work is usually split into stages, and it is better to move out for the dirtiest part.',
+      },
+      {
+        q: 'How can I reduce dust during a renovation?',
+        a: 'Separate the work zone with plastic sheeting, seal door gaps, cover furniture and floors, use tools connected to a vacuum and clean up every day.',
+      },
+      {
+        q: 'Which room should we renovate first if we live in the flat?',
+        a: 'Usually the room you can most easily do without, while the kitchen and bathroom are planned to be finished as quickly as possible. Wiring and pipes are often done for the whole flat at once.',
+      },
+      {
+        q: 'Do you do staged apartment renovations in Tbilisi?',
+        a: 'Yes. We visit the flat, agree which rooms are done and in what order, and prepare an estimate and schedule that take your living arrangements into account.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['apartment-renovation', 'common-renovation-mistakes', 'renovation-for-foreign-buyers'],
   },
 ];
 
