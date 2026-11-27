@@ -51,6 +51,7 @@ export const GUIDE_SLUGS = [
   'winter-construction',
   'choosing-a-plot',
   'bathroom-renovation',
+  'common-renovation-mistakes',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -1073,6 +1074,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['common-renovation-mistakes', 'reading-an-estimate', 'cosmetic-vs-full-renovation'],
   },
   {
     slug: GUIDE_SLUGS[13],
@@ -1431,6 +1433,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['common-renovation-mistakes', 'apartment-renovation', 'renovation-cost-factors'],
   },
   {
     slug: GUIDE_SLUGS[18],
@@ -2120,6 +2123,93 @@ const ka: Guide[] = [
     ],
     service: 'renovation-interior',
     related: ['apartment-renovation', 'old-apartment-renovation', 'cosmetic-vs-full-renovation'],
+  },
+  {
+    slug: GUIDE_SLUGS[27],
+    metaTitle: 'რემონტის ყველაზე ხშირი შეცდომები და როგორ ავიცილოთ | BAU BILD',
+    metaDescription:
+      'ბინის ან სახლის რემონტის ყველაზე ხშირი შეცდომები: გეგმის გარეშე დაწყება, ბუნდოვანი ხარჯთაღრიცხვა, ძველი გაყვანილობა, ჰიდროიზოლაცია, გაშრობა და ჩაბარება.',
+    h1: 'რემონტის ყველაზე ხშირი შეცდომები და როგორ ავიცილოთ ისინი',
+    lead: 'ბინის ან სახლის რემონტის დროს შეცდომების უმეტესობა ერთნაირად მეორდება და თითქმის ყოველთვის რემონტის დასაწყისში იბადება, როცა გადაწყვეტილებები ჯერ კიდევ იაფია. აქ შევკრიბეთ ის შეცდომები, რომლებსაც ყველაზე ხშირად ვხვდებით, და მარტივი გზები მათ ასაცილებლად.',
+    published: '2026-11-27',
+    sections: [
+      {
+        h2: '1. რემონტის დაწყება გეგმის გარეშე',
+        paragraphs: [
+          'ხშირად რემონტი იწყება დემონტაჟით, ხოლო ავეჯის, როზეტების და განათების ადგილი შემდეგ წყდება. შედეგად კედლები ხელახლა იჭრება და უკვე გაკეთებული სამუშაო ფუჭდება.',
+          'სანამ რამეს დაანგრევთ, ქაღალდზე ან დიზაინერთან ერთად გადაწყვიტეთ: სად დადგება სამზარეულო, საწოლი, ტელევიზორი, სარეცხი მანქანა, სად გჭირდებათ როზეტები და სინათლე. ეს გეგმა რემონტის ყველა შემდეგ ეტაპს განსაზღვრავს.',
+        ],
+      },
+      {
+        h2: '2. ბუნდოვანი ხარჯთაღრიცხვა',
+        paragraphs: [
+          'თუ ხარჯთაღრიცხვაში მხოლოდ ზოგადი სტრიქონებია, მაგალითად „რემონტი სრულად“, შემდეგ ძნელია გაარკვიო, რა შედის ფასში და რა არა. სწორედ აქედან იწყება დავა და დამატებითი ხარჯი.',
+          'მოითხოვეთ ხარჯთაღრიცხვა, სადაც სამუშაოები და მასალები ცალ-ცალკეა, მოცულობებით. ასე სხვადასხვა შეთავაზებას ერთმანეთს რეალურად შეადარებთ.',
+        ],
+      },
+      {
+        h2: '3. ძველი გაყვანილობისა და მილების დატოვება',
+        paragraphs: [
+          'ახალი ფილის და შეღებილი კედლების ქვეშ დატოვებული ძველი ელექტროგაყვანილობა და მილები რემონტის ყველაზე ძვირი შეცდომაა: ავარიის დროს ახალი რემონტის დანგრევა გიწევთ.',
+          'სრული რემონტისას ელექტროგაყვანილობა და სანტექნიკა მაშინ უნდა შეიცვალოს, როცა კედლები ღიაა. მოგვიანებით ეს გაცილებით ძვირი და რთულია.',
+        ],
+      },
+      {
+        h2: '4. სამუშაოების არასწორი თანმიმდევრობა',
+        paragraphs: [
+          'რემონტს თავისი ლოგიკა აქვს: ჯერ დემონტაჟი და ინჟინერია, შემდეგ ტიხრები, ლესვა და მოჭიმვა, მერე ფილა, შპაკლი და შეღებვა, ბოლოს იატაკის საფარი, კარები და მოწყობილობები. როცა თანმიმდევრობა ირღვევა, ერთი ხელოსანი მეორის ნამუშევარს აზიანებს.',
+          'ერთი გუნდი ან ერთი პასუხისმგებელი პირი, რომელიც მთელ სამუშაოს კოორდინაციას უწევს, ამ პრობლემას მნიშვნელოვნად ამცირებს.',
+        ],
+      },
+      {
+        h2: '5. ჰიდროიზოლაციის და ვენტილაციის გამოტოვება',
+        paragraphs: [
+          'აბაზანაში და სამზარეულოში ჰიდროიზოლაციაზე დაზოგვა ხშირად მეზობლის დატბორვით ან ობით მთავრდება. ფილა და შეერთებები წყალს სრულად ვერ აკავებს.',
+          'ასევე შეამოწმეთ, მუშაობს თუ არა ვენტილაცია. ძველ კორპუსებში არხები ხშირად ჩახერგილია, ახალ ბინაში კი პლასტმასის ფანჯრები ჰაერის მოძრაობას ამცირებს.',
+        ],
+      },
+      {
+        h2: '6. გაშრობის დროის დაჩქარება',
+        paragraphs: [
+          'ლესვას, მოჭიმვას და შპაკლს გაშრობა სჭირდება. თუ ფილა, ლამინატი ან საღებავი ნესტიან ზედაპირზე დაიდება, შემდეგ ჩნდება ბზარები, აბუშტული საღებავი, ამობურცული იატაკი და ობი.',
+          'გაშრობის დრო ამინდზე, სეზონზე და ფენის სისქეზეა დამოკიდებული. რემონტის გეგმაში ის წინასწარ უნდა იყოს გათვალისწინებული და არ უნდა „მოიჭრას“ ვადის გამო.',
+        ],
+      },
+      {
+        h2: '7. მასალების შეძენა ბოლო წუთს',
+        paragraphs: [
+          'როცა ფილა, კარები ან სანტექნიკა მაშინ იყიდება, როცა ხელოსანი უკვე ელოდება, არჩევანი ხშირად იმაზე კეთდება, რაც მაღაზიაშია, და არა იმაზე, რაც გჭირდებათ. ზოგჯერ სამუშაო ჩერდება შეკვეთის მოლოდინში.',
+          'გადაწყვიტეთ წინასწარ, ვინ ყიდულობს მასალებს, და შეარჩიეთ ძირითადი პოზიციები რემონტის დაწყებამდე. ფილაზე და იატაკზე აიღეთ მცირე მარაგი ჭრისთვის და მომავალი შეკეთებისთვის.',
+        ],
+      },
+      {
+        h2: '8. ჩაბარება შემოწმების გარეშე',
+        paragraphs: [
+          'რემონტის ბოლოს ყველაფერი ერთად შეამოწმეთ: როზეტები და ავტომატები, ონკანები და დრენაჟი, კარების და ფანჯრების დახურვა, ფილის თანაბრობა, კედლების და ჭერის ზედაპირი.',
+          'ხარვეზები ჩამოწერეთ და შეთანხმდით, როდის გასწორდება. ასევე მოითხოვეთ გაყვანილობის სქემა ან ფოტოები, რომ მომავალში იცოდეთ, სად გადის მილები და კაბელები.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რა არის რემონტის ყველაზე ძვირი შეცდომა?',
+        a: 'ყველაზე ძვირი ის შეცდომებია, რომლებიც ფილის ან კედლის ქვეშ იმალება: ძველი მილები და გაყვანილობა, გამოტოვებული ჰიდროიზოლაცია. მათი გამოსწორება ახალი რემონტის დანგრევას მოითხოვს.',
+      },
+      {
+        q: 'როგორ ავიცილო თავიდან დამატებითი ხარჯი რემონტისას?',
+        a: 'დაიწყეთ დეტალური გეგმით და ხარჯთაღრიცხვით, სადაც სამუშაოები და მასალები ცალ-ცალკეა. ცვლილებები სამუშაოს დროს წერილობით შეათანხმეთ, სანამ შესრულდება.',
+      },
+      {
+        q: 'რა შევამოწმო რემონტის ჩაბარებისას?',
+        a: 'ელექტროობა, წყალი და კანალიზაცია, კარები და ფანჯრები, ფილის, კედლების და ჭერის ზედაპირები. ყველა ხარვეზი ჩამოწერეთ და შეუთანხმეთ გამოსწორების ვადა.',
+      },
+      {
+        q: 'აკეთებთ ბინის და სახლის რემონტს თბილისში?',
+        a: 'დიახ. ვაკეთებთ ბინისა და სახლის რემონტს თბილისში და მთელ საქართველოში, შავი კარკასიდან მზა ინტერიერამდე. დაგვიკავშირდით, ვნახავთ ობიექტს და მოგიმზადებთ დეტალურ ხარჯთაღრიცხვას.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['apartment-renovation', 'reading-an-estimate', 'bathroom-renovation'],
   },
 ];
 
@@ -3109,6 +3199,7 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['common-renovation-mistakes', 'reading-an-estimate', 'cosmetic-vs-full-renovation'],
   },
   {
     slug: GUIDE_SLUGS[13],
@@ -3467,6 +3558,7 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    related: ['common-renovation-mistakes', 'apartment-renovation', 'renovation-cost-factors'],
   },
   {
     slug: GUIDE_SLUGS[18],
@@ -4156,6 +4248,93 @@ const en: Guide[] = [
     ],
     service: 'renovation-interior',
     related: ['apartment-renovation', 'old-apartment-renovation', 'renovation-for-foreign-buyers'],
+  },
+  {
+    slug: GUIDE_SLUGS[27],
+    metaTitle: 'Common Renovation Mistakes and How to Avoid Them | BAU BILD',
+    metaDescription:
+      'The most common mistakes in apartment and house renovation: starting without a plan, vague estimates, old wiring, skipped waterproofing, rushed drying and handover.',
+    h1: 'Common renovation mistakes and how to avoid them',
+    lead: 'Most renovation mistakes repeat from project to project, and almost all of them are made at the start, when decisions are still cheap to change. Here are the ones we see most often in apartments and houses, and simple ways to avoid them.',
+    published: '2026-11-27',
+    sections: [
+      {
+        h2: '1. Starting without a plan',
+        paragraphs: [
+          'Renovations often begin with demolition, and the positions of furniture, sockets and lights are decided later. Walls then get cut open again and finished work is wasted.',
+          'Before anything is knocked down, decide on paper or with a designer where the kitchen, bed, TV and washing machine go, and where you need sockets and lighting. That plan drives every later stage.',
+        ],
+      },
+      {
+        h2: '2. A vague estimate',
+        paragraphs: [
+          'If the estimate only has general lines such as "full renovation", it is hard to tell later what is included. That is where disputes and extra costs start.',
+          'Ask for an estimate that lists works and materials separately, with quantities. Then you can compare offers properly.',
+        ],
+      },
+      {
+        h2: '3. Leaving old wiring and pipes',
+        paragraphs: [
+          'Old wiring and pipes left under new tiles and fresh paint are the most expensive mistake: when something fails, the new finish has to be broken.',
+          'In a full renovation, replace the electrics and plumbing while the walls are open. Doing it later is far harder and costlier.',
+        ],
+      },
+      {
+        h2: '4. Doing the works in the wrong order',
+        paragraphs: [
+          'Renovation has its own logic: strip-out and services first, then partitions, plaster and screed, then tiling, skim coat and paint, and finally flooring, doors and fixtures. When the order breaks, one trade damages the work of another.',
+          'One team, or one person responsible for coordinating all trades, removes most of this problem.',
+        ],
+      },
+      {
+        h2: '5. Skipping waterproofing and ventilation',
+        paragraphs: [
+          'Saving on waterproofing in bathrooms and kitchens often ends with a flooded neighbour or mould. Tiles and grout do not stop water on their own.',
+          'Also check that ventilation works. In older blocks the ducts are often blocked, and in new flats sealed windows reduce air movement.',
+        ],
+      },
+      {
+        h2: '6. Rushing the drying time',
+        paragraphs: [
+          'Plaster, screed and filler need time to dry. Tiles, laminate or paint laid on a damp surface lead to cracks, blistering paint, lifting floors and mould.',
+          'Drying time depends on weather, season and layer thickness. Build it into the plan from the start instead of cutting it to meet a date.',
+        ],
+      },
+      {
+        h2: '7. Buying materials at the last minute',
+        paragraphs: [
+          'When tiles, doors or fittings are bought while the tradesman is already waiting, the choice is made from what is in stock rather than what you need, and work sometimes stops while an order arrives.',
+          'Decide early who buys materials and choose the main items before work starts. Keep a small spare of tiles and flooring for cuts and future repairs.',
+        ],
+      },
+      {
+        h2: '8. Handing over without checking',
+        paragraphs: [
+          'At the end, check everything together: sockets and breakers, taps and drains, doors and windows, tile flatness, wall and ceiling finishes.',
+          'Write down any defects and agree when they will be fixed. Ask for a wiring and pipe layout or photos so you know later where cables and pipes run.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the most expensive renovation mistake?',
+        a: 'The ones hidden under tiles or plaster: old pipes and wiring, and missing waterproofing. Fixing them means breaking the new finish.',
+      },
+      {
+        q: 'How do I avoid extra costs during a renovation?',
+        a: 'Start with a detailed plan and an estimate that lists works and materials separately. Agree any changes in writing before they are done.',
+      },
+      {
+        q: 'What should I check when the renovation is handed over?',
+        a: 'Electrics, water and drainage, doors and windows, and the tile, wall and ceiling finishes. List every defect and agree a date for fixing it.',
+      },
+      {
+        q: 'Do you renovate apartments and houses in Tbilisi?',
+        a: 'Yes. We renovate apartments and houses in Tbilisi and across Georgia, from shell to finished interior. Contact us and we will visit and prepare a detailed estimate.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['apartment-renovation', 'reading-an-estimate', 'renovation-for-foreign-buyers'],
   },
 ];
 
