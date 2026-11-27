@@ -52,6 +52,7 @@ export const GUIDE_SLUGS = [
   'choosing-a-plot',
   'bathroom-renovation',
   'common-renovation-mistakes',
+  'common-construction-mistakes',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -489,6 +490,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['common-construction-mistakes', 'reading-an-estimate', 'house-construction-stages'],
   },
   {
     slug: GUIDE_SLUGS[5],
@@ -1653,6 +1655,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['common-construction-mistakes', 'common-renovation-mistakes', 'house-construction-cost'],
   },
   {
     slug: GUIDE_SLUGS[21],
@@ -2211,6 +2214,93 @@ const ka: Guide[] = [
     service: 'renovation-interior',
     related: ['apartment-renovation', 'reading-an-estimate', 'bathroom-renovation'],
   },
+  {
+    slug: GUIDE_SLUGS[28],
+    metaTitle: 'სახლის მშენებლობის ყველაზე ხშირი შეცდომები | BAU BILD',
+    metaDescription:
+      'სახლის მშენებლობის ყველაზე ხშირი შეცდომები: ნაკვეთი და გრუნტი, პროექტის გარეშე დაწყება, საძირკველი, ხარჯთაღრიცხვა, ზედამხედველობა, ჰიდრო და თბოიზოლაცია.',
+    h1: 'სახლის მშენებლობის ყველაზე ხშირი შეცდომები და როგორ ავიცილოთ ისინი',
+    lead: 'სახლის მშენებლობის შეცდომები ძვირი ჯდება, რადგან მათი უმეტესობა კედლებში, საძირკველში ან სახურავის ქვეშ იმალება და გვიან ჩნდება. აქ შევკრიბეთ ის შეცდომები, რომლებსაც კერძო სახლის მშენებლობისას ყველაზე ხშირად ვხვდებით, და მარტივი გზები მათ ასაცილებლად.',
+    published: '2026-11-27',
+    sections: [
+      {
+        h2: '1. ნაკვეთის და გრუნტის შეუმოწმებლობა',
+        paragraphs: [
+          'ხშირად ნაკვეთი იყიდება ისე, რომ არავინ ამოწმებს, რა მიწაზე დადგება სახლი, მიდის თუ არა მასთან გზა და კომუნიკაციები, და რა შეიძლება აშენდეს ამ ზონაში. შემდეგ ეს ყველაფერი მშენებლობის დროს ჩნდება და გეგმა იცვლება.',
+          'ყიდვამდე შეამოწმეთ დოკუმენტები, მისასვლელი და კომუნიკაციები, ფერდობზე ან ნესტიან ადგილას კი გეოლოგიური კვლევა გააკეთეთ. გრუნტის მონაცემები საძირკვლის სწორად შერჩევისთვის აუცილებელია.',
+        ],
+      },
+      {
+        h2: '2. მშენებლობის დაწყება სრული პროექტის გარეშე',
+        paragraphs: [
+          '„ადგილზე გადავწყვეტთ“ ყველაზე ძვირი მიდგომაა. როცა არქიტექტურული და კონსტრუქციული პროექტი არ არსებობს, ოსტატები თავად წყვეტენ კედლების სისქეს, არმატურას და ღიობებს, ხოლო ცვლილებები უკვე აშენებულის დანგრევას მოითხოვს.',
+          'სახლის მშენებლობა უნდა დაიწყოს პროექტით, სადაც გეგმები, კონსტრუქცია და ინჟინერია ერთად არის დამუშავებული. ეს ასევე საჭიროა ნებართვისთვის და ზუსტი ხარჯთაღრიცხვისთვის.',
+        ],
+      },
+      {
+        h2: '3. საძირკველზე დაზოგვა',
+        paragraphs: [
+          'საძირკველი სახლის ის ნაწილია, რომლის გასწორება შემდეგ თითქმის შეუძლებელია. არასაკმარისი სიღრმე, სუსტი არმატურა ან ცუდად დატკეპნილი გრუნტი ბზარებით და ჯდომით ბრუნდება.',
+          'საძირკვლის ტიპი და ზომები კონსტრუქტორმა უნდა შეარჩიოს გრუნტის მონაცემებით. ბეტონის ჩასხმამდე არმატურა შეამოწმეთ, ფოტოებით დააფიქსირეთ და ბეტონს გამაგრების დრო მიეცით.',
+        ],
+      },
+      {
+        h2: '4. ბუნდოვანი ხარჯთაღრიცხვა და ხელშეკრულება',
+        paragraphs: [
+          'თუ ხარჯთაღრიცხვაში მხოლოდ ზოგადი სტრიქონებია, ძნელია გაიგო, რა შედის ფასში. მშენებლობის შუაში „გაუთვალისწინებელი“ ხარჯები ხშირად სწორედ აქედან ჩნდება.',
+          'მოითხოვეთ ხარჯთაღრიცხვა სამუშაოებად და მასალებად დაყოფილი, მოცულობებით. ხელშეკრულებაში ჩაწერეთ სამუშაოს ფარგლები, ეტაპები, გადახდის წესი, ცვლილებების შეთანხმების წესი და გარანტია.',
+        ],
+      },
+      {
+        h2: '5. ზედამხედველობის არარსებობა',
+        paragraphs: [
+          'მშენებლობაზე ყოველდღიური კონტროლის გარეშე მცირე გადახვევები გროვდება: სხვა მასალა, სხვა სისქე, გამოტოვებული ფენა. მათი უმეტესობა შემდეგ კედლის ან იატაკის ქვეშ იმალება.',
+          'უნდა არსებობდეს ერთი პასუხისმგებელი პირი, რომელიც ხარისხს ამოწმებს, და ფარული სამუშაოები (არმატურა, იზოლაცია, მილები) დაფარვამდე შემოწმდეს და დაფიქსირდეს.',
+        ],
+      },
+      {
+        h2: '6. ჰიდროიზოლაციის და თბოიზოლაციის გამოტოვება',
+        paragraphs: [
+          'საძირკვლის და სარდაფის ჰიდროიზოლაცია, სახურავის ქვეშა ფენები და კედლების თბოიზოლაცია ხშირად პირველია, რაზეც ზოგავენ. შედეგი არის ნესტი, ობი და ძვირი გათბობა ყოველ ზამთარს.',
+          'იზოლაციის ფენები პროექტში უნდა იყოს ჩადებული და მშენებლობის სწორ ეტაპზე გაკეთდეს. მოგვიანებით მათი დამატება გაცილებით ძვირი და ზოგჯერ შეუძლებელია.',
+        ],
+      },
+      {
+        h2: '7. ამინდის და სეზონის უგულებელყოფა',
+        paragraphs: [
+          'ბეტონი, ბათქაში და წებოვანი ნარევები ტემპერატურაზე და ტენიანობაზე რეაგირებს. ყინვაში ჩასხმული ბეტონი ან წვიმაში დაწყობილი წყობა შემდეგ ხარისხს აკლებს.',
+          'სამუშაოების გრაფიკი სეზონის გათვალისწინებით დაგეგმეთ, ცივ ამინდში კი გამოიყენეთ შესაბამისი დანამატები, დაფარვა და გათბობა.',
+        ],
+      },
+      {
+        h2: '8. ცვლილებები მშენებლობის დროს',
+        paragraphs: [
+          'ფანჯრის გადატანა, კედლის დამატება ან ოთახების გადაგეგმვა მშენებლობის შუაში ხშირად ჯაჭვურ ცვლილებებს იწვევს: კონსტრუქციაში, ინჟინერიაში და ვადებში.',
+          'ყველა მნიშვნელოვანი გადაწყვეტილება პროექტის ეტაპზე მიიღეთ. თუ ცვლილება მაინც საჭიროა, ჯერ წერილობით შეათანხმეთ მისი გავლენა ხარჯზე და გრაფიკზე.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რა არის სახლის მშენებლობის ყველაზე ძვირი შეცდომა?',
+        a: 'ის შეცდომები, რომლებიც კონსტრუქციაში იმალება: სუსტი საძირკველი, შეუმოწმებელი გრუნტი, გამოტოვებული ჰიდროიზოლაცია. მათი გასწორება ხშირად უკვე აშენებულის ნაწილობრივ დანგრევას მოითხოვს.',
+      },
+      {
+        q: 'როგორ ავიცილო თავიდან დამატებითი ხარჯი სახლის მშენებლობისას?',
+        a: 'დაიწყეთ სრული პროექტით და დეტალური ხარჯთაღრიცხვით, ხელშეკრულებაში ჩაწერეთ სამუშაოს ფარგლები და ცვლილებების წესი, და მიიღეთ მთავარი გადაწყვეტილებები მშენებლობის დაწყებამდე.',
+      },
+      {
+        q: 'როგორ შევარჩიო სამშენებლო კომპანია?',
+        a: 'ნახეთ, რამდენად დეტალურ ხარჯთაღრიცხვას და ხელშეკრულებას გთავაზობთ, ვინ არის პასუხისმგებელი ობიექტზე და როგორ გაცნობებთ სამუშაოს მიმდინარეობას. დაწვრილებით წაიკითხეთ ჩვენს სტატიაში სამშენებლო კომპანიის შერჩევაზე.',
+      },
+      {
+        q: 'აკეთებთ სახლის მშენებლობას თბილისში და რეგიონებში?',
+        a: 'დიახ. ვაშენებთ კერძო სახლებს და აგარაკებს თბილისში და მთელ საქართველოში, საძირკვლიდან გასაღების ჩაბარებამდე. დაგვიკავშირდით, ვნახავთ ნაკვეთს ან პროექტს და მოგიმზადებთ დეტალურ ხარჯთაღრიცხვას.',
+      },
+    ],
+    service: 'residential-construction',
+    related: ['house-construction-stages', 'choose-construction-company', 'house-construction-cost'],
+  },
 ];
 
 const en: Guide[] = [
@@ -2614,6 +2704,7 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['common-construction-mistakes', 'reading-an-estimate', 'house-construction-stages'],
   },
   {
     slug: GUIDE_SLUGS[5],
@@ -3778,6 +3869,7 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['common-construction-mistakes', 'common-renovation-mistakes', 'house-construction-cost'],
   },
   {
     slug: GUIDE_SLUGS[21],
@@ -4335,6 +4427,93 @@ const en: Guide[] = [
     ],
     service: 'renovation-interior',
     related: ['apartment-renovation', 'reading-an-estimate', 'renovation-for-foreign-buyers'],
+  },
+  {
+    slug: GUIDE_SLUGS[28],
+    metaTitle: 'Common House Construction Mistakes and How to Avoid Them | BAU BILD',
+    metaDescription:
+      'The most common mistakes when building a house: unchecked plot and soil, no full design, cutting corners on foundations, vague estimates, no supervision, skipped insulation.',
+    h1: 'Common house construction mistakes and how to avoid them',
+    lead: 'House construction mistakes are expensive because most of them end up hidden in walls, foundations or under the roof, and only show up later. Here are the ones we see most often when private houses are built, and simple ways to avoid them.',
+    published: '2026-11-27',
+    sections: [
+      {
+        h2: '1. Not checking the plot and soil',
+        paragraphs: [
+          'Plots are often bought without anyone checking what ground the house will stand on, whether there is road access and utilities, and what may be built in that zone. These issues then appear during construction and force changes.',
+          'Before buying, check the documents, access and utilities, and on a slope or damp site order a geotechnical survey. Soil data is essential for choosing the right foundation.',
+        ],
+      },
+      {
+        h2: '2. Starting without a full design',
+        paragraphs: [
+          '"We will decide on site" is the most expensive approach. Without architectural and structural drawings, the crew decides wall thicknesses, reinforcement and openings, and later changes mean demolishing finished work.',
+          'A house should be built from a design in which layouts, structure and building services are worked out together. It is also needed for the permit and an accurate estimate.',
+        ],
+      },
+      {
+        h2: '3. Saving on the foundation',
+        paragraphs: [
+          'The foundation is the part of a house that is almost impossible to fix later. Too shallow, weak reinforcement or poorly compacted ground comes back as cracks and settlement.',
+          'The foundation type and size should be chosen by a structural engineer from soil data. Check and photograph the reinforcement before pouring, and give the concrete time to cure.',
+        ],
+      },
+      {
+        h2: '4. A vague estimate and contract',
+        paragraphs: [
+          'If the estimate only has general lines, it is hard to tell what is included. Mid-build "unexpected" costs usually start there.',
+          'Ask for an estimate broken down into works and materials, with quantities. The contract should state the scope, stages, payment terms, how changes are agreed, and the warranty.',
+        ],
+      },
+      {
+        h2: '5. No supervision',
+        paragraphs: [
+          'Without daily control, small deviations pile up on site: a different material, a different thickness, a missed layer. Most of them end up hidden under walls or floors.',
+          'There should be one person responsible for quality, and hidden works (reinforcement, insulation, pipes) should be checked and recorded before they are covered.',
+        ],
+      },
+      {
+        h2: '6. Skipping waterproofing and insulation',
+        paragraphs: [
+          'Foundation and basement waterproofing, roof membranes and wall insulation are often the first things people cut. The result is damp, mould and high heating bills every winter.',
+          'Insulation layers belong in the design and must be done at the right stage. Adding them later is far more expensive and sometimes impossible.',
+        ],
+      },
+      {
+        h2: '7. Ignoring weather and season',
+        paragraphs: [
+          'Concrete, render and adhesives react to temperature and humidity. Concrete poured in frost or masonry laid in rain loses quality.',
+          'Plan the schedule around the season, and in cold weather use suitable admixtures, covers and heating.',
+        ],
+      },
+      {
+        h2: '8. Changes during construction',
+        paragraphs: [
+          'Moving a window, adding a wall or re-planning rooms mid-build often triggers a chain of changes to structure, services and schedule.',
+          'Make the major decisions at design stage. If a change is still needed, agree its effect on cost and schedule in writing first.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the most expensive house construction mistake?',
+        a: 'Mistakes hidden in the structure: a weak foundation, unchecked soil, missing waterproofing. Fixing them often means partly demolishing finished work.',
+      },
+      {
+        q: 'How do I avoid extra costs when building a house?',
+        a: 'Start with a full design and a detailed estimate, put the scope and change rules in the contract, and make the main decisions before construction starts.',
+      },
+      {
+        q: 'How do I choose a construction company?',
+        a: 'Look at how detailed their estimate and contract are, who is responsible on site and how they report progress. Our guide on choosing a construction company covers this in more detail.',
+      },
+      {
+        q: 'Do you build houses in Tbilisi and the regions?',
+        a: 'Yes. We build private houses and country homes in Tbilisi and across Georgia, from foundations to handover. Contact us and we will look at the plot or design and prepare a detailed estimate.',
+      },
+    ],
+    service: 'residential-construction',
+    related: ['house-construction-stages', 'choose-construction-company', 'building-in-georgia-foreigner'],
   },
 ];
 
