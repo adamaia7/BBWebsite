@@ -54,6 +54,7 @@ export const GUIDE_SLUGS = [
   'common-renovation-mistakes',
   'common-construction-mistakes',
   'renovating-while-living',
+  'kitchen-renovation',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -132,6 +133,7 @@ const ka: Guide[] = [
         paragraphs: [
           'პროექტის მიხედვით მზადდება ხარჯთაღრიცხვა: სამუშაოების და მასალების ჩამონათვალი ფასებით. ხელშეკრულებაში უნდა ჩაიწეროს სამუშაოს მოცულობა, ეტაპები, ვადები, გადახდის გრაფიკი და გარანტია.',
           'სჯობს, გადახდა ეტაპებზე იყოს მიბმული: შემდეგ ეტაპზე გადასვლამდე მიმდინარე ეტაპი ერთად მოწმდება.',
+          'სახლის მშენებლობის კარგ ხარჯთაღრიცხვაში თითოეული ეტაპი ცალკეა: მიწის სამუშაოები და საძირკველი, შავი კარკასი და სახურავი, თეთრი კარკასი და საინჟინრო ქსელები, ფასადი, მწვანე კარკასი. ყველა სტრიქონს აქვს მოცულობა, ერთეული და ფასი, ხოლო მასალები დასახელებულია მარკით ან კლასით. ასე ხედავთ, რაში იხდით და სხვადასხვა სამშენებლო კომპანიის შეთავაზებას ერთმანეთს რეალურად ადარებთ.',
         ],
       },
       {
@@ -190,8 +192,13 @@ const ka: Guide[] = [
         q: 'როდის მზადდება სახლის მშენებლობის ხარჯთაღრიცხვა?',
         a: 'ზუსტი ხარჯთაღრიცხვა პროექტის შემდეგ მზადდება, როცა ცნობილია სახლის ზომები, კონსტრუქცია და მასალები. მასში სამუშაოები და მასალები ეტაპების მიხედვით ცალ-ცალკეა გაწერილი.',
       },
+      {
+        q: 'რატომ განსხვავდება სხვადასხვა კომპანიის ხარჯთაღრიცხვა?',
+        a: 'ხშირად იმიტომ, რომ ერთსა და იმავე სახლს სხვადასხვა მოცულობით, მასალით ან ეტაპების ჩამონათვალით ითვლიან. შეადარეთ სტრიქონ-სტრიქონ: რა შედის თითოეულ ეტაპში, რა მასალაა მითითებული და რა რჩება ფასის გარეთ.',
+      },
     ],
     service: 'residential-construction',
+    updated: '2026-11-28',
     related: ['house-construction-mtskheta', 'house-design', 'house-construction-cost'],
   },
   {
@@ -572,6 +579,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['house-construction-stages', 'energy-efficient-house', 'house-construction-cost'],
   },
   {
     slug: GUIDE_SLUGS[6],
@@ -2134,7 +2142,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    related: ['apartment-renovation', 'old-apartment-renovation', 'cosmetic-vs-full-renovation'],
+    related: ['kitchen-renovation', 'apartment-renovation', 'old-apartment-renovation'],
   },
   {
     slug: GUIDE_SLUGS[27],
@@ -2388,7 +2396,87 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    related: ['apartment-renovation', 'common-renovation-mistakes', 'bathroom-renovation'],
+    related: ['kitchen-renovation', 'apartment-renovation', 'common-renovation-mistakes'],
+  },
+  {
+    slug: GUIDE_SLUGS[30],
+    metaTitle: 'სამზარეულოს რემონტი: განლაგება, ინჟინერია და მასალები | BAU BILD',
+    metaDescription:
+      'სამზარეულოს რემონტი ბინაში ან სახლში: განლაგება, წყალი და კანალიზაცია, ელექტროობა, გამწოვი და ვენტილაცია, ზედაპირები და სამუშაოების თანმიმდევრობა.',
+    h1: 'სამზარეულოს რემონტი: განლაგებიდან ავეჯის დამონტაჟებამდე',
+    lead: 'სამზარეულო ბინის ყველაზე დატვირთული ოთახია: აქ ერთად ხვდება წყალი, კანალიზაცია, ელექტროობა, გაზი ან ინდუქცია და ვენტილაცია. ამიტომ სამზარეულოს რემონტი სხვა ოთახებზე მეტ დაგეგმვას მოითხოვს. აქ ავხსნით, რა უნდა გადაწყვიტოთ წინასწარ და რა თანმიმდევრობით მიდის სამუშაო.',
+    published: '2026-11-28',
+    sections: [
+      {
+        h2: '1. განლაგება იწყება ავეჯის პროექტით',
+        paragraphs: [
+          'სამზარეულოს რემონტი ავეჯის პროექტით უნდა დაიწყოს და არა კედლების ლესვით. სწორედ ავეჯის ნახაზი განსაზღვრავს, სად იქნება ნიჟარა, ქურა, ღუმელი, მაცივარი, ჭურჭლის სარეცხი მანქანა და გამწოვი.',
+          'ყველაზე მოსახერხებელია, როცა ნიჟარა, ქურა და მაცივარი ახლოს არის ერთმანეთთან და მათ შორის თავისუფალი სამუშაო ზედაპირი რჩება. ხაზოვანი, კუთხოვანი, П-ს ფორმის ან კუნძულიანი განლაგება ოთახის ზომასა და ფორმაზეა დამოკიდებული.',
+        ],
+      },
+      {
+        h2: '2. წყალი და კანალიზაცია',
+        paragraphs: [
+          'ნიჟარის და ჭურჭლის სარეცხი მანქანის ადგილი წინასწარ უნდა დაფიქსირდეს, რადგან კანალიზაციის მილს სწორი დახრა სჭირდება. თუ ნიჟარა დგარიდან შორს გადადის, მილის დახრა შეიძლება ვეღარ მოეწყოს და ეს წინასწარ უნდა შემოწმდეს.',
+          'ძველ ბინებში სამზარეულოს რემონტისას ღირს ძველი ლითონის მილების შეცვლა, სანამ კედლები და იატაკი ღიაა. ყოველ მოწყობილობას საკუთარი ჩამკეტი ონკანი უნდა ჰქონდეს.',
+        ],
+      },
+      {
+        h2: '3. ელექტროობა და როზეტები',
+        paragraphs: [
+          'სამზარეულოში ყველაზე მეტი ელექტრომოწყობილობაა: ქურა ან ინდუქცია, ღუმელი, ჭურჭლის სარეცხი, მაცივარი, ჩაიდანი, ყავის აპარატი. ძლიერ მოწყობილობებს ცალკე ხაზი და ცალკე ავტომატი სჭირდება.',
+          'როზეტები სამუშაო ზედაპირის ზემოთ ავეჯის ნახაზის მიხედვით განალაგეთ, რომ შემდეგ გამაგრძელებლები არ დაგჭირდეთ. ასევე წინასწარ გადაწყვიტეთ ზედა კარადების ქვეშ განათება.',
+        ],
+      },
+      {
+        h2: '4. გაზი, გამწოვი და ვენტილაცია',
+        paragraphs: [
+          'გაზის მილის გადატანა მხოლოდ შესაბამის მომსახურე ორგანიზაციასთან შეთანხმებით და უფლებამოსილი სპეციალისტის მიერ ხდება. ეს საკითხი რემონტის დაწყებამდე უნდა გაირკვეს.',
+          'გამწოვი ყველაზე ეფექტურად მაშინ მუშაობს, როცა ჰაერი ვენტილაციის არხში გადის. თუ ძველ კორპუსში არხი ჩახერგილია, ის რემონტამდე უნდა შემოწმდეს. ბოლო წლებში ბევრი არჩევს ინდუქციურ ქურას, რაც გაზის საკითხს საერთოდ ხსნის.',
+        ],
+      },
+      {
+        h2: '5. კედლები, იატაკი და ფარტუკი',
+        paragraphs: [
+          'სამზარეულოს იატაკი წყალს, ცხიმს და დარტყმას უნდა უძლებდეს. ამიტომ აქ ყველაზე ხშირად ფილა ან კერამოგრანიტი იყენებენ. ნიჟარის და ჭურჭლის სარეცხის ზონაში სასურველია ჰიდროიზოლაცია.',
+          'სამუშაო ზედაპირსა და ზედა კარადებს შორის კედელს (ფარტუკს) ადვილად გასაწმენდი მასალა სჭირდება: ფილა, მინა ან ქვა. კედლის დანარჩენი ნაწილისთვის აირჩიეთ ნესტგამძლე და გასარეცხი საღებავი.',
+        ],
+      },
+      {
+        h2: '6. სამუშაოების თანმიმდევრობა',
+        paragraphs: [
+          'სამზარეულოს რემონტი ასე მიდის: დემონტაჟი, წყლის, კანალიზაციის და ელექტროს გაყვანა, ლესვა და მოჭიმვა, ფილა იატაკზე და ფარტუკზე, შპაკლი და შეღებვა, ბოლოს ავეჯის, სამუშაო ზედაპირის და ტექნიკის დამონტაჟება.',
+          'ავეჯის საბოლოო გაზომვა ლესვის და მოჭიმვის შემდეგ ხდება, როცა კედლები და იატაკი უკვე საბოლოო მდგომარეობაშია. ასე ავეჯი ზუსტად ჯდება.',
+        ],
+      },
+      {
+        h2: '7. ხშირი შეცდომები',
+        paragraphs: [
+          'როზეტები და მილები ავეჯის პროექტამდე გაყვანილი, გამწოვი ვენტილაციის არხის გარეშე, ჭურჭლის სარეცხისთვის დაუგეგმავი ადგილი და იატაკის ფილა, რომელიც ავეჯის ქვეშ არ გადის: ეს ის შეცდომებია, რომლებსაც ყველაზე ხშირად ვხვდებით.',
+          'ყველა მათგანი თავიდან აიცილება, თუ ავეჯის ნახაზი და საინჟინრო სქემა რემონტის დაწყებამდე ერთად შეთანხმდება.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რით უნდა დავიწყო სამზარეულოს რემონტი?',
+        a: 'ავეჯის პროექტით. ის განსაზღვრავს ნიჟარის, ქურის, ტექნიკის და როზეტების ადგილს, ხოლო ამის მიხედვით ეწყობა წყალი, კანალიზაცია და ელექტროობა.',
+      },
+      {
+        q: 'შეიძლება ნიჟარის სხვა ადგილზე გადატანა?',
+        a: 'ხშირად შეიძლება, თუ კანალიზაციის მილს სწორი დახრა მოეწყობა. ეს ობიექტზე უნდა შემოწმდეს რემონტის დაწყებამდე.',
+      },
+      {
+        q: 'რა მასალა სჯობს სამზარეულოს იატაკზე?',
+        a: 'ყველაზე პრაქტიკულია ფილა ან კერამოგრანიტი, რადგან წყალს, ცხიმს და დარტყმას კარგად უძლებს და ადვილად იწმინდება.',
+      },
+      {
+        q: 'აკეთებთ სამზარეულოს და ბინის რემონტს თბილისში?',
+        a: 'დიახ. BAU BILD აკეთებს სამზარეულოს, აბაზანის და მთლიანი ბინის რემონტს თბილისში და მთელ საქართველოში. დაგვიკავშირდით, ვნახავთ ობიექტს და მოგიმზადებთ დეტალურ ხარჯთაღრიცხვას.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['apartment-renovation', 'bathroom-renovation', 'common-renovation-mistakes'],
   },
 ];
 
@@ -2874,6 +2962,7 @@ const en: Guide[] = [
       },
     ],
     service: 'residential-construction',
+    related: ['house-construction-stages', 'energy-efficient-house', 'house-construction-cost'],
   },
   {
     slug: GUIDE_SLUGS[6],
@@ -4436,7 +4525,7 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    related: ['apartment-renovation', 'old-apartment-renovation', 'renovation-for-foreign-buyers'],
+    related: ['kitchen-renovation', 'apartment-renovation', 'old-apartment-renovation'],
   },
   {
     slug: GUIDE_SLUGS[27],
@@ -4690,7 +4779,87 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    related: ['apartment-renovation', 'common-renovation-mistakes', 'renovation-for-foreign-buyers'],
+    related: ['kitchen-renovation', 'apartment-renovation', 'common-renovation-mistakes'],
+  },
+  {
+    slug: GUIDE_SLUGS[30],
+    metaTitle: 'Kitchen Renovation: Layout, Services and Materials | BAU BILD',
+    metaDescription:
+      'Kitchen renovation in an apartment or house: layout, water and drainage, electrics, extractor and ventilation, surfaces, and the right order of works.',
+    h1: 'Kitchen renovation: from layout to fitting the units',
+    lead: 'The kitchen is the busiest room in a home: water, drainage, electrics, gas or induction and ventilation all meet here. That is why a kitchen renovation needs more planning than other rooms. Here is what to decide in advance and the order the work follows.',
+    published: '2026-11-28',
+    sections: [
+      {
+        h2: '1. The layout starts with the furniture plan',
+        paragraphs: [
+          'A kitchen renovation should start with the kitchen unit plan, not with plastering. The unit drawing fixes where the sink, hob, oven, fridge, dishwasher and extractor will go.',
+          'The kitchen works best when the sink, hob and fridge are close to each other with free worktop between them. A straight, L-shaped, U-shaped or island layout depends on the size and shape of the room.',
+        ],
+      },
+      {
+        h2: '2. Water and drainage',
+        paragraphs: [
+          'Fix the position of the sink and dishwasher early, because the waste pipe needs a proper fall. If the sink moves far from the drain stack, the fall may not be achievable, so check this before work starts.',
+          'In older apartments, replace old metal pipes while the walls and floor are open. Every appliance should have its own shut-off valve.',
+        ],
+      },
+      {
+        h2: '3. Electrics and sockets',
+        paragraphs: [
+          'The kitchen has the most appliances in the home: hob, oven, dishwasher, fridge, kettle, coffee machine. High-power appliances need their own circuit and breaker.',
+          'Place worktop sockets according to the unit drawing so you do not need extension leads later, and decide on under-cabinet lighting in advance.',
+        ],
+      },
+      {
+        h2: '4. Gas, extractor and ventilation',
+        paragraphs: [
+          'Moving a gas pipe is done only in agreement with the gas service provider and by an authorised specialist. Settle this before the renovation starts.',
+          'An extractor works best when it vents into a ventilation duct. In older blocks the duct is often blocked and should be checked first. Many people now choose an induction hob, which removes the gas question altogether.',
+        ],
+      },
+      {
+        h2: '5. Walls, floor and splashback',
+        paragraphs: [
+          'A kitchen floor has to resist water, grease and impact, so tiles or porcelain stoneware are the usual choice. Waterproofing is advisable around the sink and dishwasher.',
+          'The wall between the worktop and the wall units needs an easy-clean splashback: tile, glass or stone. For the rest of the wall, choose a moisture-resistant washable paint.',
+        ],
+      },
+      {
+        h2: '6. The order of works',
+        paragraphs: [
+          'A kitchen renovation runs like this: strip-out, water, drainage and electrics, plaster and screed, floor and splashback tiling, skim coat and paint, and finally the units, worktop and appliances.',
+          'The final measurement for the units is taken after plastering and screeding, when walls and floor are in their final state, so the units fit exactly.',
+        ],
+      },
+      {
+        h2: '7. Common mistakes',
+        paragraphs: [
+          'Sockets and pipes installed before the unit plan, an extractor with no duct, no planned space for a dishwasher, and floor tiles that stop short under the units: these are the mistakes we see most often.',
+          'All of them are avoided when the unit drawing and the services layout are agreed together before the renovation starts.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Where should a kitchen renovation start?',
+        a: 'With the kitchen unit plan. It fixes the positions of the sink, hob, appliances and sockets, and the water, drainage and electrics are laid out from it.',
+      },
+      {
+        q: 'Can the sink be moved to another place?',
+        a: 'Often yes, as long as the waste pipe can be given a proper fall. This should be checked on site before work begins.',
+      },
+      {
+        q: 'What is the best kitchen floor material?',
+        a: 'Tiles or porcelain stoneware are the most practical, because they resist water, grease and impact and are easy to clean.',
+      },
+      {
+        q: 'Do you renovate kitchens and apartments in Tbilisi?',
+        a: 'Yes. BAU BILD renovates kitchens, bathrooms and whole apartments in Tbilisi and across Georgia. Contact us and we will visit and prepare a detailed estimate.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['apartment-renovation', 'bathroom-renovation', 'renovation-for-foreign-buyers'],
   },
 ];
 
