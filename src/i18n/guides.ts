@@ -55,6 +55,7 @@ export const GUIDE_SLUGS = [
   'common-construction-mistakes',
   'renovating-while-living',
   'kitchen-renovation',
+  'new-build-renovation',
 ] as const;
 
 export function guideUrl(lang: Lang, slug?: string): string {
@@ -424,7 +425,7 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    related: ['renovation-for-foreign-buyers', 'apartment-renovation', 'cosmetic-vs-full-renovation'],
+    related: ['new-build-renovation', 'apartment-renovation', 'cosmetic-vs-full-renovation'],
   },
   {
     slug: GUIDE_SLUGS[4],
@@ -1432,6 +1433,14 @@ const ka: Guide[] = [
           'კოსმეტიკური რემონტის დროს ბინაში ცხოვრება ზოგჯერ შესაძლებელია, თუ სამუშაო ოთახ-ოთახ მიდის. კაპიტალური რემონტისას, როცა წყალი და დენი ითიშება და ბევრი მტვერია, ჯობს გარკვეული პერიოდით სხვაგან გადახვიდეთ.',
         ],
       },
+      {
+        h2: '7. რემონტი კვადრატულობით: როგორ ითვლება',
+        paragraphs: [
+          'ხშირად რემონტის ფასს კვადრატულ მეტრზე ითხოვენ. ეს სწრაფი ორიენტირია, მაგრამ კვადრატულობით ფასი მხოლოდ მაშინ არის სანდო, როცა ცნობილია, რა სამუშაოები და რა მასალები შედის მასში.',
+          'ერთი და იგივე ფართის ბინაში კოსმეტიკური და კაპიტალური რემონტის მოცულობა სრულიად განსხვავებულია. ასევე კვადრატულობით ერთნაირად ვერ დაითვლება აბაზანა, სამზარეულო და საძინებელი: სველ წერტილებში გაცილებით მეტი სამუშაოა.',
+          'ამიტომ ზუსტი ფასისთვის საჭიროა ობიექტის ნახვა და ხარჯთაღრიცხვა, სადაც სამუშაოები ითვლება თავისი ერთეულით: კედლები და ჭერი კვადრატულ მეტრზე, პლინტუსი გრძივ მეტრზე, როზეტები და სანტექნიკა ცალობით.',
+        ],
+      },
     ],
     faq: [
       {
@@ -1450,8 +1459,13 @@ const ka: Guide[] = [
         q: 'როგორ გავიგო, რომელი რემონტი მჭირდება?',
         a: 'სპეციალისტი ადგილზე ამოწმებს ელექტროობას, მილებს, კედლებს და იატაკს. ამის შემდეგ მზადდება ხარჯთაღრიცხვა სამუშაოების ჩამონათვალით.',
       },
+      {
+        q: 'შეიძლება რემონტის ფასი კვადრატულობით დაითვალოს?',
+        a: 'კვადრატულობით ფასი მხოლოდ საორიენტაციოა. ზუსტი ფასი დამოკიდებულია რემონტის ტიპზე, მასალებზე და სველი წერტილების რაოდენობაზე, ამიტომ მას ობიექტის ნახვის შემდეგ დეტალური ხარჯთაღრიცხვით ვადგენთ.',
+      },
     ],
     service: 'renovation-interior',
+    updated: '2026-11-28',
     related: ['common-renovation-mistakes', 'apartment-renovation', 'renovation-cost-factors'],
   },
   {
@@ -2476,7 +2490,87 @@ const ka: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    related: ['apartment-renovation', 'bathroom-renovation', 'common-renovation-mistakes'],
+    related: ['new-build-renovation', 'apartment-renovation', 'bathroom-renovation'],
+  },
+  {
+    slug: GUIDE_SLUGS[31],
+    metaTitle: 'ახალი ბინის რემონტი ახალ აშენებულ კორპუსში | BAU BILD',
+    metaDescription:
+      'ახალი ბინის რემონტი თბილისში: რა შევამოწმოთ ბინის მიღებისას, რით განსხვავდება ახალ კორპუსში რემონტი, ნესტი და ჯდენა, საინჟინრო ქსელები და სამუშაოების თანმიმდევრობა.',
+    h1: 'ახალი ბინის რემონტი: რა უნდა იცოდეთ ახალ კორპუსში შესვლამდე',
+    lead: 'ახალ აშენებულ კორპუსში ნაყიდი ბინა ხშირად შავ ან თეთრ კარკასში გადმოგეცემათ და საცხოვრებლად მისი გამზადება სრულ რემონტს ნიშნავს. ახალ ბინას თავისი თავისებურებები აქვს: შენობა ჯერ კიდევ შრება და ჯდება, საინჟინრო ქსელები ახლა ერთდება, მეზობლებიც ერთდროულად აკეთებენ რემონტს. აქ ავხსნით, რა უნდა შეამოწმოთ და რა თანმიმდევრობით გააკეთოთ ახალი ბინის რემონტი.',
+    published: '2026-11-28',
+    sections: [
+      {
+        h2: '1. ბინის მიღება დეველოპერისგან',
+        paragraphs: [
+          'რემონტამდე ბინა ყურადღებით მიიღეთ. შეამოწმეთ, ემთხვევა თუ არა ფართი და გეგმარება ხელშეკრულებას, სწორია თუ არა კედლები, იატაკი და ჭერი, როგორ არის დამონტაჟებული ფანჯრები და შესასვლელი კარი, სად შედის წყალი, კანალიზაცია, დენი და გაზი.',
+          'ყველა ხარვეზი წერილობით დააფიქსირეთ მიღება-ჩაბარების აქტში ან ცალკე წერილით. რემონტის დაწყების შემდეგ ძნელი დასამტკიცებელია, რომ ხარვეზი დეველოპერის იყო.',
+        ],
+      },
+      {
+        h2: '2. შავი, თეთრი თუ მწვანე კარკასი',
+        paragraphs: [
+          'ბინის მდგომარეობა განსაზღვრავს, რამდენი სამუშაოა წინ. შავ კარკასში თითქმის ყველაფერი ნულიდან კეთდება, თეთრში უკვე არის ლესვა, მოჭიმვა და ნაწილი ინჟინერიისა, მწვანეში კი მხოლოდ საბოლოო მოპირკეთება რჩება.',
+          'თეთრ კარკასშიც გადაამოწმეთ, რა ხარისხით არის შესრულებული ლესვა და მოჭიმვა, და მოგწონთ თუ არა როზეტების და მილების ადგილი. ზოგჯერ მათი გადატანა ჯობს, ვიდრე ავეჯის მათზე მორგება.',
+        ],
+      },
+      {
+        h2: '3. ნესტი და შენობის ჯდენა',
+        paragraphs: [
+          'ახალ კორპუსში ბეტონი და ლესვა ჯერ კიდევ შეიცავს ტენს. თუ მოპირკეთება ნესტიან კედელზე დაიდება, შეიძლება გაჩნდეს ობი, აბუშტული საღებავი ან ამობურცული იატაკი.',
+          'შენობა პირველ წლებში ოდნავ ჯდება, რის გამოც ლესვაზე და კუთხეებში შეიძლება წვრილი ბზარები გაჩნდეს. ამიტომ ახალ ბინაში ხშირად იყენებენ არმირების ბადეს, ელასტიურ შპაკლს და საღებავს, ხოლო ძვირ დეკორატიულ მოპირკეთებას ნაწილობრივ მოგვიანებით აკეთებენ.',
+        ],
+      },
+      {
+        h2: '4. საინჟინრო ქსელები',
+        paragraphs: [
+          'ახალი ბინის რემონტი საუკეთესო დროა ელექტროობის, წყლის, კანალიზაციის და გათბობის სწორად დასაგეგმად. ავეჯის და ტექნიკის განლაგება წინასწარ გადაწყვიტეთ, რომ როზეტები, განათება და მილები ზუსტად საჭირო ადგილზე გავიდეს.',
+          'წინასწარ დაგეგმეთ გათბობა (ცენტრალური, ქვაბი ან იატაკის გათბობა) და კონდიციონერის ადგილი, რადგან მათი მილები და კაბელები კედლებში და მოჭიმვაში გადის.',
+        ],
+      },
+      {
+        h2: '5. ხმის იზოლაცია',
+        paragraphs: [
+          'ახალ კორპუსში მეზობლები ხშირად ერთდროულად აკეთებენ რემონტს და იატაკის, კედლის და ჭერის ხმის იზოლაციის დამატება სწორედ ახლაა ყველაზე ადვილი.',
+          'მოჭიმვის ქვეშ ხმის საიზოლაციო ფენა ნაბიჯების ხმას ამცირებს, მეზობელ ბინასთან საერთო კედელზე კი შეიძლება ცალკე საიზოლაციო სისტემა მოეწყოს.',
+        ],
+      },
+      {
+        h2: '6. სამუშაოების თანმიმდევრობა',
+        paragraphs: [
+          'ახალი ბინის რემონტი ჩვეულებრივ ასე მიდის: ბინის მიღება და დიზაინის ან განლაგების გეგმა, ინჟინერიის გაყვანა, ტიხრები, ლესვა და მოჭიმვა, გაშრობა, ფილა სველ წერტილებში, შპაკლი და შეღებვა, იატაკი, კარები, სანტექნიკა და ავეჯი.',
+          'ერთი გუნდი, რომელიც ყველა ეტაპს აკეთებს, ამცირებს იმის რისკს, რომ ერთი ხელოსნის შეცდომა მეორის ნამუშევარს დააზიანებს.',
+        ],
+      },
+      {
+        h2: '7. კორპუსის წესები',
+        paragraphs: [
+          'ბევრ ახალ კორპუსს აქვს რემონტის წესები: სამუშაო საათები, ლიფტის გამოყენება, ნაგვის გატანა. ეს წესები დეველოპერთან ან ამხანაგობასთან რემონტის დაწყებამდე დააზუსტეთ.',
+          'ფასადის, აივნის მოაჯირის ან საერთო ქსელების შეცვლა ჩვეულებრივ ცალკე შეთანხმებას მოითხოვს.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'რით იწყება ახალი ბინის რემონტი?',
+        a: 'ბინის ყურადღებით მიღებით, ხარვეზების წერილობით დაფიქსირებით და განლაგების გეგმით. შემდეგ იგეგმება ინჟინერია და მზადდება ხარჯთაღრიცხვა.',
+      },
+      {
+        q: 'რატომ ჩნდება ბზარები ახალ ბინაში რემონტის შემდეგ?',
+        a: 'ახალი შენობა პირველ წლებში შრება და ოდნავ ჯდება. არმირების ბადე, ელასტიური მასალები და გაშრობის დროის დაცვა ბზარების რისკს მნიშვნელოვნად ამცირებს.',
+      },
+      {
+        q: 'თეთრ კარკასში ნაყიდ ბინას სრული რემონტი სჭირდება?',
+        a: 'თეთრ კარკასში ლესვა და მოჭიმვა უკვე გაკეთებულია, ამიტომ სამუშაო ნაკლებია, მაგრამ მაინც საჭიროა სველი წერტილები, შპაკლი და შეღებვა, იატაკი, კარები და სანტექნიკა. ასევე შეამოწმეთ ლესვის და ინჟინერიის ხარისხი.',
+      },
+      {
+        q: 'აკეთებთ ახალი ბინის რემონტს თბილისში?',
+        a: 'დიახ. BAU BILD აკეთებს ახალი და ძველი ბინების რემონტს თბილისში და მთელ საქართველოში, შავი კარკასიდან მზა ინტერიერამდე. დაგვიკავშირდით, ვნახავთ ბინას და მოგიმზადებთ დეტალურ ხარჯთაღრიცხვას.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['black-white-green-frame', 'apartment-renovation', 'kitchen-renovation'],
   },
 ];
 
@@ -2807,7 +2901,7 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    related: ['renovation-for-foreign-buyers', 'apartment-renovation', 'cosmetic-vs-full-renovation'],
+    related: ['new-build-renovation', 'apartment-renovation', 'cosmetic-vs-full-renovation'],
   },
   {
     slug: GUIDE_SLUGS[4],
@@ -3815,6 +3909,14 @@ const en: Guide[] = [
           'During a cosmetic renovation it is sometimes possible to stay if the work goes room by room. During a full renovation, when water and power are cut off and there is a lot of dust, it is better to move out for a while.',
         ],
       },
+      {
+        h2: '7. Renovation priced per square metre',
+        paragraphs: [
+          'Renovation prices are often quoted per square metre. That is a quick guide, but a per-square-metre price is only reliable when you know which works and materials it includes.',
+          'Cosmetic and full renovation in the same apartment involve very different amounts of work, and bathrooms and kitchens need far more work per square metre than bedrooms.',
+          'For an exact price the site needs to be seen and an estimate prepared where each item is counted in its own unit: walls and ceilings per square metre, skirting per linear metre, sockets and sanitary ware per piece.',
+        ],
+      },
     ],
     faq: [
       {
@@ -3835,6 +3937,7 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
+    updated: '2026-11-28',
     related: ['common-renovation-mistakes', 'apartment-renovation', 'renovation-cost-factors'],
   },
   {
@@ -4859,7 +4962,87 @@ const en: Guide[] = [
       },
     ],
     service: 'renovation-interior',
-    related: ['apartment-renovation', 'bathroom-renovation', 'renovation-for-foreign-buyers'],
+    related: ['new-build-renovation', 'apartment-renovation', 'bathroom-renovation'],
+  },
+  {
+    slug: GUIDE_SLUGS[31],
+    metaTitle: 'New Build Apartment Renovation in Tbilisi | BAU BILD',
+    metaDescription:
+      'Renovating a new build apartment in Tbilisi: what to check at handover, how renovation differs in a new building, damp and settlement, services and the order of works.',
+    h1: 'New build apartment renovation: what to know before you move in',
+    lead: 'An apartment bought in a newly built block is usually handed over in shell or white frame condition, and making it ready to live in means a full renovation. New builds have their own specifics: the building is still drying and settling, services are being connected for the first time, and neighbours renovate at the same time. Here is what to check and the order in which to renovate.',
+    published: '2026-11-28',
+    sections: [
+      {
+        h2: '1. Taking the apartment from the developer',
+        paragraphs: [
+          'Inspect the apartment carefully before any renovation. Check that the area and layout match the contract, that walls, floors and ceilings are straight, how the windows and entrance door are fitted, and where water, drainage, power and gas come in.',
+          'Record every defect in writing, in the handover act or a separate letter. Once renovation starts, it is hard to prove a defect was the developer.',
+        ],
+      },
+      {
+        h2: '2. Black, white or green frame',
+        paragraphs: [
+          'The condition of the apartment decides how much work lies ahead. In black frame almost everything starts from zero, white frame already has plaster, screed and some services, and green frame only needs final finishes.',
+          'Even in white frame, check the quality of the plaster and screed and whether you like the positions of sockets and pipes. Moving them is sometimes better than fitting the furniture around them.',
+        ],
+      },
+      {
+        h2: '3. Damp and settlement',
+        paragraphs: [
+          'In a new block the concrete and plaster still hold moisture. Finishes laid on damp walls can lead to mould, blistering paint or lifting floors.',
+          'The building settles slightly in its first years, so fine cracks can appear in plaster and corners. That is why new builds often use reinforcing mesh, flexible filler and paint, and expensive decorative finishes are sometimes left for later.',
+        ],
+      },
+      {
+        h2: '4. Services',
+        paragraphs: [
+          'Renovating a new apartment is the best time to plan electrics, water, drainage and heating properly. Decide the furniture and appliance layout first so sockets, lighting and pipes come out exactly where needed.',
+          'Plan the heating (central, boiler or underfloor) and air conditioning positions early, because their pipes and cables run in the walls and screed.',
+        ],
+      },
+      {
+        h2: '5. Sound insulation',
+        paragraphs: [
+          'In a new block neighbours often renovate at the same time, and adding sound insulation to floors, walls and ceilings is easiest now.',
+          'A sound-insulating layer under the screed reduces footstep noise, and a separate insulation system can be built on a wall shared with the next apartment.',
+        ],
+      },
+      {
+        h2: '6. Order of works',
+        paragraphs: [
+          'A new build renovation usually runs like this: handover and a design or layout plan, services, partitions, plaster and screed, drying, tiling in wet areas, skim coat and paint, flooring, doors, sanitary ware and furniture.',
+          'One team doing every stage reduces the risk of one trade damaging the work of another.',
+        ],
+      },
+      {
+        h2: '7. Building rules',
+        paragraphs: [
+          'Many new blocks have renovation rules: working hours, use of the lift and removal of debris. Check them with the developer or the residents association before work begins.',
+          'Changes to the facade, balcony railings or shared services usually need separate approval.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Where does a new build renovation start?',
+        a: 'With a careful handover, written record of defects and a layout plan. Then the services are planned and a detailed estimate is prepared.',
+      },
+      {
+        q: 'Why do cracks appear in a new apartment after renovation?',
+        a: 'A new building dries and settles slightly in its first years. Reinforcing mesh, flexible materials and proper drying time greatly reduce the risk of cracks.',
+      },
+      {
+        q: 'Does a white frame apartment need a full renovation?',
+        a: 'White frame already has plaster and screed, so there is less work, but wet areas, skim coat and paint, flooring, doors and sanitary ware are still needed. Also check the quality of the plaster and services.',
+      },
+      {
+        q: 'Do you renovate new build apartments in Tbilisi?',
+        a: 'Yes. BAU BILD renovates new and older apartments in Tbilisi and across Georgia, from shell to finished interior. Contact us and we will visit and prepare a detailed estimate.',
+      },
+    ],
+    service: 'renovation-interior',
+    related: ['black-white-green-frame', 'apartment-renovation', 'renovation-for-foreign-buyers'],
   },
 ];
 
